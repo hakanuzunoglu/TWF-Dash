@@ -1,0 +1,24 @@
+{
+  "Category": "",
+  "Title": "TWF DASH VERTICAL",
+  "Description": "All in one dash made for DDUs",
+  "Author": "Hakan Uzunoglu",
+  "ScreenCount": 5.0,
+  "InGameScreensIndexs": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "IdleScreensIndexs": [
+    0
+  ],
+  "MainPreviewIndex": 1,
+  "IsOverlay": false,
+  "Width": 480.0,
+  "Height": 800.0,
+  "OverlaySizeWarning": false,
+  "MetadataVersion": 2.0,
+  "EnableOnDashboardMessaging": true,
+  "PitScreensIndexs": []
+}

@@ -1,0 +1,25 @@
+{
+  "Category": "",
+  "Title": "TWF DASH WIDE",
+  "Description": "All in one dash made for DDUs",
+  "Author": "Hakan Uzunoglu",
+  "ScreenCount": 6.0,
+  "InGameScreensIndexs": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "IdleScreensIndexs": [
+    0
+  ],
+  "MainPreviewIndex": 1,
+  "IsOverlay": false,
+  "Width": 1050.0,
+  "Height": 480.0,
+  "OverlaySizeWarning": true,
+  "MetadataVersion": 2.0,
+  "EnableOnDashboardMessaging": true,
+  "PitScreensIndexs": []
+}
