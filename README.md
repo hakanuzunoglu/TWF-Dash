@@ -1,9 +1,9 @@
 # TWF-Dash
 **TWF Dashboard Ecosystem Beta**
 
-The TWF Dash Ecosystem is now made universal, so ideally it should work with every game that SimHub supports - some features might not work or be missing as intended depending on game.\
+The TWF Dash Ecosystem is now made universal, so ideally it should work with every game that SimHub supports - some features might not work or be missing as intended depending on game.
 
-Fully compatible with: AMS2, ACC, AC, iRacing with enhanced features.\
+Fully compatible with: AMS2, ACC, AC, iRacing with enhanced features.
 
 **Known Issues**\
 Deltas might not work in RF2.\
