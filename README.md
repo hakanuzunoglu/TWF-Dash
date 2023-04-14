@@ -26,7 +26,7 @@ https://www.simhubdash.com/community-2/dashboard-templates/romainrobs-collection
 
 # Installation
 
- Download the [latest release](https://github.com/hakanuzunoglu/TWF-Dash/releases/). 
+- Download the [latest release](https://github.com/hakanuzunoglu/TWF-Dash/releases/). 
 - Unzip the file contents and double click on the dashes you want to install. 
 - Copy **TWF_DASH_HELPER.JS** and **TWF_DASH_CONFIG.JSON** under **C:\Program Files (x86)\SimHub\JavascriptExtensions**
 
