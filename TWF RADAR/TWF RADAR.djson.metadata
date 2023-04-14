@@ -3,9 +3,10 @@
   "Title": "TWF RADAR",
   "Description": "All in one dash made for DDUs",
   "Author": "Hakan Uzunoglu",
-  "ScreenCount": 2.0,
+  "ScreenCount": 3.0,
   "InGameScreensIndexs": [
-    1
+    1,
+    2
   ],
   "IdleScreensIndexs": [
     0

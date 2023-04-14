@@ -3,12 +3,13 @@
   "Title": "TWF DASH VERTICAL",
   "Description": "All in one dash made for DDUs",
   "Author": "Hakan Uzunoglu",
-  "ScreenCount": 5.0,
+  "ScreenCount": 6.0,
   "InGameScreensIndexs": [
     1,
     2,
     3,
-    4
+    4,
+    5
   ],
   "IdleScreensIndexs": [
     0

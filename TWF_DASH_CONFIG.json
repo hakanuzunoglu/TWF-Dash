@@ -1,36 +1,30 @@
 {
-    "your_name": "",
+    "SECTION 1": "############# PERSONALIZATION #############",
+    
+    "your_name": " ",
         "your_name_tip": "Your name (will appear in various places)",
 
-    "your_number": "",
+    "your_number": " ",
         "your_number_tip": "Your number (will appear in various places)",
 
-    "your_color": "orange",
+    "your_color": " ",
         "your_color_tip": "Red, Blue, #FF233E49 (default - will appear in various places)",
+    
+    "ui_color": 1,
+        "ui_color_tip": "Main color style for the dash 1: Blue, 2: Black", 
+    
+    
+    "SECTION 2": "#################### MAIN DASH FEATURES  ##########################",
+    
 
     "spotter": 2,
-        "spotter_tip": "0: Off, 1: Front and Rear, 2: Rear Only",
+        "spotter_tip": "Turn the spotter and radar surrounding the middle section 0: Off, 1: Front and Rear, 2: Rear Only",
 
-    "ui_color": 1,
-        "ui_color_tip": "1: Blue, 2: Black, 3: Custom",
-
-    "ui_custom_color": "#FF233E49",
-        "ui_custom_color_tip": "Red, Blue, #FF233E49 (default) ",
+    "mfd_map": 0,
+        "mfd_map_tip": "Disable map in main dash MFDs 1: Show maps, 0: Hide maps",
     
-    "ui_custom_bgcolor": "#FF233E4",
-        "ui_custom_bgcolor_tip": "Red, Blue, #FF233E49 (default) ",
-
-    "ui_radius": 6,
-        "ui_radius_tip": "Corner radius for borders, default 6",
-   
-    "laptimer_size":1,
-        "laptimer_size_tip": "Extra large or normal text size for first screen of laptimer 1: Normal, 2: Xlarge",
-
-    "radar_background":1,
-        "radar_background_tip": "1: Normal, 2: Green for chroma-keying with OBS",
-    
-    "show_leds":1,
-        "show_leds_tip": "1: No, 2: Show shift LEDS on main screen",
+    "show_leds":0,
+        "show_leds_tip": "1: Show shift / REV LEDS on main screen, 0:Hide",
     
     "pedals":1,
         "pedals_tip": "1: Default, Middle, 2: Linear below middle, 0: Off",
@@ -39,14 +33,39 @@
         "turbo_tip": "Show turbo boost gauge below middle area 1:Show, 0:Hide",
     
     "mfd_left":0,
-        "mfd_left_tip": "BETA - What to display on main screen left side by default: 0: Tyres, 1: Vehicle and Damage, 2:Timings, 3: Timings and Behind, 4: Behind, 5: Relative, 6: Class, 7:Map",
+        "mfd_left_tip": "What to display on main screen left side by default: 0: Tyres, 1: Vehicle and Damage, 2:Timings, 3: Timings and Behind, 4: Behind, 5: Relative, 6: Class, 7:Map",
     
-    "mfd_right":0,
-        "mfd_right_tip": "BETA - What to display on main screen right side by default: 0: Timings, 1: Tyres, 2:Vehicle and damage, 3: Timings and Ahead, 4: Ahead, 5: Relative, 6: Class, 7:Map",
+    "mfd_right":3,
+        "mfd_right_tip": "What to display on main screen right side by default: 0: Tyres, 1: Vehicle and Damage, 2:Timings, 3: Timings and Ahead, 4: Ahead, 5: Relative, 6: Class, 7:Map",
+
+    "pit_distance":1,
+        "pit_distance_tip": "Auto display pit distance helpers in place of spotters 1: Yes, 0: No",
     
-    "ams_brakedamageontyres":1,
-        "ams_brakedamageontyres_tip": "Show brake damage gauge combined with the temperature on tyres widget. 1:Show 2:Hide",
+    "show_alerts_mainscreen": 1,
+        "show_alerts_mainscreen_tip": "Display alerts (car settings etc) on main dash screen. 1: Pop-up alerts 0: No",
     
+    "show_flags_mainscreen": 1,
+        "show_flags_mainscreen_tip": "Display flags on main dash screen. 1: Small 2: Pop-up flags 0: No",
+   
+    "show_lapreview_mainscreen": 1,
+        "show_flags_mainscreen_tip": "Display lap review on main dash screen 1: Pop-up 0: No",
+   
+    "show_alerts_secondaryscreen": 1,
+        "show_alerts_secondaryscreen_tip": "Display alerts (car settings etc) on secondary dash screens. 1: Pop-up alerts 0: No",
+    
+    "show_flags_secondaryscreen": 1,
+        "show_flags_secondaryscreen_tip": "Display flags on secondary dash screens. 1: Small 2: Pop-up 0: No",
+   
+    "show_speed_secondaryscreen": 1,
+        "show_speed_secondaryscreen_tip": "Display speed and gear instead of car logos on secondary dash screens. 1: Yes 0: No",
+    
+    "show_lapreview_secondaryscreen": 1,
+        "show_lapreview_secondaryscreen_tip": "Display lap review popups on secondary dash screens  1: Pop-up 0: No",
+   
+    
+    "SECTION 3": "#################### MAIN DASH - CONTEXTUAL ALERTS  ##########################",
+    
+
      "contextual_pit":1,
         "contextual_pit_tip": "Auto display pit MFD with tyres and fuel once you reach the pit entry in main MFD. 1: Yes, 0: No",
     
@@ -60,50 +79,26 @@
         "contextual_vehicle_tip": "Auto display your vehicle status in main MFD in case there is something wrong with your engine. 1: Yes, 0: No",
     
     "contextual_head2head":0,
-        "contextual_head2head_tip": "Auto display behind and ahead drivers in main MFD. 1: Yes, 0: No",
+        "contextual_head2head_tip": "Auto display behind and ahead drivers in main MFD once the gap is within threshold. 1: Yes, 0: No",
     
     "contextual_head2head_threshold":20,
         "contextual_head2head_threshold_tip": "The gap threshold (in seconds) for displaying behind and ahead drivers MFD. 10: 10 Seconds",
     
-    "pit_distance":1,
-        "pit_distance_tip": "Auto display pit distance helpers in place of spotters 1: Yes, 0: No",
     
-     "mfd_laptimer":0,
+    "SECTION 3": "#################### OTHER DASHES ##########################",
+    
+   "laptimer_size":1,
+        "laptimer_size_tip": "Extra large or normal text size for first screen of laptimer 1: Normal, 2: Xlarge",
+
+    "laptimer_blinkonnewlap":1,
+        "laptimer_blinkonnewlap_tip": "Show the last lap time as blinking in place of the current lap time when you go into a new lap 1:Yes 2:No",
+    
+    "mfd_laptimer":0,
         "mfd_laptimer_tip": "What to display on laptimer by default: 0: Timings, 1: Timings and Delta, 2: Behind and Ahead, 3: Tyres and Vehicle, 4:Vehicle 5: Map, 6: Relative and Map, 7: Class and Map, 8: Relative, 9: Class",
     
     "mfd_radar":0,
-        "mfd_radar_tip": "BETA - What to display on radar by default:  0: Radar, 1: Behind and Ahead, 2: Timings with Behind and Ahead, 3: Timings, 4: Timings with Delta, 5: Map, 6: Tyres, 7: Vehicle, 8: Relative, 9: Class",
-    
-    "laptimer_blinkonnewlap":1,
-        "laptimer_blinkonnewlap_tip": "Show the last lap time as blinking when you go into a new lap 1:Yes 2:No",
-    
-    "show_alerts_mainscreen": 1,
-        "show_alerts_mainscreen_tip": "Display alerts (car settings etc) on main dash screen. 1: Pop-up alerts 0: No",
-    
-    "show_flags_mainscreen": 1,
-        "show_flags_mainscreen_tip": "Display flags on main dash screen. 1: Small 2: Popup 0: No",
-   
-    "show_lapreview_mainscreen": 1,
-        "show_flags_mainscreen_tip": "Display lap review on main dash screen 1: Popup 0: No",
-   
-    "show_alerts_secondaryscreen": 1,
-        "show_alerts_secondaryscreen_tip": "Display alerts (car settings etc) on secondary dash screens. 1: Pop-up alerts 0: No",
-    
-    "show_flags_secondaryscreen": 1,
-        "show_flags_secondaryscreen_tip": "Display flags on secondary dash screens. 1: Small 2: Popup 0: No",
-   
-    "show_lapreview_secondaryscreen": 1,
-        "show_lapreview_secondaryscreen_tip": "Display lap review popups on secondary dash screens  1: Popup 0: No",
-   
-    "show_alerts_verticaldash": 1,
-        "show_alerts_verticaldash_tip": "1: Show car adjustment alerts, 0: hide",
-     
-    "show_lapreview_verticaldash": 1,
-        "show_lapreview_verticaldash_tip": "1: Show lap review popups, 0: hide",
-    
-     "show_flags_verticaldash": 1,
-        "show_flags_verticaldash_tip": "1: Show flags in radar, 0: hide",
-    
+        "mfd_radar_tip": "What to display on radar by default:  0: Radar, 1: Behind and Ahead, 2: Timings with Behind and Ahead, 3: Timings, 4: Timings with Delta, 5: Map, 6: Tyres, 7: Vehicle, 8: Relative, 9: Class",
+
     "show_alerts_radar": 1,
         "show_alerts_radar_tip": "1: Show car adjustment alerts, 0: hide",
      
@@ -124,5 +119,40 @@
     
      "show_flags_laptimer": 1,
         "show_flags_laptimer_tip": "1: Show flags in radar, 2: Fullscreen flags 0: hide",
+  
+    "show_alerts_verticaldash": 1,
+        "show_alerts_verticaldash_tip": "1: Show car adjustment alerts, 0: hide",
+     
+    "show_lapreview_verticaldash": 1,
+        "show_lapreview_verticaldash_tip": "1: Show lap review popups, 0: hide",
     
-}
+     "show_flags_verticaldash": 1,
+        "show_flags_verticaldash_tip": "1: Show flags in radar, 0: hide",
+    
+    
+    
+    "SECTION 3": "#################### EXPERIMENTAL - OTHERS ##########################",
+    
+    "ui_custom_color": "#FF233E49",
+        "ui_custom_color_tip": "Red, Blue, #FF233E49 (default) ",
+    
+    "ui_custom_bgcolor": "#FF233E4",
+        "ui_custom_bgcolor_tip": "Red, Blue, #FF233E49 (default) ",
+
+    "ui_radius": 6,
+        "ui_radius_tip": "Corner radius for borders, default 6",
+    
+    "ams_brakedamageontyres":1,
+        "ams_brakedamageontyres_tip": "Show brake damage gauge combined with the temperature on tyres widget. 1:Show 2:Hide",
+ 
+      "radar_background":1,
+        "radar_background_tip": "1: Normal, 2: Green for chroma-keying with OBS",
+}    
+   
+ 
+    
+    
+    
+    
+  
+    
