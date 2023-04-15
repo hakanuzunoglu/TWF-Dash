@@ -1,13 +1,13 @@
 {
     "SECTION 1": "############# PERSONALIZATION #############",
     
-    "your_name": " ",
+    "your_name": "HAKAN U",
         "your_name_tip": "Your name (will appear in various places)",
 
-    "your_number": " ",
+    "your_number": "66",
         "your_number_tip": "Your number (will appear in various places)",
 
-    "your_color": " ",
+    "your_color": "orange",
         "your_color_tip": "Red, Blue, #FF233E49 (default - will appear in various places)",
     
     "ui_color": 1,
@@ -20,7 +20,7 @@
     "spotter": 2,
         "spotter_tip": "Turn the spotter and radar surrounding the middle section 0: Off, 1: Front and Rear, 2: Rear Only",
 
-    "mfd_map": 0,
+    "mfd_map": 1,
         "mfd_map_tip": "Disable map in main dash MFDs 1: Show maps, 0: Hide maps",
     
     "show_leds":0,
