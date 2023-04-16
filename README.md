@@ -55,8 +55,10 @@ The TWF Dash Ecosystem is now made universal, so ideally it should work with eve
 	 - TWF LAPTIMER: Laptimer dash with your laps, car damage and status, leaderboards, map as seperate screens. Good for secondary DDUs.
 	 - TWF VERTICAL DASH: A secondary DDU specifically made for tablets in vertical position, including tyres, damage and all screens from TWF LAPTIMER and TWF RADAR.
 
-**Known Issues**
+## **Known Issues**
+
 Features might not work as intended for games that are not mentioned seperately.
+Also MFD Default display customization numbers might change depending on the game. 
 
 ## Requirements
 
