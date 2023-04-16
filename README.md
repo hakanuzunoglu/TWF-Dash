@@ -1,5 +1,5 @@
 
-
+![TWF Dash Screenshot](https://raw.githubusercontent.com/hakanuzunoglu/TWF-Dash/main/documentation/img/twf_dash.jpg)
 ## TWF Dashboard Ecosystem Beta
 
 Rather than replica dashboards made for real-life racing, use a family of 7 dashboards custom-made for different DDUs with many features that can make you better or faster in sim racing. 
