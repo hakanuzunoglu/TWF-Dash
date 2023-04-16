@@ -13,7 +13,6 @@ function changed(delay, value) {
         root['triggerTime'] = root['time'];
     }
 
-    // return root['triggerTime'];
     return root['triggerTime'] == null ? false : root['time'] - root['triggerTime'] <= delay / 1000;
 }
 
@@ -30,7 +29,6 @@ function isincreasing(delay, value) {
         root['triggerTime'] = root['time'];
     }
 
-    // return root['triggerTime'];
     return root['triggerTime'] == null ? false : root['time'] - root['triggerTime'] <= delay / 1000;
 }
 
@@ -45,7 +43,6 @@ function isdecreasing(delay, value) {
         root['triggerTime'] = root['time'];
     }
 
-    // return root['triggerTime'];
     return root['triggerTime'] == null ? false : root['time'] - root['triggerTime'] <= delay / 1000;
 }
 

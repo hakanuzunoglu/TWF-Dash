@@ -21,10 +21,10 @@
         "spotter_tip": "Turn the spotter and radar surrounding the middle section 0: Off, 1: Front and Rear, 2: Rear Only",
 
     "mfd_map": 1,
-        "mfd_map_tip": "Disable map in main dash MFDs 1: Show maps, 0: Hide maps",
+        "mfd_map_tip": "Disable map in main dash MFDs Note: It is confirmed that maps slow down the performance on AC. If you race in AC, it is recommended to turn map off at least on main screen. 1: Show maps, 0: Hide maps",
     
     "show_leds":0,
-        "show_leds_tip": "1: Show shift / REV LEDS on main screen, 0:Hide",
+        "show_leds_tip": "If you use the dash on a mobile phone and want to have RPM Shift lights. 1: Show shift / REV LEDS on main screen, 0:Hide",
     
     "pedals":1,
         "pedals_tip": "1: Default, Middle, 2: Linear below middle, 0: Off",
@@ -35,7 +35,7 @@
     "mfd_left":0,
         "mfd_left_tip": "What to display on main screen left side by default (order could change per game, due to some screens unavailability): 0: Tyres, 1: Vehicle and Damage, 2:Timings, 3: Timings and Behind, 4: Behind, 5: Relative, 6: Class, 7:Map",
     
-    "mfd_right":3,
+    "mfd_right":2,
         "mfd_right_tip": "What to display on main screen right side by default: (order could change per game, due to some screens unavailability)0: Tyres, 1: Vehicle and Damage, 2:Timings, 3: Timings and Ahead, 4: Ahead, 5: Relative, 6: Class, 7:Map",
 
     "pit_distance":1,
@@ -148,3 +148,11 @@
       "radar_background":1,
         "radar_background_tip": "1: Normal, 2: Green for chroma-keying with OBS",
 }    
+   
+ 
+    
+    
+    
+    
+  
+    
