@@ -1,10 +1,10 @@
 {
     "SECTION 1": "############# PERSONALIZATION #############",
     
-    "your_name": "HAKAN U",
+    "your_name": " ",
         "your_name_tip": "Your name (will appear in various places)",
 
-    "your_number": "66",
+    "your_number": " ",
         "your_number_tip": "Your number (will appear in various places)",
 
     "your_color": "orange",
@@ -33,10 +33,10 @@
         "turbo_tip": "Show turbo boost gauge below middle area 1:Show, 0:Hide",
     
     "mfd_left":0,
-        "mfd_left_tip": "What to display on main screen left side by default: 0: Tyres, 1: Vehicle and Damage, 2:Timings, 3: Timings and Behind, 4: Behind, 5: Relative, 6: Class, 7:Map",
+        "mfd_left_tip": "What to display on main screen left side by default (order could change per game, due to some screens unavailability): 0: Tyres, 1: Vehicle and Damage, 2:Timings, 3: Timings and Behind, 4: Behind, 5: Relative, 6: Class, 7:Map",
     
     "mfd_right":3,
-        "mfd_right_tip": "What to display on main screen right side by default: 0: Tyres, 1: Vehicle and Damage, 2:Timings, 3: Timings and Ahead, 4: Ahead, 5: Relative, 6: Class, 7:Map",
+        "mfd_right_tip": "What to display on main screen right side by default: (order could change per game, due to some screens unavailability)0: Tyres, 1: Vehicle and Damage, 2:Timings, 3: Timings and Ahead, 4: Ahead, 5: Relative, 6: Class, 7:Map",
 
     "pit_distance":1,
         "pit_distance_tip": "Auto display pit distance helpers in place of spotters 1: Yes, 0: No",
@@ -148,11 +148,3 @@
       "radar_background":1,
         "radar_background_tip": "1: Normal, 2: Green for chroma-keying with OBS",
 }    
-   
- 
-    
-    
-    
-    
-  
-    

@@ -2,6 +2,53 @@
 // TWF Dash JavaScript Extensions
 // Please place this file under 'C:\\Program Files (x86)\Simhub\JavascriptExtensions'
 //
+function changed(delay, value) {
+
+    root['time'] = timespantoseconds($prop('SystemInfoPlugin.Uptime'));
+
+    root['oldstate'] = root['oldstate'] == null ? value : root['newstate'];
+    root['newstate'] = value;
+
+    if (root['newstate'] != root['oldstate']) {
+        root['triggerTime'] = root['time'];
+    }
+
+    // return root['triggerTime'];
+    return root['triggerTime'] == null ? false : root['time'] - root['triggerTime'] <= delay / 1000;
+}
+
+
+
+function isincreasing(delay, value) {
+
+    root['time'] = timespantoseconds($prop('SystemInfoPlugin.Uptime'));
+
+    root['oldstate'] = root['oldstate'] == null ? value : root['newstate'];
+    root['newstate'] = value;
+
+    if (root['newstate'] > root['oldstate']) {
+        root['triggerTime'] = root['time'];
+    }
+
+    // return root['triggerTime'];
+    return root['triggerTime'] == null ? false : root['time'] - root['triggerTime'] <= delay / 1000;
+}
+
+function isdecreasing(delay, value) {
+
+    root['time'] = timespantoseconds($prop('SystemInfoPlugin.Uptime'));
+
+    root['oldstate'] = root['oldstate'] == null ? value : root['newstate'];
+    root['newstate'] = value;
+
+    if (root['newstate'] < root['oldstate']) {
+        root['triggerTime'] = root['time'];
+    }
+
+    // return root['triggerTime'];
+    return root['triggerTime'] == null ? false : root['time'] - root['triggerTime'] <= delay / 1000;
+}
+
 function twf_read_setting(setting, novalue) {
     const settings_file = readtextfile('./JavascriptExtensions/TWF_DASH_CONFIG.json')
     const config = JSON.parse(settings_file);
@@ -13,8 +60,6 @@ function twf_read_setting(setting, novalue) {
         return setting_value
     }
 }
-
-
 
 function twf_read_setting_exists(setting, yes, no) {
     const settings_file = readtextfile('./JavascriptExtensions/TWF_DASH_CONFIG.json')
@@ -272,6 +317,47 @@ function twf_predicted_lap_color() {
     }
 }
 
+function twf_get_session_best_delta(options) {
+    currentgame = $prop('DataCorePlugin.CurrentGame')
+    delta = 0
+    if ($prop('DataCorePlugin.CurrentGame') == 'RFactor2') {
+        if (timespantoseconds($prop('DataCorePlugin.GameData.BestLapTime')) == 0) {
+            delta = 0
+        } else {
+            delta = timespantoseconds($prop('PersistantTrackerPlugin.EstimatedLapTime')) - timespantoseconds($prop('DataCorePlugin.GameData.BestLapTime'))
+        }
+    } else {
+        delta = $prop('DeltaToSessionBest')
+    }
+    if (options == "color") {
+        return delta
+
+    } else {
+        return Math.abs(delta)
+    }
+}
+
+function twf_get_alltime_best_delta(options) {
+    currentgame = $prop('DataCorePlugin.CurrentGame')
+    delta = 0
+    if ($prop('DataCorePlugin.CurrentGame') == 'RFactor2') {
+        delta = "NA"
+    } else {
+        delta = $prop('PersistantTrackerPlugin.AllTimeBestLiveDeltaSeconds')
+    }
+    if (options == "color") {
+        return delta
+
+    } else {
+        return Math.abs(delta)
+    }
+}
+
+function twf_get_lastlap_delta() {
+
+}
+
+
 function twf_predicted_lap_time() {
     var predicted = $prop('PersistantTrackerPlugin.EstimatedLapTime')
     if ($prop('DataCorePlugin.CurrentGame') == 'AssettoCorsaCompetizione') {
@@ -441,7 +527,7 @@ function twf_refuel(fueltype) {
 
 
 function twf_laptimer_blink() {
-    if (twf_read_setting("laptimer_blinkonnewlap",1) == 1) {
+    if (twf_read_setting("laptimer_blinkonnewlap", 1) == 1) {
         if (changed(5000, $prop('LastLapTime'))) {
             return 1
         } else {
