@@ -8,8 +8,6 @@ The TWF Dash Ecosystem is now made universal, so ideally it should work with eve
 
 **Fully compatible with: AMS2, ACC, AC, iRacing with enhanced features.**
 
-![TWF Dash Screenshot](https://raw.githubusercontent.com/hakanuzunoglu/TWF-Dash/main/documentation/img/twf_dash2.jpg)
-
 ## Highlights:
 
  - **New tyres module design** with inner, outer, and middle sections of tyres displayed seperately
@@ -56,6 +54,8 @@ The TWF Dash Ecosystem is now made universal, so ideally it should work with eve
 	 - TWF RADAR: Radar dash with collision avoidance system combined with screens from TWF LAPTIMER. Good for secondary DDUs.
 	 - TWF LAPTIMER: Laptimer dash with your laps, car damage and status, leaderboards, map as seperate screens. Good for secondary DDUs.
 	 - TWF VERTICAL DASH: A secondary DDU specifically made for tablets in vertical position, including tyres, damage and all screens from TWF LAPTIMER and TWF RADAR.
+	 
+![TWF Dash Screenshot](https://raw.githubusercontent.com/hakanuzunoglu/TWF-Dash/main/documentation/img/twf_dash2.jpg)
 
 ## **Known Issues**
 
