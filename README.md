@@ -1,5 +1,5 @@
 
-![TWF Dash Screenshot](https://raw.githubusercontent.com/hakanuzunoglu/TWF-Dash/main/documentation/img/twf_dash.jpg)
+![TWF Dash Screenshot](https://raw.githubusercontent.com/hakanuzunoglu/TWF-Dash/main/documentation/img/twf_dash3.jpg)
 ## TWF Dashboard Ecosystem Beta
 
 Rather than replica dashboards made for real-life racing, use a family of 7 dashboards custom-made for different DDUs with many features that can make you better or faster in sim racing. 
@@ -7,6 +7,8 @@ Rather than replica dashboards made for real-life racing, use a family of 7 dash
 The TWF Dash Ecosystem is now made universal, so ideally it should work with every game that SimHub supports - some features might not work or be missing as intended depending on game.
 
 **Fully compatible with: AMS2, ACC, AC, iRacing with enhanced features.**
+
+![TWF Dash Screenshot](https://raw.githubusercontent.com/hakanuzunoglu/TWF-Dash/main/documentation/img/twf_dash2.jpg)
 
 ## Highlights:
 
