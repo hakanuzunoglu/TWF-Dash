@@ -127,7 +127,7 @@ function twf_get_ui_color(ui) {
         "infobg": "#FF152B33"
     }
     const color_codes_2 = {
-        "border": "#FF233E49",
+        "border": "#FF222222",
         "tablebg": "#6E3C3C3C",
         "rpmbg": "#FF222222",
         "spotterbg": "#FF111111",
@@ -140,19 +140,17 @@ function twf_get_ui_color(ui) {
         "infobg": "#FF222222"
     }
     const color_codes_3 = {
-        "border": "#FF233E49",
+       "border": "#FF333333",
         "tablebg": "#6E3C3C3C",
-        "rpmbg": "#FF233E49",
-        "spotterbg": "#FF061217",
+        "rpmbg": "#FF222222",
+        "spotterbg": "#FF111111",
         "spottergauge": "#FFFF8C00",
-        "dimbg": "#FF061217",
+        "dimbg": "#FF111111",
         "positionbg": "#FFFFFF",
         "positionbgplayer": "#FFFFD700",
         "bodytext": "#FFFFFF",
-        "pagination": "#FF477384",
-        "infobg": "#FF152B33"
-
-
+        "pagination": "#FF222222",
+        "infobg": "#FF222222"
     }
     if (ui_preference == 1) {
         return color_codes_1[setting_key];
@@ -160,8 +158,11 @@ function twf_get_ui_color(ui) {
     if (ui_preference == 2) {
         return color_codes_2[setting_key];
 
+    } if (ui_preference == 3) {
+        return color_codes_3[setting_key];
+
     } else {
-        return color_codes_2[setting_key];
+        return color_codes_1[setting_key];
 
     }
 }
@@ -197,12 +198,30 @@ function twf_get_ui_bg(ui) {
         "dashlights": "deltabgblack"
 
     }
+    
+     const images_3 = {
+        "delta": " ",
+        "deltalap": " ",
+        "mfd1left": " ",
+        "mfd2left": " ",
+        "mfd1right": " ",
+        "mfd2right": " ",
+        "contextualleft": "bgmfdcontextualleft",
+        "contextualright": "bgmfdcontextualright",
+        "bg": " ",
+        "carsettings": " ",
+        "dashlights": " "
+
+    }
 
     if (ui_preference == 1) {
         return images_1[setting_key];
     }
     if (ui_preference == 2) {
         return images_2[setting_key];
+
+    }  if (ui_preference == 3) {
+        return images_3[setting_key];
 
     } else {
         return images_1[setting_key];

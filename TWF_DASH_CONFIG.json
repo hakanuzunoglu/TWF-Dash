@@ -11,7 +11,7 @@
         "your_color_tip": "Red, Blue, #FF233E49 (default - will appear in various places)",
     
     "ui_color": 1,
-        "ui_color_tip": "Main color style for the dash 1: Blue, 2: Black", 
+        "ui_color_tip": "Main color style for the dash 1: Blue, 2: Black, 3: Subtle (with less backgrounds)", 
     
     
     "SECTION 2": "#################### MAIN DASH FEATURES  ##########################",
