@@ -324,8 +324,8 @@ function twf_get_session_best_delta(options) {
             delta = timespantoseconds($prop('PersistantTrackerPlugin.EstimatedLapTime')) - timespantoseconds($prop('DataCorePlugin.GameData.BestLapTime'))
         }
     } else {
-        delta = $prop('DeltaToSessionBest')
-    }
+        delta = $prop('PersistantTrackerPlugin.SessionBestLiveDeltaSeconds')
+    }   
     if (options == "color") {
         return delta
 
@@ -350,8 +350,20 @@ function twf_get_alltime_best_delta(options) {
     }
 }
 
-function twf_get_lastlap_delta() {
+function twf_get_lastlap_delta(options) {
+ delta = 0
+ predicted = timespantoseconds(twf_predicted_lap_time())
+lastlap = timespantoseconds($prop('LastLapTime'))
+    if (lastlap>0 && predicted > 0) {
+        
+        delta = predicted - lastlap
+    }
+    if (options == "color") {
+        return delta
 
+    } else {
+        return Math.abs(delta)
+    }
 }
 
 

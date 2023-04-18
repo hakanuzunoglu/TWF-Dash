@@ -7,7 +7,7 @@
     "your_number": " ",
         "your_number_tip": "Your number (will appear in various places)",
 
-    "your_color": "orange",
+    "your_color": " ",
         "your_color_tip": "Red, Blue, #FF233E49 (default - will appear in various places)",
     
     "ui_color": 1,
@@ -24,7 +24,7 @@
         "mfd_map_tip": "Disable map in main dash MFDs Note: It is confirmed that maps slow down the performance on AC. If you race in AC, it is recommended to turn map off at least on main screen. 1: Show maps, 0: Hide maps",
     
     "show_leds":0,
-        "show_leds_tip": "If you use the dash on a mobile phone and want to have RPM Shift lights. 1: Show shift / REV LEDS on main screen, 0:Hide",
+        "show_leds_tip": "1: Show shift / REV LEDS on main screen, 0:Hide",
     
     "pedals":1,
         "pedals_tip": "1: Default, Middle, 2: Linear below middle, 0: Off",
@@ -75,7 +75,7 @@
     "contextual_damage":1,
         "contextual_damage_tip": "Auto display a damage overlay in main MFD if your car receives damage. 1: Yes, 0: No",
    
-     "contextual_vehicle":1,
+     "contextual_vehicle":0,
         "contextual_vehicle_tip": "Auto display your vehicle status in main MFD in case there is something wrong with your engine. 1: Yes, 0: No",
     
     "contextual_head2head":0,
