@@ -6,12 +6,12 @@ Rather than replica dashboards made for real-life racing, use a family of 7 dash
 
 The TWF Dash Ecosystem is now made universal, so ideally it should work with every game that SimHub supports - some features might not work or be missing as intended depending on game.
 
-**Fully compatible with: AMS2, ACC, AC, iRacing with enhanced features.**
+**Fully compatible with: AMS2, ACC, AC, RF2 (beta) and iRacing with enhanced features.**
 
 ## Highlights:
 
  - **New tyres module design** with inner, outer, and middle sections of tyres displayed seperately
-	 - ACC & AC: Tyre pressure, tyre temp, brake temp, inner, outer and middle sections seperate temps, wheel spin and lock per tyre
+	 - ACC & AC: Tyre pressure, tyre temp, brake temp wheel spin and lock per tyre, sectional temps for AC.
 	 - AMS2: Tyre pressure, tyre temp, brake temp, brake wear, inner, outer and middle tyre section temps
 	 - IRacing: Tyre pressure, tyre temp, tyre wear, inner, outer and middle tyre section temps
 	 - For other games, it uses SimHub native properties, so it will be displayed as per SimHub support
