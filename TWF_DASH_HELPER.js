@@ -61,8 +61,8 @@ function twf_read_setting(setting, novalue) {
 function twf_read_setting_exists(setting, yes, no) {
     const settings_file = readtextfile('./JavascriptExtensions/TWF_DASH_CONFIG.json')
     const config = JSON.parse(settings_file);
-    setting_key = setting
-    let setting_value = config[setting_key];
+    setting_key_e = setting
+    let setting_value = config[setting_key_e];
     if (!config || setting_value != null) {
         return yes
     } else {
@@ -74,8 +74,8 @@ function twf_read_setting_exists(setting, yes, no) {
 function twf_read_setting_equals(setting, value, yes, no) {
     const settings_file = readtextfile('./JavascriptExtensions/TWF_DASH_CONFIG.json')
     const config = JSON.parse(settings_file);
-    setting_key = setting
-    let setting_value = config[setting_key];
+    setting_key_eq = setting
+    let setting_value = config[setting_key_eq];
     if (!config || !setting_value) {
         return no
     } else if (setting_value == value) {
@@ -110,8 +110,8 @@ function twf_format_driver_name(name) {
 
 
 function twf_get_ui_color(ui) {
-    ui_preference = twf_read_setting("ui_color", 1)
-    setting_key = ui
+    ui_preference = twf_read_setting("ui_color", 1);
+    setting_key_color = ui;
 
     const color_codes_1 = {
         "border": "#FF233E49",
@@ -152,24 +152,42 @@ function twf_get_ui_color(ui) {
         "pagination": "#FF222222",
         "infobg": "#FF222222"
     }
+     const color_codes_4 = {
+       "border": twf_read_setting("ui_custom_color", "#FF333333"),
+        "tablebg": twf_read_setting("ui_custom_bgcolor", "#6E3C3C3C"),
+        "rpmbg": "#FF222222",
+        "spotterbg": "#FF111111",
+        "spottergauge": "#FFFF8C00",
+        "dimbg": "#FF111111",
+        "positionbg": "#FFFFFF",
+        "positionbgplayer": "#FFFFD700",
+        "bodytext": "#FFFFFF",
+        "pagination": "#FF222222",
+        "infobg": "#FF222222"
+    }
+
     if (ui_preference == 1) {
-        return color_codes_1[setting_key];
+        return color_codes_1[setting_key_color];
     }
     if (ui_preference == 2) {
-        return color_codes_2[setting_key];
+        return color_codes_2[setting_key_color];
 
     } if (ui_preference == 3) {
-        return color_codes_3[setting_key];
+        return color_codes_3[setting_key_color];
 
-    } else {
-        return color_codes_1[setting_key];
+    }
+      if (ui_preference == 4) {
+        return color_codes_4[setting_key_color];
+
+    }else {
+        return color_codes_1[setting_key_color];
 
     }
 }
 
 function twf_get_ui_bg(ui) {
-    ui_preference = twf_read_setting("ui_color", 1)
-    setting_key = ui
+    ui_preference = twf_read_setting("ui_color", 1);
+    setting_key_bg = ui;
 
     const images_1 = {
         "delta": "deltabg",
@@ -213,18 +231,36 @@ function twf_get_ui_bg(ui) {
         "dashlights": " "
 
     }
+      const images_4 = {
+        "delta": "deltabgblack",
+        "deltalap": "deltalapbgblack",
+        "mfd1left": "bgmfd1leftblack",
+        "mfd2left": "bgmfd2leftblack",
+        "mfd1right": "bgmfd1rightblack",
+        "mfd2right": "bgmfd2rightblack",
+        "contextualleft": "bgmfdcontextualleft",
+        "contextualright": "bgmfdcontextualright",
+        "bg": "bgmainblack",
+        "carsettings": "bgbottomblack",
+        "dashlights": "deltabgblack"
+
+    }
 
     if (ui_preference == 1) {
-        return images_1[setting_key];
+        return images_1[setting_key_bg];
     }
     if (ui_preference == 2) {
-        return images_2[setting_key];
+        return images_2[setting_key_bg];
 
     }  if (ui_preference == 3) {
-        return images_3[setting_key];
+        return images_3[setting_key_bg];
 
-    } else {
-        return images_1[setting_key];
+    
+     }  if (ui_preference == 4) {
+        return images_4[setting_key_bg];
+
+    }else {
+        return images_1[setting_key_bg];
 
     }
 }
@@ -325,8 +361,8 @@ function twf_predicted_lap_color() {
             return '#666666'
         } else if (predictedseconds == overallbestlap) {
             return '#C500CE'
-        } else if (predictedseconds == sessionbest) {
-            return '#FF00FF00'
+        } else if (predictedseconds <= sessionbest) {
+            return '#FF01ad01'
         } else {
             return '#FFFFD700'
         }
@@ -385,6 +421,9 @@ lastlap = timespantoseconds($prop('LastLapTime'))
     }
 }
 
+function twf_get_live_delta(options){
+    
+}
 
 function twf_predicted_lap_time() {
     var predicted = $prop('PersistantTrackerPlugin.EstimatedLapTime')
@@ -411,7 +450,7 @@ function twf_last_lap_color(color) {
         } else if (lastlap == overallbestlap) {
             return '#FFFF00FF'
         } else if (lastlap == sessionbest) {
-            return '#FF00FF00'
+            return '#FF01ad01'
         } else {
             return text_color
         }
@@ -428,7 +467,7 @@ function twf_best_lap_color() {
             if (timespantoseconds($prop('BestLapTime')) < 1) {
                 return '#666666'
             } else {
-                return '#FF00FF00'
+                return '#FF01ad01'
             }
         }
     }
