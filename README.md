@@ -1,4 +1,5 @@
 
+
 ![TWF Dash Screenshot](https://raw.githubusercontent.com/hakanuzunoglu/TWF-Dash/main/documentation/img/twf_dash3.jpg)
 ## TWF Dashboard Ecosystem Beta
 
@@ -51,11 +52,16 @@ The TWF Dash Ecosystem is now made universal, so ideally it should work with eve
 	 - TWF DASH: Main dash with all features
 	 - TWF DASH WIDE: Main dash with additional flag lights on the side (for phones)
 	 - TWF DASH ULTRAWIDE: Main dash customized for Porsche 10" DDUs.
+	 - TWF DASH LITE: Main dash with some features removed (contextual alerts, lap review, LEDs and backgrounds) for performance seekers and low-end computers.
+	 - TWF DASH PURE RACE: Main dash with a completely different, traditional race-car style, integrated radar.
 	 - TWF RADAR: Radar dash with collision avoidance system combined with screens from TWF LAPTIMER. Good for secondary DDUs.
 	 - TWF LAPTIMER: Laptimer dash with your laps, car damage and status, leaderboards, map as seperate screens. Good for secondary DDUs.
 	 - TWF VERTICAL DASH: A secondary DDU specifically made for tablets in vertical position, including tyres, damage and all screens from TWF LAPTIMER and TWF RADAR.
 	 
 ![TWF Dash Screenshot](https://raw.githubusercontent.com/hakanuzunoglu/TWF-Dash/main/documentation/img/twf_dash2.jpg)
+
+**TWF DASH PURE RACE**
+![TWF Dash Screenshot](https://raw.githubusercontent.com/hakanuzunoglu/TWF-Dash/main/documentation/img/twf-pure-race.png)
 
 ## **Known Issues**
 
