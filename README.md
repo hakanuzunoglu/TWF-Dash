@@ -65,8 +65,11 @@ The TWF Dash Ecosystem is now made universal, so ideally it should work with eve
 
 ## **Known Issues**
 
-Features might not work as intended for games that are not mentioned seperately.
-Also MFD Default display customization numbers might change depending on the game. 
+ - Features might not work as intended for games that are not mentioned
+   seperately. 
+ - MFD Default display customization numbers might not match depending on the game.
+ - New cars in ACC 1.9 have some ABS and BB settings not matching with dashes. Waiting for SimHub update for fix.
+ - Maps can cause a couple of seconds freeze (much longer for AC), please disable the maps in JSON file from MFDs if you are using the dashes in your main DDU.
 
 ## Requirements
 
