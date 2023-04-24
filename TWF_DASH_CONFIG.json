@@ -41,6 +41,9 @@
     "pit_distance":1,
         "pit_distance_tip": "Auto display pit distance helpers in place of spotters 1: Yes, 0: No",
     
+    "delta_progress": 1,
+        "delta_progress_tip": "Display live delta progress (your delta by corner) 1: Yes, 0: No",
+    
     "show_alerts_mainscreen": 1,
         "show_alerts_mainscreen_tip": "Display alerts (car settings etc) on main dash screen. 1: Pop-up alerts 0: No",
     
@@ -102,7 +105,7 @@
     "show_alerts_radar": 1,
         "show_alerts_radar_tip": "1: Show car adjustment alerts, 0: hide",
      
-    "show_lapreview_radar": 1,
+    "show_lapreview_radar": 0,
         "show_lapreview_radar_tip": "1: Show lap review popups, 0: hide",
     
      "show_flags_radar": 1,
