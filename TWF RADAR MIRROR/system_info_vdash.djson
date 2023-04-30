@@ -1,0 +1,877 @@
+{
+  "BackgroundColor": "#FF000000",
+  "BackgroundOpacity": 100.0,
+  "BaseHeight": 210,
+  "BaseWidth": 460,
+  "DashboardDebugManager": {
+    "LastPlacement": "52,52,460,210",
+    "Maximized": false
+  },
+  "EnableClickThroughOverlay": true,
+  "EnableOnDashboardMessaging": true,
+  "ForegroundOpacity": 100.0,
+  "GridSize": 10,
+  "HideLabels": false,
+  "Id": "be1a8359-bb26-4d4a-95e1-b3bf35d8af81",
+  "Images": [],
+  "IsOverlay": false,
+  "Metadata": {
+    "EnableOnDashboardMessaging": true,
+    "Height": 210.0,
+    "IdleScreensIndexs": [
+      0
+    ],
+    "InGameScreensIndexs": [
+      0
+    ],
+    "IsOverlay": false,
+    "MainPreviewIndex": 0,
+    "MetadataVersion": 2.0,
+    "OverlaySizeWarning": false,
+    "PitScreensIndexs": [],
+    "ScreenCount": 1.0,
+    "Width": 460.0
+  },
+  "Screens": [
+    {
+      "AllowOverlays": true,
+      "BackgroundColor": "#FF000000",
+      "IdleScreen": true,
+      "InGameScreen": true,
+      "IsBackgroundLayer": false,
+      "IsForegroundLayer": false,
+      "IsOverlayLayer": false,
+      "Items": [
+        {
+          "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.Layer, SimHub.Plugins",
+          "BackgroundColor": "#00FFFFFF",
+          "Childrens": [
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.Layer, SimHub.Plugins",
+              "BackgroundColor": "#00FFFFFF",
+              "Childrens": [
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.BuiltIn.TimeText, SimHub.Plugins",
+                  "BackgroundColor": "#00FFFFFF",
+                  "Font": "Rajdhani",
+                  "FontSize": 28.0,
+                  "FontWeight": "Bold",
+                  "Format": "hh:mm:ss",
+                  "Height": 50.0,
+                  "HorizontalAlignment": 1,
+                  "IsTextItem": true,
+                  "Left": 141.5,
+                  "Name": "PC_time",
+                  "TextColor": "#FFFFFFFF",
+                  "Top": 160.0,
+                  "VerticalAlignment": 1,
+                  "Visible": true,
+                  "Width": 177.0
+                },
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+                  "BackgroundColor": "#00FFFFFF",
+                  "Bindings": {
+                    "Text": {
+                      "Formula": {
+                        "Expression": "return twf_read_setting('your_name',\"\")",
+                        "Interpreter": 1
+                      },
+                      "Mode": 2,
+                      "TargetPropertyName": "Text"
+                    }
+                  },
+                  "Font": "Rajdhani",
+                  "FontSize": 16.0,
+                  "FontWeight": "Bold",
+                  "Height": 36.0,
+                  "HorizontalAlignment": 0,
+                  "IsTextItem": true,
+                  "Left": 0.0,
+                  "Name": "name",
+                  "Text": "HAKAN U",
+                  "TextColor": "#FF808080",
+                  "TextMask": "0000000000",
+                  "TextWrapping": 2,
+                  "Top": 166.0,
+                  "VerticalAlignment": 1,
+                  "Visible": true,
+                  "Width": 159.0
+                },
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+                  "BackgroundColor": "#00FFFFFF",
+                  "Bindings": {
+                    "Text": {
+                      "FormatString": "dd MMMM",
+                      "Formula": {
+                        "Expression": "[DataCorePlugin.CustomExpression.CurrentDateTime]"
+                      },
+                      "Mode": 2,
+                      "TargetPropertyName": "Text"
+                    }
+                  },
+                  "Font": "Rajdhani",
+                  "FontSize": 20.0,
+                  "FontWeight": "Bold",
+                  "Height": 30.0,
+                  "HorizontalAlignment": 2,
+                  "IsTextItem": true,
+                  "Left": 319.0,
+                  "Name": "Date",
+                  "Text": "04 September",
+                  "TextColor": "#FF808080",
+                  "TextMask": "0000000000",
+                  "TextWrapping": 2,
+                  "Top": 169.0,
+                  "VerticalAlignment": 1,
+                  "Visible": true,
+                  "Width": 138.0
+                }
+              ],
+              "Group": true,
+              "Height": 50.0,
+              "Left": 0.0,
+              "Name": "INFO",
+              "Top": 160.0,
+              "Visible": true,
+              "Width": 457.0
+            },
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.Layer, SimHub.Plugins",
+              "BackgroundColor": "#00FFFFFF",
+              "Childrens": [
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+                  "BackgroundColor": "#1EFFFFFF",
+                  "Bindings": {
+                    "BackgroundColor": {
+                      "Formula": {
+                        "Expression": "return twf_get_ui_color(\"infobg\")",
+                        "Interpreter": 1
+                      },
+                      "Mode": 2,
+                      "TargetPropertyName": "BackgroundColor"
+                    }
+                  },
+                  "BorderStyle": {
+                    "BorderColor": "#FF444444",
+                    "RadiusBottomLeft": 6,
+                    "RadiusBottomRight": 6,
+                    "RadiusTopLeft": 6,
+                    "RadiusTopRight": 6
+                  },
+                  "Height": 30.0,
+                  "IsRectangleItem": true,
+                  "Left": 0.0,
+                  "Name": "RectangleItem2",
+                  "Top": 121.0,
+                  "Visible": true,
+                  "Width": 460.0
+                },
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.LinearGaugeItem, SimHub.Plugins",
+                  "AlternateGaugeColor": "#FF008000",
+                  "AutoSize": false,
+                  "BackgroundColor": "#38000000",
+                  "Bindings": {
+                    "GaugeColor": {
+                      "EnableMiddleColor": false,
+                      "EndColor": "#FFFF0000",
+                      "EndColorValue": 100.0,
+                      "Formula": {
+                        "Expression": "isnull([SystemInfosProvider.MemoryLoad],'')\r\n"
+                      },
+                      "MiddleColor": "#FF000000",
+                      "MiddleColorValue": 1.0,
+                      "Mode": 4,
+                      "StartColor": "#FF00FF00",
+                      "StartColorValue": 0.0,
+                      "TargetPropertyName": "GaugeColor"
+                    }
+                  },
+                  "BorderStyle": {
+                    "RadiusBottomLeft": 6,
+                    "RadiusBottomRight": 6
+                  },
+                  "GaugeAlignment": 0,
+                  "GaugeColor": "#FFFF0000",
+                  "GaugeOrientation": 0,
+                  "Height": 6.0,
+                  "IsLinearGauge": true,
+                  "Left": 0.0,
+                  "Maximum": 100.0,
+                  "Minimum": 0.0,
+                  "Name": "LinearGaugeItem",
+                  "PAW": 92.0,
+                  "Steps": 0.0,
+                  "Top": 146.0,
+                  "UseAlternateStyle": false,
+                  "Value": 20.0,
+                  "Visible": true,
+                  "Width": 460.0
+                },
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+                  "BackgroundColor": "#00FFFFFF",
+                  "Font": "Rajdhani",
+                  "FontSize": 16.0,
+                  "FontWeight": "Bold",
+                  "Height": 17.0,
+                  "HorizontalAlignment": 0,
+                  "IsTextItem": true,
+                  "Left": 10.0,
+                  "Name": "LABEL",
+                  "Text": "RAM",
+                  "TextColor": "#FFFFFFFF",
+                  "TextMask": "0000000000",
+                  "TextWrapping": 2,
+                  "Top": 127.0,
+                  "VerticalAlignment": 1,
+                  "Visible": true,
+                  "Width": 70.0
+                },
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+                  "BackgroundColor": "#00FFFFFF",
+                  "Bindings": {
+                    "Text": {
+                      "FormatString": "00.0'%'",
+                      "Formula": {
+                        "Expression": "isnull([SystemInfosProvider.MemoryLoad],'')\r\n"
+                      },
+                      "Mode": 2,
+                      "TargetPropertyName": "Text"
+                    }
+                  },
+                  "Font": "Rajdhani",
+                  "FontSize": 16.0,
+                  "FontWeight": "Bold",
+                  "Height": 17.0,
+                  "HorizontalAlignment": 2,
+                  "IsTextItem": true,
+                  "Left": 400.0,
+                  "Name": "VALUE",
+                  "Text": "RAM",
+                  "TextColor": "#FFFFFFFF",
+                  "TextMask": "0000000000",
+                  "TextWrapping": 2,
+                  "Top": 127.0,
+                  "VerticalAlignment": 1,
+                  "Visible": true,
+                  "Width": 50.0
+                }
+              ],
+              "Group": true,
+              "Height": 31.0,
+              "Left": 0.0,
+              "Name": "RAM",
+              "Top": 121.0,
+              "Visible": true,
+              "Width": 460.0
+            },
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.Layer, SimHub.Plugins",
+              "BackgroundColor": "#00FFFFFF",
+              "Childrens": [
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+                  "BackgroundColor": "#FF222222",
+                  "Bindings": {
+                    "BackgroundColor": {
+                      "Formula": {
+                        "Expression": "return twf_get_ui_color(\"infobg\")",
+                        "Interpreter": 1
+                      },
+                      "Mode": 2,
+                      "TargetPropertyName": "BackgroundColor"
+                    }
+                  },
+                  "BorderStyle": {
+                    "BorderColor": "#FF444444",
+                    "RadiusBottomLeft": 6,
+                    "RadiusBottomRight": 6,
+                    "RadiusTopLeft": 6,
+                    "RadiusTopRight": 6
+                  },
+                  "Height": 113.0,
+                  "IsRectangleItem": true,
+                  "Left": 234.0,
+                  "Name": "RectangleItem2",
+                  "Top": 0.0,
+                  "Visible": true,
+                  "Width": 225.0
+                },
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.Layer, SimHub.Plugins",
+                  "BackgroundColor": "#00FFFFFF",
+                  "Childrens": [
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.CircularGaugeItem, SimHub.Plugins",
+                      "BackgroundColor": "#00FFFFFF",
+                      "Bindings": {
+                        "CircleGaugeColor": {
+                          "EnableMiddleColor": false,
+                          "EndColor": "#FFFF0000",
+                          "EndColorValue": 100.0,
+                          "Formula": {
+                            "Expression": "isnull([SystemInfosProvider.MainGPULoad],'')\r\n"
+                          },
+                          "MiddleColor": "#FF000000",
+                          "MiddleColorValue": 1.0,
+                          "Mode": 4,
+                          "StartColor": "#FF00FF00",
+                          "StartColorValue": 0.0,
+                          "TargetPropertyName": "CircleGaugeColor"
+                        },
+                        "Value": {
+                          "Formula": {
+                            "Expression": "isnull([SystemInfosProvider.MainGPULoad],'')\r\n"
+                          },
+                          "Mode": 2,
+                          "TargetPropertyName": "Value"
+                        }
+                      },
+                      "CircleGaugeBackgroundColor": "#7D000000",
+                      "CircleGaugeColor": "#FFFFFFFF",
+                      "Height": 90.0,
+                      "Left": 248.0,
+                      "MaxAngle": 360.0,
+                      "MaxValue": 100.0,
+                      "MinAngle": 1.0,
+                      "MinValue": 0.0,
+                      "Name": "Gauge",
+                      "Steps": 0.0,
+                      "StrokeThickness": 7.0,
+                      "Top": 13.0,
+                      "Value": 300.0,
+                      "ValueEx": 359.0,
+                      "Visible": true,
+                      "Width": 90.0
+                    },
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+                      "BackgroundColor": "#00FFFFFF",
+                      "Font": "Rajdhani",
+                      "FontSize": 16.0,
+                      "FontWeight": "Bold",
+                      "Height": 17.0,
+                      "HorizontalAlignment": 1,
+                      "IsTextItem": true,
+                      "Left": 256.75,
+                      "Name": "LABEL",
+                      "Text": "LOAD",
+                      "TextColor": "#FF808080",
+                      "TextMask": "0000000000",
+                      "TextWrapping": 2,
+                      "Top": 34.0,
+                      "VerticalAlignment": 1,
+                      "Visible": true,
+                      "Width": 70.0
+                    },
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+                      "BackgroundColor": "#00FFFFFF",
+                      "Bindings": {
+                        "Text": {
+                          "FormatString": "0.0",
+                          "Formula": {
+                            "Expression": "isnull([SystemInfosProvider.MainGPULoad],'')\r\n"
+                          },
+                          "Mode": 2,
+                          "TargetPropertyName": "Text"
+                        }
+                      },
+                      "Font": "Rajdhani",
+                      "FontSize": 28.0,
+                      "FontWeight": "Bold",
+                      "Height": 31.0,
+                      "HorizontalAlignment": 1,
+                      "IsTextItem": true,
+                      "Left": 252.75,
+                      "Name": "VALUE",
+                      "Text": "100.2",
+                      "TextColor": "#FFFFFFFF",
+                      "TextMask": "0000000000",
+                      "TextWrapping": 2,
+                      "Top": 52.0,
+                      "VerticalAlignment": 1,
+                      "Visible": true,
+                      "Width": 80.0
+                    }
+                  ],
+                  "Group": true,
+                  "Height": 90.0,
+                  "Left": 248.0,
+                  "Name": "GPU LOAD",
+                  "Top": 13.0,
+                  "Visible": true,
+                  "Width": 90.0
+                },
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.Layer, SimHub.Plugins",
+                  "BackgroundColor": "#00FFFFFF",
+                  "Childrens": [
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.CircularGaugeItem, SimHub.Plugins",
+                      "BackgroundColor": "#00FFFFFF",
+                      "Bindings": {
+                        "CircleGaugeColor": {
+                          "EnableMiddleColor": false,
+                          "EndColor": "#FFFF0000",
+                          "EndColorValue": 100.0,
+                          "Formula": {
+                            "Expression": "isnull([SystemInfosProvider.MainGPUTemp],'')\r\n"
+                          },
+                          "MiddleColor": "#FF000000",
+                          "MiddleColorValue": 1.0,
+                          "Mode": 4,
+                          "StartColor": "#FF00FF00",
+                          "StartColorValue": 0.0,
+                          "TargetPropertyName": "CircleGaugeColor"
+                        },
+                        "Value": {
+                          "Formula": {
+                            "Expression": "isnull([SystemInfosProvider.MainGPUTemp],'')\r\n"
+                          },
+                          "Mode": 2,
+                          "TargetPropertyName": "Value"
+                        }
+                      },
+                      "CircleGaugeBackgroundColor": "#7D000000",
+                      "CircleGaugeColor": "#FFFFFFFF",
+                      "Height": 90.0,
+                      "Left": 354.0,
+                      "MaxAngle": 360.0,
+                      "MaxValue": 100.0,
+                      "MinAngle": 1.0,
+                      "MinValue": 0.0,
+                      "Name": "Gauge",
+                      "Steps": 0.0,
+                      "StrokeThickness": 7.0,
+                      "Top": 13.0,
+                      "Value": 300.0,
+                      "ValueEx": 359.0,
+                      "Visible": true,
+                      "Width": 90.0
+                    },
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+                      "BackgroundColor": "#00FFFFFF",
+                      "Font": "Rajdhani",
+                      "FontSize": 16.0,
+                      "FontWeight": "Bold",
+                      "Height": 17.0,
+                      "HorizontalAlignment": 1,
+                      "IsTextItem": true,
+                      "Left": 362.75,
+                      "Name": "LABEL",
+                      "Text": "TEMP",
+                      "TextColor": "#FF808080",
+                      "TextMask": "0000000000",
+                      "TextWrapping": 2,
+                      "Top": 34.0,
+                      "VerticalAlignment": 1,
+                      "Visible": true,
+                      "Width": 70.0
+                    },
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+                      "BackgroundColor": "#00FFFFFF",
+                      "Bindings": {
+                        "Text": {
+                          "FormatString": "0.0",
+                          "Formula": {
+                            "Expression": "isnull([SystemInfosProvider.MainGPUTemp],'')\r\n"
+                          },
+                          "Mode": 2,
+                          "TargetPropertyName": "Text"
+                        }
+                      },
+                      "Font": "Rajdhani",
+                      "FontSize": 28.0,
+                      "FontWeight": "Bold",
+                      "Height": 31.0,
+                      "HorizontalAlignment": 1,
+                      "IsTextItem": true,
+                      "Left": 358.75,
+                      "Name": "VALUE",
+                      "Text": "100.2",
+                      "TextColor": "#FFFFFFFF",
+                      "TextMask": "0000000000",
+                      "TextWrapping": 2,
+                      "Top": 52.0,
+                      "VerticalAlignment": 1,
+                      "Visible": true,
+                      "Width": 80.0
+                    }
+                  ],
+                  "Group": true,
+                  "Height": 90.0,
+                  "Left": 354.0,
+                  "Name": "GPU TEMP",
+                  "Top": 13.0,
+                  "Visible": true,
+                  "Width": 90.0
+                },
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+                  "BackgroundColor": "#00FFFFFF",
+                  "Font": "Rajdhani",
+                  "FontSize": 16.0,
+                  "FontWeight": "Bold",
+                  "Height": 17.0,
+                  "HorizontalAlignment": 1,
+                  "IsTextItem": true,
+                  "Left": 311.0,
+                  "Name": "LABEL",
+                  "Text": "GPU",
+                  "TextColor": "#FFFFFFFF",
+                  "TextMask": "0000000000",
+                  "TextWrapping": 2,
+                  "Top": 13.0,
+                  "VerticalAlignment": 1,
+                  "Visible": true,
+                  "Width": 70.0
+                },
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+                  "BackgroundColor": "#00FFFFFF",
+                  "Bindings": {
+                    "Text": {
+                      "Formula": {
+                        "Expression": "isnull([SystemInfosProvider.CurrentFrameRate], '')"
+                      },
+                      "Mode": 2,
+                      "TargetPropertyName": "Text"
+                    }
+                  },
+                  "Font": "Rajdhani",
+                  "FontSize": 16.0,
+                  "FontWeight": "Bold",
+                  "Height": 17.0,
+                  "HorizontalAlignment": 1,
+                  "IsTextItem": true,
+                  "Left": 312.0,
+                  "Name": "FPS",
+                  "Text": "GPU",
+                  "TextColor": "#FFFFFFFF",
+                  "TextMask": "0000000000",
+                  "TextWrapping": 2,
+                  "Top": 90.0,
+                  "VerticalAlignment": 1,
+                  "Visible": true,
+                  "Width": 70.0
+                }
+              ],
+              "Group": true,
+              "Height": 113.0,
+              "Left": 234.0,
+              "Name": "GPU",
+              "Top": 0.0,
+              "Visible": true,
+              "Width": 225.0
+            },
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.Layer, SimHub.Plugins",
+              "BackgroundColor": "#00FFFFFF",
+              "Childrens": [
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+                  "BackgroundColor": "#FF222222",
+                  "Bindings": {
+                    "BackgroundColor": {
+                      "Formula": {
+                        "Expression": "return twf_get_ui_color(\"infobg\")",
+                        "Interpreter": 1
+                      },
+                      "Mode": 2,
+                      "TargetPropertyName": "BackgroundColor"
+                    }
+                  },
+                  "BorderStyle": {
+                    "BorderColor": "#FF444444",
+                    "RadiusBottomLeft": 6,
+                    "RadiusBottomRight": 6,
+                    "RadiusTopLeft": 6,
+                    "RadiusTopRight": 6
+                  },
+                  "Height": 113.0,
+                  "IsRectangleItem": true,
+                  "Left": 0.0,
+                  "Name": "RectangleItem2",
+                  "Top": 0.0,
+                  "Visible": true,
+                  "Width": 225.0
+                },
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.Layer, SimHub.Plugins",
+                  "BackgroundColor": "#00FFFFFF",
+                  "Childrens": [
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.CircularGaugeItem, SimHub.Plugins",
+                      "BackgroundColor": "#00FFFFFF",
+                      "Bindings": {
+                        "CircleGaugeColor": {
+                          "EnableMiddleColor": false,
+                          "EndColor": "#FFFF0000",
+                          "EndColorValue": 100.0,
+                          "Formula": {
+                            "Expression": "[SystemInfosProvider.MainCPULoad]"
+                          },
+                          "MiddleColor": "#FF000000",
+                          "MiddleColorValue": 1.0,
+                          "Mode": 4,
+                          "StartColor": "#FF00FF00",
+                          "StartColorValue": 0.0,
+                          "TargetPropertyName": "CircleGaugeColor"
+                        },
+                        "Value": {
+                          "Formula": {
+                            "Expression": "[SystemInfosProvider.MainCPULoad]"
+                          },
+                          "Mode": 2,
+                          "TargetPropertyName": "Value"
+                        }
+                      },
+                      "CircleGaugeBackgroundColor": "#7D000000",
+                      "CircleGaugeColor": "#FFFFFFFF",
+                      "Height": 90.0,
+                      "Left": 14.0,
+                      "MaxAngle": 360.0,
+                      "MaxValue": 100.0,
+                      "MinAngle": 1.0,
+                      "MinValue": 0.0,
+                      "Name": "Gauge",
+                      "Steps": 0.0,
+                      "StrokeThickness": 7.0,
+                      "Top": 13.0,
+                      "Value": 300.0,
+                      "ValueEx": 359.0,
+                      "Visible": true,
+                      "Width": 90.0
+                    },
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+                      "BackgroundColor": "#00FFFFFF",
+                      "Font": "Rajdhani",
+                      "FontSize": 16.0,
+                      "FontWeight": "Bold",
+                      "Height": 17.0,
+                      "HorizontalAlignment": 1,
+                      "IsTextItem": true,
+                      "Left": 22.75,
+                      "Name": "LABEL",
+                      "Text": "LOAD",
+                      "TextColor": "#FF808080",
+                      "TextMask": "0000000000",
+                      "TextWrapping": 2,
+                      "Top": 34.0,
+                      "VerticalAlignment": 1,
+                      "Visible": true,
+                      "Width": 70.0
+                    },
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+                      "BackgroundColor": "#00FFFFFF",
+                      "Bindings": {
+                        "Text": {
+                          "FormatString": "0.0",
+                          "Formula": {
+                            "Expression": "[SystemInfoPlugin.CPULoadPercent]"
+                          },
+                          "Mode": 2,
+                          "TargetPropertyName": "Text"
+                        }
+                      },
+                      "Font": "Rajdhani",
+                      "FontSize": 28.0,
+                      "FontWeight": "Bold",
+                      "Height": 31.0,
+                      "HorizontalAlignment": 1,
+                      "IsTextItem": true,
+                      "Left": 18.75,
+                      "Name": "VALUE",
+                      "Text": "100.2",
+                      "TextColor": "#FFFFFFFF",
+                      "TextMask": "0000000000",
+                      "TextWrapping": 2,
+                      "Top": 52.0,
+                      "VerticalAlignment": 1,
+                      "Visible": true,
+                      "Width": 80.0
+                    }
+                  ],
+                  "Group": true,
+                  "Height": 90.0,
+                  "Left": 14.0,
+                  "Name": "CPU LOAD",
+                  "Top": 13.0,
+                  "Visible": true,
+                  "Width": 90.0
+                },
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.Layer, SimHub.Plugins",
+                  "BackgroundColor": "#00FFFFFF",
+                  "Childrens": [
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.CircularGaugeItem, SimHub.Plugins",
+                      "BackgroundColor": "#00FFFFFF",
+                      "Bindings": {
+                        "CircleGaugeColor": {
+                          "EnableMiddleColor": false,
+                          "EndColor": "#FFFF0000",
+                          "EndColorValue": 100.0,
+                          "Formula": {
+                            "Expression": "isnull([SystemInfosProvider.MainCPUTemp], '')"
+                          },
+                          "MiddleColor": "#FF000000",
+                          "MiddleColorValue": 1.0,
+                          "Mode": 4,
+                          "StartColor": "#FF00FF00",
+                          "StartColorValue": 0.0,
+                          "TargetPropertyName": "CircleGaugeColor"
+                        },
+                        "Value": {
+                          "Formula": {
+                            "Expression": "isnull([SystemInfosProvider.MainCPUTemp], '')"
+                          },
+                          "Mode": 2,
+                          "TargetPropertyName": "Value"
+                        }
+                      },
+                      "CircleGaugeBackgroundColor": "#7D000000",
+                      "CircleGaugeColor": "#FFFFFFFF",
+                      "Height": 90.0,
+                      "Left": 120.0,
+                      "MaxAngle": 360.0,
+                      "MaxValue": 100.0,
+                      "MinAngle": 1.0,
+                      "MinValue": 0.0,
+                      "Name": "Gauge",
+                      "Steps": 0.0,
+                      "StrokeThickness": 7.0,
+                      "Top": 13.0,
+                      "Value": 300.0,
+                      "ValueEx": 359.0,
+                      "Visible": true,
+                      "Width": 90.0
+                    },
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+                      "BackgroundColor": "#00FFFFFF",
+                      "Font": "Rajdhani",
+                      "FontSize": 16.0,
+                      "FontWeight": "Bold",
+                      "Height": 17.0,
+                      "HorizontalAlignment": 1,
+                      "IsTextItem": true,
+                      "Left": 128.75,
+                      "Name": "LABEL",
+                      "Text": "TEMP",
+                      "TextColor": "#FF808080",
+                      "TextMask": "0000000000",
+                      "TextWrapping": 2,
+                      "Top": 34.0,
+                      "VerticalAlignment": 1,
+                      "Visible": true,
+                      "Width": 70.0
+                    },
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+                      "BackgroundColor": "#00FFFFFF",
+                      "Bindings": {
+                        "Text": {
+                          "FormatString": "0.0",
+                          "Formula": {
+                            "Expression": "isnull([SystemInfosProvider.MainCPUTemp], '')"
+                          },
+                          "Mode": 2,
+                          "TargetPropertyName": "Text"
+                        }
+                      },
+                      "Font": "Rajdhani",
+                      "FontSize": 28.0,
+                      "FontWeight": "Bold",
+                      "Height": 31.0,
+                      "HorizontalAlignment": 1,
+                      "IsTextItem": true,
+                      "Left": 124.75,
+                      "Name": "VALUE",
+                      "Text": "100.2",
+                      "TextColor": "#FFFFFFFF",
+                      "TextMask": "0000000000",
+                      "TextWrapping": 2,
+                      "Top": 52.0,
+                      "VerticalAlignment": 1,
+                      "Visible": true,
+                      "Width": 80.0
+                    }
+                  ],
+                  "Group": true,
+                  "Height": 90.0,
+                  "Left": 120.0,
+                  "Name": "CPU TEMP",
+                  "Top": 13.0,
+                  "Visible": true,
+                  "Width": 90.0
+                },
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+                  "BackgroundColor": "#00FFFFFF",
+                  "Font": "Rajdhani",
+                  "FontSize": 16.0,
+                  "FontWeight": "Bold",
+                  "Height": 17.0,
+                  "HorizontalAlignment": 1,
+                  "IsTextItem": true,
+                  "Left": 77.0,
+                  "Name": "LABEL",
+                  "Text": "CPU",
+                  "TextColor": "#FFFFFFFF",
+                  "TextMask": "0000000000",
+                  "TextWrapping": 2,
+                  "Top": 13.0,
+                  "VerticalAlignment": 1,
+                  "Visible": true,
+                  "Width": 70.0
+                }
+              ],
+              "Group": true,
+              "Height": 113.0,
+              "Left": 0.0,
+              "Name": "CPU",
+              "Top": 0.0,
+              "Visible": true,
+              "Width": 225.0
+            }
+          ],
+          "Group": true,
+          "Height": 210.0,
+          "Left": 0.0,
+          "Name": "SYS_INFO",
+          "Top": 0.0,
+          "Visible": true,
+          "Width": 460.0
+        }
+      ],
+      "Name": "Screen",
+      "OverlayMaxDuration": 0,
+      "OverlayMinDuration": 0,
+      "OverlayTriggerExpression": {
+        "Expression": ""
+      },
+      "PitScreen": false,
+      "ScreenEnabledExpression": {
+        "Expression": ""
+      },
+      "ScreenId": "b52f2768-6b58-45d4-8829-5005b7013b77"
+    }
+  ],
+  "ShowBackground": true,
+  "ShowBoundingRectangles": false,
+  "ShowForeground": true,
+  "ShowOnScreenControls": true,
+  "SnapToGrid": false,
+  "Version": 2
+}

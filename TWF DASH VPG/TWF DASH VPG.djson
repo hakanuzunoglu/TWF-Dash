@@ -1,0 +1,4470 @@
+{
+  "BackgroundColor": "#FF000000",
+  "BackgroundOpacity": 100.0,
+  "BaseHeight": 480,
+  "BaseWidth": 850,
+  "DashboardDebugManager": {
+    "LastPlacement": "179,132,995,562",
+    "Maximized": false
+  },
+  "EnableClickThroughOverlay": true,
+  "EnableOnDashboardMessaging": true,
+  "ForegroundOpacity": 100.0,
+  "GridSize": 10,
+  "HideLabels": true,
+  "Id": "4aa7becb-3fb6-46e6-8265-3294bbba1bc0",
+  "Images": [
+    {
+      "Extension": ".png",
+      "Height": 20,
+      "Length": 218,
+      "MD5": "6570a8d57a498bb19aef4c2536f068ff",
+      "Modified": false,
+      "Name": "icon-weather-clear-day",
+      "Optimized": true,
+      "Width": 20
+    },
+    {
+      "Extension": ".png",
+      "Length": 252,
+      "MD5": "f339b4cc0b71397a741c8d7e64239325",
+      "Modified": false,
+      "Name": "icon-weather-clear-night",
+      "Optimized": true
+    },
+    {
+      "Extension": ".png",
+      "Length": 306,
+      "MD5": "55cedbebfbabc49a48dba0614a46cb66",
+      "Modified": false,
+      "Name": "icon-weather-cloudy-day",
+      "Optimized": true
+    },
+    {
+      "Extension": ".png",
+      "Length": 277,
+      "MD5": "64c5754afab1c6889619887228e08a13",
+      "Modified": false,
+      "Name": "icon-weather-cloudy-night",
+      "Optimized": true
+    },
+    {
+      "Extension": ".png",
+      "Length": 313,
+      "MD5": "75203ceec141546cadb6069c7fd2763d",
+      "Modified": false,
+      "Name": "icon-weather-drizzle",
+      "Optimized": true
+    },
+    {
+      "Extension": ".png",
+      "Length": 325,
+      "MD5": "c5d72ad98f6aa3424b30f5e2cb0ec301",
+      "Modified": false,
+      "Name": "icon-weather-heavy",
+      "Optimized": true
+    },
+    {
+      "Extension": ".png",
+      "Length": 326,
+      "MD5": "4d0efd948fdbd81d7f99deee2f92ded9",
+      "Modified": false,
+      "Name": "icon-weather-light",
+      "Optimized": true
+    },
+    {
+      "Extension": ".png",
+      "Length": 293,
+      "MD5": "0741d595067e0508a47db8ff557c2411",
+      "Modified": false,
+      "Name": "icon-weather-m-cloudy",
+      "Optimized": true
+    },
+    {
+      "Extension": ".png",
+      "Length": 322,
+      "MD5": "e355fba756d76bb8c0d2f33ddd3262a1",
+      "Modified": false,
+      "Name": "icon-weather-medium",
+      "Optimized": true
+    },
+    {
+      "Extension": ".png",
+      "Length": 298,
+      "MD5": "4c353ed48de20978da30ee4ee2ac8ef9",
+      "Modified": false,
+      "Name": "icon-weather-no-rain",
+      "Optimized": true
+    },
+    {
+      "Extension": ".png",
+      "Length": 358,
+      "MD5": "d71abc71ed42e9085172c67e294a51cc",
+      "Modified": false,
+      "Name": "icon-weather-overcast",
+      "Optimized": true
+    },
+    {
+      "Extension": ".png",
+      "Length": 425,
+      "MD5": "a48dcfacce6807cd4f166ed76b033be1",
+      "Modified": false,
+      "Name": "icon-weather-thunder",
+      "Optimized": true
+    },
+    {
+      "Extension": ".png",
+      "Height": 639,
+      "Length": 47000,
+      "MD5": "88fa2b3539821ffd63f866e0839ea367",
+      "Modified": false,
+      "Name": "tabular 482",
+      "Optimized": true,
+      "Width": 1066
+    },
+    {
+      "Extension": ".png",
+      "Height": 53,
+      "Length": 595,
+      "MD5": "1ef823152a6a497ce7e918378418c9ca",
+      "Modified": false,
+      "Name": "engine",
+      "Optimized": true,
+      "Width": 53
+    },
+    {
+      "Extension": ".png",
+      "Height": 33,
+      "Length": 671,
+      "MD5": "e1c973b41eca8c762404e3ee889e999f",
+      "Modified": false,
+      "Name": "high-beam",
+      "Optimized": true,
+      "Width": 48
+    },
+    {
+      "Extension": ".png",
+      "Height": 36,
+      "Length": 756,
+      "MD5": "5d73e87adcc2918fb090dc795225d00f",
+      "Modified": false,
+      "Name": "left-indicator",
+      "Optimized": true,
+      "Width": 37
+    },
+    {
+      "Extension": ".png",
+      "Height": 39,
+      "Length": 974,
+      "MD5": "498434662b5c0bf34e7ac2acbf012309",
+      "Modified": false,
+      "Name": "low-beam",
+      "Optimized": true,
+      "Width": 45
+    },
+    {
+      "Extension": ".png",
+      "Height": 53,
+      "Length": 946,
+      "MD5": "2e71a39c11973642c01eb4d8a14db845",
+      "Modified": false,
+      "Name": "rain-light",
+      "Optimized": true,
+      "Width": 53
+    },
+    {
+      "Extension": ".png",
+      "Height": 53,
+      "Length": 802,
+      "MD5": "06616dc5d3d8af557bd6c3c6205a5c8b",
+      "Modified": false,
+      "Name": "right-indicator",
+      "Optimized": true,
+      "Width": 53
+    },
+    {
+      "Extension": ".png",
+      "Height": 53,
+      "Length": 968,
+      "MD5": "9b9bbe225c5b920ef7ed357bbcec7752",
+      "Modified": false,
+      "Name": "wiper",
+      "Optimized": true,
+      "Width": 53
+    },
+    {
+      "Extension": ".png",
+      "Height": 53,
+      "Length": 603,
+      "MD5": "4b32afa1459864fcd55b55476cb34629",
+      "Modified": false,
+      "Name": "ignition",
+      "Optimized": true,
+      "Width": 53
+    },
+    {
+      "Extension": ".png",
+      "Height": 17,
+      "Length": 273,
+      "MD5": "2a483f656d34effb6a48ce795f6f0f74",
+      "Modified": false,
+      "Name": "air-temp",
+      "Optimized": true,
+      "Width": 20
+    },
+    {
+      "Extension": ".png",
+      "Height": 19,
+      "Length": 328,
+      "MD5": "de84363ffada443f172b161ec7ae2263",
+      "Modified": false,
+      "Name": "track-temp",
+      "Optimized": true,
+      "Width": 19
+    },
+    {
+      "Extension": ".png",
+      "Height": 50,
+      "Length": 2558,
+      "MD5": "f38b6d7195462dbe10193b1347bd713a",
+      "Modified": false,
+      "Name": "chequered",
+      "Optimized": true,
+      "Width": 390
+    },
+    {
+      "Extension": ".png",
+      "Height": 35,
+      "Length": 341,
+      "MD5": "375f2ffe4adba7c06c22f42576d4e2ac",
+      "Modified": false,
+      "Name": "icon-battery",
+      "Optimized": true,
+      "Width": 35
+    },
+    {
+      "Extension": ".png",
+      "Height": 35,
+      "Length": 458,
+      "MD5": "784601b749a69fa3bdf2e00d3b0b9588",
+      "Modified": false,
+      "Name": "icon-fuel-pressure",
+      "Optimized": true,
+      "Width": 35
+    },
+    {
+      "Extension": ".png",
+      "Height": 35,
+      "Length": 349,
+      "MD5": "81d23ccec820d3f4c34079ece516e13c",
+      "Modified": false,
+      "Name": "icon-oil-level",
+      "Optimized": true,
+      "Width": 35
+    },
+    {
+      "Extension": ".png",
+      "Height": 35,
+      "Length": 545,
+      "MD5": "f03e8885326cd256635ec0308b2de35c",
+      "Modified": false,
+      "Name": "icon-oil-pressure",
+      "Optimized": true,
+      "Width": 35
+    },
+    {
+      "Extension": ".png",
+      "Height": 35,
+      "Length": 547,
+      "MD5": "7d5b798ea9a28d4b97fdbd550e6aaf7b",
+      "Modified": false,
+      "Name": "icon-oil-temp",
+      "Optimized": true,
+      "Width": 35
+    },
+    {
+      "Extension": ".png",
+      "Height": 35,
+      "Length": 665,
+      "MD5": "cb7ab386bb665531add6271aaaa8f7bf",
+      "Modified": false,
+      "Name": "icon-water-temp",
+      "Optimized": true,
+      "Width": 35
+    },
+    {
+      "Extension": ".png",
+      "Height": 256,
+      "Length": 13841,
+      "MD5": "0d24fdfcddc484f298a84eacb9d53027",
+      "Modified": false,
+      "Name": "ac",
+      "Optimized": true,
+      "Width": 256
+    },
+    {
+      "Extension": ".png",
+      "Height": 89,
+      "Length": 6632,
+      "MD5": "fb6a136b3bd622211dd78cae3e3d271c",
+      "Modified": false,
+      "Name": "iracing-logo",
+      "Optimized": true,
+      "Width": 299
+    },
+    {
+      "Extension": ".png",
+      "Height": 69,
+      "Length": 18571,
+      "MD5": "2c099ed74c110e53773af3028f6f76ba",
+      "Modified": false,
+      "Name": "Assetto_Corsa_Competizione",
+      "Optimized": true,
+      "Width": 253
+    },
+    {
+      "Extension": ".jpg",
+      "Height": 266,
+      "Length": 7368,
+      "MD5": "cf0054a4fb20affdb8e31c0d153399f6",
+      "Modified": false,
+      "Name": "assetto_corsa_logo",
+      "Optimized": true,
+      "Width": 266
+    },
+    {
+      "Extension": ".jpg",
+      "Height": 76,
+      "Length": 11253,
+      "MD5": "c422527a092c9120948a73dc795d6910",
+      "Modified": false,
+      "Name": "Automobilista-2_logo",
+      "Optimized": true,
+      "Width": 533
+    },
+    {
+      "Extension": ".png",
+      "Height": 639,
+      "Length": 78418,
+      "MD5": "6ac015deb5f262b065bf0d1083ec2290",
+      "Modified": false,
+      "Name": "tabular-rounded-800x480",
+      "Optimized": true,
+      "Width": 1066
+    },
+    {
+      "Extension": ".png",
+      "Height": 301,
+      "Length": 21311,
+      "MD5": "ef318dd0704ea3fafb135e1a2fdd0f90",
+      "Modified": false,
+      "Name": "car",
+      "Optimized": true,
+      "Width": 149
+    },
+    {
+      "Extension": ".png",
+      "Height": 349,
+      "Length": 41368,
+      "MD5": "64f897556cd2ab0b3227f98ad59b1c32",
+      "Modified": false,
+      "Name": "bg_middle",
+      "Optimized": true,
+      "Width": 349
+    },
+    {
+      "Extension": ".png",
+      "Length": 11053,
+      "MD5": "3983528822a7264895fb56662cef51d8",
+      "Modified": false,
+      "Name": "bg_middle2",
+      "Optimized": true
+    },
+    {
+      "Extension": ".png",
+      "Height": 639,
+      "Length": 372019,
+      "MD5": "ea6bec8c83353776f9ce4e4f57ffc8cc",
+      "Modified": false,
+      "Name": "HOME-MFD_GAPS",
+      "Optimized": true,
+      "Width": 1066
+    },
+    {
+      "Extension": ".png",
+      "Height": 431,
+      "Length": 4248,
+      "MD5": "45c8463ee8189f0a93d1249b448f57eb",
+      "Modified": false,
+      "Name": "bg_mfd_1_left",
+      "Optimized": true,
+      "Width": 429
+    },
+    {
+      "Extension": ".png",
+      "Height": 431,
+      "Length": 4082,
+      "MD5": "3834ec3903f8009fa7394bfbb4388932",
+      "Modified": false,
+      "Name": "bg_mfd_1_right",
+      "Optimized": true,
+      "Width": 429
+    },
+    {
+      "Extension": ".png",
+      "Height": 95,
+      "Length": 19651,
+      "MD5": "2f3a45228fa642d7811bf036d0805103",
+      "Modified": false,
+      "Name": "bg_bottom_1",
+      "Optimized": true,
+      "Width": 585
+    },
+    {
+      "Extension": ".png",
+      "Height": 60,
+      "Length": 16678,
+      "MD5": "f4e7bacd33e8a3e4b8c9a6ba3f2a12b3",
+      "Modified": false,
+      "Name": "delta_bg",
+      "Optimized": true,
+      "Width": 420
+    },
+    {
+      "Extension": ".png",
+      "Height": 55,
+      "Length": 7109,
+      "MD5": "2a8b8c005c5554f12ffe2dd04a788c46",
+      "Modified": false,
+      "Name": "delta_green",
+      "Optimized": true,
+      "Width": 208
+    },
+    {
+      "Extension": ".png",
+      "Height": 55,
+      "Length": 6744,
+      "MD5": "a0cf0589e00eb0e456207571158e111a",
+      "Modified": false,
+      "Name": "delta_red",
+      "Optimized": true,
+      "Width": 209
+    },
+    {
+      "Extension": ".png",
+      "Height": 110,
+      "Length": 9369,
+      "MD5": "60ecf9e378cddf1d6acf8c99227de749",
+      "Modified": false,
+      "Name": "delta_lap_bg",
+      "Optimized": true,
+      "Width": 262
+    },
+    {
+      "Extension": ".png",
+      "Height": 645,
+      "Length": 83863,
+      "MD5": "c6e3ba93d56806e43e8e512f858e1a69",
+      "Modified": false,
+      "Name": "logo",
+      "Optimized": true,
+      "Width": 974
+    },
+    {
+      "Extension": ".png",
+      "Height": 325,
+      "Length": 13841,
+      "MD5": "0d24fdfcddc484f298a84eacb9d53027",
+      "Modified": false,
+      "Name": "twf_transparent_light",
+      "Optimized": true,
+      "Width": 538
+    },
+    {
+      "Extension": ".png",
+      "Height": 639,
+      "Length": 324010,
+      "MD5": "f4afa962ac6d49596b121c1fc0aaeae0",
+      "Modified": false,
+      "Name": "bgmain",
+      "Optimized": true,
+      "Width": 1066
+    },
+    {
+      "Extension": ".png",
+      "Length": 211293,
+      "MD5": "2eb96217a10b4370f2299de444c6edf2",
+      "Modified": false,
+      "Name": "bg",
+      "Optimized": true
+    },
+    {
+      "Extension": ".png",
+      "Length": 13566,
+      "MD5": "6177bafffdb52c77c2eafcd0b7bdb623",
+      "Modified": false,
+      "Name": "deltabgblack",
+      "Optimized": true
+    },
+    {
+      "Extension": ".png",
+      "Height": 60,
+      "Length": 16665,
+      "MD5": "650afe9998748072a1c67f66cd7ef36a",
+      "Modified": false,
+      "Name": "deltabg",
+      "Optimized": true,
+      "Width": 420
+    },
+    {
+      "Extension": ".png",
+      "Height": 480,
+      "Length": 37914,
+      "MD5": "3fd76b0bcf929e42139661b6e0543cb0",
+      "Modified": false,
+      "Name": "bg_radar_grid2",
+      "Optimized": true,
+      "Width": 800
+    },
+    {
+      "Extension": ".png",
+      "Height": 95,
+      "Length": 19651,
+      "MD5": "2f3a45228fa642d7811bf036d0805103",
+      "Modified": false,
+      "Name": "bgbottom",
+      "Optimized": true,
+      "Width": 585
+    },
+    {
+      "Extension": ".png",
+      "Length": 16501,
+      "MD5": "acbd35e1f08dc61eb4a1e0e60806f0a2",
+      "Modified": false,
+      "Name": "bgbottomblack",
+      "Optimized": true
+    },
+    {
+      "Extension": ".png",
+      "Height": 431,
+      "Length": 4248,
+      "MD5": "45c8463ee8189f0a93d1249b448f57eb",
+      "Modified": false,
+      "Name": "bgmfd1left",
+      "Optimized": true,
+      "Width": 429
+    },
+    {
+      "Extension": ".png",
+      "Length": 4051,
+      "MD5": "27bda581bf181b6cd736ced5ef24f761",
+      "Modified": false,
+      "Name": "bgmfd1leftblack",
+      "Optimized": true
+    }
+  ],
+  "IsOverlay": false,
+  "Metadata": {
+    "Author": "Hakan Uzunoglu",
+    "Category": "",
+    "Description": "All in one dash made for DDUs",
+    "EnableOnDashboardMessaging": true,
+    "Height": 480.0,
+    "IdleScreensIndexs": [
+      0
+    ],
+    "InGameScreensIndexs": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "IsOverlay": false,
+    "MainPreviewIndex": 1,
+    "MetadataVersion": 2.0,
+    "OverlaySizeWarning": false,
+    "PitScreensIndexs": [],
+    "ScreenCount": 7.0,
+    "Title": "TWF DASH VPG",
+    "Width": 850.0
+  },
+  "Screens": [
+    {
+      "AllowOverlays": true,
+      "BackgroundColor": "#FF000000",
+      "IdleScreen": true,
+      "InGameScreen": false,
+      "IsBackgroundLayer": false,
+      "IsForegroundLayer": false,
+      "IsOverlayLayer": false,
+      "Items": [
+        {
+          "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.ImageItem, SimHub.Plugins",
+          "AutoSize": false,
+          "BackgroundColor": "#00FFFFFF",
+          "Bindings": {
+            "Image": {
+              "Formula": {
+                "Expression": "const json_settings = readtextfile('./JavascriptExtensions/TWF_DASH_CONFIG.json')\r\nconst config = JSON.parse(json_settings);\r\n\r\nif (!config){\r\n\treturn \"bgmain\"\r\n} else {\r\n\t\tif(config.ui_color == \"1\"){\r\n\t\t\treturn \"bgmain\"\r\n\t\t}\r\n        if(config.ui_color == \"2\"){\r\n\t\t\treturn \"bgmainblack\"\r\n\t\t} \r\n        if(config.ui_color == \"3\"){\r\n\t\t\treturn \"bgmaincustom\"\r\n\t\t}else {\r\n\t\t\treturn \"bgmain\"\r\n\t\t}\r\n}",
+                "Interpreter": 1
+              },
+              "Mode": 2,
+              "TargetPropertyName": "Image"
+            }
+          },
+          "Height": 480.0,
+          "Image": "bgmain",
+          "Left": 0.0,
+          "Name": "bg3",
+          "Opacity": 70.0,
+          "Top": 0.0,
+          "Visible": true,
+          "Width": 850.0
+        },
+        {
+          "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.Layer, SimHub.Plugins",
+          "BackgroundColor": "#00FFFFFF",
+          "Bindings": {
+            "Visible": {
+              "Formula": {
+                "Expression": "const json_settings = readtextfile('./JavascriptExtensions/TWF_DASH_CONFIG.json')\r\nconst config = JSON.parse(json_settings);\r\n\r\nif (!config){\r\n\treturn 0\r\n} else {\r\n\t\tif(config.your_name != \"\"){\r\n\t\t\treturn 1\r\n\t\t}\r\n      \telse {\r\n\t\t\treturn 0\r\n\t\t}\r\n}",
+                "Interpreter": 1
+              },
+              "Mode": 2,
+              "TargetPropertyName": "Visible"
+            }
+          },
+          "Childrens": [
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.Layer, SimHub.Plugins",
+              "BackgroundColor": "#00FFFFFF",
+              "Childrens": [
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.ImageItem, SimHub.Plugins",
+                  "AutoSize": false,
+                  "BackgroundColor": "#00FFFFFF",
+                  "Height": 511.0,
+                  "Image": "bg_radar_grid2",
+                  "Left": 25.0,
+                  "Name": "grid",
+                  "Opacity": 40.0,
+                  "Top": 10.0,
+                  "Visible": true,
+                  "Width": 800.0
+                },
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.ImageItem, SimHub.Plugins",
+                  "AutoSize": false,
+                  "BackgroundColor": "#00FFFFFF",
+                  "Bindings": {
+                    "Image": {
+                      "Formula": {
+                        "Expression": "const json_settings = readtextfile('./JavascriptExtensions/TWF_DASH_CONFIG.json')\r\nconst config = JSON.parse(json_settings);\r\n\r\nif (!config){\r\n\treturn \"deltabg\"\r\n} else {\r\n\t\tif(config.ui_color == \"1\"){\r\n\t\t\treturn \"deltabg\"\r\n\t\t}\r\n        if(config.ui_color == \"2\"){\r\n\t\t\treturn \"deltabgblack\"\r\n\t\t} \r\n        if(config.ui_color == \"3\"){\r\n\t\t\treturn \"deltabgcustom\"\r\n\t\t}else {\r\n\t\t\treturn \"deltabg\"\r\n\t\t}\r\n}",
+                        "Interpreter": 1
+                      },
+                      "Mode": 2,
+                      "TargetPropertyName": "Image"
+                    }
+                  },
+                  "Height": 65.0,
+                  "Image": "deltabg",
+                  "Left": 197.5,
+                  "Name": "bg",
+                  "Top": 0.0,
+                  "Visible": true,
+                  "Width": 455.0
+                }
+              ],
+              "Group": true,
+              "Height": 521.0,
+              "Left": 25.0,
+              "Name": "Layer",
+              "Top": 0.0,
+              "Visible": true,
+              "Width": 800.0
+            },
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.BuiltIn.TimeText, SimHub.Plugins",
+              "BackgroundColor": "#00FFFFFF",
+              "Font": "Rajdhani",
+              "FontSize": 42.0,
+              "FontWeight": "Bold",
+              "Format": "hh:mm:ss",
+              "Height": 50.0,
+              "HorizontalAlignment": 0,
+              "IsTextItem": true,
+              "Left": 15.0,
+              "Name": "PC_time",
+              "TextColor": "#FF808080",
+              "Top": 10.0,
+              "VerticalAlignment": 1,
+              "Visible": true,
+              "Width": 177.0
+            },
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.ImageItem, SimHub.Plugins",
+              "AutoSize": true,
+              "AutoSizeScale": 0.1,
+              "BackgroundColor": "#00FFFFFF",
+              "Height": 64.5,
+              "Image": "logo",
+              "Left": 729.0,
+              "Name": "ImageItem2",
+              "Top": 15.0,
+              "Visible": true,
+              "Width": 97.4
+            },
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+              "BackgroundColor": "#00FFFFFF",
+              "Bindings": {
+                "Text": {
+                  "Formula": {
+                    "Expression": "const json_settings = readtextfile('./JavascriptExtensions/TWF_DASH_CONFIG.json')\r\nconst config = JSON.parse(json_settings);\r\n\r\nif (!config){\r\n\treturn 0\r\n} else {\r\n\t\tif(config.your_name != \"\"){\r\n\t\t\treturn config.your_number\r\n\t\t}\r\n      \telse {\r\n\t\t\treturn ''\r\n\t\t}\r\n}",
+                    "Interpreter": 1
+                  },
+                  "Mode": 2,
+                  "TargetPropertyName": "Text"
+                },
+                "TextColor": {
+                  "Formula": {
+                    "Expression": "const json_settings = readtextfile('./JavascriptExtensions/TWF_DASH_CONFIG.json')\r\nconst config = JSON.parse(json_settings);\r\n\r\nif (!config){\r\n\treturn 0\r\n} else {\r\n\t\tif(config.your_color != \"\"){\r\n\t\t\treturn config.your_color\r\n\t\t}\r\n      \telse {\r\n\t\t\treturn 'orange'\r\n\t\t}\r\n}",
+                    "Interpreter": 1
+                  },
+                  "Mode": 2,
+                  "TargetPropertyName": "TextColor"
+                }
+              },
+              "Font": "Rajdhani",
+              "FontSize": 350.0,
+              "FontStyle": "Italic",
+              "FontWeight": "Bold",
+              "Height": 400.0,
+              "HorizontalAlignment": 0,
+              "IsTextItem": true,
+              "Left": -38.0,
+              "Name": "TextItem",
+              "Text": "66",
+              "TextColor": "#FFFFA500",
+              "Top": 188.0,
+              "VerticalAlignment": 1,
+              "Visible": true,
+              "Width": 880.0
+            },
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+              "BackgroundColor": "#00FFFFFF",
+              "Bindings": {
+                "Text": {
+                  "Formula": {
+                    "Expression": "const json_settings = readtextfile('./JavascriptExtensions/TWF_DASH_CONFIG.json')\r\nconst config = JSON.parse(json_settings);\r\n\r\nif (!config){\r\n\treturn 0\r\n} else {\r\n\t\tif(config.your_name != \"\"){\r\n\t\t\treturn config.your_name\r\n\t\t}\r\n      \telse {\r\n\t\t\treturn ''\r\n\t\t}\r\n}",
+                    "Interpreter": 1
+                  },
+                  "Mode": 2,
+                  "TargetPropertyName": "Text"
+                }
+              },
+              "CharWidth": 45.0,
+              "Font": "Rajdhani",
+              "FontSize": 50.0,
+              "FontStyle": "Italic",
+              "FontWeight": "Bold",
+              "Height": 60.0,
+              "HorizontalAlignment": 0,
+              "IsTextItem": true,
+              "Left": 68.0,
+              "Name": "TextItem2",
+              "Text": "YOUR NAME",
+              "TextColor": "#FFFFFFFF",
+              "TextMaskColor": "#FFFF0000",
+              "Top": 204.0,
+              "VerticalAlignment": 1,
+              "Visible": true,
+              "Width": 761.0
+            },
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+              "BackgroundColor": "#00FFFFFF",
+              "CharWidth": 23.0,
+              "Font": "Rajdhani",
+              "FontSize": 24.0,
+              "Height": 40.0,
+              "HorizontalAlignment": 1,
+              "IsTextItem": true,
+              "Left": 225.0,
+              "Name": "TextItem2",
+              "Text": "WAITING FOR DATA",
+              "TextColor": "#FF808080",
+              "Top": 16.0,
+              "UseMonospacedText": true,
+              "VerticalAlignment": 1,
+              "Visible": true,
+              "Width": 400.0
+            }
+          ],
+          "Group": true,
+          "Height": 588.0,
+          "Left": -38.0,
+          "Name": "DRIVER_NAME",
+          "Top": 0.0,
+          "Visible": true,
+          "Width": 880.0
+        },
+        {
+          "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.Layer, SimHub.Plugins",
+          "BackgroundColor": "#00FFFFFF",
+          "Bindings": {
+            "Visible": {
+              "Formula": {
+                "Expression": "const json_settings = readtextfile('./JavascriptExtensions/TWF_DASH_CONFIG.json')\r\nconst config = JSON.parse(json_settings);\r\n\r\nif (!config){\r\n\treturn 1\r\n} else {\r\n\t\tif(config.your_name == \"\"){\r\n\t\t\treturn 1\r\n\t\t}\r\n      \telse {\r\n\t\t\treturn 0\r\n\t\t}\r\n}",
+                "Interpreter": 1
+              },
+              "Mode": 2,
+              "TargetPropertyName": "Visible"
+            }
+          },
+          "Childrens": [
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.Layer, SimHub.Plugins",
+              "BackgroundColor": "#00FFFFFF",
+              "Childrens": [
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.ImageItem, SimHub.Plugins",
+                  "AutoSize": false,
+                  "BackgroundColor": "#00FFFFFF",
+                  "Height": 511.0,
+                  "Image": "bg_radar_grid2",
+                  "Left": 25.0,
+                  "Name": "grid",
+                  "Opacity": 40.0,
+                  "Top": 11.0,
+                  "Visible": true,
+                  "Width": 800.0
+                },
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.ImageItem, SimHub.Plugins",
+                  "AutoSize": false,
+                  "BackgroundColor": "#00FFFFFF",
+                  "Bindings": {
+                    "Image": {
+                      "Formula": {
+                        "Expression": "const json_settings = readtextfile('./JavascriptExtensions/TWF_DASH_CONFIG.json')\r\nconst config = JSON.parse(json_settings);\r\n\r\nif (!config){\r\n\treturn \"deltabg\"\r\n} else {\r\n\t\tif(config.ui_color == \"1\"){\r\n\t\t\treturn \"deltabg\"\r\n\t\t}\r\n        if(config.ui_color == \"2\"){\r\n\t\t\treturn \"deltabgblack\"\r\n\t\t} \r\n        if(config.ui_color == \"3\"){\r\n\t\t\treturn \"deltabgcustom\"\r\n\t\t}else {\r\n\t\t\treturn \"deltabg\"\r\n\t\t}\r\n}",
+                        "Interpreter": 1
+                      },
+                      "Mode": 2,
+                      "TargetPropertyName": "Image"
+                    }
+                  },
+                  "Height": 65.0,
+                  "Image": "deltabg",
+                  "Left": 197.5,
+                  "Name": "bg",
+                  "Top": 0.0,
+                  "Visible": true,
+                  "Width": 455.0
+                },
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.ImageItem, SimHub.Plugins",
+                  "AutoSize": false,
+                  "BackgroundColor": "#00FFFFFF",
+                  "Bindings": {
+                    "Image": {
+                      "Formula": {
+                        "Expression": "const json_settings = readtextfile('./JavascriptExtensions/TWF_DASH_CONFIG.json')\r\nconst config = JSON.parse(json_settings);\r\n\r\nif (!config){\r\n\treturn \"deltabg\"\r\n} else {\r\n\t\tif(config.ui_color == \"1\"){\r\n\t\t\treturn \"deltabg\"\r\n\t\t}\r\n        if(config.ui_color == \"2\"){\r\n\t\t\treturn \"deltabgblack\"\r\n\t\t} \r\n        if(config.ui_color == \"3\"){\r\n\t\t\treturn \"deltabgcustom\"\r\n\t\t}else {\r\n\t\t\treturn \"deltabg\"\r\n\t\t}\r\n}",
+                        "Interpreter": 1
+                      },
+                      "Mode": 2,
+                      "TargetPropertyName": "Image"
+                    }
+                  },
+                  "Height": 65.0,
+                  "Image": "deltabg",
+                  "Left": 197.5,
+                  "Name": "bg2",
+                  "Rotation": 180.0,
+                  "Top": 410.0,
+                  "Visible": true,
+                  "Width": 455.0
+                }
+              ],
+              "Group": true,
+              "Height": 522.0,
+              "Left": 25.0,
+              "Name": "Layer",
+              "Top": 0.0,
+              "Visible": true,
+              "Width": 800.0
+            },
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.BuiltIn.TimeText, SimHub.Plugins",
+              "BackgroundColor": "#00FFFFFF",
+              "Font": "Rajdhani",
+              "FontSize": 42.0,
+              "FontWeight": "Bold",
+              "Format": "hh:mm:ss",
+              "Height": 50.0,
+              "HorizontalAlignment": 1,
+              "IsTextItem": true,
+              "Left": 336.5,
+              "Name": "PC_time",
+              "TextColor": "#FFFFFFFF",
+              "Top": 304.0,
+              "VerticalAlignment": 1,
+              "Visible": true,
+              "Width": 177.0
+            },
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.ImageItem, SimHub.Plugins",
+              "AutoSize": true,
+              "AutoSizeScale": 0.16,
+              "BackgroundColor": "#00FFFFFF",
+              "Height": 103.2,
+              "Image": "logo",
+              "Left": 347.08,
+              "Name": "ImageItem2",
+              "Top": 188.4,
+              "Visible": true,
+              "Width": 155.84
+            },
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+              "BackgroundColor": "#00FFFFFF",
+              "CharWidth": 23.0,
+              "Font": "Rajdhani",
+              "FontSize": 24.0,
+              "Height": 40.0,
+              "HorizontalAlignment": 1,
+              "IsTextItem": true,
+              "Left": 225.0,
+              "Name": "TextItem",
+              "Text": "WAITING FOR DATA",
+              "TextColor": "#FF808080",
+              "Top": 16.0,
+              "UseMonospacedText": true,
+              "VerticalAlignment": 1,
+              "Visible": true,
+              "Width": 400.0
+            }
+          ],
+          "Group": true,
+          "Height": 522.0,
+          "Left": 25.0,
+          "Name": "DEFAULT",
+          "Top": 0.0,
+          "Visible": false,
+          "Width": 800.0
+        }
+      ],
+      "Name": "Idle",
+      "OverlayMaxDuration": 0,
+      "OverlayMinDuration": 0,
+      "OverlayTriggerExpression": {
+        "Expression": ""
+      },
+      "PitScreen": false,
+      "ScreenEnabledExpression": {
+        "Expression": ""
+      },
+      "ScreenId": "a70c8579-5ae3-46a5-860f-7387f918bbb0"
+    },
+    {
+      "AllowOverlays": true,
+      "BackgroundColor": "#FF000000",
+      "IdleScreen": false,
+      "InGameScreen": true,
+      "IsBackgroundLayer": false,
+      "IsForegroundLayer": false,
+      "IsOverlayLayer": false,
+      "Items": [
+        {
+          "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.Layer, SimHub.Plugins",
+          "BackgroundColor": "#00FFFFFF",
+          "Childrens": [
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.ImageItem, SimHub.Plugins",
+              "AutoSize": false,
+              "BackgroundColor": "#00FFFFFF",
+              "Bindings": {
+                "Image": {
+                  "Formula": {
+                    "Expression": "const json_settings = readtextfile('./JavascriptExtensions/TWF_DASH_CONFIG.json')\r\nconst config = JSON.parse(json_settings);\r\n\r\nif (!config){\r\n\treturn \"bgmain\"\r\n} else {\r\n\t\tif(config.ui_color == \"1\"){\r\n\t\t\treturn \"bgmain\"\r\n\t\t}\r\n        if(config.ui_color == \"2\"){\r\n\t\t\treturn \"bgmainblack\"\r\n\t\t} \r\n        if(config.ui_color == \"3\"){\r\n\t\t\treturn \"bgmaincustom\"\r\n\t\t}else {\r\n\t\t\treturn \"bgmain\"\r\n\t\t}\r\n}",
+                    "Interpreter": 1
+                  },
+                  "Mode": 2,
+                  "TargetPropertyName": "Image"
+                }
+              },
+              "Height": 480.0,
+              "Image": "bgmain",
+              "Left": -0.2950000000000159,
+              "Name": "bg3",
+              "Opacity": 70.0,
+              "Top": -1.75,
+              "Visible": true,
+              "Width": 850.0
+            },
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.WidgetItem, SimHub.Plugins",
+              "AutoSize": true,
+              "BackgroundColor": "#00FFFFFF",
+              "Bindings": {
+                "InitialScreenIndex": {
+                  "Formula": {
+                    "Expression": "const json_settings = readtextfile('./JavascriptExtensions/TWF_DASH_CONFIG.json')\r\nconst config = JSON.parse(json_settings);\r\n\r\nif (!config){\r\n\treturn 0\r\n} else {\r\n\t\t\treturn config.mfd_left\r\n}\r\n\r\n",
+                    "Interpreter": 1
+                  },
+                  "Mode": 2,
+                  "TargetPropertyName": "InitialScreenIndex"
+                }
+              },
+              "FileName": "MFD_V2_LEFT.djson",
+              "Height": 370.0,
+              "InitialScreenIndex": 0,
+              "Left": -10.0,
+              "Name": "MFD_V2_LEFT",
+              "NextScreenCommand": 1,
+              "PreviousScreenCommand": 0,
+              "Top": 50.0,
+              "Visible": true,
+              "Width": 435.0
+            },
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.WidgetItem, SimHub.Plugins",
+              "AutoSize": true,
+              "BackgroundColor": "#00FFFFFF",
+              "Bindings": {
+                "InitialScreenIndex": {
+                  "Formula": {
+                    "Expression": "const json_settings = readtextfile('./JavascriptExtensions/TWF_DASH_CONFIG.json')\r\nconst config = JSON.parse(json_settings);\r\n\r\nif (!config){\r\n\treturn 0\r\n} else {\r\n\t\t\treturn config.mfd_right\r\n}\r\n\r\n",
+                    "Interpreter": 1
+                  },
+                  "Mode": 2,
+                  "TargetPropertyName": "InitialScreenIndex"
+                }
+              },
+              "FileName": "MFD_V2_RIGHT.djson",
+              "Height": 370.0,
+              "InitialScreenIndex": 1,
+              "Left": 425.0,
+              "Name": "MFD_V2_RIGHT",
+              "NextScreenCommand": 2,
+              "PreviousScreenCommand": 0,
+              "Top": 50.0,
+              "Visible": true,
+              "Width": 435.0
+            },
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.WidgetItem, SimHub.Plugins",
+              "AutoSize": true,
+              "BackgroundColor": "#00FFFFFF",
+              "FileName": "CONTEXTUAL_ALERTS.djson",
+              "Height": 370.0,
+              "InitialScreenIndex": 0,
+              "Left": -8.295000000000016,
+              "Name": "CONTEXTUAL_ALERTS",
+              "NextScreenCommand": 0,
+              "PreviousScreenCommand": 0,
+              "Top": 50.0,
+              "Visible": true,
+              "Width": 870.0
+            },
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.WidgetItem, SimHub.Plugins",
+              "AutoSize": true,
+              "BackgroundColor": "#00FFFFFF",
+              "Bindings": {
+                "Visible": {
+                  "Formula": {
+                    "Expression": "const json_settings = readtextfile('./JavascriptExtensions/TWF_DASH_CONFIG.json')\r\nconst config = JSON.parse(json_settings);\r\n\r\nif (!config){\r\n\treturn 0\r\n} else {\r\n\t\tif(config.pedals == 2){\r\n\t\t\treturn 1\r\n\t\t} else {\r\n\t\t\treturn 0\r\n\t\t}\r\n}",
+                    "Interpreter": 1
+                  },
+                  "Mode": 2,
+                  "TargetPropertyName": "Visible"
+                }
+              },
+              "FileName": "PEDALS.djson",
+              "Height": 4.0,
+              "InitialScreenIndex": 0,
+              "Left": 344.705,
+              "Name": "PEDALS",
+              "NextScreenCommand": 0,
+              "PreviousScreenCommand": 0,
+              "Top": 390.25,
+              "Visible": true,
+              "Width": 160.0
+            },
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.WidgetItem, SimHub.Plugins",
+              "AutoSize": true,
+              "BackgroundColor": "#00FFFFFF",
+              "FileName": "SPOTTER.djson",
+              "Height": 225.0,
+              "InitialScreenIndex": 0,
+              "Left": 261.205,
+              "Name": "SPOTTER",
+              "NextScreenCommand": 0,
+              "PreviousScreenCommand": 0,
+              "RenderingSkip": 10,
+              "Top": 125.75,
+              "Visible": true,
+              "Width": 327.0
+            },
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.WidgetItem, SimHub.Plugins",
+              "AutoSize": true,
+              "BackgroundColor": "#00FFFFFF",
+              "Bindings": {
+                "Visible": {
+                  "Formula": {
+                    "Expression": "const json_settings = readtextfile('./JavascriptExtensions/TWF_DASH_CONFIG.json')\r\nconst config = JSON.parse(json_settings);\r\n\r\nif (!config){\r\n\treturn 0\r\n} else {\r\n\t\tif(config.pit_distance == 1 && $prop('DataCorePlugin.CurrentGame')==\"IRacing\" && ($prop('PitLimiterOn')>0 || $prop('IsInPitLane'))){\r\n\t\t\treturn 1\r\n\t\t\t\r\n\t\t} else {\r\n\t\t\treturn 0\r\n\t\t}\r\n}\r\n\r\n",
+                    "Interpreter": 1
+                  },
+                  "Mode": 2,
+                  "TargetPropertyName": "Visible"
+                }
+              },
+              "FileName": "PIT_DISTANCE_METER.djson",
+              "Height": 225.0,
+              "InitialScreenIndex": 0,
+              "Left": 261.205,
+              "Name": "PITDISTANCE",
+              "NextScreenCommand": 0,
+              "PreviousScreenCommand": 0,
+              "RenderingSkip": 10,
+              "Top": 125.75,
+              "Visible": true,
+              "Width": 327.0
+            },
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.WidgetItem, SimHub.Plugins",
+              "AutoSize": true,
+              "AutoSizeScale": 1.1,
+              "BackgroundColor": "#00FFFFFF",
+              "FileName": "MIDDLE_ROTATING.djson",
+              "Height": 398.20000000000005,
+              "InitialScreenIndex": 0,
+              "IsFreezed": true,
+              "Left": 225.60499999999996,
+              "Name": "MIDDLE",
+              "NextScreenCommand": 0,
+              "PreviousScreenCommand": 0,
+              "Top": 37.25,
+              "Visible": true,
+              "Width": 398.20000000000005
+            },
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.Layer, SimHub.Plugins",
+              "BackgroundColor": "#00FFFFFF",
+              "Childrens": [
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.WidgetItem, SimHub.Plugins",
+                  "AutoSize": true,
+                  "AutoSizeScale": 1.1,
+                  "BackgroundColor": "#00FFFFFF",
+                  "FileName": "CAR_SETTINGS.djson",
+                  "Height": 82.5,
+                  "InitialScreenIndex": 0,
+                  "Left": 181.60499999999996,
+                  "Name": "CAR_SETTINGS",
+                  "NextScreenCommand": 0,
+                  "PreviousScreenCommand": 0,
+                  "RenderingSkip": 30,
+                  "Top": 401.25,
+                  "Visible": true,
+                  "Width": 486.20000000000005
+                },
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.WidgetItem, SimHub.Plugins",
+                  "AutoSize": true,
+                  "BackgroundColor": "#00FFFFFF",
+                  "FileName": "FUEL_V2.djson",
+                  "Height": 55.0,
+                  "InitialScreenIndex": 0,
+                  "Left": 642.7049999999999,
+                  "Name": "FUEL_V2",
+                  "NextScreenCommand": 5,
+                  "PreviousScreenCommand": 0,
+                  "RenderingSkip": 30,
+                  "Top": 413.25,
+                  "Visible": true,
+                  "Width": 196.0
+                },
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.WidgetItem, SimHub.Plugins",
+                  "AutoSize": true,
+                  "AutoSizeScale": 1.1,
+                  "BackgroundColor": "#00FFFFFF",
+                  "FileName": "ENVIRONMENTTEMPS.djson",
+                  "Height": 66.0,
+                  "InitialScreenIndex": 0,
+                  "Left": 9.704999999999984,
+                  "Name": "ENVIRONMENTTEMPS",
+                  "NextScreenCommand": 0,
+                  "PreviousScreenCommand": 0,
+                  "RenderingSkip": 30,
+                  "Top": 404.25,
+                  "Visible": false,
+                  "Width": 181.50000000000003
+                },
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.WidgetItem, SimHub.Plugins",
+                  "AutoSize": true,
+                  "BackgroundColor": "#00FFFFFF",
+                  "FileName": "IRATINGS.djson",
+                  "Height": 20.0,
+                  "InitialScreenIndex": 0,
+                  "Left": 12.704999999999984,
+                  "Name": "IRATINGS",
+                  "NextScreenCommand": 0,
+                  "PreviousScreenCommand": 0,
+                  "RenderingSkip": 30,
+                  "Top": 413.25,
+                  "Visible": false,
+                  "Width": 176.0
+                },
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.ImageItem, SimHub.Plugins",
+                  "AutoSize": true,
+                  "AutoSizeScale": 0.09,
+                  "BackgroundColor": "#00FFFFFF",
+                  "Height": 58.05,
+                  "Image": "logo",
+                  "Left": 13.0,
+                  "Name": "ImageItem2",
+                  "Top": 409.5,
+                  "Visible": true,
+                  "Width": 87.66
+                }
+              ],
+              "Group": true,
+              "Height": 82.5,
+              "Left": 9.704999999999984,
+              "Name": "BOTTTOM",
+              "Top": 401.25,
+              "Visible": true,
+              "Width": 829.0
+            },
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.WidgetItem, SimHub.Plugins",
+              "AutoSize": true,
+              "BackgroundColor": "#00FFFFFF",
+              "FileName": "DELTA_V2.djson",
+              "Height": 90.0,
+              "InitialScreenIndex": 0,
+              "Left": 197.20499999999998,
+              "Name": "DELTA_V2",
+              "NextScreenCommand": 4,
+              "PreviousScreenCommand": 0,
+              "Top": -1.75,
+              "Visible": true,
+              "Width": 455.0
+            },
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.Layer, SimHub.Plugins",
+              "BackgroundColor": "#00FFFFFF",
+              "Childrens": [
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.Layer, SimHub.Plugins",
+                  "BackgroundColor": "#00FFFFFF",
+                  "Childrens": [
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+                      "BackgroundColor": "#00FFFFFF",
+                      "Bindings": {
+                        "Text": {
+                          "Formula": {
+                            "Expression": "if([OpponentsCount]=1, '',\r\nif([Position]=0, '',\r\nif([DataCorePlugin.CurrentGame] == 'IRacing', 'P' + [GameRawData.Telemetry.PlayerCarClassPosition],\r\n'P' + [Position] + '/' + [OpponentsCount])))"
+                          },
+                          "Mode": 2,
+                          "TargetPropertyName": "Text"
+                        }
+                      },
+                      "Font": "Rajdhani",
+                      "FontSize": 40.0,
+                      "FontWeight": "Bold",
+                      "Height": 36.0,
+                      "HorizontalAlignment": 0,
+                      "IsTextItem": true,
+                      "Left": 11.704999999999984,
+                      "Name": "POSITION_VALUE",
+                      "RenderingSkip": 60,
+                      "Text": "P26/32",
+                      "TextColor": "#FFFFFFFF",
+                      "Top": 28.25,
+                      "VerticalAlignment": 1,
+                      "Visible": true,
+                      "Width": 131.0
+                    },
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+                      "BackgroundColor": "#00FFFFFF",
+                      "Bindings": {
+                        "Text": {
+                          "Formula": {
+                            "Expression": "ucase([DataCorePlugin.GameData.SessionTypeName])"
+                          },
+                          "Mode": 2,
+                          "TargetPropertyName": "Text"
+                        }
+                      },
+                      "Font": "Rajdhani",
+                      "FontSize": 22.0,
+                      "FontWeight": "SemiBold",
+                      "Height": 20.0,
+                      "HorizontalAlignment": 0,
+                      "IsTextItem": true,
+                      "Left": 12.704999999999984,
+                      "Name": "SESSION_TYPE",
+                      "RenderingSkip": 60,
+                      "Text": "LONE QUALIFY",
+                      "TextColor": "#FF999999",
+                      "Top": 8.25,
+                      "VerticalAlignment": 1,
+                      "Visible": true,
+                      "Width": 168.0
+                    }
+                  ],
+                  "Group": true,
+                  "Height": 56.0,
+                  "Left": 11.704999999999984,
+                  "Name": "POSITION",
+                  "Top": 8.25,
+                  "Visible": true,
+                  "Width": 169.0
+                },
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.Layer, SimHub.Plugins",
+                  "BackgroundColor": "#00FFFFFF",
+                  "Childrens": [
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+                      "BackgroundColor": "#00FFFFFF",
+                      "Bindings": {
+                        "Text": {
+                          "Formula": {
+                            "Expression": "'L'+[CurrentLap]"
+                          },
+                          "Mode": 2,
+                          "TargetPropertyName": "Text"
+                        }
+                      },
+                      "Font": "Rajdhani",
+                      "FontSize": 40.0,
+                      "FontWeight": "Bold",
+                      "Height": 36.0,
+                      "HorizontalAlignment": 2,
+                      "IsTextItem": true,
+                      "Left": 707.7050000000002,
+                      "Name": "LAP_VALUE2",
+                      "RenderingSkip": 30,
+                      "Text": "L6",
+                      "TextColor": "#FFFFFFFF",
+                      "Top": 28.25,
+                      "VerticalAlignment": 1,
+                      "Visible": true,
+                      "Width": 130.0
+                    },
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+                      "BackgroundColor": "#00FFFFFF",
+                      "Bindings": {
+                        "Text": {
+                          "FormatString": "hh\\:mm\\:ss",
+                          "Formula": {
+                            "Expression": "if(isnull([SessionTimeLeft]), 'N/A',\r\nif([DataCorePlugin.CurrentGame] == 'IRacing' and [SessionTypeName] == 'TESTING', '-',\r\nif(timespantoseconds([SessionTimeLeft])<=0, '-', [SessionTimeLeft])))"
+                          },
+                          "Mode": 2,
+                          "TargetPropertyName": "Text"
+                        },
+                        "TextColor": {
+                          "EnableMiddleColor": true,
+                          "EndColor": "#FF808080",
+                          "EndColorValue": 601.0,
+                          "Formula": {
+                            "Expression": "if(isnull([SessionTimeLeft]), 0,\r\nif(timespantoseconds([SessionTimeLeft])<=0, 601, timespantoseconds([SessionTimeLeft])))"
+                          },
+                          "MiddleColor": "#FFFFFF00",
+                          "MiddleColorValue": 600.0,
+                          "Mode": 4,
+                          "StartColor": "#FFFF0000",
+                          "StartColorValue": 0.0,
+                          "TargetPropertyName": "TextColor"
+                        }
+                      },
+                      "Font": "Rajdhani",
+                      "FontSize": 22.0,
+                      "FontWeight": "SemiBold",
+                      "Height": 20.0,
+                      "HorizontalAlignment": 2,
+                      "IsTextItem": true,
+                      "Left": 667.7050000000002,
+                      "Name": "REMAINING",
+                      "RenderingSkip": 30,
+                      "Text": "11:00:24",
+                      "TextColor": "#FF808080",
+                      "Top": 8.25,
+                      "VerticalAlignment": 1,
+                      "Visible": true,
+                      "Width": 170.0
+                    }
+                  ],
+                  "Group": true,
+                  "Height": 56.0,
+                  "Left": 667.7050000000002,
+                  "Name": "LAP",
+                  "Top": 8.25,
+                  "Visible": true,
+                  "Width": 170.0
+                },
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.Layer, SimHub.Plugins",
+                  "BackgroundColor": "#00FFFFFF",
+                  "Childrens": [
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.WidgetItem, SimHub.Plugins",
+                      "AutoSize": true,
+                      "BackgroundColor": "#00FFFFFF",
+                      "Bindings": {
+                        "Visible": {
+                          "Formula": {
+                            "Expression": "const json_settings = readtextfile('./JavascriptExtensions/TWF_DASH_CONFIG.json')\r\nconst config = JSON.parse(json_settings);\r\n\r\nif (!config){\r\n\treturn 0\r\n} else {\r\n\t\tif(config.show_lapreview_mainscreen == 1){\r\n\t\t\treturn 1\r\n\t\t\t\r\n\t\t} else {\r\n\t\t\treturn 0\r\n\t\t}\r\n}\r\n\r\n",
+                            "Interpreter": 1
+                          },
+                          "Mode": 2,
+                          "TargetPropertyName": "Visible"
+                        }
+                      },
+                      "FileName": "lap_review.djson",
+                      "Height": 294.0,
+                      "InitialScreenIndex": 0,
+                      "Left": -10.295000000000016,
+                      "Name": "LAP_REVIEW",
+                      "NextScreenCommand": 0,
+                      "PreviousScreenCommand": 0,
+                      "RenderingSkip": 30,
+                      "Top": 91.25,
+                      "Visible": false,
+                      "Width": 870.0
+                    },
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.WidgetItem, SimHub.Plugins",
+                      "AutoSize": true,
+                      "AutoSizeScale": 1.119,
+                      "BackgroundColor": "#00FFFFFF",
+                      "Bindings": {
+                        "Visible": {
+                          "Formula": {
+                            "Expression": "const json_settings = readtextfile('./JavascriptExtensions/TWF_DASH_CONFIG.json')\r\nconst config = JSON.parse(json_settings);\r\n\r\nif (!config){\r\n\treturn 1\r\n} else {\r\n\t\tif(config.show_alerts_mainscreen == 1){\r\n\t\t\treturn 1\r\n\t\t\t\r\n\t\t} else {\r\n\t\t\treturn 0\r\n\t\t}\r\n}\r\n\r\n",
+                            "Interpreter": 1
+                          },
+                          "Mode": 2,
+                          "TargetPropertyName": "Visible"
+                        }
+                      },
+                      "FileName": "POPUP_ALERTS.djson",
+                      "Height": 294.297,
+                      "InitialScreenIndex": 0,
+                      "Left": -11.705000000000041,
+                      "Name": "POPUP ALERTS",
+                      "NextScreenCommand": 0,
+                      "PreviousScreenCommand": 0,
+                      "RenderingSkip": 10,
+                      "Top": 88.63116666666664,
+                      "Visible": true,
+                      "Width": 872.82
+                    },
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.WidgetItem, SimHub.Plugins",
+                      "AutoSize": true,
+                      "AutoSizeScale": 1.119,
+                      "BackgroundColor": "#00FFFFFF",
+                      "Bindings": {
+                        "Visible": {
+                          "Formula": {
+                            "Expression": "const json_settings = readtextfile('./JavascriptExtensions/TWF_DASH_CONFIG.json')\r\nconst config = JSON.parse(json_settings);\r\n\r\nif (!config){\r\n\treturn 0\r\n} else {\r\n\t\tif(config.show_flags_mainscreen == 2){\r\n\t\t\treturn 1\r\n\t\t\t\r\n\t\t} else {\r\n\t\t\treturn 0\r\n\t\t}\r\n}\r\n\r\n",
+                            "Interpreter": 1
+                          },
+                          "Mode": 2,
+                          "TargetPropertyName": "Visible"
+                        }
+                      },
+                      "FileName": "LARGE_FLAGS.djson",
+                      "Height": 294.297,
+                      "InitialScreenIndex": 0,
+                      "Left": -11.705000000000041,
+                      "Name": "LARGE_FLAGS",
+                      "NextScreenCommand": 0,
+                      "PreviousScreenCommand": 0,
+                      "RenderingSkip": 30,
+                      "Top": 88.63116666666664,
+                      "Visible": false,
+                      "Width": 872.82
+                    },
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.WidgetItem, SimHub.Plugins",
+                      "AutoSize": true,
+                      "AutoSizeScale": 1.05,
+                      "BackgroundColor": "#00FFFFFF",
+                      "Bindings": {
+                        "Visible": {
+                          "Formula": {
+                            "Expression": "const json_settings = readtextfile('./JavascriptExtensions/TWF_DASH_CONFIG.json')\r\nconst config = JSON.parse(json_settings);\r\n\r\nif (!config){\r\n\treturn 1\r\n} else {\r\n\t\tif(config.show_flags_mainscreen == 1){\r\n\t\t\treturn 1\r\n\t\t\t\r\n\t\t} else {\r\n\t\t\treturn 0\r\n\t\t}\r\n}\r\n\r\n",
+                            "Interpreter": 1
+                          },
+                          "Mode": 2,
+                          "TargetPropertyName": "Visible"
+                        }
+                      },
+                      "FileName": "SMALL_FLAGS.djson",
+                      "Height": 68.25,
+                      "InitialScreenIndex": 0,
+                      "Left": 185.82999999999998,
+                      "Name": "SMALL_FLAGS",
+                      "NextScreenCommand": 0,
+                      "PreviousScreenCommand": 0,
+                      "RenderingSkip": 30,
+                      "Top": -1.75,
+                      "Visible": true,
+                      "Width": 477.75
+                    }
+                  ],
+                  "Group": true,
+                  "Height": 387.0,
+                  "Left": -11.705000000000041,
+                  "Name": "ALERTS",
+                  "Top": -1.75,
+                  "Visible": true,
+                  "Width": 872.82
+                }
+              ],
+              "Group": true,
+              "Height": 387.0,
+              "Left": -11.705000000000041,
+              "Name": "TOP",
+              "Top": -1.75,
+              "Visible": true,
+              "Width": 872.82
+            }
+          ],
+          "Group": true,
+          "Height": 485.5,
+          "Left": -11.705000000000041,
+          "Name": "DASH",
+          "Top": -1.75,
+          "Visible": true,
+          "Width": 873.41
+        }
+      ],
+      "Name": "ROUND-FIXED",
+      "OverlayMaxDuration": 0,
+      "OverlayMinDuration": 0,
+      "OverlayTriggerExpression": {
+        "Expression": ""
+      },
+      "PitScreen": false,
+      "ScreenEnabledExpression": {
+        "Expression": ""
+      },
+      "ScreenId": "f849cd11-de91-43a3-b74b-a043bc0a7101"
+    },
+    {
+      "AllowOverlays": true,
+      "BackgroundColor": "#FF000000",
+      "IdleScreen": false,
+      "InGameScreen": true,
+      "IsBackgroundLayer": false,
+      "IsForegroundLayer": false,
+      "IsOverlayLayer": false,
+      "Items": [
+        {
+          "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.ImageItem, SimHub.Plugins",
+          "AutoSize": false,
+          "BackgroundColor": "#00FFFFFF",
+          "Bindings": {
+            "Image": {
+              "Formula": {
+                "Expression": "const json_settings = readtextfile('./JavascriptExtensions/TWF_DASH_CONFIG.json')\r\nconst config = JSON.parse(json_settings);\r\n\r\nif (!config){\r\n\treturn \"bgmain\"\r\n} else {\r\n\t\tif(config.ui_color == \"1\"){\r\n\t\t\treturn \"bgmain\"\r\n\t\t}\r\n        if(config.ui_color == \"2\"){\r\n\t\t\treturn \"bgmainblack\"\r\n\t\t} \r\n        if(config.ui_color == \"3\"){\r\n\t\t\treturn \"bgmaincustom\"\r\n\t\t}else {\r\n\t\t\treturn \"bgmain\"\r\n\t\t}\r\n}",
+                "Interpreter": 1
+              },
+              "Mode": 2,
+              "TargetPropertyName": "Image"
+            }
+          },
+          "Height": 480.0,
+          "Image": "bgmain",
+          "Left": 0.0,
+          "Name": "bg3",
+          "Opacity": 70.0,
+          "Top": 0.0,
+          "Visible": true,
+          "Width": 850.0
+        },
+        {
+          "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+          "BackgroundColor": "#26000000",
+          "BorderStyle": {
+            "Bindings": {
+              "BorderColor": {
+                "Formula": {
+                  "Expression": "const json_settings = readtextfile('./JavascriptExtensions/TWF_DASH_CONFIG.json')\r\nconst config = JSON.parse(json_settings);\r\n\r\nif (!config){\r\n\treturn \"#FF233E49\"\r\n} else {\r\n\t\tif(config.ui_color == \"1\"){\r\n\t\t\treturn \"#FF233E49\"\r\n\t\t}\r\n        if(config.ui_color == \"2\"){\r\n\t\t\treturn \"#FF3C3C3C\"\r\n\t\t} \r\n        if(config.ui_color == \"3\"){\r\n\t\t\treturn config.ui_custom_color\r\n\t\t}else {\r\n\t\t\treturn 0\r\n\t\t}\r\n}",
+                  "Interpreter": 1
+                },
+                "Mode": 2,
+                "TargetPropertyName": "BorderColor"
+              },
+              "RadiusBottomLeft": {
+                "Formula": {
+                  "Expression": "const json_settings = readtextfile('./JavascriptExtensions/TWF_DASH_CONFIG.json')\r\nconst config = JSON.parse(json_settings);\r\n\r\nif (!config){\r\n\treturn \"6\"\r\n} else {\r\n\treturn config.ui_radius\r\n}",
+                  "Interpreter": 1
+                },
+                "Mode": 2,
+                "TargetPropertyName": "RadiusBottomLeft"
+              },
+              "RadiusBottomRight": {
+                "Formula": {
+                  "Expression": "const json_settings = readtextfile('./JavascriptExtensions/TWF_DASH_CONFIG.json')\r\nconst config = JSON.parse(json_settings);\r\n\r\nif (!config){\r\n\treturn \"6\"\r\n} else {\r\n\treturn config.ui_radius\r\n}",
+                  "Interpreter": 1
+                },
+                "Mode": 2,
+                "TargetPropertyName": "RadiusBottomRight"
+              },
+              "RadiusTopLeft": {
+                "Formula": {
+                  "Expression": "const json_settings = readtextfile('./JavascriptExtensions/TWF_DASH_CONFIG.json')\r\nconst config = JSON.parse(json_settings);\r\n\r\nif (!config){\r\n\treturn \"6\"\r\n} else {\r\n\treturn config.ui_radius\r\n}",
+                  "Interpreter": 1
+                },
+                "Mode": 2,
+                "TargetPropertyName": "RadiusTopLeft"
+              },
+              "RadiusTopRight": {
+                "Formula": {
+                  "Expression": "const json_settings = readtextfile('./JavascriptExtensions/TWF_DASH_CONFIG.json')\r\nconst config = JSON.parse(json_settings);\r\n\r\nif (!config){\r\n\treturn \"6\"\r\n} else {\r\n\treturn config.ui_radius\r\n}",
+                  "Interpreter": 1
+                },
+                "Mode": 2,
+                "TargetPropertyName": "RadiusTopRight"
+              }
+            },
+            "BorderBottom": 2,
+            "BorderColor": "#FF233E49",
+            "BorderLeft": 2,
+            "BorderRight": 2,
+            "BorderTop": 2,
+            "RadiusBottomLeft": 6,
+            "RadiusBottomRight": 6,
+            "RadiusTopLeft": 6,
+            "RadiusTopRight": 6
+          },
+          "Height": 324.0,
+          "IsRectangleItem": true,
+          "Left": 10.0,
+          "Name": "RectangleItem",
+          "Top": 68.0,
+          "Visible": true,
+          "Width": 270.0
+        },
+        {
+          "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+          "BackgroundColor": "#26000000",
+          "BorderStyle": {
+            "Bindings": {
+              "BorderColor": {
+                "Formula": {
+                  "Expression": "const json_settings = readtextfile('./JavascriptExtensions/TWF_DASH_CONFIG.json')\r\nconst config = JSON.parse(json_settings);\r\n\r\nif (!config){\r\n\treturn \"#FF233E49\"\r\n} else {\r\n\t\tif(config.ui_color == \"1\"){\r\n\t\t\treturn \"#FF233E49\"\r\n\t\t}\r\n        if(config.ui_color == \"2\"){\r\n\t\t\treturn \"#FF3C3C3C\"\r\n\t\t} \r\n        if(config.ui_color == \"3\"){\r\n\t\t\treturn config.ui_custom_color\r\n\t\t}else {\r\n\t\t\treturn 0\r\n\t\t}\r\n}",
+                  "Interpreter": 1
+                },
+                "Mode": 2,
+                "TargetPropertyName": "BorderColor"
+              },
+              "RadiusBottomLeft": {
+                "Formula": {
+                  "Expression": "const json_settings = readtextfile('./JavascriptExtensions/TWF_DASH_CONFIG.json')\r\nconst config = JSON.parse(json_settings);\r\n\r\nif (!config){\r\n\treturn \"6\"\r\n} else {\r\n\treturn config.ui_radius\r\n}",
+                  "Interpreter": 1
+                },
+                "Mode": 2,
+                "TargetPropertyName": "RadiusBottomLeft"
+              },
+              "RadiusBottomRight": {
+                "Formula": {
+                  "Expression": "const json_settings = readtextfile('./JavascriptExtensions/TWF_DASH_CONFIG.json')\r\nconst config = JSON.parse(json_settings);\r\n\r\nif (!config){\r\n\treturn \"6\"\r\n} else {\r\n\treturn config.ui_radius\r\n}",
+                  "Interpreter": 1
+                },
+                "Mode": 2,
+                "TargetPropertyName": "RadiusBottomRight"
+              },
+              "RadiusTopLeft": {
+                "Formula": {
+                  "Expression": "const json_settings = readtextfile('./JavascriptExtensions/TWF_DASH_CONFIG.json')\r\nconst config = JSON.parse(json_settings);\r\n\r\nif (!config){\r\n\treturn \"6\"\r\n} else {\r\n\treturn config.ui_radius\r\n}",
+                  "Interpreter": 1
+                },
+                "Mode": 2,
+                "TargetPropertyName": "RadiusTopLeft"
+              },
+              "RadiusTopRight": {
+                "Formula": {
+                  "Expression": "const json_settings = readtextfile('./JavascriptExtensions/TWF_DASH_CONFIG.json')\r\nconst config = JSON.parse(json_settings);\r\n\r\nif (!config){\r\n\treturn \"6\"\r\n} else {\r\n\treturn config.ui_radius\r\n}",
+                  "Interpreter": 1
+                },
+                "Mode": 2,
+                "TargetPropertyName": "RadiusTopRight"
+              }
+            },
+            "BorderBottom": 2,
+            "BorderColor": "#FF233E49",
+            "BorderLeft": 2,
+            "BorderRight": 2,
+            "BorderTop": 2,
+            "RadiusBottomLeft": 6,
+            "RadiusBottomRight": 6,
+            "RadiusTopLeft": 6,
+            "RadiusTopRight": 6
+          },
+          "Height": 324.0,
+          "IsRectangleItem": true,
+          "Left": 290.0,
+          "Name": "RectangleItem2",
+          "Top": 68.0,
+          "Visible": true,
+          "Width": 270.0
+        },
+        {
+          "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+          "BackgroundColor": "#26000000",
+          "BorderStyle": {
+            "Bindings": {
+              "BorderColor": {
+                "Formula": {
+                  "Expression": "const json_settings = readtextfile('./JavascriptExtensions/TWF_DASH_CONFIG.json')\r\nconst config = JSON.parse(json_settings);\r\n\r\nif (!config){\r\n\treturn \"#FF233E49\"\r\n} else {\r\n\t\tif(config.ui_color == \"1\"){\r\n\t\t\treturn \"#FF233E49\"\r\n\t\t}\r\n        if(config.ui_color == \"2\"){\r\n\t\t\treturn \"#FF3C3C3C\"\r\n\t\t} \r\n        if(config.ui_color == \"3\"){\r\n\t\t\treturn config.ui_custom_color\r\n\t\t}else {\r\n\t\t\treturn 0\r\n\t\t}\r\n}",
+                  "Interpreter": 1
+                },
+                "Mode": 2,
+                "TargetPropertyName": "BorderColor"
+              },
+              "RadiusBottomLeft": {
+                "Formula": {
+                  "Expression": "const json_settings = readtextfile('./JavascriptExtensions/TWF_DASH_CONFIG.json')\r\nconst config = JSON.parse(json_settings);\r\n\r\nif (!config){\r\n\treturn \"6\"\r\n} else {\r\n\treturn config.ui_radius\r\n}",
+                  "Interpreter": 1
+                },
+                "Mode": 2,
+                "TargetPropertyName": "RadiusBottomLeft"
+              },
+              "RadiusBottomRight": {
+                "Formula": {
+                  "Expression": "const json_settings = readtextfile('./JavascriptExtensions/TWF_DASH_CONFIG.json')\r\nconst config = JSON.parse(json_settings);\r\n\r\nif (!config){\r\n\treturn \"6\"\r\n} else {\r\n\treturn config.ui_radius\r\n}",
+                  "Interpreter": 1
+                },
+                "Mode": 2,
+                "TargetPropertyName": "RadiusBottomRight"
+              },
+              "RadiusTopLeft": {
+                "Formula": {
+                  "Expression": "const json_settings = readtextfile('./JavascriptExtensions/TWF_DASH_CONFIG.json')\r\nconst config = JSON.parse(json_settings);\r\n\r\nif (!config){\r\n\treturn \"6\"\r\n} else {\r\n\treturn config.ui_radius\r\n}",
+                  "Interpreter": 1
+                },
+                "Mode": 2,
+                "TargetPropertyName": "RadiusTopLeft"
+              },
+              "RadiusTopRight": {
+                "Formula": {
+                  "Expression": "const json_settings = readtextfile('./JavascriptExtensions/TWF_DASH_CONFIG.json')\r\nconst config = JSON.parse(json_settings);\r\n\r\nif (!config){\r\n\treturn \"6\"\r\n} else {\r\n\treturn config.ui_radius\r\n}",
+                  "Interpreter": 1
+                },
+                "Mode": 2,
+                "TargetPropertyName": "RadiusTopRight"
+              }
+            },
+            "BorderBottom": 2,
+            "BorderColor": "#FF233E49",
+            "BorderLeft": 2,
+            "BorderRight": 2,
+            "BorderTop": 2,
+            "RadiusBottomLeft": 6,
+            "RadiusBottomRight": 6,
+            "RadiusTopLeft": 6,
+            "RadiusTopRight": 6
+          },
+          "Height": 324.0,
+          "IsRectangleItem": true,
+          "Left": 570.0,
+          "Name": "RectangleItem3",
+          "Top": 68.0,
+          "Visible": true,
+          "Width": 270.0
+        },
+        {
+          "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.WidgetItem, SimHub.Plugins",
+          "AutoSize": true,
+          "AutoSizeScale": 1.07,
+          "BackgroundColor": "#00FFFFFF",
+          "FileName": "MFD_STANDINGS_LITE.djson",
+          "Height": 321.0,
+          "InitialScreenIndex": 0,
+          "Left": 24.0,
+          "Name": "MFD_STANDINGS_LITE_V2",
+          "NextScreenCommand": 1,
+          "PreviousScreenCommand": 0,
+          "RenderingSkip": 30,
+          "Top": 77.0,
+          "Visible": true,
+          "Width": 243.96
+        },
+        {
+          "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.WidgetItem, SimHub.Plugins",
+          "AutoSize": true,
+          "BackgroundColor": "#00FFFFFF",
+          "FileName": "MFD_1.djson",
+          "Height": 326.0,
+          "InitialScreenIndex": 0,
+          "Left": 291.0,
+          "Name": "MFD_1",
+          "NextScreenCommand": 2,
+          "PreviousScreenCommand": 0,
+          "RenderingSkip": 10,
+          "Top": 70.0,
+          "Visible": true,
+          "Width": 268.0
+        },
+        {
+          "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.WidgetItem, SimHub.Plugins",
+          "AutoSize": true,
+          "BackgroundColor": "#00FFFFFF",
+          "FileName": "MFD_2.djson",
+          "Height": 326.0,
+          "InitialScreenIndex": 0,
+          "Left": 571.0,
+          "Name": "MFD_",
+          "NextScreenCommand": 4,
+          "PreviousScreenCommand": 0,
+          "RenderingSkip": 10,
+          "Top": 71.0,
+          "Visible": true,
+          "Width": 268.0
+        },
+        {
+          "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.Layer, SimHub.Plugins",
+          "BackgroundColor": "#00FFFFFF",
+          "Childrens": [
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.WidgetItem, SimHub.Plugins",
+              "AutoSize": true,
+              "BackgroundColor": "#00FFFFFF",
+              "FileName": "CONTEXTUAL_ALERTS.djson",
+              "Height": 370.0,
+              "InitialScreenIndex": 0,
+              "Left": -8.0,
+              "Name": "CONTEXTUAL_ALERTS",
+              "NextScreenCommand": 0,
+              "PreviousScreenCommand": 0,
+              "Top": 73.0,
+              "Visible": false,
+              "Width": 870.0
+            },
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.Layer, SimHub.Plugins",
+              "BackgroundColor": "#00FFFFFF",
+              "Childrens": [
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.Layer, SimHub.Plugins",
+                  "BackgroundColor": "#00FFFFFF",
+                  "Childrens": [
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+                      "BackgroundColor": "#00FFFFFF",
+                      "Bindings": {
+                        "Text": {
+                          "Formula": {
+                            "Expression": "if([OpponentsCount]=1, '',\r\nif([Position]=0, '',\r\nif([DataCorePlugin.CurrentGame] == 'IRacing', 'P' + [GameRawData.Telemetry.PlayerCarClassPosition],\r\n'P' + [Position] + '/' + [OpponentsCount])))"
+                          },
+                          "Mode": 2,
+                          "TargetPropertyName": "Text"
+                        }
+                      },
+                      "Font": "Rajdhani",
+                      "FontSize": 40.0,
+                      "FontWeight": "Bold",
+                      "Height": 36.0,
+                      "HorizontalAlignment": 0,
+                      "IsTextItem": true,
+                      "Left": 12.0,
+                      "Name": "POSITION_VALUE",
+                      "Text": "P26/32",
+                      "TextColor": "#FFFFFFFF",
+                      "Top": 30.0,
+                      "VerticalAlignment": 1,
+                      "Visible": true,
+                      "Width": 131.0
+                    },
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+                      "BackgroundColor": "#00FFFFFF",
+                      "Bindings": {
+                        "Text": {
+                          "Formula": {
+                            "Expression": "ucase([DataCorePlugin.GameData.SessionTypeName])"
+                          },
+                          "Mode": 2,
+                          "TargetPropertyName": "Text"
+                        }
+                      },
+                      "Font": "Rajdhani",
+                      "FontSize": 22.0,
+                      "FontWeight": "SemiBold",
+                      "Height": 20.0,
+                      "HorizontalAlignment": 0,
+                      "IsTextItem": true,
+                      "Left": 13.0,
+                      "Name": "SESSION_TYPE",
+                      "Text": "LONE QUALIFY",
+                      "TextColor": "#FF999999",
+                      "Top": 10.0,
+                      "VerticalAlignment": 1,
+                      "Visible": true,
+                      "Width": 168.0
+                    }
+                  ],
+                  "Group": true,
+                  "Height": 56.0,
+                  "Left": 12.0,
+                  "Name": "POSITION",
+                  "Top": 10.0,
+                  "Visible": true,
+                  "Width": 169.0
+                },
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.Layer, SimHub.Plugins",
+                  "BackgroundColor": "#00FFFFFF",
+                  "Childrens": [
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+                      "BackgroundColor": "#00FFFFFF",
+                      "Bindings": {
+                        "Text": {
+                          "Formula": {
+                            "Expression": "'L'+[CurrentLap]"
+                          },
+                          "Mode": 2,
+                          "TargetPropertyName": "Text"
+                        }
+                      },
+                      "Font": "Rajdhani",
+                      "FontSize": 40.0,
+                      "FontWeight": "Bold",
+                      "Height": 36.0,
+                      "HorizontalAlignment": 2,
+                      "IsTextItem": true,
+                      "Left": 708.0,
+                      "Name": "LAP_VALUE2",
+                      "Text": "L6",
+                      "TextColor": "#FFFFFFFF",
+                      "Top": 30.0,
+                      "VerticalAlignment": 1,
+                      "Visible": true,
+                      "Width": 130.0
+                    },
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+                      "BackgroundColor": "#00FFFFFF",
+                      "Bindings": {
+                        "Text": {
+                          "FormatString": "hh\\:mm\\:ss",
+                          "Formula": {
+                            "Expression": "if(isnull([SessionTimeLeft]), 'N/A',\r\nif([DataCorePlugin.CurrentGame] == 'IRacing' and [SessionTypeName] == 'TESTING', '-',\r\nif(timespantoseconds([SessionTimeLeft])<=0, '-', [SessionTimeLeft])))"
+                          },
+                          "Mode": 2,
+                          "TargetPropertyName": "Text"
+                        },
+                        "TextColor": {
+                          "EnableMiddleColor": true,
+                          "EndColor": "#FF808080",
+                          "EndColorValue": 601.0,
+                          "Formula": {
+                            "Expression": "if(isnull([SessionTimeLeft]), 0,\r\nif(timespantoseconds([SessionTimeLeft])<=0, 601, timespantoseconds([SessionTimeLeft])))"
+                          },
+                          "MiddleColor": "#FFFFFF00",
+                          "MiddleColorValue": 600.0,
+                          "Mode": 4,
+                          "StartColor": "#FFFF0000",
+                          "StartColorValue": 0.0,
+                          "TargetPropertyName": "TextColor"
+                        }
+                      },
+                      "Font": "Rajdhani",
+                      "FontSize": 22.0,
+                      "FontWeight": "SemiBold",
+                      "Height": 20.0,
+                      "HorizontalAlignment": 2,
+                      "IsTextItem": true,
+                      "Left": 668.0,
+                      "Name": "REMAINING",
+                      "Text": "11:00:24",
+                      "TextColor": "#FF808080",
+                      "Top": 10.0,
+                      "VerticalAlignment": 1,
+                      "Visible": true,
+                      "Width": 170.0
+                    }
+                  ],
+                  "Group": true,
+                  "Height": 56.0,
+                  "Left": 668.0,
+                  "Name": "LAP",
+                  "Top": 10.0,
+                  "Visible": true,
+                  "Width": 170.0
+                },
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.WidgetItem, SimHub.Plugins",
+                  "AutoSize": true,
+                  "AutoSizeScale": 1.03,
+                  "BackgroundColor": "#00FFFFFF",
+                  "FileName": "DASH_LIGHTS.djson",
+                  "Height": 59.74,
+                  "InitialScreenIndex": 0,
+                  "Left": 172.65,
+                  "Name": "DASH_LIGHTS",
+                  "NextScreenCommand": 0,
+                  "PreviousScreenCommand": 0,
+                  "Top": 0.0,
+                  "Visible": true,
+                  "Width": 504.7
+                },
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.Layer, SimHub.Plugins",
+                  "BackgroundColor": "#00FFFFFF",
+                  "Childrens": [
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.WidgetItem, SimHub.Plugins",
+                      "AutoSize": true,
+                      "BackgroundColor": "#00FFFFFF",
+                      "Bindings": {
+                        "Visible": {
+                          "Formula": {
+                            "Expression": "const json_settings = readtextfile('./JavascriptExtensions/TWF_DASH_CONFIG.json')\r\nconst config = JSON.parse(json_settings);\r\n\r\nif (!config){\r\n\treturn 0\r\n} else {\r\n\t\tif(config.show_lapreview_secondaryscreen == 1){\r\n\t\t\treturn 1\r\n\t\t\t\r\n\t\t} else {\r\n\t\t\treturn 0\r\n\t\t}\r\n}\r\n\r\n",
+                            "Interpreter": 1
+                          },
+                          "Mode": 2,
+                          "TargetPropertyName": "Visible"
+                        }
+                      },
+                      "FileName": "lap_review.djson",
+                      "Height": 294.0,
+                      "InitialScreenIndex": 0,
+                      "Left": -10.0,
+                      "Name": "LAP_REVIEW",
+                      "NextScreenCommand": 0,
+                      "PreviousScreenCommand": 0,
+                      "Top": 93.0,
+                      "Visible": false,
+                      "Width": 870.0
+                    },
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.WidgetItem, SimHub.Plugins",
+                      "AutoSize": true,
+                      "AutoSizeScale": 1.119,
+                      "BackgroundColor": "#00FFFFFF",
+                      "Bindings": {
+                        "Visible": {
+                          "Formula": {
+                            "Expression": "const json_settings = readtextfile('./JavascriptExtensions/TWF_DASH_CONFIG.json')\r\nconst config = JSON.parse(json_settings);\r\n\r\nif (!config){\r\n\treturn 1\r\n} else {\r\n\t\tif(config.show_alerts_secondaryscreen == 1){\r\n\t\t\treturn 1\r\n\t\t\t\r\n\t\t} else {\r\n\t\t\treturn 0\r\n\t\t}\r\n}\r\n\r\n",
+                            "Interpreter": 1
+                          },
+                          "Mode": 2,
+                          "TargetPropertyName": "Visible"
+                        }
+                      },
+                      "FileName": "POPUP_ALERTS.djson",
+                      "Height": 294.297,
+                      "InitialScreenIndex": 0,
+                      "Left": -11.410000000000025,
+                      "Name": "POPUP ALERTS",
+                      "NextScreenCommand": 0,
+                      "PreviousScreenCommand": 0,
+                      "Top": 90.38116666666664,
+                      "Visible": true,
+                      "Width": 872.82
+                    },
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.WidgetItem, SimHub.Plugins",
+                      "AutoSize": true,
+                      "AutoSizeScale": 1.119,
+                      "BackgroundColor": "#00FFFFFF",
+                      "Bindings": {
+                        "Visible": {
+                          "Formula": {
+                            "Expression": "const json_settings = readtextfile('./JavascriptExtensions/TWF_DASH_CONFIG.json')\r\nconst config = JSON.parse(json_settings);\r\n\r\nif (!config){\r\n\treturn 0\r\n} else {\r\n\t\tif(config.show_flags_secondaryscreen == 2){\r\n\t\t\treturn 1\r\n\t\t\t\r\n\t\t} else {\r\n\t\t\treturn 0\r\n\t\t}\r\n}\r\n\r\n",
+                            "Interpreter": 1
+                          },
+                          "Mode": 2,
+                          "TargetPropertyName": "Visible"
+                        }
+                      },
+                      "FileName": "LARGE_FLAGS.djson",
+                      "Height": 294.297,
+                      "InitialScreenIndex": 0,
+                      "Left": -11.410000000000025,
+                      "Name": "LARGE_FLAGS",
+                      "NextScreenCommand": 0,
+                      "PreviousScreenCommand": 0,
+                      "Top": 90.38116666666664,
+                      "Visible": false,
+                      "Width": 872.82
+                    },
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.WidgetItem, SimHub.Plugins",
+                      "AutoSize": true,
+                      "AutoSizeScale": 1.05,
+                      "BackgroundColor": "#00FFFFFF",
+                      "Bindings": {
+                        "Visible": {
+                          "Formula": {
+                            "Expression": "const json_settings = readtextfile('./JavascriptExtensions/TWF_DASH_CONFIG.json')\r\nconst config = JSON.parse(json_settings);\r\n\r\nif (!config){\r\n\treturn 1\r\n} else {\r\n\t\tif(config.show_flags_secondaryscreen == 1){\r\n\t\t\treturn 1\r\n\t\t\t\r\n\t\t} else {\r\n\t\t\treturn 0\r\n\t\t}\r\n}\r\n\r\n",
+                            "Interpreter": 1
+                          },
+                          "Mode": 2,
+                          "TargetPropertyName": "Visible"
+                        }
+                      },
+                      "FileName": "SMALL_FLAGS.djson",
+                      "Height": 68.25,
+                      "InitialScreenIndex": 0,
+                      "Left": 186.125,
+                      "Name": "SMALL_FLAGS",
+                      "NextScreenCommand": 0,
+                      "PreviousScreenCommand": 0,
+                      "Top": -10.0,
+                      "Visible": true,
+                      "Width": 477.75
+                    }
+                  ],
+                  "Group": true,
+                  "Height": 397.0,
+                  "Left": -11.410000000000025,
+                  "Name": "ALERTS",
+                  "Top": -10.0,
+                  "Visible": true,
+                  "Width": 872.8200000000002
+                }
+              ],
+              "Group": true,
+              "Height": 397.0,
+              "Left": -11.410000000000025,
+              "Name": "TOP",
+              "Top": -10.0,
+              "Visible": true,
+              "Width": 872.8200000000002
+            }
+          ],
+          "Group": true,
+          "Height": 453.0,
+          "Left": -11.410000000000025,
+          "Name": "DASH",
+          "Top": -10.0,
+          "Visible": true,
+          "Width": 873.4100000000001
+        },
+        {
+          "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.Layer, SimHub.Plugins",
+          "BackgroundColor": "#00FFFFFF",
+          "Childrens": [
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.WidgetItem, SimHub.Plugins",
+              "AutoSize": true,
+              "AutoSizeScale": 1.1,
+              "BackgroundColor": "#00FFFFFF",
+              "FileName": "CAR_SETTINGS.djson",
+              "Height": 82.5,
+              "InitialScreenIndex": 0,
+              "Left": 181.89999999999998,
+              "Name": "CAR_SETTINGS",
+              "NextScreenCommand": 0,
+              "PreviousScreenCommand": 0,
+              "Top": 403.0,
+              "Visible": true,
+              "Width": 486.20000000000005
+            },
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.WidgetItem, SimHub.Plugins",
+              "AutoSize": true,
+              "BackgroundColor": "#00FFFFFF",
+              "FileName": "FUEL_V2.djson",
+              "Height": 55.0,
+              "InitialScreenIndex": 0,
+              "Left": 643.0,
+              "Name": "FUEL_V2",
+              "NextScreenCommand": 5,
+              "PreviousScreenCommand": 0,
+              "Top": 415.0,
+              "Visible": true,
+              "Width": 196.0
+            },
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.WidgetItem, SimHub.Plugins",
+              "AutoSize": true,
+              "AutoSizeScale": 1.1,
+              "BackgroundColor": "#00FFFFFF",
+              "FileName": "ENVIRONMENTTEMPS.djson",
+              "Height": 66.0,
+              "InitialScreenIndex": 0,
+              "Left": 10.0,
+              "Name": "ENVIRONMENTTEMPS",
+              "NextScreenCommand": 0,
+              "PreviousScreenCommand": 0,
+              "Top": 406.0,
+              "Visible": true,
+              "Width": 181.50000000000003
+            },
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.WidgetItem, SimHub.Plugins",
+              "AutoSize": true,
+              "BackgroundColor": "#00FFFFFF",
+              "FileName": "IRATINGS.djson",
+              "Height": 20.0,
+              "InitialScreenIndex": 0,
+              "Left": 13.0,
+              "Name": "IRATINGS",
+              "NextScreenCommand": 0,
+              "PreviousScreenCommand": 0,
+              "Top": 415.0,
+              "Visible": true,
+              "Width": 176.0
+            }
+          ],
+          "Group": true,
+          "Height": 82.5,
+          "Left": 10.0,
+          "Name": "BOTTTOM",
+          "Top": 403.0,
+          "Visible": true,
+          "Width": 829.0
+        }
+      ],
+      "Name": "Relative / Timings / Vehicle",
+      "OverlayMaxDuration": 0,
+      "OverlayMinDuration": 0,
+      "OverlayTriggerExpression": {
+        "Expression": ""
+      },
+      "PitScreen": false,
+      "ScreenEnabledExpression": {
+        "Expression": ""
+      },
+      "ScreenId": "c7a3f920-12a1-4808-99aa-200debbaeb9c"
+    },
+    {
+      "AllowOverlays": true,
+      "BackgroundColor": "#FF000000",
+      "IdleScreen": false,
+      "InGameScreen": true,
+      "IsBackgroundLayer": false,
+      "IsForegroundLayer": false,
+      "IsOverlayLayer": false,
+      "Items": [
+        {
+          "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.ImageItem, SimHub.Plugins",
+          "AutoSize": false,
+          "BackgroundColor": "#00FFFFFF",
+          "Bindings": {
+            "Image": {
+              "Formula": {
+                "Expression": "const json_settings = readtextfile('./JavascriptExtensions/TWF_DASH_CONFIG.json')\r\nconst config = JSON.parse(json_settings);\r\n\r\nif (!config){\r\n\treturn \"bgmain\"\r\n} else {\r\n\t\tif(config.ui_color == \"1\"){\r\n\t\t\treturn \"bgmain\"\r\n\t\t}\r\n        if(config.ui_color == \"2\"){\r\n\t\t\treturn \"bgmainblack\"\r\n\t\t} \r\n        if(config.ui_color == \"3\"){\r\n\t\t\treturn \"bgmaincustom\"\r\n\t\t}else {\r\n\t\t\treturn \"bgmain\"\r\n\t\t}\r\n}",
+                "Interpreter": 1
+              },
+              "Mode": 2,
+              "TargetPropertyName": "Image"
+            }
+          },
+          "Height": 480.0,
+          "Image": "bgmain",
+          "Left": 0.0,
+          "Name": "bg3",
+          "Opacity": 70.0,
+          "Top": 0.0,
+          "Visible": true,
+          "Width": 850.0
+        },
+        {
+          "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+          "BackgroundColor": "#26000000",
+          "BorderStyle": {
+            "Bindings": {
+              "BorderColor": {
+                "Formula": {
+                  "Expression": "const json_settings = readtextfile('./JavascriptExtensions/TWF_DASH_CONFIG.json')\r\nconst config = JSON.parse(json_settings);\r\n\r\nif (!config){\r\n\treturn \"#FF233E49\"\r\n} else {\r\n\t\tif(config.ui_color == \"1\"){\r\n\t\t\treturn \"#FF233E49\"\r\n\t\t}\r\n        if(config.ui_color == \"2\"){\r\n\t\t\treturn \"#FF3C3C3C\"\r\n\t\t} \r\n        if(config.ui_color == \"3\"){\r\n\t\t\treturn config.ui_custom_color\r\n\t\t}else {\r\n\t\t\treturn 0\r\n\t\t}\r\n}",
+                  "Interpreter": 1
+                },
+                "Mode": 2,
+                "TargetPropertyName": "BorderColor"
+              },
+              "RadiusBottomLeft": {
+                "Formula": {
+                  "Expression": "const json_settings = readtextfile('./JavascriptExtensions/TWF_DASH_CONFIG.json')\r\nconst config = JSON.parse(json_settings);\r\n\r\nif (!config){\r\n\treturn \"6\"\r\n} else {\r\n\treturn config.ui_radius\r\n}",
+                  "Interpreter": 1
+                },
+                "Mode": 2,
+                "TargetPropertyName": "RadiusBottomLeft"
+              },
+              "RadiusBottomRight": {
+                "Formula": {
+                  "Expression": "const json_settings = readtextfile('./JavascriptExtensions/TWF_DASH_CONFIG.json')\r\nconst config = JSON.parse(json_settings);\r\n\r\nif (!config){\r\n\treturn \"6\"\r\n} else {\r\n\treturn config.ui_radius\r\n}",
+                  "Interpreter": 1
+                },
+                "Mode": 2,
+                "TargetPropertyName": "RadiusBottomRight"
+              },
+              "RadiusTopLeft": {
+                "Formula": {
+                  "Expression": "const json_settings = readtextfile('./JavascriptExtensions/TWF_DASH_CONFIG.json')\r\nconst config = JSON.parse(json_settings);\r\n\r\nif (!config){\r\n\treturn \"6\"\r\n} else {\r\n\treturn config.ui_radius\r\n}",
+                  "Interpreter": 1
+                },
+                "Mode": 2,
+                "TargetPropertyName": "RadiusTopLeft"
+              },
+              "RadiusTopRight": {
+                "Formula": {
+                  "Expression": "const json_settings = readtextfile('./JavascriptExtensions/TWF_DASH_CONFIG.json')\r\nconst config = JSON.parse(json_settings);\r\n\r\nif (!config){\r\n\treturn \"6\"\r\n} else {\r\n\treturn config.ui_radius\r\n}",
+                  "Interpreter": 1
+                },
+                "Mode": 2,
+                "TargetPropertyName": "RadiusTopRight"
+              }
+            },
+            "BorderBottom": 2,
+            "BorderColor": "#FF233E49",
+            "BorderLeft": 2,
+            "BorderRight": 2,
+            "BorderTop": 2,
+            "RadiusBottomLeft": 6,
+            "RadiusBottomRight": 6,
+            "RadiusTopLeft": 6,
+            "RadiusTopRight": 6
+          },
+          "Height": 324.0,
+          "IsRectangleItem": true,
+          "Left": 10.0,
+          "Name": "RectangleItem3",
+          "Top": 68.0,
+          "Visible": true,
+          "Width": 270.0
+        },
+        {
+          "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+          "BackgroundColor": "#26000000",
+          "BorderStyle": {
+            "Bindings": {
+              "BorderColor": {
+                "Formula": {
+                  "Expression": "const json_settings = readtextfile('./JavascriptExtensions/TWF_DASH_CONFIG.json')\r\nconst config = JSON.parse(json_settings);\r\n\r\nif (!config){\r\n\treturn \"#FF233E49\"\r\n} else {\r\n\t\tif(config.ui_color == \"1\"){\r\n\t\t\treturn \"#FF233E49\"\r\n\t\t}\r\n        if(config.ui_color == \"2\"){\r\n\t\t\treturn \"#FF3C3C3C\"\r\n\t\t} \r\n        if(config.ui_color == \"3\"){\r\n\t\t\treturn config.ui_custom_color\r\n\t\t}else {\r\n\t\t\treturn 0\r\n\t\t}\r\n}",
+                  "Interpreter": 1
+                },
+                "Mode": 2,
+                "TargetPropertyName": "BorderColor"
+              },
+              "RadiusBottomLeft": {
+                "Formula": {
+                  "Expression": "const json_settings = readtextfile('./JavascriptExtensions/TWF_DASH_CONFIG.json')\r\nconst config = JSON.parse(json_settings);\r\n\r\nif (!config){\r\n\treturn \"6\"\r\n} else {\r\n\treturn config.ui_radius\r\n}",
+                  "Interpreter": 1
+                },
+                "Mode": 2,
+                "TargetPropertyName": "RadiusBottomLeft"
+              },
+              "RadiusBottomRight": {
+                "Formula": {
+                  "Expression": "const json_settings = readtextfile('./JavascriptExtensions/TWF_DASH_CONFIG.json')\r\nconst config = JSON.parse(json_settings);\r\n\r\nif (!config){\r\n\treturn \"6\"\r\n} else {\r\n\treturn config.ui_radius\r\n}",
+                  "Interpreter": 1
+                },
+                "Mode": 2,
+                "TargetPropertyName": "RadiusBottomRight"
+              },
+              "RadiusTopLeft": {
+                "Formula": {
+                  "Expression": "const json_settings = readtextfile('./JavascriptExtensions/TWF_DASH_CONFIG.json')\r\nconst config = JSON.parse(json_settings);\r\n\r\nif (!config){\r\n\treturn \"6\"\r\n} else {\r\n\treturn config.ui_radius\r\n}",
+                  "Interpreter": 1
+                },
+                "Mode": 2,
+                "TargetPropertyName": "RadiusTopLeft"
+              },
+              "RadiusTopRight": {
+                "Formula": {
+                  "Expression": "const json_settings = readtextfile('./JavascriptExtensions/TWF_DASH_CONFIG.json')\r\nconst config = JSON.parse(json_settings);\r\n\r\nif (!config){\r\n\treturn \"6\"\r\n} else {\r\n\treturn config.ui_radius\r\n}",
+                  "Interpreter": 1
+                },
+                "Mode": 2,
+                "TargetPropertyName": "RadiusTopRight"
+              }
+            },
+            "BorderBottom": 2,
+            "BorderColor": "#FF233E49",
+            "BorderLeft": 2,
+            "BorderRight": 2,
+            "BorderTop": 2,
+            "RadiusBottomLeft": 6,
+            "RadiusBottomRight": 6,
+            "RadiusTopLeft": 6,
+            "RadiusTopRight": 6
+          },
+          "Height": 324.0,
+          "IsRectangleItem": true,
+          "Left": 290.0,
+          "Name": "RectangleItem",
+          "Top": 68.0,
+          "Visible": true,
+          "Width": 550.0
+        },
+        {
+          "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.WidgetItem, SimHub.Plugins",
+          "AutoSize": true,
+          "AutoSizeScale": 1.07,
+          "BackgroundColor": "#00FFFFFF",
+          "FileName": "MFD_STANDINGS_LITE.djson",
+          "Height": 321.0,
+          "InitialScreenIndex": 0,
+          "Left": 24.0,
+          "Name": "STANDINGS_LITE_V2",
+          "NextScreenCommand": 1,
+          "PreviousScreenCommand": 0,
+          "RenderingSkip": 30,
+          "Top": 77.0,
+          "Visible": true,
+          "Width": 243.96
+        },
+        {
+          "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.WidgetItem, SimHub.Plugins",
+          "AutoSize": true,
+          "BackgroundColor": "#00FFFFFF",
+          "FileName": "MAP_FULL.djson",
+          "Height": 308.0,
+          "InitialScreenIndex": 0,
+          "Left": 301.0,
+          "Name": "MAP_FULL",
+          "NextScreenCommand": 0,
+          "PreviousScreenCommand": 0,
+          "Top": 75.0,
+          "Visible": true,
+          "Width": 531.0
+        },
+        {
+          "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.Layer, SimHub.Plugins",
+          "BackgroundColor": "#00FFFFFF",
+          "Childrens": [
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.WidgetItem, SimHub.Plugins",
+              "AutoSize": true,
+              "BackgroundColor": "#00FFFFFF",
+              "FileName": "CONTEXTUAL_ALERTS.djson",
+              "Height": 370.0,
+              "InitialScreenIndex": 0,
+              "Left": -8.0,
+              "Name": "CONTEXTUAL_ALERTS",
+              "NextScreenCommand": 0,
+              "PreviousScreenCommand": 0,
+              "Top": 73.0,
+              "Visible": false,
+              "Width": 870.0
+            },
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.Layer, SimHub.Plugins",
+              "BackgroundColor": "#00FFFFFF",
+              "Childrens": [
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.WidgetItem, SimHub.Plugins",
+                  "AutoSize": true,
+                  "AutoSizeScale": 1.1,
+                  "BackgroundColor": "#00FFFFFF",
+                  "FileName": "CAR_SETTINGS.djson",
+                  "Height": 82.5,
+                  "InitialScreenIndex": 0,
+                  "Left": 181.89999999999998,
+                  "Name": "CAR_SETTINGS",
+                  "NextScreenCommand": 0,
+                  "PreviousScreenCommand": 0,
+                  "Top": 403.0,
+                  "Visible": true,
+                  "Width": 486.20000000000005
+                },
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.WidgetItem, SimHub.Plugins",
+                  "AutoSize": true,
+                  "BackgroundColor": "#00FFFFFF",
+                  "FileName": "FUEL_V2.djson",
+                  "Height": 55.0,
+                  "InitialScreenIndex": 0,
+                  "Left": 643.0,
+                  "Name": "FUEL_V2",
+                  "NextScreenCommand": 5,
+                  "PreviousScreenCommand": 0,
+                  "Top": 415.0,
+                  "Visible": true,
+                  "Width": 196.0
+                },
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.WidgetItem, SimHub.Plugins",
+                  "AutoSize": true,
+                  "AutoSizeScale": 1.1,
+                  "BackgroundColor": "#00FFFFFF",
+                  "FileName": "ENVIRONMENTTEMPS.djson",
+                  "Height": 66.0,
+                  "InitialScreenIndex": 0,
+                  "Left": 10.0,
+                  "Name": "ENVIRONMENTTEMPS",
+                  "NextScreenCommand": 0,
+                  "PreviousScreenCommand": 0,
+                  "Top": 406.0,
+                  "Visible": true,
+                  "Width": 181.50000000000003
+                },
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.WidgetItem, SimHub.Plugins",
+                  "AutoSize": true,
+                  "BackgroundColor": "#00FFFFFF",
+                  "FileName": "IRATINGS.djson",
+                  "Height": 20.0,
+                  "InitialScreenIndex": 0,
+                  "Left": 13.0,
+                  "Name": "IRATINGS",
+                  "NextScreenCommand": 0,
+                  "PreviousScreenCommand": 0,
+                  "Top": 415.0,
+                  "Visible": true,
+                  "Width": 176.0
+                }
+              ],
+              "Group": true,
+              "Height": 82.5,
+              "Left": 10.0,
+              "Name": "BOTTTOM",
+              "Top": 403.0,
+              "Visible": true,
+              "Width": 829.0
+            },
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.Layer, SimHub.Plugins",
+              "BackgroundColor": "#00FFFFFF",
+              "Childrens": [
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.Layer, SimHub.Plugins",
+                  "BackgroundColor": "#00FFFFFF",
+                  "Childrens": [
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+                      "BackgroundColor": "#00FFFFFF",
+                      "Bindings": {
+                        "Text": {
+                          "Formula": {
+                            "Expression": "if([OpponentsCount]=1, '',\r\nif([Position]=0, '',\r\nif([DataCorePlugin.CurrentGame] == 'IRacing', 'P' + [GameRawData.Telemetry.PlayerCarClassPosition],\r\n'P' + [Position] + '/' + [OpponentsCount])))"
+                          },
+                          "Mode": 2,
+                          "TargetPropertyName": "Text"
+                        }
+                      },
+                      "Font": "Rajdhani",
+                      "FontSize": 40.0,
+                      "FontWeight": "Bold",
+                      "Height": 36.0,
+                      "HorizontalAlignment": 0,
+                      "IsTextItem": true,
+                      "Left": 12.0,
+                      "Name": "POSITION_VALUE",
+                      "Text": "P26/32",
+                      "TextColor": "#FFFFFFFF",
+                      "Top": 30.0,
+                      "VerticalAlignment": 1,
+                      "Visible": true,
+                      "Width": 131.0
+                    },
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+                      "BackgroundColor": "#00FFFFFF",
+                      "Bindings": {
+                        "Text": {
+                          "Formula": {
+                            "Expression": "ucase([DataCorePlugin.GameData.SessionTypeName])"
+                          },
+                          "Mode": 2,
+                          "TargetPropertyName": "Text"
+                        }
+                      },
+                      "Font": "Rajdhani",
+                      "FontSize": 22.0,
+                      "FontWeight": "SemiBold",
+                      "Height": 20.0,
+                      "HorizontalAlignment": 0,
+                      "IsTextItem": true,
+                      "Left": 13.0,
+                      "Name": "SESSION_TYPE",
+                      "Text": "LONE QUALIFY",
+                      "TextColor": "#FF999999",
+                      "Top": 10.0,
+                      "VerticalAlignment": 1,
+                      "Visible": true,
+                      "Width": 168.0
+                    }
+                  ],
+                  "Group": true,
+                  "Height": 56.0,
+                  "Left": 12.0,
+                  "Name": "POSITION",
+                  "Top": 10.0,
+                  "Visible": true,
+                  "Width": 169.0
+                },
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.Layer, SimHub.Plugins",
+                  "BackgroundColor": "#00FFFFFF",
+                  "Childrens": [
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+                      "BackgroundColor": "#00FFFFFF",
+                      "Bindings": {
+                        "Text": {
+                          "Formula": {
+                            "Expression": "'L'+[CurrentLap]"
+                          },
+                          "Mode": 2,
+                          "TargetPropertyName": "Text"
+                        }
+                      },
+                      "Font": "Rajdhani",
+                      "FontSize": 40.0,
+                      "FontWeight": "Bold",
+                      "Height": 36.0,
+                      "HorizontalAlignment": 2,
+                      "IsTextItem": true,
+                      "Left": 708.0,
+                      "Name": "LAP_VALUE2",
+                      "Text": "L6",
+                      "TextColor": "#FFFFFFFF",
+                      "Top": 30.0,
+                      "VerticalAlignment": 1,
+                      "Visible": true,
+                      "Width": 130.0
+                    },
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+                      "BackgroundColor": "#00FFFFFF",
+                      "Bindings": {
+                        "Text": {
+                          "FormatString": "hh\\:mm\\:ss",
+                          "Formula": {
+                            "Expression": "if(isnull([SessionTimeLeft]), 'N/A',\r\nif([DataCorePlugin.CurrentGame] == 'IRacing' and [SessionTypeName] == 'TESTING', '-',\r\nif(timespantoseconds([SessionTimeLeft])<=0, '-', [SessionTimeLeft])))"
+                          },
+                          "Mode": 2,
+                          "TargetPropertyName": "Text"
+                        },
+                        "TextColor": {
+                          "EnableMiddleColor": true,
+                          "EndColor": "#FF808080",
+                          "EndColorValue": 601.0,
+                          "Formula": {
+                            "Expression": "if(isnull([SessionTimeLeft]), 0,\r\nif(timespantoseconds([SessionTimeLeft])<=0, 601, timespantoseconds([SessionTimeLeft])))"
+                          },
+                          "MiddleColor": "#FFFFFF00",
+                          "MiddleColorValue": 600.0,
+                          "Mode": 4,
+                          "StartColor": "#FFFF0000",
+                          "StartColorValue": 0.0,
+                          "TargetPropertyName": "TextColor"
+                        }
+                      },
+                      "Font": "Rajdhani",
+                      "FontSize": 22.0,
+                      "FontWeight": "SemiBold",
+                      "Height": 20.0,
+                      "HorizontalAlignment": 2,
+                      "IsTextItem": true,
+                      "Left": 668.0,
+                      "Name": "REMAINING",
+                      "Text": "11:00:24",
+                      "TextColor": "#FF808080",
+                      "Top": 10.0,
+                      "VerticalAlignment": 1,
+                      "Visible": true,
+                      "Width": 170.0
+                    }
+                  ],
+                  "Group": true,
+                  "Height": 56.0,
+                  "Left": 668.0,
+                  "Name": "LAP",
+                  "Top": 10.0,
+                  "Visible": true,
+                  "Width": 170.0
+                },
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.WidgetItem, SimHub.Plugins",
+                  "AutoSize": true,
+                  "AutoSizeScale": 1.03,
+                  "BackgroundColor": "#00FFFFFF",
+                  "FileName": "DASH_LIGHTS.djson",
+                  "Height": 59.74,
+                  "InitialScreenIndex": 0,
+                  "Left": 172.65,
+                  "Name": "DASH_LIGHTS",
+                  "NextScreenCommand": 0,
+                  "PreviousScreenCommand": 0,
+                  "Top": 0.0,
+                  "Visible": true,
+                  "Width": 504.7
+                },
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.Layer, SimHub.Plugins",
+                  "BackgroundColor": "#00FFFFFF",
+                  "Childrens": [
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.WidgetItem, SimHub.Plugins",
+                      "AutoSize": true,
+                      "BackgroundColor": "#00FFFFFF",
+                      "Bindings": {
+                        "Visible": {
+                          "Formula": {
+                            "Expression": "const json_settings = readtextfile('./JavascriptExtensions/TWF_DASH_CONFIG.json')\r\nconst config = JSON.parse(json_settings);\r\n\r\nif (!config){\r\n\treturn 0\r\n} else {\r\n\t\tif(config.show_lapreview_secondaryscreen == 1){\r\n\t\t\treturn 1\r\n\t\t\t\r\n\t\t} else {\r\n\t\t\treturn 0\r\n\t\t}\r\n}\r\n\r\n",
+                            "Interpreter": 1
+                          },
+                          "Mode": 2,
+                          "TargetPropertyName": "Visible"
+                        }
+                      },
+                      "FileName": "lap_review.djson",
+                      "Height": 294.0,
+                      "InitialScreenIndex": 0,
+                      "Left": -10.0,
+                      "Name": "LAP_REVIEW",
+                      "NextScreenCommand": 0,
+                      "PreviousScreenCommand": 0,
+                      "Top": 93.0,
+                      "Visible": false,
+                      "Width": 870.0
+                    },
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.WidgetItem, SimHub.Plugins",
+                      "AutoSize": true,
+                      "AutoSizeScale": 1.119,
+                      "BackgroundColor": "#00FFFFFF",
+                      "Bindings": {
+                        "Visible": {
+                          "Formula": {
+                            "Expression": "const json_settings = readtextfile('./JavascriptExtensions/TWF_DASH_CONFIG.json')\r\nconst config = JSON.parse(json_settings);\r\n\r\nif (!config){\r\n\treturn 1\r\n} else {\r\n\t\tif(config.show_alerts_secondaryscreen == 1){\r\n\t\t\treturn 1\r\n\t\t\t\r\n\t\t} else {\r\n\t\t\treturn 0\r\n\t\t}\r\n}\r\n\r\n",
+                            "Interpreter": 1
+                          },
+                          "Mode": 2,
+                          "TargetPropertyName": "Visible"
+                        }
+                      },
+                      "FileName": "POPUP_ALERTS.djson",
+                      "Height": 294.297,
+                      "InitialScreenIndex": 0,
+                      "Left": -11.410000000000025,
+                      "Name": "POPUP ALERTS",
+                      "NextScreenCommand": 0,
+                      "PreviousScreenCommand": 0,
+                      "Top": 90.38116666666664,
+                      "Visible": true,
+                      "Width": 872.82
+                    },
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.WidgetItem, SimHub.Plugins",
+                      "AutoSize": true,
+                      "AutoSizeScale": 1.119,
+                      "BackgroundColor": "#00FFFFFF",
+                      "Bindings": {
+                        "Visible": {
+                          "Formula": {
+                            "Expression": "const json_settings = readtextfile('./JavascriptExtensions/TWF_DASH_CONFIG.json')\r\nconst config = JSON.parse(json_settings);\r\n\r\nif (!config){\r\n\treturn 0\r\n} else {\r\n\t\tif(config.show_flags_secondaryscreen == 2){\r\n\t\t\treturn 1\r\n\t\t\t\r\n\t\t} else {\r\n\t\t\treturn 0\r\n\t\t}\r\n}\r\n\r\n",
+                            "Interpreter": 1
+                          },
+                          "Mode": 2,
+                          "TargetPropertyName": "Visible"
+                        }
+                      },
+                      "FileName": "LARGE_FLAGS.djson",
+                      "Height": 294.297,
+                      "InitialScreenIndex": 0,
+                      "Left": -11.410000000000025,
+                      "Name": "LARGE_FLAGS",
+                      "NextScreenCommand": 0,
+                      "PreviousScreenCommand": 0,
+                      "Top": 90.38116666666664,
+                      "Visible": false,
+                      "Width": 872.82
+                    },
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.WidgetItem, SimHub.Plugins",
+                      "AutoSize": true,
+                      "AutoSizeScale": 1.05,
+                      "BackgroundColor": "#00FFFFFF",
+                      "Bindings": {
+                        "Visible": {
+                          "Formula": {
+                            "Expression": "const json_settings = readtextfile('./JavascriptExtensions/TWF_DASH_CONFIG.json')\r\nconst config = JSON.parse(json_settings);\r\n\r\nif (!config){\r\n\treturn 1\r\n} else {\r\n\t\tif(config.show_flags_secondaryscreen == 1){\r\n\t\t\treturn 1\r\n\t\t\t\r\n\t\t} else {\r\n\t\t\treturn 0\r\n\t\t}\r\n}\r\n\r\n",
+                            "Interpreter": 1
+                          },
+                          "Mode": 2,
+                          "TargetPropertyName": "Visible"
+                        }
+                      },
+                      "FileName": "SMALL_FLAGS.djson",
+                      "Height": 68.25,
+                      "InitialScreenIndex": 0,
+                      "Left": 186.125,
+                      "Name": "SMALL_FLAGS",
+                      "NextScreenCommand": 0,
+                      "PreviousScreenCommand": 0,
+                      "Top": -10.0,
+                      "Visible": true,
+                      "Width": 477.75
+                    }
+                  ],
+                  "Group": true,
+                  "Height": 397.0,
+                  "Left": -11.410000000000025,
+                  "Name": "ALERTS",
+                  "Top": -10.0,
+                  "Visible": true,
+                  "Width": 872.8200000000002
+                }
+              ],
+              "Group": true,
+              "Height": 397.0,
+              "Left": -11.410000000000025,
+              "Name": "TOP",
+              "Top": -10.0,
+              "Visible": true,
+              "Width": 872.8200000000002
+            }
+          ],
+          "Group": true,
+          "Height": 495.5,
+          "Left": -11.410000000000025,
+          "Name": "DASH",
+          "Top": -10.0,
+          "Visible": true,
+          "Width": 873.4100000000001
+        }
+      ],
+      "Name": "Relative / Map ",
+      "OverlayMaxDuration": 0,
+      "OverlayMinDuration": 0,
+      "OverlayTriggerExpression": {
+        "Expression": ""
+      },
+      "PitScreen": false,
+      "ScreenEnabledExpression": {
+        "Expression": ""
+      },
+      "ScreenId": "d6feba0e-039f-4cec-9d31-778017801af1"
+    },
+    {
+      "AllowOverlays": true,
+      "BackgroundColor": "#FF000000",
+      "IdleScreen": false,
+      "InGameScreen": true,
+      "IsBackgroundLayer": false,
+      "IsForegroundLayer": false,
+      "IsOverlayLayer": false,
+      "Items": [
+        {
+          "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.ImageItem, SimHub.Plugins",
+          "AutoSize": false,
+          "BackgroundColor": "#00FFFFFF",
+          "Bindings": {
+            "Image": {
+              "Formula": {
+                "Expression": "const json_settings = readtextfile('./JavascriptExtensions/TWF_DASH_CONFIG.json')\r\nconst config = JSON.parse(json_settings);\r\n\r\nif (!config){\r\n\treturn \"bgmain\"\r\n} else {\r\n\t\tif(config.ui_color == \"1\"){\r\n\t\t\treturn \"bgmain\"\r\n\t\t}\r\n        if(config.ui_color == \"2\"){\r\n\t\t\treturn \"bgmainblack\"\r\n\t\t} \r\n        if(config.ui_color == \"3\"){\r\n\t\t\treturn \"bgmaincustom\"\r\n\t\t}else {\r\n\t\t\treturn \"bgmain\"\r\n\t\t}\r\n}",
+                "Interpreter": 1
+              },
+              "Mode": 2,
+              "TargetPropertyName": "Image"
+            }
+          },
+          "Height": 480.0,
+          "Image": "bgmain",
+          "Left": 0.0,
+          "Name": "bg3",
+          "Opacity": 70.0,
+          "Top": 0.0,
+          "Visible": true,
+          "Width": 850.0
+        },
+        {
+          "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+          "BackgroundColor": "#26000000",
+          "BorderStyle": {
+            "Bindings": {
+              "BorderColor": {
+                "Formula": {
+                  "Expression": "const json_settings = readtextfile('./JavascriptExtensions/TWF_DASH_CONFIG.json')\r\nconst config = JSON.parse(json_settings);\r\n\r\nif (!config){\r\n\treturn \"#FF233E49\"\r\n} else {\r\n\t\tif(config.ui_color == \"1\"){\r\n\t\t\treturn \"#FF233E49\"\r\n\t\t}\r\n        if(config.ui_color == \"2\"){\r\n\t\t\treturn \"#FF3C3C3C\"\r\n\t\t} \r\n        if(config.ui_color == \"3\"){\r\n\t\t\treturn config.ui_custom_color\r\n\t\t}else {\r\n\t\t\treturn 0\r\n\t\t}\r\n}",
+                  "Interpreter": 1
+                },
+                "Mode": 2,
+                "TargetPropertyName": "BorderColor"
+              },
+              "RadiusBottomLeft": {
+                "Formula": {
+                  "Expression": "const json_settings = readtextfile('./JavascriptExtensions/TWF_DASH_CONFIG.json')\r\nconst config = JSON.parse(json_settings);\r\n\r\nif (!config){\r\n\treturn \"6\"\r\n} else {\r\n\treturn config.ui_radius\r\n}",
+                  "Interpreter": 1
+                },
+                "Mode": 2,
+                "TargetPropertyName": "RadiusBottomLeft"
+              },
+              "RadiusBottomRight": {
+                "Formula": {
+                  "Expression": "const json_settings = readtextfile('./JavascriptExtensions/TWF_DASH_CONFIG.json')\r\nconst config = JSON.parse(json_settings);\r\n\r\nif (!config){\r\n\treturn \"6\"\r\n} else {\r\n\treturn config.ui_radius\r\n}",
+                  "Interpreter": 1
+                },
+                "Mode": 2,
+                "TargetPropertyName": "RadiusBottomRight"
+              },
+              "RadiusTopLeft": {
+                "Formula": {
+                  "Expression": "const json_settings = readtextfile('./JavascriptExtensions/TWF_DASH_CONFIG.json')\r\nconst config = JSON.parse(json_settings);\r\n\r\nif (!config){\r\n\treturn \"6\"\r\n} else {\r\n\treturn config.ui_radius\r\n}",
+                  "Interpreter": 1
+                },
+                "Mode": 2,
+                "TargetPropertyName": "RadiusTopLeft"
+              },
+              "RadiusTopRight": {
+                "Formula": {
+                  "Expression": "const json_settings = readtextfile('./JavascriptExtensions/TWF_DASH_CONFIG.json')\r\nconst config = JSON.parse(json_settings);\r\n\r\nif (!config){\r\n\treturn \"6\"\r\n} else {\r\n\treturn config.ui_radius\r\n}",
+                  "Interpreter": 1
+                },
+                "Mode": 2,
+                "TargetPropertyName": "RadiusTopRight"
+              }
+            },
+            "BorderBottom": 2,
+            "BorderColor": "#FF233E49",
+            "BorderLeft": 2,
+            "BorderRight": 2,
+            "BorderTop": 2,
+            "RadiusBottomLeft": 6,
+            "RadiusBottomRight": 6,
+            "RadiusTopLeft": 6,
+            "RadiusTopRight": 6
+          },
+          "Height": 324.0,
+          "IsRectangleItem": true,
+          "Left": 10.0,
+          "Name": "RectangleItem",
+          "Top": 68.0,
+          "Visible": true,
+          "Width": 550.0
+        },
+        {
+          "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+          "BackgroundColor": "#26000000",
+          "BorderStyle": {
+            "Bindings": {
+              "BorderColor": {
+                "Formula": {
+                  "Expression": "const json_settings = readtextfile('./JavascriptExtensions/TWF_DASH_CONFIG.json')\r\nconst config = JSON.parse(json_settings);\r\n\r\nif (!config){\r\n\treturn \"#FF233E49\"\r\n} else {\r\n\t\tif(config.ui_color == \"1\"){\r\n\t\t\treturn \"#FF233E49\"\r\n\t\t}\r\n        if(config.ui_color == \"2\"){\r\n\t\t\treturn \"#FF3C3C3C\"\r\n\t\t} \r\n        if(config.ui_color == \"3\"){\r\n\t\t\treturn config.ui_custom_color\r\n\t\t}else {\r\n\t\t\treturn 0\r\n\t\t}\r\n}",
+                  "Interpreter": 1
+                },
+                "Mode": 2,
+                "TargetPropertyName": "BorderColor"
+              },
+              "RadiusBottomLeft": {
+                "Formula": {
+                  "Expression": "const json_settings = readtextfile('./JavascriptExtensions/TWF_DASH_CONFIG.json')\r\nconst config = JSON.parse(json_settings);\r\n\r\nif (!config){\r\n\treturn \"6\"\r\n} else {\r\n\treturn config.ui_radius\r\n}",
+                  "Interpreter": 1
+                },
+                "Mode": 2,
+                "TargetPropertyName": "RadiusBottomLeft"
+              },
+              "RadiusBottomRight": {
+                "Formula": {
+                  "Expression": "const json_settings = readtextfile('./JavascriptExtensions/TWF_DASH_CONFIG.json')\r\nconst config = JSON.parse(json_settings);\r\n\r\nif (!config){\r\n\treturn \"6\"\r\n} else {\r\n\treturn config.ui_radius\r\n}",
+                  "Interpreter": 1
+                },
+                "Mode": 2,
+                "TargetPropertyName": "RadiusBottomRight"
+              },
+              "RadiusTopLeft": {
+                "Formula": {
+                  "Expression": "const json_settings = readtextfile('./JavascriptExtensions/TWF_DASH_CONFIG.json')\r\nconst config = JSON.parse(json_settings);\r\n\r\nif (!config){\r\n\treturn \"6\"\r\n} else {\r\n\treturn config.ui_radius\r\n}",
+                  "Interpreter": 1
+                },
+                "Mode": 2,
+                "TargetPropertyName": "RadiusTopLeft"
+              },
+              "RadiusTopRight": {
+                "Formula": {
+                  "Expression": "const json_settings = readtextfile('./JavascriptExtensions/TWF_DASH_CONFIG.json')\r\nconst config = JSON.parse(json_settings);\r\n\r\nif (!config){\r\n\treturn \"6\"\r\n} else {\r\n\treturn config.ui_radius\r\n}",
+                  "Interpreter": 1
+                },
+                "Mode": 2,
+                "TargetPropertyName": "RadiusTopRight"
+              }
+            },
+            "BorderBottom": 2,
+            "BorderColor": "#FF233E49",
+            "BorderLeft": 2,
+            "BorderRight": 2,
+            "BorderTop": 2,
+            "RadiusBottomLeft": 6,
+            "RadiusBottomRight": 6,
+            "RadiusTopLeft": 6,
+            "RadiusTopRight": 6
+          },
+          "Height": 324.0,
+          "IsRectangleItem": true,
+          "Left": 570.0,
+          "Name": "RectangleItem3",
+          "Top": 68.0,
+          "Visible": true,
+          "Width": 270.0
+        },
+        {
+          "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.WidgetItem, SimHub.Plugins",
+          "AutoSize": true,
+          "BackgroundColor": "#00FFFFFF",
+          "FileName": "MFD_1.djson",
+          "Height": 326.0,
+          "InitialScreenIndex": 3,
+          "Left": 571.0,
+          "Name": "MFD_",
+          "NextScreenCommand": 2,
+          "PreviousScreenCommand": 0,
+          "Top": 71.0,
+          "Visible": true,
+          "Width": 268.0
+        },
+        {
+          "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.WidgetItem, SimHub.Plugins",
+          "AutoSize": true,
+          "AutoSizeScale": 1.07,
+          "BackgroundColor": "#00FFFFFF",
+          "FileName": "MFD_STANDINGS_FULL.djson",
+          "Height": 321.0,
+          "InitialScreenIndex": 0,
+          "Left": 20.0,
+          "Name": "STANDINGS_FULL",
+          "NextScreenCommand": 1,
+          "PreviousScreenCommand": 0,
+          "RenderingSkip": 30,
+          "Top": 77.0,
+          "Visible": true,
+          "Width": 529.65
+        },
+        {
+          "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.Layer, SimHub.Plugins",
+          "BackgroundColor": "#00FFFFFF",
+          "Childrens": [
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.WidgetItem, SimHub.Plugins",
+              "AutoSize": true,
+              "BackgroundColor": "#00FFFFFF",
+              "FileName": "CONTEXTUAL_ALERTS.djson",
+              "Height": 370.0,
+              "InitialScreenIndex": 0,
+              "Left": -8.0,
+              "Name": "CONTEXTUAL_ALERTS",
+              "NextScreenCommand": 0,
+              "PreviousScreenCommand": 0,
+              "Top": 73.0,
+              "Visible": false,
+              "Width": 870.0
+            },
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.Layer, SimHub.Plugins",
+              "BackgroundColor": "#00FFFFFF",
+              "Childrens": [
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.Layer, SimHub.Plugins",
+                  "BackgroundColor": "#00FFFFFF",
+                  "Childrens": [
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.WidgetItem, SimHub.Plugins",
+                      "AutoSize": true,
+                      "AutoSizeScale": 1.1,
+                      "BackgroundColor": "#00FFFFFF",
+                      "FileName": "CAR_SETTINGS.djson",
+                      "Height": 82.5,
+                      "InitialScreenIndex": 0,
+                      "Left": 181.89999999999998,
+                      "Name": "CAR_SETTINGS",
+                      "NextScreenCommand": 0,
+                      "PreviousScreenCommand": 0,
+                      "Top": 403.0,
+                      "Visible": true,
+                      "Width": 486.20000000000005
+                    },
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.WidgetItem, SimHub.Plugins",
+                      "AutoSize": true,
+                      "BackgroundColor": "#00FFFFFF",
+                      "FileName": "FUEL_V2.djson",
+                      "Height": 55.0,
+                      "InitialScreenIndex": 0,
+                      "Left": 643.0,
+                      "Name": "FUEL_V2",
+                      "NextScreenCommand": 5,
+                      "PreviousScreenCommand": 0,
+                      "Top": 415.0,
+                      "Visible": true,
+                      "Width": 196.0
+                    },
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.WidgetItem, SimHub.Plugins",
+                      "AutoSize": true,
+                      "AutoSizeScale": 1.1,
+                      "BackgroundColor": "#00FFFFFF",
+                      "FileName": "ENVIRONMENTTEMPS.djson",
+                      "Height": 66.0,
+                      "InitialScreenIndex": 0,
+                      "Left": 10.0,
+                      "Name": "ENVIRONMENTTEMPS",
+                      "NextScreenCommand": 0,
+                      "PreviousScreenCommand": 0,
+                      "Top": 406.0,
+                      "Visible": true,
+                      "Width": 181.50000000000003
+                    },
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.WidgetItem, SimHub.Plugins",
+                      "AutoSize": true,
+                      "BackgroundColor": "#00FFFFFF",
+                      "FileName": "IRATINGS.djson",
+                      "Height": 20.0,
+                      "InitialScreenIndex": 0,
+                      "Left": 13.0,
+                      "Name": "IRATINGS",
+                      "NextScreenCommand": 0,
+                      "PreviousScreenCommand": 0,
+                      "Top": 415.0,
+                      "Visible": true,
+                      "Width": 176.0
+                    }
+                  ],
+                  "Group": true,
+                  "Height": 82.5,
+                  "Left": 10.0,
+                  "Name": "BOTTTOM",
+                  "Top": 403.0,
+                  "Visible": true,
+                  "Width": 829.0
+                },
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.Layer, SimHub.Plugins",
+                  "BackgroundColor": "#00FFFFFF",
+                  "Childrens": [
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+                      "BackgroundColor": "#00FFFFFF",
+                      "Bindings": {
+                        "Text": {
+                          "Formula": {
+                            "Expression": "if([OpponentsCount]=1, '',\r\nif([Position]=0, '',\r\nif([DataCorePlugin.CurrentGame] == 'IRacing', 'P' + [GameRawData.Telemetry.PlayerCarClassPosition],\r\n'P' + [Position] + '/' + [OpponentsCount])))"
+                          },
+                          "Mode": 2,
+                          "TargetPropertyName": "Text"
+                        }
+                      },
+                      "Font": "Rajdhani",
+                      "FontSize": 40.0,
+                      "FontWeight": "Bold",
+                      "Height": 36.0,
+                      "HorizontalAlignment": 0,
+                      "IsTextItem": true,
+                      "Left": 12.0,
+                      "Name": "POSITION_VALUE",
+                      "Text": "P26/32",
+                      "TextColor": "#FFFFFFFF",
+                      "Top": 30.0,
+                      "VerticalAlignment": 1,
+                      "Visible": true,
+                      "Width": 131.0
+                    },
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+                      "BackgroundColor": "#00FFFFFF",
+                      "Bindings": {
+                        "Text": {
+                          "Formula": {
+                            "Expression": "ucase([DataCorePlugin.GameData.SessionTypeName])"
+                          },
+                          "Mode": 2,
+                          "TargetPropertyName": "Text"
+                        }
+                      },
+                      "Font": "Rajdhani",
+                      "FontSize": 22.0,
+                      "FontWeight": "SemiBold",
+                      "Height": 20.0,
+                      "HorizontalAlignment": 0,
+                      "IsTextItem": true,
+                      "Left": 13.0,
+                      "Name": "SESSION_TYPE",
+                      "Text": "LONE QUALIFY",
+                      "TextColor": "#FF999999",
+                      "Top": 10.0,
+                      "VerticalAlignment": 1,
+                      "Visible": true,
+                      "Width": 168.0
+                    }
+                  ],
+                  "Group": true,
+                  "Height": 56.0,
+                  "Left": 12.0,
+                  "Name": "POSITION",
+                  "Top": 10.0,
+                  "Visible": true,
+                  "Width": 169.0
+                },
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.Layer, SimHub.Plugins",
+                  "BackgroundColor": "#00FFFFFF",
+                  "Childrens": [
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+                      "BackgroundColor": "#00FFFFFF",
+                      "Bindings": {
+                        "Text": {
+                          "Formula": {
+                            "Expression": "'L'+[CurrentLap]"
+                          },
+                          "Mode": 2,
+                          "TargetPropertyName": "Text"
+                        }
+                      },
+                      "Font": "Rajdhani",
+                      "FontSize": 40.0,
+                      "FontWeight": "Bold",
+                      "Height": 36.0,
+                      "HorizontalAlignment": 2,
+                      "IsTextItem": true,
+                      "Left": 708.0,
+                      "Name": "LAP_VALUE2",
+                      "Text": "L6",
+                      "TextColor": "#FFFFFFFF",
+                      "Top": 30.0,
+                      "VerticalAlignment": 1,
+                      "Visible": true,
+                      "Width": 130.0
+                    },
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+                      "BackgroundColor": "#00FFFFFF",
+                      "Bindings": {
+                        "Text": {
+                          "FormatString": "hh\\:mm\\:ss",
+                          "Formula": {
+                            "Expression": "if(isnull([SessionTimeLeft]), 'N/A',\r\nif([DataCorePlugin.CurrentGame] == 'IRacing' and [SessionTypeName] == 'TESTING', '-',\r\nif(timespantoseconds([SessionTimeLeft])<=0, '-', [SessionTimeLeft])))"
+                          },
+                          "Mode": 2,
+                          "TargetPropertyName": "Text"
+                        },
+                        "TextColor": {
+                          "EnableMiddleColor": true,
+                          "EndColor": "#FF808080",
+                          "EndColorValue": 601.0,
+                          "Formula": {
+                            "Expression": "if(isnull([SessionTimeLeft]), 0,\r\nif(timespantoseconds([SessionTimeLeft])<=0, 601, timespantoseconds([SessionTimeLeft])))"
+                          },
+                          "MiddleColor": "#FFFFFF00",
+                          "MiddleColorValue": 600.0,
+                          "Mode": 4,
+                          "StartColor": "#FFFF0000",
+                          "StartColorValue": 0.0,
+                          "TargetPropertyName": "TextColor"
+                        }
+                      },
+                      "Font": "Rajdhani",
+                      "FontSize": 22.0,
+                      "FontWeight": "SemiBold",
+                      "Height": 20.0,
+                      "HorizontalAlignment": 2,
+                      "IsTextItem": true,
+                      "Left": 668.0,
+                      "Name": "REMAINING",
+                      "Text": "11:00:24",
+                      "TextColor": "#FF808080",
+                      "Top": 10.0,
+                      "VerticalAlignment": 1,
+                      "Visible": true,
+                      "Width": 170.0
+                    }
+                  ],
+                  "Group": true,
+                  "Height": 56.0,
+                  "Left": 668.0,
+                  "Name": "LAP",
+                  "Top": 10.0,
+                  "Visible": true,
+                  "Width": 170.0
+                },
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.WidgetItem, SimHub.Plugins",
+                  "AutoSize": true,
+                  "AutoSizeScale": 1.03,
+                  "BackgroundColor": "#00FFFFFF",
+                  "FileName": "DASH_LIGHTS.djson",
+                  "Height": 59.74,
+                  "InitialScreenIndex": 0,
+                  "Left": 172.65,
+                  "Name": "DASH_LIGHTS",
+                  "NextScreenCommand": 0,
+                  "PreviousScreenCommand": 0,
+                  "Top": 0.0,
+                  "Visible": true,
+                  "Width": 504.7
+                },
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.Layer, SimHub.Plugins",
+                  "BackgroundColor": "#00FFFFFF",
+                  "Childrens": [
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.WidgetItem, SimHub.Plugins",
+                      "AutoSize": true,
+                      "BackgroundColor": "#00FFFFFF",
+                      "Bindings": {
+                        "Visible": {
+                          "Formula": {
+                            "Expression": "const json_settings = readtextfile('./JavascriptExtensions/TWF_DASH_CONFIG.json')\r\nconst config = JSON.parse(json_settings);\r\n\r\nif (!config){\r\n\treturn 0\r\n} else {\r\n\t\tif(config.show_lapreview_secondaryscreen == 1){\r\n\t\t\treturn 1\r\n\t\t\t\r\n\t\t} else {\r\n\t\t\treturn 0\r\n\t\t}\r\n}\r\n\r\n",
+                            "Interpreter": 1
+                          },
+                          "Mode": 2,
+                          "TargetPropertyName": "Visible"
+                        }
+                      },
+                      "FileName": "lap_review.djson",
+                      "Height": 294.0,
+                      "InitialScreenIndex": 0,
+                      "Left": -10.0,
+                      "Name": "LAP_REVIEW",
+                      "NextScreenCommand": 0,
+                      "PreviousScreenCommand": 0,
+                      "Top": 93.0,
+                      "Visible": false,
+                      "Width": 870.0
+                    },
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.WidgetItem, SimHub.Plugins",
+                      "AutoSize": true,
+                      "AutoSizeScale": 1.119,
+                      "BackgroundColor": "#00FFFFFF",
+                      "Bindings": {
+                        "Visible": {
+                          "Formula": {
+                            "Expression": "const json_settings = readtextfile('./JavascriptExtensions/TWF_DASH_CONFIG.json')\r\nconst config = JSON.parse(json_settings);\r\n\r\nif (!config){\r\n\treturn 1\r\n} else {\r\n\t\tif(config.show_alerts_secondaryscreen == 1){\r\n\t\t\treturn 1\r\n\t\t\t\r\n\t\t} else {\r\n\t\t\treturn 0\r\n\t\t}\r\n}\r\n\r\n",
+                            "Interpreter": 1
+                          },
+                          "Mode": 2,
+                          "TargetPropertyName": "Visible"
+                        }
+                      },
+                      "FileName": "POPUP_ALERTS.djson",
+                      "Height": 294.297,
+                      "InitialScreenIndex": 0,
+                      "Left": -11.410000000000025,
+                      "Name": "POPUP ALERTS",
+                      "NextScreenCommand": 0,
+                      "PreviousScreenCommand": 0,
+                      "Top": 90.38116666666664,
+                      "Visible": true,
+                      "Width": 872.82
+                    },
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.WidgetItem, SimHub.Plugins",
+                      "AutoSize": true,
+                      "AutoSizeScale": 1.119,
+                      "BackgroundColor": "#00FFFFFF",
+                      "Bindings": {
+                        "Visible": {
+                          "Formula": {
+                            "Expression": "const json_settings = readtextfile('./JavascriptExtensions/TWF_DASH_CONFIG.json')\r\nconst config = JSON.parse(json_settings);\r\n\r\nif (!config){\r\n\treturn 0\r\n} else {\r\n\t\tif(config.show_flags_secondaryscreen == 2){\r\n\t\t\treturn 1\r\n\t\t\t\r\n\t\t} else {\r\n\t\t\treturn 0\r\n\t\t}\r\n}\r\n\r\n",
+                            "Interpreter": 1
+                          },
+                          "Mode": 2,
+                          "TargetPropertyName": "Visible"
+                        }
+                      },
+                      "FileName": "LARGE_FLAGS.djson",
+                      "Height": 294.297,
+                      "InitialScreenIndex": 0,
+                      "Left": -11.410000000000025,
+                      "Name": "LARGE_FLAGS",
+                      "NextScreenCommand": 0,
+                      "PreviousScreenCommand": 0,
+                      "Top": 90.38116666666664,
+                      "Visible": false,
+                      "Width": 872.82
+                    },
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.WidgetItem, SimHub.Plugins",
+                      "AutoSize": true,
+                      "AutoSizeScale": 1.05,
+                      "BackgroundColor": "#00FFFFFF",
+                      "Bindings": {
+                        "Visible": {
+                          "Formula": {
+                            "Expression": "const json_settings = readtextfile('./JavascriptExtensions/TWF_DASH_CONFIG.json')\r\nconst config = JSON.parse(json_settings);\r\n\r\nif (!config){\r\n\treturn 1\r\n} else {\r\n\t\tif(config.show_flags_secondaryscreen == 1){\r\n\t\t\treturn 1\r\n\t\t\t\r\n\t\t} else {\r\n\t\t\treturn 0\r\n\t\t}\r\n}\r\n\r\n",
+                            "Interpreter": 1
+                          },
+                          "Mode": 2,
+                          "TargetPropertyName": "Visible"
+                        }
+                      },
+                      "FileName": "SMALL_FLAGS.djson",
+                      "Height": 68.25,
+                      "InitialScreenIndex": 0,
+                      "Left": 186.125,
+                      "Name": "SMALL_FLAGS",
+                      "NextScreenCommand": 0,
+                      "PreviousScreenCommand": 0,
+                      "Top": -10.0,
+                      "Visible": true,
+                      "Width": 477.75
+                    }
+                  ],
+                  "Group": true,
+                  "Height": 397.0,
+                  "Left": -11.410000000000025,
+                  "Name": "ALERTS",
+                  "Top": -10.0,
+                  "Visible": true,
+                  "Width": 872.8200000000002
+                }
+              ],
+              "Group": true,
+              "Height": 495.5,
+              "Left": -11.410000000000025,
+              "Name": "TOP",
+              "Top": -10.0,
+              "Visible": true,
+              "Width": 872.8200000000002
+            }
+          ],
+          "Group": true,
+          "Height": 495.5,
+          "Left": -11.410000000000025,
+          "Name": "DASH",
+          "Top": -10.0,
+          "Visible": true,
+          "Width": 873.4100000000001
+        }
+      ],
+      "Name": "Relative / Vehicle",
+      "OverlayMaxDuration": 0,
+      "OverlayMinDuration": 0,
+      "OverlayTriggerExpression": {
+        "Expression": ""
+      },
+      "PitScreen": false,
+      "ScreenEnabledExpression": {
+        "Expression": ""
+      },
+      "ScreenId": "00ff2803-fdd4-478f-99ef-32913c846719"
+    },
+    {
+      "AllowOverlays": true,
+      "BackgroundColor": "#FF000000",
+      "IdleScreen": false,
+      "InGameScreen": true,
+      "IsBackgroundLayer": false,
+      "IsForegroundLayer": false,
+      "IsOverlayLayer": false,
+      "Items": [
+        {
+          "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.ImageItem, SimHub.Plugins",
+          "AutoSize": false,
+          "BackgroundColor": "#00FFFFFF",
+          "Bindings": {
+            "Image": {
+              "Formula": {
+                "Expression": "const json_settings = readtextfile('./JavascriptExtensions/TWF_DASH_CONFIG.json')\r\nconst config = JSON.parse(json_settings);\r\n\r\nif (!config){\r\n\treturn \"bgmain\"\r\n} else {\r\n\t\tif(config.ui_color == \"1\"){\r\n\t\t\treturn \"bgmain\"\r\n\t\t}\r\n        if(config.ui_color == \"2\"){\r\n\t\t\treturn \"bgmainblack\"\r\n\t\t} \r\n        if(config.ui_color == \"3\"){\r\n\t\t\treturn \"bgmaincustom\"\r\n\t\t}else {\r\n\t\t\treturn \"bgmain\"\r\n\t\t}\r\n}",
+                "Interpreter": 1
+              },
+              "Mode": 2,
+              "TargetPropertyName": "Image"
+            }
+          },
+          "Height": 480.0,
+          "Image": "bgmain",
+          "Left": 0.0,
+          "Name": "bg3",
+          "Opacity": 70.0,
+          "Top": 0.0,
+          "Visible": true,
+          "Width": 850.0
+        },
+        {
+          "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.Layer, SimHub.Plugins",
+          "BackgroundColor": "#00FFFFFF",
+          "Childrens": [
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.Layer, SimHub.Plugins",
+              "BackgroundColor": "#00FFFFFF",
+              "Childrens": [
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.Layer, SimHub.Plugins",
+                  "BackgroundColor": "#00FFFFFF",
+                  "Childrens": [
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+                      "BackgroundColor": "#00FFFFFF",
+                      "Bindings": {
+                        "Text": {
+                          "Formula": {
+                            "Expression": "if([OpponentsCount]=1, '',\r\nif([Position]=0, '',\r\nif([DataCorePlugin.CurrentGame] == 'IRacing', 'P' + [GameRawData.Telemetry.PlayerCarClassPosition],\r\n'P' + [Position] + '/' + [OpponentsCount])))"
+                          },
+                          "Mode": 2,
+                          "TargetPropertyName": "Text"
+                        }
+                      },
+                      "Font": "Rajdhani",
+                      "FontSize": 40.0,
+                      "FontWeight": "Bold",
+                      "Height": 36.0,
+                      "HorizontalAlignment": 0,
+                      "IsTextItem": true,
+                      "Left": 12.0,
+                      "Name": "POSITION_VALUE",
+                      "Text": "P26/32",
+                      "TextColor": "#FFFFFFFF",
+                      "Top": 30.0,
+                      "VerticalAlignment": 1,
+                      "Visible": true,
+                      "Width": 131.0
+                    },
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+                      "BackgroundColor": "#00FFFFFF",
+                      "Bindings": {
+                        "Text": {
+                          "Formula": {
+                            "Expression": "ucase([DataCorePlugin.GameData.SessionTypeName])"
+                          },
+                          "Mode": 2,
+                          "TargetPropertyName": "Text"
+                        }
+                      },
+                      "Font": "Rajdhani",
+                      "FontSize": 22.0,
+                      "FontWeight": "SemiBold",
+                      "Height": 20.0,
+                      "HorizontalAlignment": 0,
+                      "IsTextItem": true,
+                      "Left": 13.0,
+                      "Name": "SESSION_TYPE",
+                      "Text": "LONE QUALIFY",
+                      "TextColor": "#FF999999",
+                      "Top": 10.0,
+                      "VerticalAlignment": 1,
+                      "Visible": true,
+                      "Width": 168.0
+                    }
+                  ],
+                  "Group": true,
+                  "Height": 56.0,
+                  "Left": 12.0,
+                  "Name": "POSITION",
+                  "Top": 10.0,
+                  "Visible": true,
+                  "Width": 169.0
+                },
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.Layer, SimHub.Plugins",
+                  "BackgroundColor": "#00FFFFFF",
+                  "Childrens": [
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+                      "BackgroundColor": "#00FFFFFF",
+                      "Bindings": {
+                        "Text": {
+                          "Formula": {
+                            "Expression": "'L'+[CurrentLap]"
+                          },
+                          "Mode": 2,
+                          "TargetPropertyName": "Text"
+                        }
+                      },
+                      "Font": "Rajdhani",
+                      "FontSize": 40.0,
+                      "FontWeight": "Bold",
+                      "Height": 36.0,
+                      "HorizontalAlignment": 2,
+                      "IsTextItem": true,
+                      "Left": 708.0,
+                      "Name": "LAP_VALUE2",
+                      "Text": "L6",
+                      "TextColor": "#FFFFFFFF",
+                      "Top": 30.0,
+                      "VerticalAlignment": 1,
+                      "Visible": true,
+                      "Width": 130.0
+                    },
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+                      "BackgroundColor": "#00FFFFFF",
+                      "Bindings": {
+                        "Text": {
+                          "FormatString": "hh\\:mm\\:ss",
+                          "Formula": {
+                            "Expression": "if(isnull([SessionTimeLeft]), 'N/A',\r\nif([DataCorePlugin.CurrentGame] == 'IRacing' and [SessionTypeName] == 'TESTING', '-',\r\nif(timespantoseconds([SessionTimeLeft])<=0, '-', [SessionTimeLeft])))"
+                          },
+                          "Mode": 2,
+                          "TargetPropertyName": "Text"
+                        },
+                        "TextColor": {
+                          "EnableMiddleColor": true,
+                          "EndColor": "#FF808080",
+                          "EndColorValue": 601.0,
+                          "Formula": {
+                            "Expression": "if(isnull([SessionTimeLeft]), 0,\r\nif(timespantoseconds([SessionTimeLeft])<=0, 601, timespantoseconds([SessionTimeLeft])))"
+                          },
+                          "MiddleColor": "#FFFFFF00",
+                          "MiddleColorValue": 600.0,
+                          "Mode": 4,
+                          "StartColor": "#FFFF0000",
+                          "StartColorValue": 0.0,
+                          "TargetPropertyName": "TextColor"
+                        }
+                      },
+                      "Font": "Rajdhani",
+                      "FontSize": 22.0,
+                      "FontWeight": "SemiBold",
+                      "Height": 20.0,
+                      "HorizontalAlignment": 2,
+                      "IsTextItem": true,
+                      "Left": 668.0,
+                      "Name": "REMAINING",
+                      "Text": "11:00:24",
+                      "TextColor": "#FF808080",
+                      "Top": 10.0,
+                      "VerticalAlignment": 1,
+                      "Visible": true,
+                      "Width": 170.0
+                    }
+                  ],
+                  "Group": true,
+                  "Height": 56.0,
+                  "Left": 668.0,
+                  "Name": "LAP",
+                  "Top": 10.0,
+                  "Visible": true,
+                  "Width": 170.0
+                },
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.WidgetItem, SimHub.Plugins",
+                  "AutoSize": true,
+                  "AutoSizeScale": 1.03,
+                  "BackgroundColor": "#00FFFFFF",
+                  "FileName": "DASH_LIGHTS.djson",
+                  "Height": 59.74,
+                  "InitialScreenIndex": 0,
+                  "Left": 172.65,
+                  "Name": "DASH_LIGHTS",
+                  "NextScreenCommand": 0,
+                  "PreviousScreenCommand": 0,
+                  "Top": 0.0,
+                  "Visible": true,
+                  "Width": 504.7
+                },
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.Layer, SimHub.Plugins",
+                  "BackgroundColor": "#00FFFFFF",
+                  "Childrens": [
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.WidgetItem, SimHub.Plugins",
+                      "AutoSize": true,
+                      "BackgroundColor": "#00FFFFFF",
+                      "Bindings": {
+                        "Visible": {
+                          "Formula": {
+                            "Expression": "const json_settings = readtextfile('./JavascriptExtensions/TWF_DASH_CONFIG.json')\r\nconst config = JSON.parse(json_settings);\r\n\r\nif (!config){\r\n\treturn 0\r\n} else {\r\n\t\tif(config.show_lapreview_secondaryscreen == 1){\r\n\t\t\treturn 1\r\n\t\t\t\r\n\t\t} else {\r\n\t\t\treturn 0\r\n\t\t}\r\n}\r\n\r\n",
+                            "Interpreter": 1
+                          },
+                          "Mode": 2,
+                          "TargetPropertyName": "Visible"
+                        }
+                      },
+                      "FileName": "lap_review.djson",
+                      "Height": 294.0,
+                      "InitialScreenIndex": 0,
+                      "Left": -10.0,
+                      "Name": "LAP_REVIEW",
+                      "NextScreenCommand": 0,
+                      "PreviousScreenCommand": 0,
+                      "Top": 93.0,
+                      "Visible": false,
+                      "Width": 870.0
+                    },
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.WidgetItem, SimHub.Plugins",
+                      "AutoSize": true,
+                      "AutoSizeScale": 1.119,
+                      "BackgroundColor": "#00FFFFFF",
+                      "Bindings": {
+                        "Visible": {
+                          "Formula": {
+                            "Expression": "const json_settings = readtextfile('./JavascriptExtensions/TWF_DASH_CONFIG.json')\r\nconst config = JSON.parse(json_settings);\r\n\r\nif (!config){\r\n\treturn 1\r\n} else {\r\n\t\tif(config.show_alerts_secondaryscreen == 1){\r\n\t\t\treturn 1\r\n\t\t\t\r\n\t\t} else {\r\n\t\t\treturn 0\r\n\t\t}\r\n}\r\n\r\n",
+                            "Interpreter": 1
+                          },
+                          "Mode": 2,
+                          "TargetPropertyName": "Visible"
+                        }
+                      },
+                      "FileName": "POPUP_ALERTS.djson",
+                      "Height": 294.297,
+                      "InitialScreenIndex": 0,
+                      "Left": -11.410000000000025,
+                      "Name": "POPUP ALERTS",
+                      "NextScreenCommand": 0,
+                      "PreviousScreenCommand": 0,
+                      "Top": 90.38116666666664,
+                      "Visible": true,
+                      "Width": 872.82
+                    },
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.WidgetItem, SimHub.Plugins",
+                      "AutoSize": true,
+                      "AutoSizeScale": 1.119,
+                      "BackgroundColor": "#00FFFFFF",
+                      "Bindings": {
+                        "Visible": {
+                          "Formula": {
+                            "Expression": "const json_settings = readtextfile('./JavascriptExtensions/TWF_DASH_CONFIG.json')\r\nconst config = JSON.parse(json_settings);\r\n\r\nif (!config){\r\n\treturn 0\r\n} else {\r\n\t\tif(config.show_flags_secondaryscreen == 2){\r\n\t\t\treturn 1\r\n\t\t\t\r\n\t\t} else {\r\n\t\t\treturn 0\r\n\t\t}\r\n}\r\n\r\n",
+                            "Interpreter": 1
+                          },
+                          "Mode": 2,
+                          "TargetPropertyName": "Visible"
+                        }
+                      },
+                      "FileName": "LARGE_FLAGS.djson",
+                      "Height": 294.297,
+                      "InitialScreenIndex": 0,
+                      "Left": -11.410000000000025,
+                      "Name": "LARGE_FLAGS",
+                      "NextScreenCommand": 0,
+                      "PreviousScreenCommand": 0,
+                      "Top": 90.38116666666664,
+                      "Visible": false,
+                      "Width": 872.82
+                    },
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.WidgetItem, SimHub.Plugins",
+                      "AutoSize": true,
+                      "AutoSizeScale": 1.05,
+                      "BackgroundColor": "#00FFFFFF",
+                      "Bindings": {
+                        "Visible": {
+                          "Formula": {
+                            "Expression": "const json_settings = readtextfile('./JavascriptExtensions/TWF_DASH_CONFIG.json')\r\nconst config = JSON.parse(json_settings);\r\n\r\nif (!config){\r\n\treturn 1\r\n} else {\r\n\t\tif(config.show_flags_secondaryscreen == 1){\r\n\t\t\treturn 1\r\n\t\t\t\r\n\t\t} else {\r\n\t\t\treturn 0\r\n\t\t}\r\n}\r\n\r\n",
+                            "Interpreter": 1
+                          },
+                          "Mode": 2,
+                          "TargetPropertyName": "Visible"
+                        }
+                      },
+                      "FileName": "SMALL_FLAGS.djson",
+                      "Height": 68.25,
+                      "InitialScreenIndex": 0,
+                      "Left": 186.125,
+                      "Name": "SMALL_FLAGS",
+                      "NextScreenCommand": 0,
+                      "PreviousScreenCommand": 0,
+                      "Top": -10.0,
+                      "Visible": true,
+                      "Width": 477.75
+                    }
+                  ],
+                  "Group": true,
+                  "Height": 397.0,
+                  "Left": -11.410000000000025,
+                  "Name": "ALERTS",
+                  "Top": -10.0,
+                  "Visible": true,
+                  "Width": 872.8200000000002
+                }
+              ],
+              "Group": true,
+              "Height": 397.0,
+              "Left": -11.410000000000025,
+              "Name": "TOP",
+              "Top": -10.0,
+              "Visible": true,
+              "Width": 872.8200000000002
+            }
+          ],
+          "Group": true,
+          "Height": 397.0,
+          "Left": -11.410000000000025,
+          "Name": "DASH",
+          "Top": -10.0,
+          "Visible": true,
+          "Width": 872.8200000000002
+        },
+        {
+          "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+          "BackgroundColor": "#26000000",
+          "BorderStyle": {
+            "Bindings": {
+              "BorderColor": {
+                "Formula": {
+                  "Expression": "const json_settings = readtextfile('./JavascriptExtensions/TWF_DASH_CONFIG.json')\r\nconst config = JSON.parse(json_settings);\r\n\r\nif (!config){\r\n\treturn \"#FF233E49\"\r\n} else {\r\n\t\tif(config.ui_color == \"1\"){\r\n\t\t\treturn \"#FF233E49\"\r\n\t\t}\r\n        if(config.ui_color == \"2\"){\r\n\t\t\treturn \"#FF3C3C3C\"\r\n\t\t} \r\n        if(config.ui_color == \"3\"){\r\n\t\t\treturn config.ui_custom_color\r\n\t\t}else {\r\n\t\t\treturn 0\r\n\t\t}\r\n}",
+                  "Interpreter": 1
+                },
+                "Mode": 2,
+                "TargetPropertyName": "BorderColor"
+              },
+              "RadiusBottomLeft": {
+                "Formula": {
+                  "Expression": "const json_settings = readtextfile('./JavascriptExtensions/TWF_DASH_CONFIG.json')\r\nconst config = JSON.parse(json_settings);\r\n\r\nif (!config){\r\n\treturn \"6\"\r\n} else {\r\n\treturn config.ui_radius\r\n}",
+                  "Interpreter": 1
+                },
+                "Mode": 2,
+                "TargetPropertyName": "RadiusBottomLeft"
+              },
+              "RadiusBottomRight": {
+                "Formula": {
+                  "Expression": "const json_settings = readtextfile('./JavascriptExtensions/TWF_DASH_CONFIG.json')\r\nconst config = JSON.parse(json_settings);\r\n\r\nif (!config){\r\n\treturn \"6\"\r\n} else {\r\n\treturn config.ui_radius\r\n}",
+                  "Interpreter": 1
+                },
+                "Mode": 2,
+                "TargetPropertyName": "RadiusBottomRight"
+              },
+              "RadiusTopLeft": {
+                "Formula": {
+                  "Expression": "const json_settings = readtextfile('./JavascriptExtensions/TWF_DASH_CONFIG.json')\r\nconst config = JSON.parse(json_settings);\r\n\r\nif (!config){\r\n\treturn \"6\"\r\n} else {\r\n\treturn config.ui_radius\r\n}",
+                  "Interpreter": 1
+                },
+                "Mode": 2,
+                "TargetPropertyName": "RadiusTopLeft"
+              },
+              "RadiusTopRight": {
+                "Formula": {
+                  "Expression": "const json_settings = readtextfile('./JavascriptExtensions/TWF_DASH_CONFIG.json')\r\nconst config = JSON.parse(json_settings);\r\n\r\nif (!config){\r\n\treturn \"6\"\r\n} else {\r\n\treturn config.ui_radius\r\n}",
+                  "Interpreter": 1
+                },
+                "Mode": 2,
+                "TargetPropertyName": "RadiusTopRight"
+              }
+            },
+            "BorderBottom": 2,
+            "BorderColor": "#FF233E49",
+            "BorderLeft": 2,
+            "BorderRight": 2,
+            "BorderTop": 2,
+            "RadiusBottomLeft": 6,
+            "RadiusBottomRight": 6,
+            "RadiusTopLeft": 6,
+            "RadiusTopRight": 6
+          },
+          "Height": 390.0,
+          "IsRectangleItem": true,
+          "Left": 10.0,
+          "Name": "RectangleItem",
+          "Top": 80.0,
+          "Visible": true,
+          "Width": 830.0
+        },
+        {
+          "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.WidgetItem, SimHub.Plugins",
+          "AutoSize": true,
+          "AutoSizeScale": 1.28,
+          "BackgroundColor": "#00FFFFFF",
+          "FileName": "MFD_STANDINGS_FULL_WIDE.djson",
+          "Height": 384.0,
+          "InitialScreenIndex": 0,
+          "Left": 21.0,
+          "Name": "STANDINGS_FULL2",
+          "NextScreenCommand": 1,
+          "PreviousScreenCommand": 0,
+          "RenderingSkip": 30,
+          "Top": 90.0,
+          "Visible": true,
+          "Width": 819.2
+        }
+      ],
+      "Name": "Standings",
+      "OverlayMaxDuration": 0,
+      "OverlayMinDuration": 0,
+      "OverlayTriggerExpression": {
+        "Expression": ""
+      },
+      "PitScreen": false,
+      "ScreenEnabledExpression": {
+        "Expression": ""
+      },
+      "ScreenId": "ce14eaea-b408-4bb1-beb0-f159d32a22d5"
+    },
+    {
+      "AllowOverlays": true,
+      "BackgroundColor": "#FF000000",
+      "IdleScreen": false,
+      "InGameScreen": true,
+      "IsBackgroundLayer": false,
+      "IsForegroundLayer": false,
+      "IsOverlayLayer": false,
+      "Items": [
+        {
+          "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.Layer, SimHub.Plugins",
+          "BackgroundColor": "#00FFFFFF",
+          "Childrens": [
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.ImageItem, SimHub.Plugins",
+              "AutoSize": false,
+              "BackgroundColor": "#00FFFFFF",
+              "Bindings": {
+                "Image": {
+                  "Formula": {
+                    "Expression": "const json_settings = readtextfile('./JavascriptExtensions/TWF_DASH_CONFIG.json')\r\nconst config = JSON.parse(json_settings);\r\n\r\nif (!config){\r\n\treturn \"bgmain\"\r\n} else {\r\n\t\tif(config.ui_color == \"1\"){\r\n\t\t\treturn \"bgmain\"\r\n\t\t}\r\n        if(config.ui_color == \"2\"){\r\n\t\t\treturn \"bgmainblack\"\r\n\t\t} \r\n        if(config.ui_color == \"3\"){\r\n\t\t\treturn \"bgmaincustom\"\r\n\t\t}else {\r\n\t\t\treturn \"bgmain\"\r\n\t\t}\r\n}",
+                    "Interpreter": 1
+                  },
+                  "Mode": 2,
+                  "TargetPropertyName": "Image"
+                }
+              },
+              "Height": 480.0,
+              "Image": "bgmain",
+              "Left": -0.2950000000000159,
+              "Name": "bg3",
+              "Opacity": 70.0,
+              "Top": -1.75,
+              "Visible": true,
+              "Width": 850.0
+            },
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.WidgetItem, SimHub.Plugins",
+              "AutoSize": true,
+              "BackgroundColor": "#00FFFFFF",
+              "Bindings": {
+                "Visible": {
+                  "Formula": {
+                    "Expression": "const json_settings = readtextfile('./JavascriptExtensions/TWF_DASH_CONFIG.json')\r\nconst config = JSON.parse(json_settings);\r\n\r\nif (!config){\r\n\treturn 1\r\n} else {\r\n\t\tif(config.pit_mfd == 1 && ($prop('PitLimiterOn')>0 || $prop('IsInPitLane'))){\r\n\t\t\treturn 0\r\n\t\t\t\r\n\t\t} else {\r\n\t\t\treturn 1\r\n\t\t}\r\n}\r\n\r\n",
+                    "Interpreter": 1
+                  },
+                  "Mode": 2,
+                  "TargetPropertyName": "Visible"
+                }
+              },
+              "FileName": "MFD_V2_FULL.djson",
+              "Height": 370.0,
+              "InitialScreenIndex": 0,
+              "Left": -9.295000000000016,
+              "Name": "MFD_V2",
+              "NextScreenCommand": 1,
+              "PreviousScreenCommand": 2,
+              "Top": 48.25,
+              "Visible": true,
+              "Width": 870.0
+            },
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.WidgetItem, SimHub.Plugins",
+              "AutoSize": true,
+              "BackgroundColor": "#00FFFFFF",
+              "FileName": "CONTEXTUAL_ALERTS.djson",
+              "Height": 370.0,
+              "InitialScreenIndex": 0,
+              "Left": -8.295000000000016,
+              "Name": "CONTEXTUAL_ALERTS",
+              "NextScreenCommand": 0,
+              "PreviousScreenCommand": 0,
+              "Top": 50.25,
+              "Visible": true,
+              "Width": 870.0
+            },
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.WidgetItem, SimHub.Plugins",
+              "AutoSize": true,
+              "BackgroundColor": "#00FFFFFF",
+              "Bindings": {
+                "Visible": {
+                  "Formula": {
+                    "Expression": "const json_settings = readtextfile('./JavascriptExtensions/TWF_DASH_CONFIG.json')\r\nconst config = JSON.parse(json_settings);\r\n\r\nif (!config){\r\n\treturn 0\r\n} else {\r\n\t\tif(config.pedals == 2){\r\n\t\t\treturn 1\r\n\t\t} else {\r\n\t\t\treturn 0\r\n\t\t}\r\n}",
+                    "Interpreter": 1
+                  },
+                  "Mode": 2,
+                  "TargetPropertyName": "Visible"
+                }
+              },
+              "FileName": "PEDALS.djson",
+              "Height": 4.0,
+              "InitialScreenIndex": 0,
+              "Left": 344.705,
+              "Name": "PEDALS",
+              "NextScreenCommand": 0,
+              "PreviousScreenCommand": 0,
+              "Top": 390.25,
+              "Visible": true,
+              "Width": 160.0
+            },
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.WidgetItem, SimHub.Plugins",
+              "AutoSize": true,
+              "BackgroundColor": "#00FFFFFF",
+              "FileName": "SPOTTER.djson",
+              "Height": 225.0,
+              "InitialScreenIndex": 0,
+              "Left": 261.205,
+              "Name": "SPOTTER",
+              "NextScreenCommand": 0,
+              "PreviousScreenCommand": 0,
+              "RenderingSkip": 10,
+              "Top": 125.75,
+              "Visible": true,
+              "Width": 327.0
+            },
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.WidgetItem, SimHub.Plugins",
+              "AutoSize": true,
+              "BackgroundColor": "#00FFFFFF",
+              "Bindings": {
+                "Visible": {
+                  "Formula": {
+                    "Expression": "const json_settings = readtextfile('./JavascriptExtensions/TWF_DASH_CONFIG.json')\r\nconst config = JSON.parse(json_settings);\r\n\r\nif (!config){\r\n\treturn 0\r\n} else {\r\n\t\tif(config.pit_distance == 1 && $prop('DataCorePlugin.CurrentGame')==\"IRacing\" && ($prop('PitLimiterOn')>0 || $prop('IsInPitLane'))){\r\n\t\t\treturn 1\r\n\t\t\t\r\n\t\t} else {\r\n\t\t\treturn 0\r\n\t\t}\r\n}\r\n\r\n",
+                    "Interpreter": 1
+                  },
+                  "Mode": 2,
+                  "TargetPropertyName": "Visible"
+                }
+              },
+              "FileName": "PIT_DISTANCE_METER.djson",
+              "Height": 225.0,
+              "InitialScreenIndex": 0,
+              "Left": 261.205,
+              "Name": "PITDISTANCE",
+              "NextScreenCommand": 0,
+              "PreviousScreenCommand": 0,
+              "RenderingSkip": 10,
+              "Top": 125.75,
+              "Visible": true,
+              "Width": 327.0
+            },
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.WidgetItem, SimHub.Plugins",
+              "AutoSize": true,
+              "AutoSizeScale": 1.1,
+              "BackgroundColor": "#00FFFFFF",
+              "Bindings": {
+                "Rotation": {
+                  "Formula": {
+                    "Expression": "[ExtraInputProperties.SteeringAngle] - ([ExtraInputProperties.SteeringAngle] * 2)"
+                  },
+                  "Mode": 2,
+                  "TargetPropertyName": "Rotation"
+                }
+              },
+              "FileName": "MIDDLE_ROTATING.djson",
+              "Height": 398.20000000000005,
+              "InitialScreenIndex": 0,
+              "IsFreezed": true,
+              "Left": 225.60499999999996,
+              "Name": "MIDDLE",
+              "NextScreenCommand": 0,
+              "PreviousScreenCommand": 0,
+              "Top": 37.25,
+              "Visible": true,
+              "Width": 398.20000000000005
+            },
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.Layer, SimHub.Plugins",
+              "BackgroundColor": "#00FFFFFF",
+              "Childrens": [
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.WidgetItem, SimHub.Plugins",
+                  "AutoSize": true,
+                  "AutoSizeScale": 1.1,
+                  "BackgroundColor": "#00FFFFFF",
+                  "FileName": "CAR_SETTINGS.djson",
+                  "Height": 82.5,
+                  "InitialScreenIndex": 0,
+                  "Left": 181.60499999999996,
+                  "Name": "CAR_SETTINGS",
+                  "NextScreenCommand": 0,
+                  "PreviousScreenCommand": 0,
+                  "RenderingSkip": 30,
+                  "Top": 401.25,
+                  "Visible": true,
+                  "Width": 486.20000000000005
+                },
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.WidgetItem, SimHub.Plugins",
+                  "AutoSize": true,
+                  "BackgroundColor": "#00FFFFFF",
+                  "FileName": "FUEL_V2.djson",
+                  "Height": 55.0,
+                  "InitialScreenIndex": 0,
+                  "Left": 642.7049999999999,
+                  "Name": "FUEL_V2",
+                  "NextScreenCommand": 5,
+                  "PreviousScreenCommand": 0,
+                  "RenderingSkip": 30,
+                  "Top": 413.25,
+                  "Visible": true,
+                  "Width": 196.0
+                },
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.WidgetItem, SimHub.Plugins",
+                  "AutoSize": true,
+                  "AutoSizeScale": 1.1,
+                  "BackgroundColor": "#00FFFFFF",
+                  "FileName": "ENVIRONMENTTEMPS.djson",
+                  "Height": 66.0,
+                  "InitialScreenIndex": 0,
+                  "Left": 9.704999999999984,
+                  "Name": "ENVIRONMENTTEMPS",
+                  "NextScreenCommand": 0,
+                  "PreviousScreenCommand": 0,
+                  "RenderingSkip": 30,
+                  "Top": 404.25,
+                  "Visible": true,
+                  "Width": 181.50000000000003
+                },
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.WidgetItem, SimHub.Plugins",
+                  "AutoSize": true,
+                  "BackgroundColor": "#00FFFFFF",
+                  "FileName": "IRATINGS.djson",
+                  "Height": 20.0,
+                  "InitialScreenIndex": 0,
+                  "Left": 12.704999999999984,
+                  "Name": "IRATINGS",
+                  "NextScreenCommand": 0,
+                  "PreviousScreenCommand": 0,
+                  "RenderingSkip": 30,
+                  "Top": 413.25,
+                  "Visible": true,
+                  "Width": 176.0
+                }
+              ],
+              "Group": true,
+              "Height": 82.5,
+              "Left": 9.704999999999984,
+              "Name": "BOTTTOM",
+              "Top": 401.25,
+              "Visible": true,
+              "Width": 829.0
+            },
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.WidgetItem, SimHub.Plugins",
+              "AutoSize": true,
+              "BackgroundColor": "#00FFFFFF",
+              "FileName": "DELTA_V2.djson",
+              "Height": 90.0,
+              "InitialScreenIndex": 0,
+              "Left": 197.20499999999998,
+              "Name": "DELTA_V2",
+              "NextScreenCommand": 4,
+              "PreviousScreenCommand": 0,
+              "Top": -1.75,
+              "Visible": true,
+              "Width": 455.0
+            },
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.Layer, SimHub.Plugins",
+              "BackgroundColor": "#00FFFFFF",
+              "Childrens": [
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.Layer, SimHub.Plugins",
+                  "BackgroundColor": "#00FFFFFF",
+                  "Childrens": [
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+                      "BackgroundColor": "#00FFFFFF",
+                      "Bindings": {
+                        "Text": {
+                          "Formula": {
+                            "Expression": "if([OpponentsCount]=1, '',\r\nif([Position]=0, '',\r\nif([DataCorePlugin.CurrentGame] == 'IRacing', 'P' + [GameRawData.Telemetry.PlayerCarClassPosition],\r\n'P' + [Position] + '/' + [OpponentsCount])))"
+                          },
+                          "Mode": 2,
+                          "TargetPropertyName": "Text"
+                        }
+                      },
+                      "Font": "Rajdhani",
+                      "FontSize": 40.0,
+                      "FontWeight": "Bold",
+                      "Height": 36.0,
+                      "HorizontalAlignment": 0,
+                      "IsTextItem": true,
+                      "Left": 11.704999999999984,
+                      "Name": "POSITION_VALUE",
+                      "RenderingSkip": 60,
+                      "Text": "P26/32",
+                      "TextColor": "#FFFFFFFF",
+                      "Top": 28.25,
+                      "VerticalAlignment": 1,
+                      "Visible": true,
+                      "Width": 131.0
+                    },
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+                      "BackgroundColor": "#00FFFFFF",
+                      "Bindings": {
+                        "Text": {
+                          "Formula": {
+                            "Expression": "ucase([DataCorePlugin.GameData.SessionTypeName])"
+                          },
+                          "Mode": 2,
+                          "TargetPropertyName": "Text"
+                        }
+                      },
+                      "Font": "Rajdhani",
+                      "FontSize": 22.0,
+                      "FontWeight": "SemiBold",
+                      "Height": 20.0,
+                      "HorizontalAlignment": 0,
+                      "IsTextItem": true,
+                      "Left": 12.704999999999984,
+                      "Name": "SESSION_TYPE",
+                      "RenderingSkip": 60,
+                      "Text": "LONE QUALIFY",
+                      "TextColor": "#FF999999",
+                      "Top": 8.25,
+                      "VerticalAlignment": 1,
+                      "Visible": true,
+                      "Width": 168.0
+                    }
+                  ],
+                  "Group": true,
+                  "Height": 56.0,
+                  "Left": 11.704999999999984,
+                  "Name": "POSITION",
+                  "Top": 8.25,
+                  "Visible": true,
+                  "Width": 169.0
+                },
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.Layer, SimHub.Plugins",
+                  "BackgroundColor": "#00FFFFFF",
+                  "Childrens": [
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+                      "BackgroundColor": "#00FFFFFF",
+                      "Bindings": {
+                        "Text": {
+                          "Formula": {
+                            "Expression": "'L'+[CurrentLap]"
+                          },
+                          "Mode": 2,
+                          "TargetPropertyName": "Text"
+                        }
+                      },
+                      "Font": "Rajdhani",
+                      "FontSize": 40.0,
+                      "FontWeight": "Bold",
+                      "Height": 36.0,
+                      "HorizontalAlignment": 2,
+                      "IsTextItem": true,
+                      "Left": 707.7050000000002,
+                      "Name": "LAP_VALUE2",
+                      "RenderingSkip": 30,
+                      "Text": "L6",
+                      "TextColor": "#FFFFFFFF",
+                      "Top": 28.25,
+                      "VerticalAlignment": 1,
+                      "Visible": true,
+                      "Width": 130.0
+                    },
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+                      "BackgroundColor": "#00FFFFFF",
+                      "Bindings": {
+                        "Text": {
+                          "FormatString": "hh\\:mm\\:ss",
+                          "Formula": {
+                            "Expression": "if(isnull([SessionTimeLeft]), 'N/A',\r\nif([DataCorePlugin.CurrentGame] == 'IRacing' and [SessionTypeName] == 'TESTING', '-',\r\nif(timespantoseconds([SessionTimeLeft])<=0, '-', [SessionTimeLeft])))"
+                          },
+                          "Mode": 2,
+                          "TargetPropertyName": "Text"
+                        },
+                        "TextColor": {
+                          "EnableMiddleColor": true,
+                          "EndColor": "#FF808080",
+                          "EndColorValue": 601.0,
+                          "Formula": {
+                            "Expression": "if(isnull([SessionTimeLeft]), 0,\r\nif(timespantoseconds([SessionTimeLeft])<=0, 601, timespantoseconds([SessionTimeLeft])))"
+                          },
+                          "MiddleColor": "#FFFFFF00",
+                          "MiddleColorValue": 600.0,
+                          "Mode": 4,
+                          "StartColor": "#FFFF0000",
+                          "StartColorValue": 0.0,
+                          "TargetPropertyName": "TextColor"
+                        }
+                      },
+                      "Font": "Rajdhani",
+                      "FontSize": 22.0,
+                      "FontWeight": "SemiBold",
+                      "Height": 20.0,
+                      "HorizontalAlignment": 2,
+                      "IsTextItem": true,
+                      "Left": 667.7050000000002,
+                      "Name": "REMAINING",
+                      "RenderingSkip": 30,
+                      "Text": "11:00:24",
+                      "TextColor": "#FF808080",
+                      "Top": 8.25,
+                      "VerticalAlignment": 1,
+                      "Visible": true,
+                      "Width": 170.0
+                    }
+                  ],
+                  "Group": true,
+                  "Height": 56.0,
+                  "Left": 667.7050000000002,
+                  "Name": "LAP",
+                  "Top": 8.25,
+                  "Visible": true,
+                  "Width": 170.0
+                },
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.Layer, SimHub.Plugins",
+                  "BackgroundColor": "#00FFFFFF",
+                  "Childrens": [
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.WidgetItem, SimHub.Plugins",
+                      "AutoSize": true,
+                      "BackgroundColor": "#00FFFFFF",
+                      "Bindings": {
+                        "Visible": {
+                          "Formula": {
+                            "Expression": "const json_settings = readtextfile('./JavascriptExtensions/TWF_DASH_CONFIG.json')\r\nconst config = JSON.parse(json_settings);\r\n\r\nif (!config){\r\n\treturn 0\r\n} else {\r\n\t\tif(config.show_lapreview_mainscreen == 1){\r\n\t\t\treturn 1\r\n\t\t\t\r\n\t\t} else {\r\n\t\t\treturn 0\r\n\t\t}\r\n}\r\n\r\n",
+                            "Interpreter": 1
+                          },
+                          "Mode": 2,
+                          "TargetPropertyName": "Visible"
+                        }
+                      },
+                      "FileName": "lap_review.djson",
+                      "Height": 294.0,
+                      "InitialScreenIndex": 0,
+                      "Left": -10.295000000000016,
+                      "Name": "LAP_REVIEW",
+                      "NextScreenCommand": 0,
+                      "PreviousScreenCommand": 0,
+                      "RenderingSkip": 30,
+                      "Top": 91.25,
+                      "Visible": false,
+                      "Width": 870.0
+                    },
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.WidgetItem, SimHub.Plugins",
+                      "AutoSize": true,
+                      "AutoSizeScale": 1.119,
+                      "BackgroundColor": "#00FFFFFF",
+                      "Bindings": {
+                        "Visible": {
+                          "Formula": {
+                            "Expression": "const json_settings = readtextfile('./JavascriptExtensions/TWF_DASH_CONFIG.json')\r\nconst config = JSON.parse(json_settings);\r\n\r\nif (!config){\r\n\treturn 1\r\n} else {\r\n\t\tif(config.show_alerts_mainscreen == 1){\r\n\t\t\treturn 1\r\n\t\t\t\r\n\t\t} else {\r\n\t\t\treturn 0\r\n\t\t}\r\n}\r\n\r\n",
+                            "Interpreter": 1
+                          },
+                          "Mode": 2,
+                          "TargetPropertyName": "Visible"
+                        }
+                      },
+                      "FileName": "POPUP_ALERTS.djson",
+                      "Height": 294.297,
+                      "InitialScreenIndex": 0,
+                      "Left": -11.705000000000041,
+                      "Name": "POPUP ALERTS",
+                      "NextScreenCommand": 0,
+                      "PreviousScreenCommand": 0,
+                      "RenderingSkip": 10,
+                      "Top": 88.63116666666664,
+                      "Visible": true,
+                      "Width": 872.82
+                    },
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.WidgetItem, SimHub.Plugins",
+                      "AutoSize": true,
+                      "AutoSizeScale": 1.119,
+                      "BackgroundColor": "#00FFFFFF",
+                      "Bindings": {
+                        "Visible": {
+                          "Formula": {
+                            "Expression": "const json_settings = readtextfile('./JavascriptExtensions/TWF_DASH_CONFIG.json')\r\nconst config = JSON.parse(json_settings);\r\n\r\nif (!config){\r\n\treturn 0\r\n} else {\r\n\t\tif(config.show_flags_mainscreen == 2){\r\n\t\t\treturn 1\r\n\t\t\t\r\n\t\t} else {\r\n\t\t\treturn 0\r\n\t\t}\r\n}\r\n\r\n",
+                            "Interpreter": 1
+                          },
+                          "Mode": 2,
+                          "TargetPropertyName": "Visible"
+                        }
+                      },
+                      "FileName": "LARGE_FLAGS.djson",
+                      "Height": 294.297,
+                      "InitialScreenIndex": 0,
+                      "Left": -11.705000000000041,
+                      "Name": "LARGE_FLAGS",
+                      "NextScreenCommand": 0,
+                      "PreviousScreenCommand": 0,
+                      "RenderingSkip": 30,
+                      "Top": 88.63116666666664,
+                      "Visible": false,
+                      "Width": 872.82
+                    },
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.WidgetItem, SimHub.Plugins",
+                      "AutoSize": true,
+                      "AutoSizeScale": 1.05,
+                      "BackgroundColor": "#00FFFFFF",
+                      "Bindings": {
+                        "Visible": {
+                          "Formula": {
+                            "Expression": "const json_settings = readtextfile('./JavascriptExtensions/TWF_DASH_CONFIG.json')\r\nconst config = JSON.parse(json_settings);\r\n\r\nif (!config){\r\n\treturn 1\r\n} else {\r\n\t\tif(config.show_flags_mainscreen == 1){\r\n\t\t\treturn 1\r\n\t\t\t\r\n\t\t} else {\r\n\t\t\treturn 0\r\n\t\t}\r\n}\r\n\r\n",
+                            "Interpreter": 1
+                          },
+                          "Mode": 2,
+                          "TargetPropertyName": "Visible"
+                        }
+                      },
+                      "FileName": "SMALL_FLAGS.djson",
+                      "Height": 68.25,
+                      "InitialScreenIndex": 0,
+                      "Left": 185.82999999999998,
+                      "Name": "SMALL_FLAGS",
+                      "NextScreenCommand": 0,
+                      "PreviousScreenCommand": 0,
+                      "RenderingSkip": 30,
+                      "Top": -1.75,
+                      "Visible": true,
+                      "Width": 477.75
+                    }
+                  ],
+                  "Group": true,
+                  "Height": 387.0,
+                  "Left": -11.705000000000041,
+                  "Name": "ALERTS",
+                  "Top": -1.75,
+                  "Visible": true,
+                  "Width": 872.82
+                }
+              ],
+              "Group": true,
+              "Height": 387.0,
+              "Left": -11.705000000000041,
+              "Name": "TOP",
+              "Top": -1.75,
+              "Visible": true,
+              "Width": 872.82
+            }
+          ],
+          "Group": true,
+          "Height": 485.5,
+          "Left": -11.705000000000041,
+          "Name": "DASH2",
+          "Top": -1.75,
+          "Visible": true,
+          "Width": 873.41
+        }
+      ],
+      "Name": "ROUND-ROTATING",
+      "OverlayMaxDuration": 0,
+      "OverlayMinDuration": 0,
+      "OverlayTriggerExpression": {
+        "Expression": ""
+      },
+      "PitScreen": false,
+      "ScreenEnabledExpression": {
+        "Expression": ""
+      },
+      "ScreenId": "e6f05b91-71e6-4fa6-8b05-11255d9c1c67"
+    }
+  ],
+  "ShowBackground": false,
+  "ShowBoundingRectangles": false,
+  "ShowForeground": true,
+  "ShowOnScreenControls": true,
+  "SnapToGrid": false,
+  "Version": 2
+}

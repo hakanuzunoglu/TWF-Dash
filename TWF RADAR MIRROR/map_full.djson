@@ -1,0 +1,247 @@
+{
+  "BackgroundColor": "#FF000000",
+  "BackgroundOpacity": 100.0,
+  "BaseHeight": 308,
+  "BaseWidth": 531,
+  "DashboardDebugManager": {
+    "LastPlacement": "26,26,531,308",
+    "Maximized": false
+  },
+  "EnableClickThroughOverlay": true,
+  "EnableOnDashboardMessaging": true,
+  "ForegroundOpacity": 100.0,
+  "GridSize": 10,
+  "HideLabels": false,
+  "Id": "e28c4e72-acd3-4649-9d1e-068c64c002cc",
+  "Images": [],
+  "IsOverlay": false,
+  "Metadata": {
+    "EnableOnDashboardMessaging": true,
+    "Height": 308.0,
+    "IdleScreensIndexs": [
+      0
+    ],
+    "InGameScreensIndexs": [
+      0
+    ],
+    "IsOverlay": false,
+    "MainPreviewIndex": 0,
+    "MetadataVersion": 2.0,
+    "OverlaySizeWarning": false,
+    "PitScreensIndexs": [],
+    "ScreenCount": 1.0,
+    "Width": 531.0
+  },
+  "Screens": [
+    {
+      "AllowOverlays": true,
+      "BackgroundColor": "#FF000000",
+      "IdleScreen": true,
+      "InGameScreen": true,
+      "IsBackgroundLayer": false,
+      "IsForegroundLayer": false,
+      "IsOverlayLayer": false,
+      "Items": [
+        {
+          "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.Layer, SimHub.Plugins",
+          "BackgroundColor": "#00FFFFFF",
+          "Childrens": [
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.GeneratedStaticMapItem, SimHub.Plugins",
+              "AlternateTrackSectorColor": "#FF5E8494",
+              "BackgroundColor": "#00FFFFFF",
+              "Bindings": {
+                "Visible": {
+                  "Formula": {
+                    "Expression": "return twf_read_setting_equals(\"ui_color\",1,1,0)",
+                    "Interpreter": 1
+                  },
+                  "Mode": 2,
+                  "TargetPropertyName": "Visible"
+                }
+              },
+              "BlinkDelay": 249.0,
+              "CursorColor": "#FFFF0000",
+              "DisplayScale": 1.0,
+              "Height": 245.0,
+              "Left": 5.0,
+              "MapShadow": true,
+              "MinimumTrackBorderWidth": 0.0,
+              "MinimumTrackWidth": 10.0,
+              "Name": "BLUE_MAP",
+              "OpponentStyle": {
+                "Bindings": {
+                  "DotColor": {
+                    "Formula": {
+                      "Expression": "if ([PersistantTrackerPlugin.DriverAhead_04_Position] > [DataCorePlugin.GameData.Position], \r\n\tif ([PersistantTrackerPlugin.DriverAhead_04_CurrentLap] = [DataCorePlugin.GameData.CurrentLap]-1, '#FFFFFF', '#00BFFF'), '#FFFFFF' )"
+                    },
+                    "Mode": 2,
+                    "TargetPropertyName": "DotColor"
+                  }
+                },
+                "DotBorderThickness": 1.0,
+                "DotBordercolor": "#FF262626",
+                "DotColor": "#FFFFFFFF",
+                "DotRadius": 20.0,
+                "LabelColor": "#FF000000",
+                "LabelFont": "Rajdhani",
+                "LabelFontSize": 14.0
+              },
+              "PlayerPulse": false,
+              "PlayerPulseColor": "#FFFF8C00",
+              "PlayerPulseRadius": 100.0,
+              "PlayerPulseThickness": 8.0,
+              "PlayerStyle": {
+                "DotBorderThickness": 0.0,
+                "DotBordercolor": "#FFFFFFFF",
+                "DotColor": "#FFFF0000",
+                "DotRadius": 25.0,
+                "LabelColor": "#FFFFFFFF",
+                "LabelFont": "Rajdhani",
+                "LabelFontSize": 14.0
+              },
+              "RenderImageHeight": 244.0340560120231,
+              "RenderImageWidth": 318.0443844746858,
+              "StartLine": {
+                "Color": "#FFFFD700",
+                "Enabled": true,
+                "Height": 50.0,
+                "Width": 10.0
+              },
+              "Top": 5.0,
+              "TrackBorderColor": "#FFFFFFFF",
+              "TrackBorderWidth": 0.0,
+              "TrackColor": "#FF233E49",
+              "TrackWidth": 10.0,
+              "Visible": true,
+              "Width": 520.0
+            },
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.GeneratedStaticMapItem, SimHub.Plugins",
+              "AlternateTrackSectorColor": "#FF333333",
+              "BackgroundColor": "#00FFFFFF",
+              "Bindings": {
+                "Visible": {
+                  "Formula": {
+                    "Expression": "return twf_read_setting_equals(\"ui_color\",2,1,0)",
+                    "Interpreter": 1
+                  },
+                  "Mode": 2,
+                  "TargetPropertyName": "Visible"
+                }
+              },
+              "BlinkDelay": 249.0,
+              "CursorColor": "#FFFF0000",
+              "DisplayScale": 1.0,
+              "Height": 245.0,
+              "Left": 5.0,
+              "MapShadow": true,
+              "MinimumTrackBorderWidth": 0.0,
+              "MinimumTrackWidth": 10.0,
+              "Name": "GREY_MAP",
+              "OpponentStyle": {
+                "Bindings": {
+                  "DotColor": {
+                    "Formula": {
+                      "Expression": "if ([PersistantTrackerPlugin.DriverAhead_04_Position] > [DataCorePlugin.GameData.Position], \r\n\tif ([PersistantTrackerPlugin.DriverAhead_04_CurrentLap] = [DataCorePlugin.GameData.CurrentLap]-1, '#FFFFFF', '#00BFFF'), '#FFFFFF' )"
+                    },
+                    "Mode": 2,
+                    "TargetPropertyName": "DotColor"
+                  }
+                },
+                "DotBorderThickness": 1.0,
+                "DotBordercolor": "#FF262626",
+                "DotColor": "#FFFFFFFF",
+                "DotRadius": 20.0,
+                "LabelColor": "#FF000000",
+                "LabelFont": "Rajdhani",
+                "LabelFontSize": 14.0
+              },
+              "PlayerPulse": false,
+              "PlayerPulseColor": "#FFFF8C00",
+              "PlayerPulseRadius": 100.0,
+              "PlayerPulseThickness": 8.0,
+              "PlayerStyle": {
+                "DotBorderThickness": 0.0,
+                "DotBordercolor": "#FFFFFFFF",
+                "DotColor": "#FFFF0000",
+                "DotRadius": 25.0,
+                "LabelColor": "#FFFFFFFF",
+                "LabelFont": "Rajdhani",
+                "LabelFontSize": 14.0
+              },
+              "RenderImageHeight": 244.0340560120231,
+              "RenderImageWidth": 318.0443844746858,
+              "StartLine": {
+                "Color": "#FFFFD700",
+                "Enabled": true,
+                "Height": 50.0,
+                "Width": 10.0
+              },
+              "Top": 5.0,
+              "TrackBorderColor": "#FFFFFFFF",
+              "TrackBorderWidth": 0.0,
+              "TrackColor": "#FF696969",
+              "TrackWidth": 10.0,
+              "Visible": true,
+              "Width": 520.0
+            },
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+              "BackgroundColor": "#00FFFFFF",
+              "Bindings": {
+                "Text": {
+                  "FormatString": "0",
+                  "Formula": {
+                    "Expression": "tcase(isnull([GameRawData.Track.TrackInfo.description],isnull([DataCorePlugin.GameRawData.Track.TrackName],isnull([DataCorePlugin.GameRawData.SessionData.WeekendInfo.TrackDisplayName],isnull([TrackName],'')))))\r\n\r\n"
+                  },
+                  "Mode": 2,
+                  "TargetPropertyName": "Text"
+                }
+              },
+              "Font": "Rajdhani",
+              "FontSize": 22.0,
+              "FontWeight": "Bold",
+              "Height": 65.0,
+              "HorizontalAlignment": 0,
+              "IsTextItem": true,
+              "Left": 6.5,
+              "Name": "TRACKNAME",
+              "Text": "Track Name",
+              "TextColor": "#FFFFFFFF",
+              "TextWrapping": 0,
+              "Top": 238.0,
+              "VerticalAlignment": 2,
+              "Visible": true,
+              "Width": 515.0
+            }
+          ],
+          "Group": true,
+          "Height": 298.0,
+          "Left": 5.0,
+          "Name": "MAP",
+          "Top": 5.0,
+          "Visible": true,
+          "Width": 520.0
+        }
+      ],
+      "Name": "Screen",
+      "OverlayMaxDuration": 0,
+      "OverlayMinDuration": 0,
+      "OverlayTriggerExpression": {
+        "Expression": ""
+      },
+      "PitScreen": false,
+      "ScreenEnabledExpression": {
+        "Expression": ""
+      },
+      "ScreenId": "660dd7d8-36a8-43a2-ac1b-67bfd8f28b02"
+    }
+  ],
+  "ShowBackground": true,
+  "ShowBoundingRectangles": false,
+  "ShowForeground": true,
+  "ShowOnScreenControls": true,
+  "SnapToGrid": false,
+  "Version": 2
+}

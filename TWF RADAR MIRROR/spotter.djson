@@ -1,0 +1,1045 @@
+{
+  "BackgroundColor": "#FF000000",
+  "BackgroundOpacity": 100.0,
+  "BaseHeight": 225,
+  "BaseWidth": 327,
+  "DashboardDebugManager": {
+    "LastPlacement": "1013,409,327,225",
+    "Maximized": false
+  },
+  "EnableClickThroughOverlay": true,
+  "EnableOnDashboardMessaging": true,
+  "ForegroundOpacity": 100.0,
+  "GridSize": 10,
+  "HideLabels": true,
+  "Id": "24f044d0-1ee1-4658-988b-f032a3d6a30a",
+  "Images": [],
+  "IsOverlay": false,
+  "Metadata": {
+    "EnableOnDashboardMessaging": true,
+    "Height": 225.0,
+    "IdleScreensIndexs": [
+      0
+    ],
+    "InGameScreensIndexs": [
+      0
+    ],
+    "IsOverlay": false,
+    "MainPreviewIndex": 0,
+    "MetadataVersion": 2.0,
+    "OverlaySizeWarning": false,
+    "PitScreensIndexs": [],
+    "ScreenCount": 1.0,
+    "Width": 327.0
+  },
+  "Screens": [
+    {
+      "AllowOverlays": true,
+      "BackgroundColor": "#FF000000",
+      "IdleScreen": true,
+      "InGameScreen": true,
+      "IsBackgroundLayer": false,
+      "IsForegroundLayer": false,
+      "IsOverlayLayer": false,
+      "Items": [
+        {
+          "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.Layer, SimHub.Plugins",
+          "BackgroundColor": "#00FFFFFF",
+          "Bindings": {
+            "Visible": {
+              "Formula": {
+                "Expression": "return twf_read_setting_equals(\"spotter\",1,1,0)",
+                "Interpreter": 1
+              },
+              "Mode": 2,
+              "TargetPropertyName": "Visible"
+            }
+          },
+          "Childrens": [
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.Layer, SimHub.Plugins",
+              "BackgroundColor": "#00FFFFFF",
+              "Childrens": [
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+                  "BackgroundColor": "#FF06151B",
+                  "Bindings": {
+                    "BackgroundColor": {
+                      "Formula": {
+                        "Expression": "return twf_get_ui_color('spotterbg')",
+                        "Interpreter": 1
+                      },
+                      "Mode": 2,
+                      "TargetPropertyName": "BackgroundColor"
+                    }
+                  },
+                  "BorderStyle": {
+                    "BorderBottom": 2,
+                    "BorderColor": "#FF233E49",
+                    "BorderLeft": 2,
+                    "BorderRight": 2,
+                    "BorderTop": 2,
+                    "RadiusBottomLeft": 9,
+                    "RadiusBottomRight": 9,
+                    "RadiusTopLeft": 9,
+                    "RadiusTopRight": 9
+                  },
+                  "Height": 225.0,
+                  "IsRectangleItem": true,
+                  "Left": 207.0,
+                  "Name": "bg",
+                  "Top": 0.0,
+                  "Visible": true,
+                  "Width": 120.0
+                },
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.LinearGaugeItem, SimHub.Plugins",
+                  "AlternateGaugeColor": "#FF008000",
+                  "AutoSize": false,
+                  "BackgroundColor": "#FFFF8C00",
+                  "Bindings": {
+                    "GaugeColor": {
+                      "Formula": {
+                        "Expression": "return twf_get_ui_color('spottergauge')",
+                        "Interpreter": 1
+                      },
+                      "Mode": 2,
+                      "TargetPropertyName": "GaugeColor"
+                    },
+                    "Value": {
+                      "Formula": {
+                        "Expression": "[PersistantTrackerPlugin.DriverBehind_00_Distance]"
+                      },
+                      "Mode": 2,
+                      "TargetPropertyName": "Value"
+                    },
+                    "Visible": {
+                      "Formula": {
+                        "Expression": "[SpotterCarLeft] == 0 and [SpotterCarRight] == 0 and [PersistantTrackerPlugin.DriverBehind_00_Distance]>0"
+                      },
+                      "Mode": 2,
+                      "TargetPropertyName": "Visible"
+                    }
+                  },
+                  "BorderStyle": {
+                    "BorderColor": "#FF808080",
+                    "RadiusBottomLeft": 11,
+                    "RadiusBottomRight": 11
+                  },
+                  "GaugeAlignment": 2,
+                  "GaugeColor": "#FF06151B",
+                  "GaugeOrientation": 1,
+                  "Height": 100.0,
+                  "IsLinearGauge": true,
+                  "Left": 207.0,
+                  "Maximum": 40.0,
+                  "Minimum": 0.0,
+                  "Name": "behind",
+                  "PAW": 57.0,
+                  "Steps": 0.0,
+                  "Top": 125.0,
+                  "UseAlternateStyle": false,
+                  "Value": 23.0,
+                  "Visible": false,
+                  "Width": 120.0
+                },
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.LinearGaugeItem, SimHub.Plugins",
+                  "AlternateGaugeColor": "#FF008000",
+                  "AutoSize": false,
+                  "BackgroundColor": "#00FFFFFF",
+                  "Bindings": {
+                    "GaugeColor": {
+                      "Formula": {
+                        "Expression": "return twf_get_ui_color('spottergauge')",
+                        "Interpreter": 1
+                      },
+                      "Mode": 2,
+                      "TargetPropertyName": "GaugeColor"
+                    },
+                    "Value": {
+                      "Formula": {
+                        "Expression": "abs([PersistantTrackerPlugin.DriverAhead_00_Distance])"
+                      },
+                      "Mode": 2,
+                      "TargetPropertyName": "Value"
+                    },
+                    "Visible": {
+                      "Formula": {
+                        "Expression": "[SpotterCarLeft] == 0 and [SpotterCarRight] == 0 and [PersistantTrackerPlugin.DriverAhead_00_Distance]>-41 and [PersistantTrackerPlugin.DriverAhead_00_Distance] !=0"
+                      },
+                      "Mode": 2,
+                      "TargetPropertyName": "Visible"
+                    }
+                  },
+                  "BorderStyle": {
+                    "BorderColor": "#FF808080",
+                    "RadiusTopLeft": 11,
+                    "RadiusTopRight": 11
+                  },
+                  "GaugeAlignment": 2,
+                  "GaugeColor": "#FFFF8C00",
+                  "GaugeOrientation": 1,
+                  "Height": 100.0,
+                  "IsLinearGauge": true,
+                  "Left": 207.0,
+                  "Maximum": 1.0,
+                  "Minimum": 40.0,
+                  "Name": "ahead",
+                  "PAW": 100.0,
+                  "Steps": 0.0,
+                  "Top": 0.0,
+                  "UseAlternateStyle": false,
+                  "Value": 0.0,
+                  "Visible": false,
+                  "Width": 120.0
+                },
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.Layer, SimHub.Plugins",
+                  "BackgroundColor": "#00FFFFFF",
+                  "Childrens": [
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+                      "BackgroundColor": "#00FFFFFF",
+                      "BorderStyle": {
+                        "Bindings": {
+                          "BorderColor": {
+                            "Formula": {
+                              "Expression": "return twf_get_ui_color('border')",
+                              "Interpreter": 1
+                            },
+                            "Mode": 2,
+                            "TargetPropertyName": "BorderColor"
+                          }
+                        },
+                        "BorderColor": "#FF233E49",
+                        "BorderTop": 1
+                      },
+                      "Height": 2.0,
+                      "IsFreezed": true,
+                      "IsRectangleItem": true,
+                      "Left": 207.0,
+                      "Name": "Gauge Scale",
+                      "Top": 8.0,
+                      "Visible": true,
+                      "Width": 120.0
+                    }
+                  ],
+                  "Group": true,
+                  "Height": 2.0,
+                  "Left": 207.0,
+                  "Name": "Gauge Mask",
+                  "RepeatTopOffset": 9.0,
+                  "Repetitions": 23.0,
+                  "Top": 8.0,
+                  "Visible": true,
+                  "Width": 120.0
+                },
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+                  "BackgroundColor": "#00FFFFFF",
+                  "BorderStyle": {
+                    "Bindings": {
+                      "BorderColor": {
+                        "Formula": {
+                          "Expression": "return twf_get_ui_color('border')",
+                          "Interpreter": 1
+                        },
+                        "Mode": 2,
+                        "TargetPropertyName": "BorderColor"
+                      }
+                    },
+                    "BorderBottom": 2,
+                    "BorderColor": "#FF233E49",
+                    "BorderLeft": 2,
+                    "BorderRight": 2,
+                    "BorderTop": 2,
+                    "RadiusBottomLeft": 9,
+                    "RadiusBottomRight": 9,
+                    "RadiusTopLeft": 9,
+                    "RadiusTopRight": 9
+                  },
+                  "Height": 225.0,
+                  "IsRectangleItem": true,
+                  "Left": 207.0,
+                  "Name": "borders",
+                  "Top": 0.0,
+                  "Visible": true,
+                  "Width": 120.0
+                },
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+                  "BackgroundColor": "#FFFF0000",
+                  "Bindings": {
+                    "Visible": {
+                      "Formula": {
+                        "Expression": "[SpotterCarRight]"
+                      },
+                      "Mode": 2,
+                      "TargetPropertyName": "Visible"
+                    }
+                  },
+                  "BlinkDelay": 150.0,
+                  "BlinkEnabled": true,
+                  "BorderStyle": {
+                    "BorderColor": "#FF233E49",
+                    "RadiusBottomLeft": 9,
+                    "RadiusBottomRight": 9,
+                    "RadiusTopLeft": 9,
+                    "RadiusTopRight": 9
+                  },
+                  "Height": 225.0,
+                  "IsRectangleItem": true,
+                  "Left": 207.0,
+                  "Name": "spotter",
+                  "Top": 0.0,
+                  "Visible": false,
+                  "Width": 120.0
+                }
+              ],
+              "Group": true,
+              "Height": 225.0,
+              "Left": 207.0,
+              "Name": "right",
+              "Top": 0.0,
+              "Visible": true,
+              "Width": 120.0
+            },
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.Layer, SimHub.Plugins",
+              "BackgroundColor": "#00FFFFFF",
+              "Childrens": [
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+                  "BackgroundColor": "#FF06151B",
+                  "Bindings": {
+                    "BackgroundColor": {
+                      "Formula": {
+                        "Expression": "return twf_get_ui_color('spotterbg')",
+                        "Interpreter": 1
+                      },
+                      "Mode": 2,
+                      "TargetPropertyName": "BackgroundColor"
+                    }
+                  },
+                  "BorderStyle": {
+                    "BorderBottom": 2,
+                    "BorderColor": "#FF233E49",
+                    "BorderLeft": 2,
+                    "BorderRight": 2,
+                    "BorderTop": 2,
+                    "RadiusBottomLeft": 9,
+                    "RadiusBottomRight": 9,
+                    "RadiusTopLeft": 9,
+                    "RadiusTopRight": 9
+                  },
+                  "Height": 225.0,
+                  "IsRectangleItem": true,
+                  "Left": 0.0,
+                  "Name": "bg",
+                  "Top": 0.0,
+                  "Visible": true,
+                  "Width": 120.0
+                },
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.LinearGaugeItem, SimHub.Plugins",
+                  "AlternateGaugeColor": "#FF008000",
+                  "AutoSize": false,
+                  "BackgroundColor": "#FFFF8C00",
+                  "Bindings": {
+                    "GaugeColor": {
+                      "Formula": {
+                        "Expression": "return twf_get_ui_color('spottergauge')",
+                        "Interpreter": 1
+                      },
+                      "Mode": 2,
+                      "TargetPropertyName": "GaugeColor"
+                    },
+                    "Value": {
+                      "Formula": {
+                        "Expression": "[PersistantTrackerPlugin.DriverBehind_00_Distance]"
+                      },
+                      "Mode": 2,
+                      "TargetPropertyName": "Value"
+                    },
+                    "Visible": {
+                      "Formula": {
+                        "Expression": "[SpotterCarLeft] == 0 and [SpotterCarRight] == 0 and [PersistantTrackerPlugin.DriverBehind_00_Distance]>0"
+                      },
+                      "Mode": 2,
+                      "TargetPropertyName": "Visible"
+                    }
+                  },
+                  "BorderStyle": {
+                    "BorderColor": "#FF808080",
+                    "RadiusBottomLeft": 11,
+                    "RadiusBottomRight": 11
+                  },
+                  "GaugeAlignment": 2,
+                  "GaugeColor": "#FF06151B",
+                  "GaugeOrientation": 1,
+                  "Height": 100.0,
+                  "IsLinearGauge": true,
+                  "Left": 0.0,
+                  "Maximum": 40.0,
+                  "Minimum": 0.0,
+                  "Name": "behind",
+                  "PAW": 57.0,
+                  "Steps": 0.0,
+                  "Top": 125.0,
+                  "UseAlternateStyle": false,
+                  "Value": 23.0,
+                  "Visible": false,
+                  "Width": 120.0
+                },
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.LinearGaugeItem, SimHub.Plugins",
+                  "AlternateGaugeColor": "#FF008000",
+                  "AutoSize": false,
+                  "BackgroundColor": "#00FFFFFF",
+                  "Bindings": {
+                    "GaugeColor": {
+                      "Formula": {
+                        "Expression": "return twf_get_ui_color('spottergauge')",
+                        "Interpreter": 1
+                      },
+                      "Mode": 2,
+                      "TargetPropertyName": "GaugeColor"
+                    },
+                    "Value": {
+                      "Formula": {
+                        "Expression": "abs([PersistantTrackerPlugin.DriverAhead_00_Distance])"
+                      },
+                      "Mode": 2,
+                      "TargetPropertyName": "Value"
+                    },
+                    "Visible": {
+                      "Formula": {
+                        "Expression": "[SpotterCarLeft] == 0 and [SpotterCarRight] == 0 and [PersistantTrackerPlugin.DriverAhead_00_Distance]>-41 and [PersistantTrackerPlugin.DriverAhead_00_Distance] !=0"
+                      },
+                      "Mode": 2,
+                      "TargetPropertyName": "Visible"
+                    }
+                  },
+                  "BorderStyle": {
+                    "BorderColor": "#FF808080",
+                    "RadiusTopLeft": 11,
+                    "RadiusTopRight": 11
+                  },
+                  "GaugeAlignment": 2,
+                  "GaugeColor": "#FFFF8C00",
+                  "GaugeOrientation": 1,
+                  "Height": 100.0,
+                  "IsLinearGauge": true,
+                  "Left": 0.0,
+                  "Maximum": 1.0,
+                  "Minimum": 40.0,
+                  "Name": "ahead",
+                  "PAW": 100.0,
+                  "Steps": 0.0,
+                  "Top": 0.0,
+                  "UseAlternateStyle": false,
+                  "Value": 0.0,
+                  "Visible": false,
+                  "Width": 120.0
+                },
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.Layer, SimHub.Plugins",
+                  "BackgroundColor": "#00FFFFFF",
+                  "Childrens": [
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+                      "BackgroundColor": "#00FFFFFF",
+                      "BorderStyle": {
+                        "Bindings": {
+                          "BorderColor": {
+                            "Formula": {
+                              "Expression": "return twf_get_ui_color('border')",
+                              "Interpreter": 1
+                            },
+                            "Mode": 2,
+                            "TargetPropertyName": "BorderColor"
+                          }
+                        },
+                        "BorderColor": "#FF233E49",
+                        "BorderTop": 1
+                      },
+                      "Height": 2.0,
+                      "IsFreezed": true,
+                      "IsRectangleItem": true,
+                      "Left": 0.0,
+                      "Name": "Gauge Scale",
+                      "Top": 8.0,
+                      "Visible": true,
+                      "Width": 120.0
+                    }
+                  ],
+                  "Group": true,
+                  "Height": 2.0,
+                  "Left": 0.0,
+                  "Name": "Gauge Mask",
+                  "RepeatTopOffset": 9.0,
+                  "Repetitions": 23.0,
+                  "Top": 8.0,
+                  "Visible": true,
+                  "Width": 120.0
+                },
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+                  "BackgroundColor": "#00FFFFFF",
+                  "BorderStyle": {
+                    "Bindings": {
+                      "BorderColor": {
+                        "Formula": {
+                          "Expression": "return twf_get_ui_color('border')",
+                          "Interpreter": 1
+                        },
+                        "Mode": 2,
+                        "TargetPropertyName": "BorderColor"
+                      }
+                    },
+                    "BorderBottom": 2,
+                    "BorderColor": "#FF233E49",
+                    "BorderLeft": 2,
+                    "BorderRight": 2,
+                    "BorderTop": 2,
+                    "RadiusBottomLeft": 9,
+                    "RadiusBottomRight": 9,
+                    "RadiusTopLeft": 9,
+                    "RadiusTopRight": 9
+                  },
+                  "Height": 225.0,
+                  "IsRectangleItem": true,
+                  "Left": 0.0,
+                  "Name": "borders",
+                  "Top": 0.0,
+                  "Visible": true,
+                  "Width": 120.0
+                },
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+                  "BackgroundColor": "#FFFF0000",
+                  "Bindings": {
+                    "Visible": {
+                      "Formula": {
+                        "Expression": "[SpotterCarLeft]"
+                      },
+                      "Mode": 2,
+                      "TargetPropertyName": "Visible"
+                    }
+                  },
+                  "BlinkDelay": 150.0,
+                  "BlinkEnabled": true,
+                  "BorderStyle": {
+                    "BorderColor": "#FF233E49",
+                    "RadiusBottomLeft": 9,
+                    "RadiusBottomRight": 9,
+                    "RadiusTopLeft": 9,
+                    "RadiusTopRight": 9
+                  },
+                  "Height": 225.0,
+                  "IsRectangleItem": true,
+                  "Left": 0.0,
+                  "Name": "spotter",
+                  "Top": 0.0,
+                  "Visible": false,
+                  "Width": 120.0
+                }
+              ],
+              "Group": true,
+              "Height": 225.0,
+              "Left": 0.0,
+              "Name": "left",
+              "Top": 0.0,
+              "Visible": true,
+              "Width": 120.0
+            }
+          ],
+          "Group": true,
+          "Height": 225.0,
+          "Left": 0.0,
+          "Name": "FRONT_REAR",
+          "Top": 0.0,
+          "Visible": true,
+          "Width": 327.0
+        },
+        {
+          "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.Layer, SimHub.Plugins",
+          "BackgroundColor": "#00FFFFFF",
+          "Bindings": {
+            "Visible": {
+              "Formula": {
+                "Expression": "return twf_read_setting_equals(\"spotter\",2,1,0)",
+                "Interpreter": 1
+              },
+              "Mode": 2,
+              "TargetPropertyName": "Visible"
+            }
+          },
+          "Childrens": [
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.Layer, SimHub.Plugins",
+              "BackgroundColor": "#00FFFFFF",
+              "Childrens": [
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+                  "BackgroundColor": "#FF06151B",
+                  "Bindings": {
+                    "BackgroundColor": {
+                      "Formula": {
+                        "Expression": "return twf_get_ui_color('spotterbg')",
+                        "Interpreter": 1
+                      },
+                      "Mode": 2,
+                      "TargetPropertyName": "BackgroundColor"
+                    }
+                  },
+                  "BorderStyle": {
+                    "BorderBottom": 2,
+                    "BorderColor": "#FF233E49",
+                    "BorderLeft": 2,
+                    "BorderRight": 2,
+                    "BorderTop": 2,
+                    "RadiusBottomLeft": 9,
+                    "RadiusBottomRight": 9,
+                    "RadiusTopLeft": 9,
+                    "RadiusTopRight": 9
+                  },
+                  "Height": 225.0,
+                  "IsRectangleItem": true,
+                  "Left": 207.0,
+                  "Name": "bg",
+                  "Top": 0.0,
+                  "Visible": true,
+                  "Width": 120.0
+                },
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.LinearGaugeItem, SimHub.Plugins",
+                  "AlternateGaugeColor": "#FF008000",
+                  "AutoSize": false,
+                  "BackgroundColor": "#FFFF8C00",
+                  "Bindings": {
+                    "BackgroundColor": {
+                      "Formula": {
+                        "Expression": "return twf_get_ui_color('spottergauge')",
+                        "Interpreter": 1
+                      },
+                      "Mode": 2,
+                      "TargetPropertyName": "BackgroundColor"
+                    },
+                    "GaugeColor": {
+                      "Formula": {
+                        "Expression": "return twf_get_ui_color('spotterbg')",
+                        "Interpreter": 1
+                      },
+                      "Mode": 2,
+                      "TargetPropertyName": "GaugeColor"
+                    },
+                    "Value": {
+                      "Formula": {
+                        "Expression": "[PersistantTrackerPlugin.DriverBehind_00_Distance]"
+                      },
+                      "Mode": 2,
+                      "TargetPropertyName": "Value"
+                    },
+                    "Visible": {
+                      "Formula": {
+                        "Expression": "[SpotterCarLeft] == 0 and [SpotterCarRight] == 0 and [PersistantTrackerPlugin.DriverBehind_00_Distance]>0"
+                      },
+                      "Mode": 2,
+                      "TargetPropertyName": "Visible"
+                    }
+                  },
+                  "BorderStyle": {
+                    "BorderColor": "#FF808080",
+                    "RadiusBottomLeft": 11,
+                    "RadiusBottomRight": 11,
+                    "RadiusTopLeft": 11,
+                    "RadiusTopRight": 11
+                  },
+                  "GaugeAlignment": 2,
+                  "GaugeColor": "#FF06151B",
+                  "GaugeOrientation": 1,
+                  "Height": 225.0,
+                  "IsLinearGauge": true,
+                  "Left": 207.0,
+                  "Maximum": 40.0,
+                  "Minimum": 0.0,
+                  "Name": "behind",
+                  "PAW": 129.0,
+                  "Steps": 0.0,
+                  "Top": 0.0,
+                  "UseAlternateStyle": false,
+                  "Value": 23.0,
+                  "Visible": true,
+                  "Width": 120.0
+                },
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.Layer, SimHub.Plugins",
+                  "BackgroundColor": "#00FFFFFF",
+                  "Childrens": [
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+                      "BackgroundColor": "#00FFFFFF",
+                      "BorderStyle": {
+                        "Bindings": {
+                          "BorderColor": {
+                            "Formula": {
+                              "Expression": "return twf_get_ui_color('border')",
+                              "Interpreter": 1
+                            },
+                            "Mode": 2,
+                            "TargetPropertyName": "BorderColor"
+                          }
+                        },
+                        "BorderColor": "#FF233E49",
+                        "BorderTop": 1
+                      },
+                      "Height": 2.0,
+                      "IsFreezed": true,
+                      "IsRectangleItem": true,
+                      "Left": 207.0,
+                      "Name": "Gauge Scale",
+                      "Top": 8.0,
+                      "Visible": true,
+                      "Width": 120.0
+                    }
+                  ],
+                  "Group": true,
+                  "Height": 2.0,
+                  "Left": 207.0,
+                  "Name": "Gauge Mask",
+                  "RepeatTopOffset": 9.0,
+                  "Repetitions": 23.0,
+                  "Top": 8.0,
+                  "Visible": true,
+                  "Width": 120.0
+                },
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+                  "BackgroundColor": "#00FFFFFF",
+                  "BorderStyle": {
+                    "Bindings": {
+                      "BorderColor": {
+                        "Formula": {
+                          "Expression": "return twf_get_ui_color('border')",
+                          "Interpreter": 1
+                        },
+                        "Mode": 2,
+                        "TargetPropertyName": "BorderColor"
+                      }
+                    },
+                    "BorderBottom": 2,
+                    "BorderColor": "#FF233E49",
+                    "BorderLeft": 2,
+                    "BorderRight": 2,
+                    "BorderTop": 2,
+                    "RadiusBottomLeft": 9,
+                    "RadiusBottomRight": 9,
+                    "RadiusTopLeft": 9,
+                    "RadiusTopRight": 9
+                  },
+                  "Height": 225.0,
+                  "IsRectangleItem": true,
+                  "Left": 207.0,
+                  "Name": "borders",
+                  "Top": 0.0,
+                  "Visible": true,
+                  "Width": 120.0
+                },
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+                  "BackgroundColor": "#FFFF0000",
+                  "Bindings": {
+                    "Visible": {
+                      "Formula": {
+                        "Expression": "[SpotterCarRight]"
+                      },
+                      "Mode": 2,
+                      "TargetPropertyName": "Visible"
+                    }
+                  },
+                  "BlinkDelay": 300.0,
+                  "BlinkEnabled": true,
+                  "BorderStyle": {
+                    "Bindings": {
+                      "BorderColor": {
+                        "Formula": {
+                          "Expression": "return twf_get_ui_color('border')\t",
+                          "Interpreter": 1
+                        },
+                        "Mode": 2,
+                        "TargetPropertyName": "BorderColor"
+                      }
+                    },
+                    "BorderColor": "#FF233E49",
+                    "RadiusBottomLeft": 9,
+                    "RadiusBottomRight": 9,
+                    "RadiusTopLeft": 9,
+                    "RadiusTopRight": 9
+                  },
+                  "Height": 225.0,
+                  "IsRectangleItem": true,
+                  "Left": 207.0,
+                  "Name": "spotter",
+                  "Top": 0.0,
+                  "Visible": false,
+                  "Width": 120.0
+                }
+              ],
+              "Group": true,
+              "Height": 225.0,
+              "Left": 207.0,
+              "Name": "right",
+              "Top": 0.0,
+              "Visible": true,
+              "Width": 120.0
+            },
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.Layer, SimHub.Plugins",
+              "BackgroundColor": "#00FFFFFF",
+              "Childrens": [
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+                  "BackgroundColor": "#FF06151B",
+                  "Bindings": {
+                    "BackgroundColor": {
+                      "Formula": {
+                        "Expression": "return twf_get_ui_color('spotterbg')",
+                        "Interpreter": 1
+                      },
+                      "Mode": 2,
+                      "TargetPropertyName": "BackgroundColor"
+                    }
+                  },
+                  "BorderStyle": {
+                    "BorderBottom": 2,
+                    "BorderColor": "#FF233E49",
+                    "BorderLeft": 2,
+                    "BorderRight": 2,
+                    "BorderTop": 2,
+                    "RadiusBottomLeft": 9,
+                    "RadiusBottomRight": 9,
+                    "RadiusTopLeft": 9,
+                    "RadiusTopRight": 9
+                  },
+                  "Height": 225.0,
+                  "IsRectangleItem": true,
+                  "Left": 0.0,
+                  "Name": "bg",
+                  "Top": 0.0,
+                  "Visible": true,
+                  "Width": 120.0
+                },
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.LinearGaugeItem, SimHub.Plugins",
+                  "AlternateGaugeColor": "#FF008000",
+                  "AutoSize": false,
+                  "BackgroundColor": "#FFFF8C00",
+                  "Bindings": {
+                    "BackgroundColor": {
+                      "Formula": {
+                        "Expression": "return twf_get_ui_color('spottergauge')",
+                        "Interpreter": 1
+                      },
+                      "Mode": 2,
+                      "TargetPropertyName": "BackgroundColor"
+                    },
+                    "GaugeColor": {
+                      "Formula": {
+                        "Expression": "return twf_get_ui_color('spotterbg')",
+                        "Interpreter": 1
+                      },
+                      "Mode": 2,
+                      "TargetPropertyName": "GaugeColor"
+                    },
+                    "Value": {
+                      "Formula": {
+                        "Expression": "[PersistantTrackerPlugin.DriverBehind_00_Distance]"
+                      },
+                      "Mode": 2,
+                      "TargetPropertyName": "Value"
+                    },
+                    "Visible": {
+                      "Formula": {
+                        "Expression": "[SpotterCarLeft] == 0 and [SpotterCarRight] == 0 and [PersistantTrackerPlugin.DriverBehind_00_Distance]>0"
+                      },
+                      "Mode": 2,
+                      "TargetPropertyName": "Visible"
+                    }
+                  },
+                  "BorderStyle": {
+                    "BorderColor": "#FF808080",
+                    "RadiusBottomLeft": 11,
+                    "RadiusBottomRight": 11,
+                    "RadiusTopLeft": 11,
+                    "RadiusTopRight": 11
+                  },
+                  "GaugeAlignment": 2,
+                  "GaugeColor": "#FF06151B",
+                  "GaugeOrientation": 1,
+                  "Height": 225.0,
+                  "IsLinearGauge": true,
+                  "Left": 0.0,
+                  "Maximum": 40.0,
+                  "Minimum": 0.0,
+                  "Name": "behind",
+                  "PAW": 129.0,
+                  "Steps": 0.0,
+                  "Top": 0.0,
+                  "UseAlternateStyle": false,
+                  "Value": 23.0,
+                  "Visible": true,
+                  "Width": 120.0
+                },
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.Layer, SimHub.Plugins",
+                  "BackgroundColor": "#00FFFFFF",
+                  "Childrens": [
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+                      "BackgroundColor": "#00FFFFFF",
+                      "BorderStyle": {
+                        "Bindings": {
+                          "BorderColor": {
+                            "Formula": {
+                              "Expression": "return twf_get_ui_color('border')",
+                              "Interpreter": 1
+                            },
+                            "Mode": 2,
+                            "TargetPropertyName": "BorderColor"
+                          }
+                        },
+                        "BorderColor": "#FF233E49",
+                        "BorderTop": 1
+                      },
+                      "Height": 2.0,
+                      "IsFreezed": true,
+                      "IsRectangleItem": true,
+                      "Left": 0.0,
+                      "Name": "Gauge Scale",
+                      "Top": 8.0,
+                      "Visible": true,
+                      "Width": 120.0
+                    }
+                  ],
+                  "Group": true,
+                  "Height": 2.0,
+                  "Left": 0.0,
+                  "Name": "Gauge Mask",
+                  "RepeatTopOffset": 9.0,
+                  "Repetitions": 23.0,
+                  "Top": 8.0,
+                  "Visible": true,
+                  "Width": 120.0
+                },
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+                  "BackgroundColor": "#00FFFFFF",
+                  "BorderStyle": {
+                    "Bindings": {
+                      "BorderColor": {
+                        "Formula": {
+                          "Expression": "return twf_get_ui_color('border')",
+                          "Interpreter": 1
+                        },
+                        "Mode": 2,
+                        "TargetPropertyName": "BorderColor"
+                      }
+                    },
+                    "BorderBottom": 2,
+                    "BorderColor": "#FF233E49",
+                    "BorderLeft": 2,
+                    "BorderRight": 2,
+                    "BorderTop": 2,
+                    "RadiusBottomLeft": 9,
+                    "RadiusBottomRight": 9,
+                    "RadiusTopLeft": 9,
+                    "RadiusTopRight": 9
+                  },
+                  "Height": 225.0,
+                  "IsRectangleItem": true,
+                  "Left": 0.0,
+                  "Name": "borders",
+                  "Top": 0.0,
+                  "Visible": true,
+                  "Width": 120.0
+                },
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+                  "BackgroundColor": "#FFFF0000",
+                  "Bindings": {
+                    "Visible": {
+                      "Formula": {
+                        "Expression": "[SpotterCarLeft]"
+                      },
+                      "Mode": 2,
+                      "TargetPropertyName": "Visible"
+                    }
+                  },
+                  "BlinkDelay": 300.0,
+                  "BlinkEnabled": true,
+                  "BorderStyle": {
+                    "Bindings": {
+                      "BorderColor": {
+                        "Formula": {
+                          "Expression": "return twf_get_ui_color('border')\t",
+                          "Interpreter": 1
+                        },
+                        "Mode": 2,
+                        "TargetPropertyName": "BorderColor"
+                      }
+                    },
+                    "BorderColor": "#FF233E49",
+                    "RadiusBottomLeft": 9,
+                    "RadiusBottomRight": 9,
+                    "RadiusTopLeft": 9,
+                    "RadiusTopRight": 9
+                  },
+                  "Height": 225.0,
+                  "IsRectangleItem": true,
+                  "Left": 0.0,
+                  "Name": "spotter",
+                  "Top": 0.0,
+                  "Visible": false,
+                  "Width": 120.0
+                }
+              ],
+              "Group": true,
+              "Height": 225.0,
+              "Left": 0.0,
+              "Name": "left",
+              "Top": 0.0,
+              "Visible": true,
+              "Width": 120.0
+            }
+          ],
+          "Group": true,
+          "Height": 225.0,
+          "Left": 0.0,
+          "Name": "REAR_ONLY",
+          "Top": 0.0,
+          "Visible": true,
+          "Width": 327.0
+        }
+      ],
+      "Name": "FRONT_REAR",
+      "OverlayMaxDuration": 0,
+      "OverlayMinDuration": 0,
+      "OverlayTriggerExpression": {
+        "Expression": ""
+      },
+      "PitScreen": false,
+      "ScreenEnabledExpression": {
+        "Expression": ""
+      },
+      "ScreenId": "0997ba5c-dbb2-418a-9e16-4228fdbdbcf0"
+    }
+  ],
+  "ShowBackground": true,
+  "ShowBoundingRectangles": false,
+  "ShowForeground": true,
+  "ShowOnScreenControls": true,
+  "SnapToGrid": false,
+  "Version": 2
+}

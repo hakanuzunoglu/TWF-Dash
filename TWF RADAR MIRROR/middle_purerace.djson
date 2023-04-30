@@ -1,0 +1,890 @@
+{
+  "BackgroundColor": "#FF000000",
+  "BackgroundOpacity": 100.0,
+  "BaseHeight": 362,
+  "BaseWidth": 362,
+  "DashboardDebugManager": {
+    "LastPlacement": "571,118,1109,1109",
+    "Maximized": false
+  },
+  "EnableClickThroughOverlay": true,
+  "EnableOnDashboardMessaging": true,
+  "ForegroundOpacity": 100.0,
+  "GridSize": 10,
+  "HideLabels": true,
+  "Id": "eb8fb72f-c449-4bbe-afce-0b060908183b",
+  "Images": [
+    {
+      "Extension": ".png",
+      "Height": 25,
+      "Length": 595,
+      "MD5": "1ef823152a6a497ce7e918378418c9ca",
+      "Modified": false,
+      "Name": "engine",
+      "Optimized": true,
+      "Width": 36
+    },
+    {
+      "Extension": ".png",
+      "Height": 29,
+      "Length": 974,
+      "MD5": "498434662b5c0bf34e7ac2acbf012309",
+      "Modified": false,
+      "Name": "low-beam",
+      "Optimized": true,
+      "Width": 40
+    },
+    {
+      "Extension": ".png",
+      "Height": 25,
+      "Length": 603,
+      "MD5": "4b32afa1459864fcd55b55476cb34629",
+      "Modified": false,
+      "Name": "ignition",
+      "Optimized": true,
+      "Width": 36
+    },
+    {
+      "Extension": ".png",
+      "Height": 35,
+      "Length": 756,
+      "MD5": "5d73e87adcc2918fb090dc795225d00f",
+      "Modified": false,
+      "Name": "left-indicator",
+      "Optimized": true,
+      "Width": 37
+    },
+    {
+      "Extension": ".png",
+      "Height": 24,
+      "Length": 946,
+      "MD5": "2e71a39c11973642c01eb4d8a14db845",
+      "Modified": false,
+      "Name": "rain-light",
+      "Optimized": true,
+      "Width": 36
+    },
+    {
+      "Extension": ".png",
+      "Height": 35,
+      "Length": 802,
+      "MD5": "06616dc5d3d8af557bd6c3c6205a5c8b",
+      "Modified": false,
+      "Name": "right-indicator",
+      "Optimized": true,
+      "Width": 37
+    },
+    {
+      "Extension": ".png",
+      "Height": 28,
+      "Length": 968,
+      "MD5": "9b9bbe225c5b920ef7ed357bbcec7752",
+      "Modified": false,
+      "Name": "wiper",
+      "Optimized": true,
+      "Width": 39
+    },
+    {
+      "Extension": ".png",
+      "Height": 25,
+      "Length": 671,
+      "MD5": "e1c973b41eca8c762404e3ee889e999f",
+      "Modified": false,
+      "Name": "high-beam",
+      "Optimized": true,
+      "Width": 36
+    }
+  ],
+  "IsOverlay": false,
+  "Metadata": {
+    "EnableOnDashboardMessaging": true,
+    "Height": 362.0,
+    "IdleScreensIndexs": [
+      0
+    ],
+    "InGameScreensIndexs": [
+      0
+    ],
+    "IsOverlay": false,
+    "MainPreviewIndex": 0,
+    "MetadataVersion": 2.0,
+    "OverlaySizeWarning": false,
+    "PitScreensIndexs": [],
+    "ScreenCount": 1.0,
+    "Width": 362.0
+  },
+  "Screens": [
+    {
+      "AllowOverlays": true,
+      "BackgroundColor": "#FFFFA500",
+      "IdleScreen": true,
+      "InGameScreen": true,
+      "IsBackgroundLayer": false,
+      "IsForegroundLayer": false,
+      "IsOverlayLayer": false,
+      "Items": [
+        {
+          "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.Layer, SimHub.Plugins",
+          "BackgroundColor": "#00FFFFFF",
+          "Childrens": [
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.Layer, SimHub.Plugins",
+              "BackgroundColor": "#00FFFFFF",
+              "Childrens": [],
+              "Group": true,
+              "Height": 0.0,
+              "Left": 0.0,
+              "Name": "MIDDLE_ROUNDED",
+              "Top": 0.0,
+              "Visible": true,
+              "Width": 0.0
+            },
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+              "BackgroundColor": "#00FFFFFF",
+              "Bindings": {
+                "Text": {
+                  "FormatString": "0",
+                  "Formula": {
+                    "Expression": "abs([Clutch])"
+                  },
+                  "Mode": 2,
+                  "TargetPropertyName": "Text"
+                },
+                "Visible": {
+                  "Formula": {
+                    "Expression": "[Clutch]>0"
+                  },
+                  "Mode": 2,
+                  "TargetPropertyName": "Visible"
+                }
+              },
+              "Font": "Rajdhani",
+              "FontSize": 22.0,
+              "FontWeight": "Bold",
+              "Height": 20.0,
+              "HorizontalAlignment": 1,
+              "IsTextItem": true,
+              "Left": 156.0,
+              "Name": "CLUTCH_VALUE",
+              "Text": "100",
+              "TextColor": "#FFFFA500",
+              "Top": 275.0,
+              "VerticalAlignment": 1,
+              "Visible": true,
+              "Width": 50.0
+            },
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.BuiltIn.RPMText, SimHub.Plugins",
+              "BackgroundColor": "#00FFFFFF",
+              "Font": "Rajdhani",
+              "FontSize": 28.0,
+              "FontWeight": "Bold",
+              "Format": "0",
+              "Height": 40.0,
+              "HorizontalAlignment": 1,
+              "IsTextItem": true,
+              "Left": 110.00000000000006,
+              "Name": "RPM_VALUE",
+              "NoDataText": "0",
+              "TextColor": "#FF999999",
+              "Top": 75.0,
+              "VerticalAlignment": 1,
+              "Visible": true,
+              "Width": 143.0
+            },
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.Layer, SimHub.Plugins",
+              "BackgroundColor": "#00FFFFFF",
+              "Bindings": {
+                "Visible": {
+                  "Formula": {
+                    "Expression": "[PitLimiterOn]>0"
+                  },
+                  "Mode": 2,
+                  "TargetPropertyName": "Visible"
+                }
+              },
+              "Childrens": [
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.EllipseItem, SimHub.Plugins",
+                  "BackgroundColor": "#00FF2626",
+                  "BlinkDelay": 296.0,
+                  "EllipseColor": "#FFFFFFFF",
+                  "EllipseThickness": 0.0,
+                  "FillColor": "#FF01499F",
+                  "Height": 235.0,
+                  "Left": 63.5,
+                  "Name": "PIT_HELPER",
+                  "Top": 63.5,
+                  "Visible": true,
+                  "Width": 235.0
+                },
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+                  "BackgroundColor": "#00FFFFFF",
+                  "Font": "Rajdhani",
+                  "FontSize": 28.0,
+                  "FontWeight": "Bold",
+                  "Height": 40.0,
+                  "HorizontalAlignment": 1,
+                  "IsTextItem": true,
+                  "Left": 109.5,
+                  "Name": "TextItem",
+                  "Text": "LIMITED",
+                  "TextColor": "#FFFFFFFF",
+                  "Top": 80.0,
+                  "VerticalAlignment": 1,
+                  "Visible": false,
+                  "Width": 143.0
+                }
+              ],
+              "Group": true,
+              "Height": 235.0,
+              "Left": 63.5,
+              "Name": "PITLIMITER",
+              "Top": 63.5,
+              "Visible": false,
+              "Width": 235.0
+            },
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.Layer, SimHub.Plugins",
+              "BackgroundColor": "#00FFFFFF",
+              "Bindings": {
+                "Visible": {
+                  "Formula": {
+                    "Expression": "[DataCorePlugin.CurrentGame]=='AssettoCorsaCompetizione' && ([IsInPitLane] || [PitLimiterOn]>0) && ([SpeedKmh]>50)"
+                  },
+                  "Mode": 2,
+                  "TargetPropertyName": "Visible"
+                }
+              },
+              "Childrens": [
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.EllipseItem, SimHub.Plugins",
+                  "BackgroundColor": "#00FF2626",
+                  "BlinkDelay": 296.0,
+                  "EllipseColor": "#FFFFFFFF",
+                  "EllipseThickness": 0.0,
+                  "FillColor": "#FFA52A2A",
+                  "Height": 235.0,
+                  "Left": 63.5,
+                  "Name": "PIT_HELPER",
+                  "Top": 63.5,
+                  "Visible": true,
+                  "Width": 235.0
+                },
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+                  "BackgroundColor": "#00FFFFFF",
+                  "Font": "Rajdhani",
+                  "FontSize": 28.0,
+                  "FontWeight": "Bold",
+                  "Height": 40.0,
+                  "HorizontalAlignment": 1,
+                  "IsTextItem": true,
+                  "Left": 109.5,
+                  "Name": "TextItem",
+                  "Text": "OVERSPEED",
+                  "TextColor": "#FFFFFFFF",
+                  "Top": 80.0,
+                  "VerticalAlignment": 1,
+                  "Visible": true,
+                  "Width": 143.0
+                }
+              ],
+              "Group": true,
+              "Height": 235.0,
+              "Left": 63.5,
+              "Name": "OVERSPEED_ACC",
+              "Top": 63.5,
+              "Visible": false,
+              "Width": 235.0
+            },
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.Layer, SimHub.Plugins",
+              "BackgroundColor": "#00FFFFFF",
+              "Bindings": {
+                "Visible": {
+                  "Formula": {
+                    "Expression": "[DataCorePlugin.CurrentGame]=='IRacing' && [SpeedKMH]> isnull([IRacingExtraProperties.iRacing_PitSpeedLimitKph],80)"
+                  },
+                  "Mode": 2,
+                  "TargetPropertyName": "Visible"
+                }
+              },
+              "Childrens": [
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.Layer, SimHub.Plugins",
+                  "BackgroundColor": "#00FFFFFF",
+                  "Bindings": {
+                    "Visible": {
+                      "Formula": {
+                        "Expression": "([GameRawData.Telemetry.PlayerTrackSurface] == 2 && isnull([IRacingExtraProperties.iRacing_DistanceToPitEntry],105) < 100)"
+                      },
+                      "Mode": 2,
+                      "TargetPropertyName": "Visible"
+                    }
+                  },
+                  "Childrens": [
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.Layer, SimHub.Plugins",
+                      "BackgroundColor": "#00FFFFFF",
+                      "Bindings": {
+                        "Visible": {
+                          "Formula": {
+                            "Expression": "[SpeedKMH]>[IRacingExtraProperties.iRacing_PitSpeedLimitKph]"
+                          },
+                          "Mode": 2,
+                          "TargetPropertyName": "Visible"
+                        }
+                      },
+                      "Childrens": [],
+                      "Group": true,
+                      "Height": 0.0,
+                      "Left": 0.0,
+                      "Name": "WRAPPER",
+                      "Top": 0.0,
+                      "Visible": true,
+                      "Width": 0.0
+                    },
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.EllipseItem, SimHub.Plugins",
+                      "BackgroundColor": "#00FF2626",
+                      "BlinkDelay": 296.0,
+                      "EllipseColor": "#FFFFFFFF",
+                      "EllipseThickness": 0.0,
+                      "FillColor": "#FFA52A2A",
+                      "Height": 235.0,
+                      "Left": 63.5,
+                      "Name": "PIT_HELPER",
+                      "Top": 63.5,
+                      "Visible": true,
+                      "Width": 235.0
+                    },
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+                      "BackgroundColor": "#00FFFFFF",
+                      "Font": "Rajdhani",
+                      "FontSize": 28.0,
+                      "FontWeight": "Bold",
+                      "Height": 40.0,
+                      "HorizontalAlignment": 1,
+                      "IsTextItem": true,
+                      "Left": 109.5,
+                      "Name": "TextItem",
+                      "Text": "OVERSPEED",
+                      "TextColor": "#FFFFFFFF",
+                      "Top": 80.0,
+                      "VerticalAlignment": 1,
+                      "Visible": true,
+                      "Width": 143.0
+                    }
+                  ],
+                  "Group": true,
+                  "Height": 298.5,
+                  "Left": 0.0,
+                  "Name": "ENTRY",
+                  "Top": 0.0,
+                  "Visible": true,
+                  "Width": 298.5
+                },
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.Layer, SimHub.Plugins",
+                  "BackgroundColor": "#00FFFFFF",
+                  "Bindings": {
+                    "Visible": {
+                      "Formula": {
+                        "Expression": "[IsInPitLane] || [PitLimiterOn]>0"
+                      },
+                      "Mode": 2,
+                      "TargetPropertyName": "Visible"
+                    }
+                  },
+                  "Childrens": [
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.EllipseItem, SimHub.Plugins",
+                      "BackgroundColor": "#00FF2626",
+                      "BlinkDelay": 296.0,
+                      "EllipseColor": "#FFFFFFFF",
+                      "EllipseThickness": 0.0,
+                      "FillColor": "#FFA52A2A",
+                      "Height": 235.0,
+                      "Left": 63.5,
+                      "Name": "PIT_HELPER",
+                      "Top": 63.5,
+                      "Visible": true,
+                      "Width": 235.0
+                    },
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+                      "BackgroundColor": "#00FFFFFF",
+                      "Font": "Rajdhani",
+                      "FontSize": 28.0,
+                      "FontWeight": "Bold",
+                      "Height": 40.0,
+                      "HorizontalAlignment": 1,
+                      "IsTextItem": true,
+                      "Left": 109.5,
+                      "Name": "TextItem",
+                      "Text": "OVERSPEED",
+                      "TextColor": "#FFFFFFFF",
+                      "Top": 80.0,
+                      "VerticalAlignment": 1,
+                      "Visible": true,
+                      "Width": 143.0
+                    }
+                  ],
+                  "Group": true,
+                  "Height": 235.0,
+                  "Left": 63.5,
+                  "Name": "PITLANE",
+                  "Top": 63.5,
+                  "Visible": true,
+                  "Width": 235.0
+                }
+              ],
+              "Group": true,
+              "Height": 298.5,
+              "Left": 0.0,
+              "Name": "OVERSPEED_IR",
+              "Top": 0.0,
+              "Visible": false,
+              "Width": 298.5
+            },
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.BuiltIn.GearText, SimHub.Plugins",
+              "BackgroundColor": "#00FFFFFF",
+              "DesignerText": "N",
+              "Font": "Rajdhani",
+              "FontSize": 162.0,
+              "FontWeight": "Bold",
+              "GearBackgoundColor": "#00FFFFFF",
+              "GearBlinkBackground": false,
+              "GearBlinkBackgroundColor": "#00FFFFFF",
+              "GearBlinkDelay": 150,
+              "GearBlinkText": false,
+              "GearBlinkTextColor": "#FFFFD700",
+              "GearTextColor": "#FFFFD700",
+              "Height": 160.0,
+              "HorizontalAlignment": 1,
+              "IgnoreNeutralGear": false,
+              "IsTextItem": true,
+              "Left": 110.00000000000006,
+              "Name": "GEAR_VALUE",
+              "NoDataText": "N",
+              "TextColor": "#FFFFD700",
+              "Top": 100.0,
+              "VerticalAlignment": 1,
+              "Visible": true,
+              "Width": 143.0
+            },
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.BuiltIn.SpeedText, SimHub.Plugins",
+              "BackgroundColor": "#00FFFFFF",
+              "Font": "Rajdhani",
+              "FontSize": 42.0,
+              "FontWeight": "Bold",
+              "Format": "0",
+              "Height": 70.0,
+              "HorizontalAlignment": 1,
+              "IsTextItem": true,
+              "Left": 110.00000000000006,
+              "Name": "SPEED_VALUE",
+              "NoDataText": "0",
+              "TextColor": "#FFFFFFFF",
+              "Top": 222.0,
+              "VerticalAlignment": 1,
+              "Visible": true,
+              "Width": 143.0
+            },
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.Layer, SimHub.Plugins",
+              "BackgroundColor": "#00FFFFFF",
+              "Childrens": [
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.ImageItem, SimHub.Plugins",
+                  "AutoSize": false,
+                  "AutoSizeScale": 0.8,
+                  "BackgroundColor": "#00FFFFFF",
+                  "Bindings": {
+                    "Visible": {
+                      "Formula": {
+                        "Expression": "isnull([DataCorePlugin.GameData.TurnIndicatorLeft],0)"
+                      },
+                      "Mode": 2,
+                      "TargetPropertyName": "Visible"
+                    }
+                  },
+                  "BlinkDelay": 500.0,
+                  "BlinkEnabled": true,
+                  "Height": 26.0,
+                  "Image": "left-indicator",
+                  "Left": 89.00000000000006,
+                  "Name": "indicator-left",
+                  "Top": 117.0,
+                  "Visible": true,
+                  "Width": 28.0
+                },
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.ImageItem, SimHub.Plugins",
+                  "AutoSize": false,
+                  "BackgroundColor": "#00FFFFFF",
+                  "Bindings": {
+                    "Visible": {
+                      "Formula": {
+                        "Expression": "if (isnull([DataCorePlugin.GameRawData.Graphics.FlashingLights],0)=0 , \r\n    if (isnull([DataCorePlugin.GameRawData.Graphics.LightsStage],0)=1, 1, 0) , 0\r\n)"
+                      },
+                      "Mode": 2,
+                      "TargetPropertyName": "Visible"
+                    }
+                  },
+                  "Height": 22.0,
+                  "Image": "low-beam",
+                  "Left": 79.00000000000006,
+                  "Name": "low-beam",
+                  "Top": 169.0,
+                  "Visible": true,
+                  "Width": 29.0
+                },
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.Layer, SimHub.Plugins",
+                  "BackgroundColor": "#00FFFFFF",
+                  "Bindings": {
+                    "Visible": {
+                      "Formula": {
+                        "Expression": "if (isnull([DataCorePlugin.GameRawData.Graphics.FlashingLights],0)=0 , \r\n    if (isnull([DataCorePlugin.GameRawData.Graphics.LightsStage],0)=2, 1, 0), 0\r\n)"
+                      },
+                      "Mode": 2,
+                      "TargetPropertyName": "Visible"
+                    }
+                  },
+                  "Childrens": [
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.ImageItem, SimHub.Plugins",
+                      "AutoSize": false,
+                      "BackgroundColor": "#00FFFFFF",
+                      "Height": 19.0,
+                      "Image": "high-beam",
+                      "Left": 79.0,
+                      "Name": "high-beam",
+                      "Top": 169.0,
+                      "Visible": true,
+                      "Width": 29.0
+                    }
+                  ],
+                  "Group": true,
+                  "Height": 19.0,
+                  "Left": 79.0,
+                  "Name": "high-beam",
+                  "Top": 169.0,
+                  "Visible": true,
+                  "Width": 29.0
+                },
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.Layer, SimHub.Plugins",
+                  "BackgroundColor": "#00FFFFFF",
+                  "Bindings": {
+                    "Visible": {
+                      "Formula": {
+                        "Expression": "blink('flasher', 300, isnull([DataCorePlugin.GameRawData.Graphics.FlashingLights],isnull([DataCorePlugin.GameRawData.Telemetry.dcHeadlightFlash],0)))\r\n"
+                      },
+                      "Mode": 2,
+                      "TargetPropertyName": "Visible"
+                    }
+                  },
+                  "Childrens": [
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.ImageItem, SimHub.Plugins",
+                      "AutoSize": false,
+                      "BackgroundColor": "#00FFFFFF",
+                      "BlinkDelay": 300.0,
+                      "BlinkEnabled": true,
+                      "Height": 19.0,
+                      "Image": "high-beam",
+                      "Left": 79.0,
+                      "Name": "flasher",
+                      "Top": 169.0,
+                      "Visible": true,
+                      "Width": 29.0
+                    }
+                  ],
+                  "Group": true,
+                  "Height": 19.0,
+                  "Left": 79.0,
+                  "Name": "flasher",
+                  "Top": 169.0,
+                  "Visible": true,
+                  "Width": 29.0
+                },
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.ImageItem, SimHub.Plugins",
+                  "AutoSize": false,
+                  "BackgroundColor": "#00FFFFFF",
+                  "Bindings": {
+                    "Visible": {
+                      "Formula": {
+                        "Expression": "isnull([DataCorePlugin.GameRawData.Graphics.RainLights],0)"
+                      },
+                      "Mode": 2,
+                      "TargetPropertyName": "Visible"
+                    }
+                  },
+                  "Height": 19.0,
+                  "Image": "rain-light",
+                  "Left": 89.00000000000006,
+                  "Name": "rain-light",
+                  "Top": 217.0,
+                  "Visible": true,
+                  "Width": 29.0
+                },
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.Layer, SimHub.Plugins",
+                  "BackgroundColor": "#00FFFFFF",
+                  "Bindings": {
+                    "Visible": {
+                      "Formula": {
+                        "Expression": "isnull([DataCorePlugin.GameRawData.Graphics.WiperLV],0)\r\n"
+                      },
+                      "Mode": 2,
+                      "TargetPropertyName": "Visible"
+                    }
+                  },
+                  "Childrens": [
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.ImageItem, SimHub.Plugins",
+                      "AutoSize": false,
+                      "BackgroundColor": "#00FFFFFF",
+                      "Height": 22.0,
+                      "Image": "wiper",
+                      "Left": 257.0,
+                      "Name": "wiper",
+                      "Top": 168.0,
+                      "Visible": true,
+                      "Width": 29.0
+                    },
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+                      "BackgroundColor": "#00FFFFFF",
+                      "Bindings": {
+                        "Text": {
+                          "Formula": {
+                            "Expression": "isnull([DataCorePlugin.GameRawData.Graphics.WiperLV],0)"
+                          },
+                          "Mode": 2,
+                          "TargetPropertyName": "Text"
+                        }
+                      },
+                      "Font": "Rajdhani",
+                      "FontSize": 16.0,
+                      "FontWeight": "SemiBold",
+                      "Height": 40.0,
+                      "HorizontalAlignment": 1,
+                      "IsTextItem": true,
+                      "Left": 274.0,
+                      "Name": "TextItem0",
+                      "ShadowColor": "#FF000000",
+                      "ShadowDepth": 2,
+                      "ShadowDirection": 144,
+                      "Text": "0",
+                      "TextColor": "#FF00F5FF",
+                      "Top": 167.0,
+                      "VerticalAlignment": 1,
+                      "Visible": true,
+                      "Width": 21.0
+                    }
+                  ],
+                  "Group": true,
+                  "Height": 40.0,
+                  "Left": 257.0,
+                  "Name": "wiper",
+                  "Top": 167.0,
+                  "Visible": true,
+                  "Width": 38.0
+                },
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.ImageItem, SimHub.Plugins",
+                  "AutoSize": false,
+                  "AutoSizeScale": 0.8,
+                  "BackgroundColor": "#00FFFFFF",
+                  "Bindings": {
+                    "Visible": {
+                      "Formula": {
+                        "Expression": "isnull([DataCorePlugin.GameData.TurnIndicatorRight],0)"
+                      },
+                      "Mode": 2,
+                      "TargetPropertyName": "Visible"
+                    }
+                  },
+                  "BlinkDelay": 500.0,
+                  "BlinkEnabled": true,
+                  "Height": 26.0,
+                  "Image": "right-indicator",
+                  "Left": 246.0,
+                  "Name": "indicator-right",
+                  "Top": 117.0,
+                  "Visible": true,
+                  "Width": 28.0
+                },
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.ImageItem, SimHub.Plugins",
+                  "AutoSize": false,
+                  "BackgroundColor": "#00FFFFFF",
+                  "Bindings": {
+                    "Visible": {
+                      "Formula": {
+                        "Expression": "if(isnull([DataCorePlugin.GameData.EngineIgnitionOn],0)==1,0,1)"
+                      },
+                      "Mode": 2,
+                      "TargetPropertyName": "Visible"
+                    }
+                  },
+                  "Height": 19.0,
+                  "Image": "ignition",
+                  "Left": 249.0,
+                  "Name": "ignition",
+                  "Top": 217.0,
+                  "Visible": true,
+                  "Width": 27.0
+                },
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.ImageItem, SimHub.Plugins",
+                  "AutoSize": false,
+                  "BackgroundColor": "#00FFFFFF",
+                  "Bindings": {
+                    "Visible": {
+                      "Formula": {
+                        "Expression": "if(isnull([DataCorePlugin.GameData.EngineStarted],0)==1,0,\r\nif(isnull([DataCorePlugin.GameData.EngineIgnitionOn],0)==1,1,0))"
+                      },
+                      "Mode": 2,
+                      "TargetPropertyName": "Visible"
+                    }
+                  },
+                  "Height": 19.0,
+                  "Image": "engine",
+                  "Left": 249.0,
+                  "Name": "engine",
+                  "Top": 217.0,
+                  "Visible": true,
+                  "Width": 27.0
+                }
+              ],
+              "Group": true,
+              "Height": 119.0,
+              "Left": 79.0,
+              "Name": "LIGHTS",
+              "Top": 117.0,
+              "Visible": true,
+              "Width": 216.0
+            },
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.Layer, SimHub.Plugins",
+              "BackgroundColor": "#00FFFFFF",
+              "Bindings": {
+                "Opacity": {
+                  "Formula": {
+                    "Expression": "inertia(if([DataCorePlugin.GameData.EngineIgnitionOn]==1,0,100),300)"
+                  },
+                  "Mode": 2,
+                  "TargetPropertyName": "Opacity"
+                }
+              },
+              "Childrens": [
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.EllipseItem, SimHub.Plugins",
+                  "BackgroundColor": "#00FF2626",
+                  "Bindings": {
+                    "FillColor": {
+                      "Formula": {
+                        "Expression": "return twf_get_ui_color('rpmbg')",
+                        "Interpreter": 1
+                      },
+                      "Mode": 2,
+                      "TargetPropertyName": "FillColor"
+                    }
+                  },
+                  "BlinkDelay": 296.0,
+                  "EllipseColor": "#FFFFFFFF",
+                  "EllipseThickness": 0.0,
+                  "FillColor": "#FF222222",
+                  "Height": 246.0,
+                  "Left": 58.0,
+                  "Name": "BG2",
+                  "Top": 58.0,
+                  "Visible": true,
+                  "Width": 246.0
+                },
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.WidgetItem, SimHub.Plugins",
+                  "AutoSize": true,
+                  "AutoSizeScale": 2.35,
+                  "BackgroundColor": "#00FFFFFF",
+                  "EnableScreenRolesAndActivation": false,
+                  "FileName": "car_logos.djson",
+                  "Height": 84.60000000000001,
+                  "InitialScreenIndex": 0,
+                  "Left": 104.625,
+                  "Name": "CARLOGOS",
+                  "NextScreenCommand": 0,
+                  "PreviousScreenCommand": 0,
+                  "Top": 138.7,
+                  "Visible": true,
+                  "Width": 152.75
+                },
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+                  "BackgroundColor": "#00FFFFFF",
+                  "Font": "Rajdhani",
+                  "FontSize": 26.0,
+                  "FontWeight": "Bold",
+                  "Height": 40.0,
+                  "HorizontalAlignment": 1,
+                  "IsTextItem": true,
+                  "Left": 90.0,
+                  "Name": "IGNITION_OFF",
+                  "Text": "IGNITION OFF",
+                  "TextColor": "#FFFFFFFF",
+                  "Top": 240.0,
+                  "VerticalAlignment": 1,
+                  "Visible": true,
+                  "Width": 182.0
+                }
+              ],
+              "Group": true,
+              "Height": 246.0,
+              "Left": 58.0,
+              "Name": "IGNITION_OFF",
+              "Top": 58.0,
+              "Visible": false,
+              "Width": 246.0
+            }
+          ],
+          "Group": true,
+          "Height": 304.0,
+          "Left": 0.0,
+          "Name": "RECTANGLE_MIDDLE",
+          "Top": 0.0,
+          "Visible": true,
+          "Width": 304.0
+        }
+      ],
+      "Name": "Screen",
+      "OverlayMaxDuration": 0,
+      "OverlayMinDuration": 0,
+      "OverlayTriggerExpression": {
+        "Expression": ""
+      },
+      "PitScreen": false,
+      "ScreenEnabledExpression": {
+        "Expression": ""
+      },
+      "ScreenId": "0c416db3-6a3a-4c3b-a5b9-96fb36092b92"
+    }
+  ],
+  "ShowBackground": true,
+  "ShowBoundingRectangles": false,
+  "ShowForeground": true,
+  "ShowOnScreenControls": true,
+  "SnapToGrid": false,
+  "Version": 2
+}

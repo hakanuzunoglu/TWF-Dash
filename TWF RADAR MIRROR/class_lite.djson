@@ -1,0 +1,505 @@
+{
+  "BackgroundColor": "#FF000000",
+  "BackgroundOpacity": 100.0,
+  "BaseHeight": 284,
+  "BaseWidth": 228,
+  "DashboardDebugManager": {
+    "LastPlacement": "130,130,618,770",
+    "Maximized": false
+  },
+  "EnableClickThroughOverlay": true,
+  "EnableOnDashboardMessaging": true,
+  "ForegroundOpacity": 100.0,
+  "GridSize": 10,
+  "HideLabels": false,
+  "Id": "fe92ec7e-947e-460b-9249-a75e833de871",
+  "Images": [],
+  "IsOverlay": false,
+  "Metadata": {
+    "EnableOnDashboardMessaging": true,
+    "Height": 284.0,
+    "IdleScreensIndexs": [
+      0
+    ],
+    "InGameScreensIndexs": [
+      0
+    ],
+    "IsOverlay": false,
+    "MainPreviewIndex": 0,
+    "MetadataVersion": 2.0,
+    "OverlaySizeWarning": false,
+    "PitScreensIndexs": [],
+    "ScreenCount": 1.0,
+    "Width": 228.0
+  },
+  "Screens": [
+    {
+      "AllowOverlays": true,
+      "BackgroundColor": "#FF000000",
+      "IdleScreen": true,
+      "InGameScreen": true,
+      "IsBackgroundLayer": false,
+      "IsForegroundLayer": false,
+      "IsOverlayLayer": false,
+      "Items": [
+        {
+          "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.Layer, SimHub.Plugins",
+          "BackgroundColor": "#00FFFFFF",
+          "Childrens": [
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.Layer, SimHub.Plugins",
+              "BackgroundColor": "#00FFFFFF",
+              "Bindings": {
+                "Visible": {
+                  "Formula": {
+                    "Expression": "if (isnull(drivername(1)), 0, 1)"
+                  },
+                  "Mode": 2,
+                  "TargetPropertyName": "Visible"
+                }
+              },
+              "Childrens": [
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.BuiltIn.LeaderBoardBackground, SimHub.Plugins",
+                  "AlternateBackgroundColor": "#00FFFFFF",
+                  "AlternateBackgroundColorEnabled": true,
+                  "BackgroundColor": "#FF000000",
+                  "Bindings": {
+                    "AlternateBackgroundColor": {
+                      "Formula": {
+                        "Expression": "return twf_get_ui_color('tablebg')\t",
+                        "Interpreter": 1
+                      },
+                      "Mode": 2,
+                      "TargetPropertyName": "AlternateBackgroundColor"
+                    }
+                  },
+                  "BorderStyle": {
+                    "RadiusBottomLeft": 5,
+                    "RadiusBottomRight": 5,
+                    "RadiusTopLeft": 5,
+                    "RadiusTopRight": 5
+                  },
+                  "Category": "Leaderboard",
+                  "DefaultBackgroundColor": "#00FFFFFF",
+                  "Height": 30.0,
+                  "IsRectangleItem": true,
+                  "LeaderboardMode": 2,
+                  "LeaderboardPosition": 1,
+                  "LeaderboardPositionRelativeToPlayer": false,
+                  "LeaderboardPositionRelativeToPlayerOnTrack": false,
+                  "Left": 0.0,
+                  "Name": "LeaderBoardBackground",
+                  "NoOpponentBackgroundColor": "#00FFFFFF",
+                  "NoOpponentBackgroundColorEnabled": false,
+                  "PlayerBackgroundColor": "#FFFF0000",
+                  "PlayerBackgroundColorEnabled": false,
+                  "Top": 16.0,
+                  "Visible": true,
+                  "Width": 228.0
+                },
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.BuiltIn.LeaderBoardBackground, SimHub.Plugins",
+                  "AlternateBackgroundColor": "#80000000",
+                  "AlternateBackgroundColorEnabled": false,
+                  "BackgroundColor": "#FF000000",
+                  "Bindings": {
+                    "DefaultBackgroundColor": {
+                      "Formula": {
+                        "Expression": "return twf_get_ui_color('positionbg')",
+                        "Interpreter": 1
+                      },
+                      "Mode": 2,
+                      "TargetPropertyName": "DefaultBackgroundColor"
+                    },
+                    "PlayerBackgroundColor": {
+                      "Formula": {
+                        "Expression": "return twf_get_ui_color('positionbgplayer')",
+                        "Interpreter": 1
+                      },
+                      "Mode": 2,
+                      "TargetPropertyName": "PlayerBackgroundColor"
+                    }
+                  },
+                  "BorderStyle": {
+                    "RadiusBottomLeft": 4,
+                    "RadiusBottomRight": 4,
+                    "RadiusTopLeft": 4,
+                    "RadiusTopRight": 4
+                  },
+                  "Category": "Leaderboard",
+                  "DefaultBackgroundColor": "#FFFFFFFF",
+                  "Height": 24.0,
+                  "IsRectangleItem": true,
+                  "LeaderboardMode": 2,
+                  "LeaderboardPosition": 1,
+                  "LeaderboardPositionRelativeToPlayer": false,
+                  "LeaderboardPositionRelativeToPlayerOnTrack": false,
+                  "Left": 0.0,
+                  "Name": "POSITIONBG",
+                  "NoOpponentBackgroundColor": "#00FFFFFF",
+                  "NoOpponentBackgroundColorEnabled": true,
+                  "PlayerBackgroundColor": "#FFFFD700",
+                  "PlayerBackgroundColorEnabled": true,
+                  "Top": 19.0,
+                  "Visible": true,
+                  "Width": 30.0
+                },
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+                  "BackgroundColor": "#00FFFFFF",
+                  "Bindings": {
+                    "Text": {
+                      "FormatString": "",
+                      "Formula": {
+                        "Expression": "return twf_class_driver_name_repeater(repeatindex())",
+                        "Interpreter": 1
+                      },
+                      "Mode": 2,
+                      "TargetPropertyName": "Text"
+                    },
+                    "TextColor": {
+                      "Formula": {
+                        "Expression": "return twf_class_driver_color_repeater(repeatindex())",
+                        "Interpreter": 1
+                      },
+                      "Mode": 2,
+                      "TargetPropertyName": "TextColor"
+                    }
+                  },
+                  "Font": "Rajdhani",
+                  "FontSize": 18.0,
+                  "FontWeight": "Bold",
+                  "Height": 24.0,
+                  "HorizontalAlignment": 0,
+                  "IsTextItem": true,
+                  "Left": 38.0,
+                  "Name": "NAME",
+                  "Text": "A Driver",
+                  "TextColor": "#FFFFFFFF",
+                  "Top": 20.0,
+                  "VerticalAlignment": 1,
+                  "Visible": true,
+                  "Width": 144.0
+                },
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.BuiltIn.LeaderboardOpponentGap, SimHub.Plugins",
+                  "BackgroundColor": "#00FFFFFF",
+                  "EmptyValueText": "0.0",
+                  "Font": "Rajdhani",
+                  "FontSize": 18.0,
+                  "FontWeight": "Bold",
+                  "Format": "0.0",
+                  "GapMode": 1,
+                  "Height": 24.0,
+                  "HorizontalAlignment": 2,
+                  "IsPlayer": false,
+                  "IsTextItem": true,
+                  "LeaderboardMode": 2,
+                  "LeaderboardPosition": 1,
+                  "LeaderboardPositionRelativeToPlayer": false,
+                  "LeaderboardPositionRelativeToPlayerOnTrack": false,
+                  "Left": 141.0,
+                  "Name": "GAP",
+                  "NameStyle": 0,
+                  "NoDataText": "",
+                  "OpponentFontSize": 18.0,
+                  "OpponentFontStyle": "Normal",
+                  "OpponentFontWeight": "Bold",
+                  "OpponentStyle": {
+                    "FontSize": 18.0,
+                    "FontStyle": "Normal",
+                    "FontWeight": "Bold",
+                    "TextColor": "#FFFFFFFF"
+                  },
+                  "OpponentTextColor": "#FFFFFFFF",
+                  "PlayerFontSize": 18.0,
+                  "PlayerFontStyle": "Normal",
+                  "PlayerFontWeight": "Bold",
+                  "PlayerStyle": {
+                    "FontSize": 18.0,
+                    "FontStyle": "Normal",
+                    "FontWeight": "Bold",
+                    "TextColor": "#FFFFE04C"
+                  },
+                  "PlayerStyleEnabled": true,
+                  "PlayerTextColor": "#FFFFE04C",
+                  "TextColor": "#FFFFFFFF",
+                  "Top": 20.0,
+                  "VerticalAlignment": 1,
+                  "Visible": true,
+                  "Width": 82.0
+                },
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.BuiltIn.LeaderboardOpponentPositionText, SimHub.Plugins",
+                  "BackgroundColor": "#00FFFFFF",
+                  "BorderStyle": {
+                    "RadiusBottomLeft": 4,
+                    "RadiusBottomRight": 4,
+                    "RadiusTopLeft": 4,
+                    "RadiusTopRight": 4
+                  },
+                  "Font": "Rajdhani",
+                  "FontSize": 18.0,
+                  "FontWeight": "Bold",
+                  "Height": 24.0,
+                  "HorizontalAlignment": 1,
+                  "IsPlayer": false,
+                  "IsTextItem": true,
+                  "LeaderboardMode": 2,
+                  "LeaderboardPosition": 1,
+                  "LeaderboardPositionRelativeToPlayer": false,
+                  "LeaderboardPositionRelativeToPlayerOnTrack": false,
+                  "Left": -1.0,
+                  "Name": "LeaderboardOpponentPositionText",
+                  "NameStyle": 0,
+                  "NoDataText": "-",
+                  "OpponentFontSize": 18.0,
+                  "OpponentFontStyle": "Normal",
+                  "OpponentFontWeight": "Bold",
+                  "OpponentStyle": {
+                    "FontSize": 18.0,
+                    "FontStyle": "Normal",
+                    "FontWeight": "Bold",
+                    "TextColor": "#FF000000"
+                  },
+                  "OpponentTextColor": "#FF000000",
+                  "PlayerFontSize": 18.0,
+                  "PlayerFontStyle": "Normal",
+                  "PlayerFontWeight": "Bold",
+                  "PlayerStyle": {
+                    "FontSize": 18.0,
+                    "FontStyle": "Normal",
+                    "FontWeight": "Bold",
+                    "TextColor": "#FF000000"
+                  },
+                  "PlayerStyleEnabled": false,
+                  "PlayerTextColor": "#FF000000",
+                  "TextColor": "#FF000000",
+                  "Top": 19.0,
+                  "VerticalAlignment": 1,
+                  "Visible": true,
+                  "Width": 30.0
+                }
+              ],
+              "Group": true,
+              "Height": 30.0,
+              "Left": -1.0,
+              "Name": "P1",
+              "Repetitions": 8.0,
+              "Top": 16.0,
+              "Visible": true,
+              "Width": 229.0
+            },
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.Layer, SimHub.Plugins",
+              "BackgroundColor": "#00FFFFFF",
+              "Bindings": {
+                "Visible": {
+                  "Formula": {
+                    "Expression": "if ([DataCorePlugin.GameData.Position]>9, 1, 0)"
+                  },
+                  "Mode": 2,
+                  "TargetPropertyName": "Visible"
+                }
+              },
+              "Childrens": [
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+                  "BackgroundColor": "#FF000000",
+                  "BorderStyle": {
+                    "BorderBottom": 1,
+                    "BorderColor": "#00FFFFFF",
+                    "BorderLeft": 1,
+                    "BorderRight": 1,
+                    "BorderTop": 1,
+                    "RadiusBottomLeft": 5,
+                    "RadiusBottomRight": 5,
+                    "RadiusTopLeft": 5,
+                    "RadiusTopRight": 5
+                  },
+                  "Height": 28.0,
+                  "IsRectangleItem": true,
+                  "Left": 0.0,
+                  "Name": "BG",
+                  "Top": 256.0,
+                  "Visible": true,
+                  "Width": 228.0
+                },
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+                  "BackgroundColor": "#FFFFE04C",
+                  "Bindings": {
+                    "Text": {
+                      "Formula": {
+                        "Expression": "[DataCorePlugin.GameData.Position]"
+                      },
+                      "Mode": 2,
+                      "TargetPropertyName": "Text"
+                    }
+                  },
+                  "BorderStyle": {
+                    "RadiusBottomLeft": 5,
+                    "RadiusBottomRight": 5,
+                    "RadiusTopLeft": 5,
+                    "RadiusTopRight": 5
+                  },
+                  "Font": "Rajdhani",
+                  "FontSize": 18.0,
+                  "FontWeight": "Bold",
+                  "Height": 24.0,
+                  "HorizontalAlignment": 1,
+                  "IsTextItem": true,
+                  "Left": 0.0,
+                  "Name": "POSITION",
+                  "Text": "00",
+                  "TextColor": "#FF000000",
+                  "Top": 259.0,
+                  "VerticalAlignment": 2,
+                  "Visible": true,
+                  "Width": 30.0
+                },
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+                  "BackgroundColor": "#00FFFFFF",
+                  "Bindings": {
+                    "Text": {
+                      "FormatString": "",
+                      "Formula": {
+                        "Expression": "return twf_get_player_name()",
+                        "Interpreter": 1
+                      },
+                      "Mode": 2,
+                      "TargetPropertyName": "Text"
+                    }
+                  },
+                  "Font": "Rajdhani",
+                  "FontSize": 18.0,
+                  "FontWeight": "Bold",
+                  "Height": 24.0,
+                  "HorizontalAlignment": 0,
+                  "IsTextItem": true,
+                  "Left": 38.0,
+                  "Name": "NAME",
+                  "Text": "A Driver",
+                  "TextColor": "#FFFFE04C",
+                  "Top": 260.0,
+                  "VerticalAlignment": 1,
+                  "Visible": true,
+                  "Width": 170.0
+                },
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.BuiltIn.LeaderboardOpponentGap, SimHub.Plugins",
+                  "BackgroundColor": "#00FFFFFF",
+                  "Bindings": {
+                    "LeaderboardPosition": {
+                      "Formula": {
+                        "Expression": "[Position]"
+                      },
+                      "Mode": 2,
+                      "TargetPropertyName": "LeaderboardPosition"
+                    }
+                  },
+                  "EmptyValueText": "0.0",
+                  "Font": "Rajdhani",
+                  "FontSize": 18.0,
+                  "FontWeight": "Bold",
+                  "Format": "0.0",
+                  "GapMode": 1,
+                  "Height": 24.0,
+                  "HorizontalAlignment": 2,
+                  "IsPlayer": false,
+                  "IsTextItem": true,
+                  "LeaderboardMode": 2,
+                  "LeaderboardPosition": 1,
+                  "LeaderboardPositionRelativeToPlayer": false,
+                  "LeaderboardPositionRelativeToPlayerOnTrack": false,
+                  "Left": 141.0,
+                  "Name": "GAP",
+                  "NameStyle": 0,
+                  "NoDataText": "",
+                  "OpponentFontSize": 18.0,
+                  "OpponentFontStyle": "Normal",
+                  "OpponentFontWeight": "Bold",
+                  "OpponentStyle": {
+                    "FontSize": 18.0,
+                    "FontStyle": "Normal",
+                    "FontWeight": "Bold",
+                    "TextColor": "#FFFFFFFF"
+                  },
+                  "OpponentTextColor": "#FFFFFFFF",
+                  "PlayerFontSize": 18.0,
+                  "PlayerFontStyle": "Normal",
+                  "PlayerFontWeight": "Bold",
+                  "PlayerStyle": {
+                    "FontSize": 18.0,
+                    "FontStyle": "Normal",
+                    "FontWeight": "Bold",
+                    "TextColor": "#FFFFE04C"
+                  },
+                  "PlayerStyleEnabled": true,
+                  "PlayerTextColor": "#FFFFE04C",
+                  "TextColor": "#FFFFFFFF",
+                  "Top": 260.0,
+                  "VerticalAlignment": 1,
+                  "Visible": true,
+                  "Width": 82.0
+                }
+              ],
+              "Group": true,
+              "Height": 28.0,
+              "Left": 0.0,
+              "Name": "Driver",
+              "RepeatTopOffset": 0.0,
+              "Top": 256.0,
+              "Visible": true,
+              "Width": 228.0
+            }
+          ],
+          "Group": true,
+          "Height": 268.0,
+          "Left": -1.0,
+          "Name": "Layer",
+          "Top": 16.0,
+          "Visible": true,
+          "Width": 229.0
+        },
+        {
+          "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+          "BackgroundColor": "#00FFFFFF",
+          "Font": "Rajdhani",
+          "FontSize": 18.0,
+          "FontWeight": "SemiBold",
+          "Height": 14.0,
+          "HorizontalAlignment": 1,
+          "IsTextItem": true,
+          "Left": 74.0,
+          "Name": "CLASS",
+          "Text": "CLASS",
+          "TextColor": "#FF878787",
+          "Top": 5.0,
+          "VerticalAlignment": 1,
+          "Visible": true,
+          "Width": 80.0
+        }
+      ],
+      "Name": "Screen",
+      "OverlayMaxDuration": 0,
+      "OverlayMinDuration": 0,
+      "OverlayTriggerExpression": {
+        "Expression": ""
+      },
+      "PitScreen": false,
+      "ScreenEnabledExpression": {
+        "Expression": ""
+      },
+      "ScreenId": "f8629314-fde7-468d-bf0b-b045c1ebd9c3"
+    }
+  ],
+  "ShowBackground": true,
+  "ShowBoundingRectangles": false,
+  "ShowForeground": true,
+  "ShowOnScreenControls": true,
+  "SnapToGrid": false,
+  "Version": 2
+}

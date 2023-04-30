@@ -1,0 +1,785 @@
+{
+  "BackgroundColor": "#FF000000",
+  "BackgroundOpacity": 100.0,
+  "BaseHeight": 294,
+  "BaseWidth": 870,
+  "DashboardDebugManager": {
+    "LastPlacement": "182,182,870,294",
+    "Maximized": false
+  },
+  "EnableClickThroughOverlay": true,
+  "EnableOnDashboardMessaging": true,
+  "ForegroundOpacity": 100.0,
+  "GridSize": 10,
+  "HideLabels": false,
+  "Id": "76a87fe8-1e0f-418c-b913-4cd13135d1e7",
+  "Images": [],
+  "IsOverlay": false,
+  "Metadata": {
+    "EnableOnDashboardMessaging": true,
+    "Height": 294.0,
+    "IdleScreensIndexs": [
+      0
+    ],
+    "InGameScreensIndexs": [
+      0
+    ],
+    "IsOverlay": false,
+    "MainPreviewIndex": 0,
+    "MetadataVersion": 2.0,
+    "OverlaySizeWarning": false,
+    "PitScreensIndexs": [],
+    "ScreenCount": 1.0,
+    "Width": 870.0
+  },
+  "Screens": [
+    {
+      "AllowOverlays": true,
+      "BackgroundColor": "#FF000000",
+      "IdleScreen": true,
+      "InGameScreen": true,
+      "IsBackgroundLayer": false,
+      "IsForegroundLayer": false,
+      "IsOverlayLayer": false,
+      "Items": [
+        {
+          "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.Layer, SimHub.Plugins",
+          "BackgroundColor": "#00FFFFFF",
+          "Bindings": {
+            "Visible": {
+              "Formula": {
+                "Expression": "changed(4000, [CurrentLap])"
+              },
+              "Mode": 2,
+              "TargetPropertyName": "Visible"
+            }
+          },
+          "Childrens": [
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+              "BackgroundColor": "#FFFFFFFF",
+              "BorderStyle": {
+                "RadiusBottomLeft": 10,
+                "RadiusBottomRight": 10,
+                "RadiusTopLeft": 10,
+                "RadiusTopRight": 10
+              },
+              "Height": 294.0,
+              "IsRectangleItem": true,
+              "Left": 0.0,
+              "Name": "RectangleItem",
+              "Top": 0.0,
+              "Visible": true,
+              "Width": 870.0
+            },
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+              "BackgroundColor": "#FF000000",
+              "Height": 294.0,
+              "IsRectangleItem": true,
+              "Left": 228.5,
+              "Name": "RectangleItem3",
+              "Top": 0.0,
+              "Visible": true,
+              "Width": 1.0
+            },
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+              "BackgroundColor": "#FF000000",
+              "Height": 294.0,
+              "IsRectangleItem": true,
+              "Left": 598.0,
+              "Name": "RectangleItem2",
+              "Top": 0.0,
+              "Visible": true,
+              "Width": 1.0
+            },
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.Layer, SimHub.Plugins",
+              "BackgroundColor": "#00FFFFFF",
+              "Childrens": [
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+                  "BackgroundColor": "#00FFFFFF",
+                  "Bindings": {
+                    "Text": {
+                      "FormatString": "m\\:ss\\.fff",
+                      "Formula": {
+                        "Expression": "'P'+[DataCorePlugin.GameData.Position]"
+                      },
+                      "Mode": 2,
+                      "TargetPropertyName": "Text"
+                    },
+                    "TextColor": {
+                      "Formula": {
+                        "Expression": "if ( [DataCorePlugin.GameData.Position]==1, '#FFC500CE', '#000000')"
+                      },
+                      "Mode": 2,
+                      "TargetPropertyName": "TextColor"
+                    }
+                  },
+                  "BorderStyle": {
+                    "BorderColor": "#FFFA0000",
+                    "RadiusBottomLeft": 10,
+                    "RadiusBottomRight": 10,
+                    "RadiusTopLeft": 10,
+                    "RadiusTopRight": 10
+                  },
+                  "Font": "Rajdhani",
+                  "FontSize": 100.0,
+                  "FontWeight": "Bold",
+                  "Height": 90.0,
+                  "HorizontalAlignment": 0,
+                  "IsTextItem": true,
+                  "Left": 24.5,
+                  "Name": "Lap Recap5",
+                  "Text": "P00",
+                  "TextColor": "#FF000000",
+                  "Top": 82.0,
+                  "VerticalAlignment": 1,
+                  "Visible": true,
+                  "Width": 186.0
+                },
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+                  "BackgroundColor": "#00FFFFFF",
+                  "Bindings": {
+                    "Text": {
+                      "Formula": {
+                        "Expression": "'LAP '+ [CurrentLap]"
+                      },
+                      "Mode": 2,
+                      "TargetPropertyName": "Text"
+                    }
+                  },
+                  "Font": "Rajdhani",
+                  "FontSize": 32.0,
+                  "FontWeight": "SemiBold",
+                  "Height": 36.0,
+                  "HorizontalAlignment": 0,
+                  "IsTextItem": true,
+                  "Left": 29.5,
+                  "Name": "LAP_VALUE",
+                  "Text": "LAP 12",
+                  "TextColor": "#FF000000",
+                  "Top": 177.0,
+                  "VerticalAlignment": 1,
+                  "Visible": true,
+                  "Width": 159.0
+                }
+              ],
+              "Group": true,
+              "Height": 131.0,
+              "Left": 24.5,
+              "Name": "POSITION",
+              "Top": 82.0,
+              "Visible": true,
+              "Width": 186.0
+            },
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+              "BackgroundColor": "#00FFFFFF",
+              "Bindings": {
+                "Text": {
+                  "FormatString": "m\\:ss\\.fff",
+                  "Formula": {
+                    "Expression": "[DataCorePlugin.GameData.LastLapTime]"
+                  },
+                  "Mode": 2,
+                  "TargetPropertyName": "Text"
+                },
+                "TextColor": {
+                  "Formula": {
+                    "Expression": "var timeDiffMine = timespantoseconds( $prop('DataCorePlugin.GameData.LastLapTime') ) - timespantoseconds( $prop('DataCorePlugin.GameData.BestLapTime') )\r\n\r\nvar timeDiffOverall = timespantoseconds( $prop('DataCorePlugin.GameData.LastLapTime') ) - timespantoseconds( driverbestlap(1) )\r\n\r\n\r\nif( root[\"offTrack\"] == null ) {\r\n\troot[\"offTrack\"] = 0\r\n}\r\n\r\nif ( $prop('DataCorePlugin.GameRawData.Telemetry.PlayerTrackSurface') == 0 ) {\r\n\troot[\"offTrack\"]++\r\n}\r\n\r\nif ( $prop('DataCorePlugin.GameData.TrackPositionPercent') < 0.001 ) {\r\n\troot[\"offTrack\"] = 0 \r\n}\r\n\r\n\r\nif ( root[\"offTrack\"] > 0) {\r\n\treturn '#FA0000'\r\n} else {\r\n\tif ( timespantoseconds($prop('DataCorePlugin.GameData.LastLapTime'))==0) {\r\n\treturn '#444444'\r\n} else {\r\n\r\n\tif ( timeDiffMine > 0 ) {\r\n\t\r\n\t\treturn '#000000' // Yellow\r\n\t\t\r\n\t} else {\r\n\t\r\n\t\tif ( timeDiffOverall > 0 ) {\r\n\t\r\n\t\t\treturn '#008200' // Green\r\n\t\t\r\n\t\t} else {\r\n\t\r\n\t\t\treturn '#C500CE' // Purple\r\n\t\t\r\n\t\t}\r\n\t\t\r\n\t}\r\n\t\r\n}\r\n}\r\n\r\n\r\n",
+                    "Interpreter": 1
+                  },
+                  "Mode": 2,
+                  "TargetPropertyName": "TextColor"
+                }
+              },
+              "BorderStyle": {
+                "BorderColor": "#FFFA0000",
+                "RadiusBottomLeft": 10,
+                "RadiusBottomRight": 10,
+                "RadiusTopLeft": 10,
+                "RadiusTopRight": 10
+              },
+              "Font": "Rajdhani",
+              "FontSize": 72.0,
+              "FontWeight": "Bold",
+              "Height": 65.0,
+              "HorizontalAlignment": 0,
+              "IsTextItem": true,
+              "Left": 249.0,
+              "Name": "LAP RECAP_IR",
+              "Text": "0:00.000",
+              "TextColor": "#FF000000",
+              "Top": 14.0,
+              "VerticalAlignment": 1,
+              "Visible": true,
+              "Width": 320.0
+            },
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.Layer, SimHub.Plugins",
+              "BackgroundColor": "#00FFFFFF",
+              "Childrens": [
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+                  "BackgroundColor": "#00FFFFFF",
+                  "Bindings": {
+                    "Text": {
+                      "FormatString": "s\\.fff",
+                      "Formula": {
+                        "Expression": "secondstotimespan(timespantoseconds([LastLapTime]) - timespantoseconds([BestLapTime]))"
+                      },
+                      "Mode": 2,
+                      "TargetPropertyName": "Text"
+                    },
+                    "TextColor": {
+                      "EnableMiddleColor": true,
+                      "EndColor": "#FFFF0000",
+                      "EndColorValue": 0.01,
+                      "Formula": {
+                        "Expression": "timespantoseconds([LastLapTime]) - timespantoseconds([BestLapTime])"
+                      },
+                      "MiddleColor": "#FF000000",
+                      "MiddleColorValue": 0.0,
+                      "Mode": 4,
+                      "StartColor": "#FF008000",
+                      "StartColorValue": -0.01,
+                      "TargetPropertyName": "TextColor"
+                    }
+                  },
+                  "BorderStyle": {
+                    "BorderColor": "#FFFA0000",
+                    "RadiusBottomLeft": 10,
+                    "RadiusBottomRight": 10,
+                    "RadiusTopLeft": 10,
+                    "RadiusTopRight": 10
+                  },
+                  "Font": "Rajdhani",
+                  "FontSize": 32.0,
+                  "FontWeight": "Bold",
+                  "Height": 40.0,
+                  "HorizontalAlignment": 0,
+                  "IsTextItem": true,
+                  "Left": 249.0,
+                  "Name": "Lap Recap4",
+                  "Text": "(+0.000)",
+                  "TextColor": "#FF000000",
+                  "Top": 69.0,
+                  "VerticalAlignment": 1,
+                  "Visible": true,
+                  "Width": 200.0
+                },
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+                  "BackgroundColor": "#00FFFFFF",
+                  "Font": "Rajdhani",
+                  "FontSize": 20.0,
+                  "FontWeight": "SemiBold",
+                  "Height": 20.0,
+                  "HorizontalAlignment": 0,
+                  "IsTextItem": true,
+                  "Left": 249.0,
+                  "Name": "REMAINING",
+                  "Text": "TO YOUR SESSION BEST",
+                  "TextColor": "#FF696969",
+                  "Top": 106.0,
+                  "VerticalAlignment": 1,
+                  "Visible": true,
+                  "Width": 320.0
+                }
+              ],
+              "Group": true,
+              "Height": 57.0,
+              "Left": 249.0,
+              "Name": "TO YOUR SESSION BEST",
+              "Top": 69.0,
+              "Visible": true,
+              "Width": 320.0
+            },
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.Layer, SimHub.Plugins",
+              "BackgroundColor": "#00FFFFFF",
+              "Bindings": {
+                "Visible": {
+                  "Formula": {
+                    "Expression": "([CurrentLap] -1 ) > 0"
+                  },
+                  "Mode": 2,
+                  "TargetPropertyName": "Visible"
+                }
+              },
+              "Childrens": [
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+                  "BackgroundColor": "#00FFFFFF",
+                  "Bindings": {
+                    "Text": {
+                      "FormatString": "m\\:ss\\.fff",
+                      "Formula": {
+                        "Expression": "[PersistantTrackerPlugin.PreviousLap_01]"
+                      },
+                      "Mode": 2,
+                      "TargetPropertyName": "Text"
+                    }
+                  },
+                  "BorderStyle": {
+                    "BorderColor": "#FFFA0000",
+                    "RadiusBottomLeft": 10,
+                    "RadiusBottomRight": 10,
+                    "RadiusTopLeft": 10,
+                    "RadiusTopRight": 10
+                  },
+                  "Font": "Rajdhani",
+                  "FontSize": 52.0,
+                  "FontWeight": "Bold",
+                  "Height": 54.0,
+                  "HorizontalAlignment": 0,
+                  "IsTextItem": true,
+                  "Left": 249.0,
+                  "Name": "Lap Recap",
+                  "Text": "0:00.000",
+                  "TextColor": "#FF000000",
+                  "Top": 137.0,
+                  "VerticalAlignment": 1,
+                  "Visible": true,
+                  "Width": 320.0
+                },
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+                  "BackgroundColor": "#00FFFFFF",
+                  "Bindings": {
+                    "Text": {
+                      "Formula": {
+                        "Expression": "'LAP '+ ([CurrentLap]-1)"
+                      },
+                      "Mode": 2,
+                      "TargetPropertyName": "Text"
+                    }
+                  },
+                  "Font": "Rajdhani",
+                  "FontSize": 22.0,
+                  "FontWeight": "SemiBold",
+                  "Height": 20.0,
+                  "HorizontalAlignment": 0,
+                  "IsTextItem": true,
+                  "Left": 249.0,
+                  "Name": "REMAINING",
+                  "Text": "LAP -1",
+                  "TextColor": "#FF696969",
+                  "Top": 186.0,
+                  "VerticalAlignment": 1,
+                  "Visible": true,
+                  "Width": 320.0
+                },
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+                  "BackgroundColor": "#00FFFFFF",
+                  "Bindings": {
+                    "Text": {
+                      "FormatString": "s\\.fff",
+                      "Formula": {
+                        "Expression": "secondstotimespan(timespantoseconds([LastLapTime]) - timespantoseconds([PersistantTrackerPlugin.PreviousLap_01]))"
+                      },
+                      "Mode": 2,
+                      "TargetPropertyName": "Text"
+                    },
+                    "TextColor": {
+                      "EnableMiddleColor": true,
+                      "EndColor": "#FFFF0000",
+                      "EndColorValue": 0.01,
+                      "Formula": {
+                        "Expression": "timespantoseconds([LastLapTime]) - timespantoseconds([PersistantTrackerPlugin.PreviousLap_01])"
+                      },
+                      "MiddleColor": "#FF000000",
+                      "MiddleColorValue": 0.0,
+                      "Mode": 4,
+                      "StartColor": "#FF008000",
+                      "StartColorValue": -0.01,
+                      "TargetPropertyName": "TextColor"
+                    }
+                  },
+                  "BorderStyle": {
+                    "BorderColor": "#FFFA0000",
+                    "RadiusBottomLeft": 10,
+                    "RadiusBottomRight": 10,
+                    "RadiusTopLeft": 10,
+                    "RadiusTopRight": 10
+                  },
+                  "Font": "Rajdhani",
+                  "FontSize": 32.0,
+                  "FontWeight": "Bold",
+                  "Height": 40.0,
+                  "HorizontalAlignment": 2,
+                  "IsTextItem": true,
+                  "Left": 474.0,
+                  "Name": "Lap Recap4",
+                  "Text": "+0.000",
+                  "TextColor": "#FF000000",
+                  "Top": 144.0,
+                  "VerticalAlignment": 1,
+                  "Visible": true,
+                  "Width": 116.0
+                }
+              ],
+              "Group": true,
+              "Height": 69.0,
+              "Left": 249.0,
+              "Name": "LAP -1",
+              "Top": 137.0,
+              "Visible": true,
+              "Width": 341.0
+            },
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.Layer, SimHub.Plugins",
+              "BackgroundColor": "#00FFFFFF",
+              "Bindings": {
+                "Visible": {
+                  "Formula": {
+                    "Expression": "([CurrentLap] -2 ) > 0"
+                  },
+                  "Mode": 2,
+                  "TargetPropertyName": "Visible"
+                }
+              },
+              "Childrens": [
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+                  "BackgroundColor": "#00FFFFFF",
+                  "Bindings": {
+                    "Text": {
+                      "FormatString": "m\\:ss\\.fff",
+                      "Formula": {
+                        "Expression": "[PersistantTrackerPlugin.PreviousLap_02]"
+                      },
+                      "Mode": 2,
+                      "TargetPropertyName": "Text"
+                    }
+                  },
+                  "BorderStyle": {
+                    "BorderColor": "#FFFA0000",
+                    "RadiusBottomLeft": 10,
+                    "RadiusBottomRight": 10,
+                    "RadiusTopLeft": 10,
+                    "RadiusTopRight": 10
+                  },
+                  "Font": "Rajdhani",
+                  "FontSize": 52.0,
+                  "FontWeight": "Bold",
+                  "Height": 54.0,
+                  "HorizontalAlignment": 0,
+                  "IsTextItem": true,
+                  "Left": 249.0,
+                  "Name": "Lap Recap2",
+                  "Text": "0:00.000",
+                  "TextColor": "#FF000000",
+                  "Top": 214.0,
+                  "VerticalAlignment": 1,
+                  "Visible": true,
+                  "Width": 320.0
+                },
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+                  "BackgroundColor": "#00FFFFFF",
+                  "Bindings": {
+                    "Text": {
+                      "Formula": {
+                        "Expression": "'LAP '+ ([CurrentLap]-2)"
+                      },
+                      "Mode": 2,
+                      "TargetPropertyName": "Text"
+                    }
+                  },
+                  "Font": "Rajdhani",
+                  "FontSize": 22.0,
+                  "FontWeight": "SemiBold",
+                  "Height": 20.0,
+                  "HorizontalAlignment": 0,
+                  "IsTextItem": true,
+                  "Left": 249.0,
+                  "Name": "REMAINING2",
+                  "Text": "LAP -2",
+                  "TextColor": "#FF696969",
+                  "Top": 261.0,
+                  "VerticalAlignment": 1,
+                  "Visible": true,
+                  "Width": 320.0
+                }
+              ],
+              "Group": true,
+              "Height": 67.0,
+              "Left": 249.0,
+              "Name": "LAP -2",
+              "Top": 214.0,
+              "Visible": true,
+              "Width": 320.0
+            },
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.Layer, SimHub.Plugins",
+              "BackgroundColor": "#00FFFFFF",
+              "Bindings": {
+                "Visible": {
+                  "Formula": {
+                    "Expression": "([DataCorePlugin.GameData.BestLapOpponentPosition]+1) != [Position]"
+                  },
+                  "Mode": 2,
+                  "TargetPropertyName": "Visible"
+                }
+              },
+              "Childrens": [
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+                  "BackgroundColor": "#00FFFFFF",
+                  "Font": "Rajdhani",
+                  "FontSize": 22.0,
+                  "FontWeight": "SemiBold",
+                  "Height": 20.0,
+                  "HorizontalAlignment": 0,
+                  "IsTextItem": true,
+                  "Left": 616.0,
+                  "Name": "REMAINING3",
+                  "Text": "FASTEST LAP",
+                  "TextColor": "#FF696969",
+                  "Top": 24.0,
+                  "VerticalAlignment": 1,
+                  "Visible": true,
+                  "Width": 210.0
+                },
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+                  "BackgroundColor": "#00FFFFFF",
+                  "Bindings": {
+                    "Text": {
+                      "FormatString": "m\\:ss\\.fff",
+                      "Formula": {
+                        "Expression": "driverbestlap([BestLapOpponentPosition]+1)"
+                      },
+                      "Mode": 2,
+                      "TargetPropertyName": "Text"
+                    }
+                  },
+                  "BorderStyle": {
+                    "BorderColor": "#FFFA0000",
+                    "RadiusBottomLeft": 10,
+                    "RadiusBottomRight": 10,
+                    "RadiusTopLeft": 10,
+                    "RadiusTopRight": 10
+                  },
+                  "Font": "Rajdhani",
+                  "FontSize": 52.0,
+                  "FontWeight": "Bold",
+                  "Height": 54.0,
+                  "HorizontalAlignment": 0,
+                  "IsTextItem": true,
+                  "Left": 614.0,
+                  "Name": "Lap Recap5",
+                  "Text": "0:00.000",
+                  "TextColor": "#FFC500CE",
+                  "Top": 76.0,
+                  "VerticalAlignment": 1,
+                  "Visible": true,
+                  "Width": 230.0
+                },
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+                  "BackgroundColor": "#FF000000",
+                  "Bindings": {
+                    "Text": {
+                      "Formula": {
+                        "Expression": "driverclassposition([BestLapOpponentPosition]+1)"
+                      },
+                      "Mode": 2,
+                      "TargetPropertyName": "Text"
+                    }
+                  },
+                  "BorderStyle": {
+                    "RadiusBottomLeft": 5,
+                    "RadiusBottomRight": 5,
+                    "RadiusTopLeft": 5,
+                    "RadiusTopRight": 5
+                  },
+                  "Font": "Rajdhani",
+                  "FontSize": 18.0,
+                  "FontWeight": "Bold",
+                  "Height": 24.0,
+                  "HorizontalAlignment": 1,
+                  "IsTextItem": true,
+                  "Left": 615.0,
+                  "Name": "TextItem0",
+                  "Text": "00",
+                  "TextColor": "#FFFFFFFF",
+                  "Top": 51.0,
+                  "VerticalAlignment": 1,
+                  "Visible": true,
+                  "Width": 24.0
+                },
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+                  "BackgroundColor": "#00FFFFFF",
+                  "Bindings": {
+                    "Text": {
+                      "Formula": {
+                        "Expression": "if(isnull(drivername($prop('BestLapOpponentPosition')+1))==0){\r\nvar name = drivername($prop('BestLapOpponentPosition')+1).toUpperCase();\r\nvar full_name = name.split(' ');\r\n\r\nreturn full_name[0].substr(0,1) + ' ' + full_name[full_name.length-1]\r\n} else {\r\nreturn ''\r\n}",
+                        "Interpreter": 1
+                      },
+                      "Mode": 2,
+                      "TargetPropertyName": "Text"
+                    }
+                  },
+                  "Font": "Rajdhani",
+                  "FontSize": 28.0,
+                  "FontWeight": "Bold",
+                  "Height": 28.0,
+                  "HorizontalAlignment": 0,
+                  "IsTextItem": true,
+                  "Left": 646.0,
+                  "Name": "TextItem6",
+                  "Text": "A Driver",
+                  "TextColor": "#FF000000",
+                  "Top": 49.0,
+                  "VerticalAlignment": 1,
+                  "Visible": true,
+                  "Width": 185.0
+                },
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+                  "BackgroundColor": "#00FFFFFF",
+                  "Bindings": {
+                    "Text": {
+                      "FormatString": "0.000",
+                      "Formula": {
+                        "Expression": "if([DataCorePlugin.GameData.BestLapOpponentPosition] > 0, timespantoseconds([BestLapTime]) - timespantoseconds(driverbestlap([DataCorePlugin.GameData.BestLapOpponentPosition]+1)), '')"
+                      },
+                      "Mode": 2,
+                      "TargetPropertyName": "Text"
+                    }
+                  },
+                  "Font": "Rajdhani",
+                  "FontSize": 32.0,
+                  "FontWeight": "Bold",
+                  "Height": 40.0,
+                  "HorizontalAlignment": 0,
+                  "IsTextItem": true,
+                  "Left": 616.0,
+                  "Name": "TextItem8",
+                  "Text": "0:00.000",
+                  "TextColor": "#FFFF0000",
+                  "Top": 136.0,
+                  "VerticalAlignment": 1,
+                  "Visible": true,
+                  "Width": 225.0
+                }
+              ],
+              "Group": true,
+              "Height": 152.0,
+              "Left": 614.0,
+              "Name": "FASTEST LAP",
+              "Top": 24.0,
+              "Visible": true,
+              "Width": 230.0
+            },
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.Layer, SimHub.Plugins",
+              "BackgroundColor": "#00FFFFFF",
+              "Childrens": [
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+                  "BackgroundColor": "#00FFFFFF",
+                  "Bindings": {
+                    "Text": {
+                      "FormatString": "m\\:ss\\.fff",
+                      "Formula": {
+                        "Expression": "[BestLapTime]"
+                      },
+                      "Mode": 2,
+                      "TargetPropertyName": "Text"
+                    },
+                    "TextColor": {
+                      "Formula": {
+                        "Expression": "if(([DataCorePlugin.GameData.BestLapOpponentPosition]+1) == [Position], '#C500CE', '#008200')"
+                      },
+                      "Mode": 2,
+                      "TargetPropertyName": "TextColor"
+                    }
+                  },
+                  "BorderStyle": {
+                    "BorderColor": "#FFFA0000",
+                    "RadiusBottomLeft": 10,
+                    "RadiusBottomRight": 10,
+                    "RadiusTopLeft": 10,
+                    "RadiusTopRight": 10
+                  },
+                  "Font": "Rajdhani",
+                  "FontSize": 52.0,
+                  "FontWeight": "Bold",
+                  "Height": 54.0,
+                  "HorizontalAlignment": 0,
+                  "IsTextItem": true,
+                  "Left": 614.0,
+                  "Name": "Lap Recap6",
+                  "Text": "0:00.000",
+                  "TextColor": "#FF000000",
+                  "Top": 186.0,
+                  "VerticalAlignment": 1,
+                  "Visible": true,
+                  "Width": 230.0
+                },
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+                  "BackgroundColor": "#00FFFFFF",
+                  "Font": "Rajdhani",
+                  "FontSize": 22.0,
+                  "FontWeight": "SemiBold",
+                  "Height": 20.0,
+                  "HorizontalAlignment": 0,
+                  "IsTextItem": true,
+                  "Left": 616.0,
+                  "Name": "REMAINING4",
+                  "Text": "YOUR SESSION BEST",
+                  "TextColor": "#FF696969",
+                  "Top": 239.0,
+                  "VerticalAlignment": 1,
+                  "Visible": true,
+                  "Width": 210.0
+                }
+              ],
+              "Group": true,
+              "Height": 73.0,
+              "Left": 614.0,
+              "Name": "SESSION BEST",
+              "Top": 186.0,
+              "Visible": true,
+              "Width": 230.0
+            }
+          ],
+          "Group": true,
+          "Height": 294.0,
+          "Left": 0.0,
+          "Name": "LAP REVIEW",
+          "Top": 0.0,
+          "Visible": true,
+          "Width": 870.0
+        }
+      ],
+      "Name": "Screen",
+      "OverlayMaxDuration": 0,
+      "OverlayMinDuration": 0,
+      "OverlayTriggerExpression": {
+        "Expression": ""
+      },
+      "PitScreen": false,
+      "ScreenEnabledExpression": {
+        "Expression": ""
+      },
+      "ScreenId": "dfc416d4-bcda-40ab-8ce7-0de73fd279af"
+    }
+  ],
+  "ShowBackground": true,
+  "ShowBoundingRectangles": false,
+  "ShowForeground": true,
+  "ShowOnScreenControls": true,
+  "SnapToGrid": false,
+  "Version": 2
+}

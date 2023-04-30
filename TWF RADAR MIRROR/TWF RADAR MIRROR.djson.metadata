@@ -1,0 +1,22 @@
+{
+  "Category": "",
+  "Title": "TWF RADAR MIRROR",
+  "Description": "All in one dash made for DDUs",
+  "Author": "Hakan Uzunoglu",
+  "ScreenCount": 3.0,
+  "InGameScreensIndexs": [
+    1,
+    2
+  ],
+  "IdleScreensIndexs": [
+    0
+  ],
+  "MainPreviewIndex": 1,
+  "IsOverlay": false,
+  "Width": 850.0,
+  "Height": 480.0,
+  "OverlaySizeWarning": false,
+  "MetadataVersion": 2.0,
+  "EnableOnDashboardMessaging": true,
+  "PitScreensIndexs": []
+}

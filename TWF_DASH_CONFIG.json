@@ -10,7 +10,7 @@
     "your_color": " ",
         "your_color_tip": "Red, Blue, #FF233E49 (default - will appear in various places)",
     
-    "ui_color": 1,
+    "ui_color": 2,
         "ui_color_tip": "Main color style for the dash 1: Blue, 2: Black, 3: Subtle (with less backgrounds), 4: Custom", 
     
     
@@ -91,7 +91,7 @@
     "SECTION 3": "#################### OTHER DASHES ##########################",
     
    "laptimer_size":1,
-        "laptimer_size_tip": "Extra large or normal text size for first screen of laptimer 1: Normal, 2: Xlarge",
+        "laptimer_size_tip": "Extra large or normal text size for first screen of laptimer 1: Xlarge, 2: Normal",
 
     "laptimer_blinkonnewlap":1,
         "laptimer_blinkonnewlap_tip": "Show the last lap time as blinking in place of the current lap time when you go into a new lap 1:Yes 2:No",
@@ -105,7 +105,7 @@
     "show_alerts_radar": 1,
         "show_alerts_radar_tip": "1: Show car adjustment alerts, 0: hide",
      
-    "show_lapreview_radar": 0,
+    "show_lapreview_radar": 1,
         "show_lapreview_radar_tip": "1: Show lap review popups, 0: hide",
     
      "show_flags_radar": 1,
@@ -117,7 +117,7 @@
     "show_alerts_laptimer": 1,
         "show_alerts_laptimer_tip": "1: Show car adjustment alerts, 2: Fullscreen alerts 0: hide",
      
-    "show_lapreview_laptimer": 0,
+    "show_lapreview_laptimer": 1,
         "show_lapreview_laptimer_tip": "1: Show lap review popups, 0: hide",
     
      "show_flags_laptimer": 1,

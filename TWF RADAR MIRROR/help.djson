@@ -1,0 +1,167 @@
+{
+  "BackgroundColor": "#FF000000",
+  "BackgroundOpacity": 100.0,
+  "BaseHeight": 480,
+  "BaseWidth": 850,
+  "DashboardDebugManager": {
+    "Maximized": false
+  },
+  "EnableClickThroughOverlay": true,
+  "EnableOnDashboardMessaging": true,
+  "ForegroundOpacity": 100.0,
+  "GridSize": 10,
+  "HideLabels": false,
+  "Id": "fc9f9f03-b3fd-4fe8-8bc5-6064b39c233d",
+  "Images": [
+    {
+      "Extension": ".png",
+      "Height": 325,
+      "Length": 13857,
+      "MD5": "471bb6165c91675712f68236c7024981",
+      "Modified": false,
+      "Name": "twf_transparent_light",
+      "Optimized": true,
+      "Width": 538
+    }
+  ],
+  "IsOverlay": false,
+  "Metadata": {
+    "EnableOnDashboardMessaging": true,
+    "Height": 480.0,
+    "IdleScreensIndexs": [
+      0
+    ],
+    "InGameScreensIndexs": [
+      0
+    ],
+    "IsOverlay": false,
+    "MainPreviewIndex": 0,
+    "MetadataVersion": 2.0,
+    "OverlaySizeWarning": false,
+    "PitScreensIndexs": [],
+    "ScreenCount": 1.0,
+    "Width": 850.0
+  },
+  "Screens": [
+    {
+      "AllowOverlays": true,
+      "BackgroundColor": "#FF000000",
+      "IdleScreen": true,
+      "InGameScreen": true,
+      "IsBackgroundLayer": false,
+      "IsForegroundLayer": false,
+      "IsOverlayLayer": false,
+      "Items": [
+        {
+          "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+          "BackgroundColor": "#00FFFFFF",
+          "Font": "Rajdhani",
+          "FontSize": 40.0,
+          "FontWeight": "Bold",
+          "Height": 36.0,
+          "HorizontalAlignment": 0,
+          "IsTextItem": true,
+          "Left": 48.0,
+          "Name": "TEXT",
+          "RenderingSkip": 60,
+          "Text": "SETUP NOT COMPLETED",
+          "TextColor": "#FFFFFFFF",
+          "Top": 120.0,
+          "VerticalAlignment": 1,
+          "Visible": true,
+          "Width": 750.0
+        },
+        {
+          "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+          "BackgroundColor": "#00FFFFFF",
+          "Font": "Rajdhani",
+          "FontSize": 28.0,
+          "FontWeight": "Medium",
+          "Height": 80.0,
+          "HorizontalAlignment": 0,
+          "IsTextItem": true,
+          "Left": 48.0,
+          "Name": "TEXT2",
+          "RenderingSkip": 60,
+          "Text": "TWF Dash Ecosystem now requires two additional Javascript files to function properly.",
+          "TextColor": "#FFFFFFFF",
+          "TextWrapping": 2,
+          "Top": 164.0,
+          "VerticalAlignment": 1,
+          "Visible": true,
+          "Width": 750.0
+        },
+        {
+          "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+          "BackgroundColor": "#00FFFFFF",
+          "Font": "Rajdhani",
+          "FontSize": 28.0,
+          "FontWeight": "Bold",
+          "Height": 90.0,
+          "HorizontalAlignment": 0,
+          "IsTextItem": true,
+          "Left": 48.0,
+          "Name": "TEXT3",
+          "RenderingSkip": 60,
+          "Text": "Please place TWF_DASH_HELPER.JS and TWF_DASH_CONFIG.json under C:\\Program Files (x86)\\Simhub\\JavascriptExtensions",
+          "TextColor": "#FFFFFFFF",
+          "TextWrapping": 2,
+          "Top": 246.0,
+          "VerticalAlignment": 1,
+          "Visible": true,
+          "Width": 750.0
+        },
+        {
+          "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+          "BackgroundColor": "#00FFFFFF",
+          "Font": "Rajdhani",
+          "FontSize": 20.0,
+          "FontWeight": "Medium",
+          "Height": 80.0,
+          "HorizontalAlignment": 0,
+          "IsTextItem": true,
+          "Left": 48.0,
+          "Name": "TEXT4",
+          "RenderingSkip": 60,
+          "Text": "You can customize TWF_DASH_CONFIG.json if you want to add your name and number on idle screens and make further UI adjustments. Check readme file for more info.",
+          "TextColor": "#FFFFFFFF",
+          "TextWrapping": 2,
+          "Top": 339.0,
+          "VerticalAlignment": 1,
+          "Visible": true,
+          "Width": 750.0
+        },
+        {
+          "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.ImageItem, SimHub.Plugins",
+          "AutoSize": true,
+          "AutoSizeScale": 0.2,
+          "BackgroundColor": "#00FFFFFF",
+          "Height": 65.0,
+          "Image": "twf_transparent_light",
+          "Left": 698.0,
+          "Name": "twf_logo",
+          "Top": 46.0,
+          "Visible": true,
+          "Width": 107.60000000000001
+        }
+      ],
+      "Name": "Screen",
+      "OverlayMaxDuration": 0,
+      "OverlayMinDuration": 0,
+      "OverlayTriggerExpression": {
+        "Expression": ""
+      },
+      "PitScreen": false,
+      "ScreenEnabledExpression": {
+        "Expression": ""
+      },
+      "ScreenId": "2b020426-1272-4d57-ab66-89d32bef1b6a"
+    }
+  ],
+  "ShowBackground": true,
+  "ShowBoundingRectangles": false,
+  "ShowForeground": true,
+  "ShowOnScreenControls": true,
+  "SnapToGrid": false,
+  "Version": 2
+}

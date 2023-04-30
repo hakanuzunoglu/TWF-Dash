@@ -1,0 +1,673 @@
+{
+  "BackgroundColor": "#FF000000",
+  "BackgroundOpacity": 100.0,
+  "BaseHeight": 353,
+  "BaseWidth": 298,
+  "DashboardDebugManager": {
+    "Maximized": false
+  },
+  "EnableClickThroughOverlay": true,
+  "EnableOnDashboardMessaging": true,
+  "ForegroundOpacity": 100.0,
+  "GridSize": 10,
+  "HideLabels": true,
+  "Id": "1108917c-adc2-4b2c-bea1-76e8076682ab",
+  "Images": [
+    {
+      "Extension": ".png",
+      "Height": 301,
+      "Length": 21311,
+      "MD5": "ef318dd0704ea3fafb135e1a2fdd0f90",
+      "Modified": false,
+      "Name": "car",
+      "Optimized": true,
+      "Width": 149
+    },
+    {
+      "Extension": ".png",
+      "Height": 136,
+      "Length": 3576,
+      "MD5": "8651138b02f0a893f6155dd6be9277ff",
+      "Modified": false,
+      "Name": "heavy_bottom",
+      "Optimized": true,
+      "Width": 337
+    },
+    {
+      "Extension": ".png",
+      "Height": 136,
+      "Length": 3017,
+      "MD5": "9030e431c770384661225f6eb0ce4587",
+      "Modified": false,
+      "Name": "light_bottom",
+      "Optimized": true,
+      "Width": 337
+    },
+    {
+      "Extension": ".png",
+      "Height": 426,
+      "Length": 2885,
+      "MD5": "0e15d24957655cb4685cdd839408273b",
+      "Modified": false,
+      "Name": "light_left",
+      "Optimized": true,
+      "Width": 169
+    },
+    {
+      "Extension": ".png",
+      "Height": 136,
+      "Length": 3588,
+      "MD5": "89ef3e9ef78a2d178aaadc670e931051",
+      "Modified": false,
+      "Name": "med_bottom",
+      "Optimized": true,
+      "Width": 337
+    },
+    {
+      "Extension": ".png",
+      "Height": 117,
+      "Length": 3353,
+      "MD5": "73a1e668f05a89f9b2dda5a3e90f4e6d",
+      "Modified": false,
+      "Name": "heavy_front",
+      "Optimized": true,
+      "Width": 336
+    },
+    {
+      "Extension": ".png",
+      "Height": 426,
+      "Length": 2955,
+      "MD5": "31f5f63d0b323c2a41105690bcea56b7",
+      "Modified": false,
+      "Name": "heavy_left",
+      "Optimized": true,
+      "Width": 169
+    },
+    {
+      "Extension": ".png",
+      "Height": 426,
+      "Length": 3119,
+      "MD5": "d1bdaeceae833cf18cf762b28a14ee95",
+      "Modified": false,
+      "Name": "heavy_right",
+      "Optimized": true,
+      "Width": 168
+    },
+    {
+      "Extension": ".png",
+      "Height": 117,
+      "Length": 2636,
+      "MD5": "5c70c1cc57e980fb1153cd258c8df04d",
+      "Modified": false,
+      "Name": "light_front",
+      "Optimized": true,
+      "Width": 336
+    },
+    {
+      "Extension": ".png",
+      "Height": 426,
+      "Length": 2900,
+      "MD5": "31f41f8b2aee8c8dbddf16eb548a4999",
+      "Modified": false,
+      "Name": "light_right",
+      "Optimized": true,
+      "Width": 168
+    },
+    {
+      "Extension": ".png",
+      "Height": 117,
+      "Length": 3343,
+      "MD5": "4ebaf1a67c719e656c406d4897094586",
+      "Modified": false,
+      "Name": "med_front",
+      "Optimized": true,
+      "Width": 336
+    },
+    {
+      "Extension": ".png",
+      "Height": 426,
+      "Length": 2802,
+      "MD5": "6cfe0db2e515e6b03fea54743aaaa61e",
+      "Modified": false,
+      "Name": "med_left",
+      "Optimized": true,
+      "Width": 169
+    },
+    {
+      "Extension": ".png",
+      "Height": 426,
+      "Length": 3057,
+      "MD5": "a86a90c0acea299d6059381968611abf",
+      "Modified": false,
+      "Name": "med_right",
+      "Optimized": true,
+      "Width": 168
+    }
+  ],
+  "IsOverlay": false,
+  "Metadata": {
+    "EnableOnDashboardMessaging": true,
+    "Height": 353.0,
+    "IdleScreensIndexs": [
+      0
+    ],
+    "InGameScreensIndexs": [
+      0
+    ],
+    "IsOverlay": false,
+    "MainPreviewIndex": 0,
+    "MetadataVersion": 2.0,
+    "OverlaySizeWarning": false,
+    "PitScreensIndexs": [],
+    "ScreenCount": 1.0,
+    "Width": 298.0
+  },
+  "Screens": [
+    {
+      "AllowOverlays": true,
+      "BackgroundColor": "#FF000000",
+      "IdleScreen": true,
+      "InGameScreen": true,
+      "IsBackgroundLayer": false,
+      "IsForegroundLayer": false,
+      "IsOverlayLayer": false,
+      "Items": [
+        {
+          "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.Layer, SimHub.Plugins",
+          "BackgroundColor": "#00FFFFFF",
+          "Bindings": {
+            "Visible": {
+              "Formula": {
+                "Expression": "if ([DataCorePlugin.CurrentGame]!='IRacing', 1, 0)"
+              },
+              "Mode": 2,
+              "TargetPropertyName": "Visible"
+            }
+          },
+          "Childrens": [
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+              "BackgroundColor": "#FF060C0E",
+              "BorderStyle": {
+                "RadiusBottomLeft": 16,
+                "RadiusBottomRight": 16,
+                "RadiusTopLeft": 30,
+                "RadiusTopRight": 30
+              },
+              "Height": 244.0,
+              "IsRectangleItem": true,
+              "Left": 100.0,
+              "Name": "RectangleItem",
+              "Top": 53.0,
+              "Visible": true,
+              "Width": 100.0
+            },
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.ImageItem, SimHub.Plugins",
+              "AutoSize": true,
+              "AutoSizeScale": 0.84,
+              "BackgroundColor": "#00FFFFFF",
+              "Height": 252.84,
+              "Image": "car",
+              "Left": 85.0,
+              "Name": "ImageItem2",
+              "Opacity": 50.0,
+              "Top": 49.5,
+              "Visible": true,
+              "Width": 125.16
+            },
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+              "BackgroundColor": "#00FFFFFF",
+              "Bindings": {
+                "Text": {
+                  "FormatString": "0",
+                  "Formula": {
+                    "Expression": "if ($prop('DataCorePlugin.GameData.CarDamage1')>0 && $prop('DataCorePlugin.GameData.CarDamage1')<=20) {\r\n\r\n\treturn 'LIT'\r\n\t\r\n} else if ($prop('DataCorePlugin.GameData.CarDamage1')>20 && $prop('DataCorePlugin.GameData.CarDamage1')<=50) {\r\n\r\n\treturn 'MED'\r\n\t\r\n} else if ($prop('DataCorePlugin.GameData.CarDamage1')>50) {\r\n\r\n\treturn 'HVY'\r\n\r\n} else {\r\n\r\n\treturn 'OK'\r\n\t\r\n}",
+                    "Interpreter": 1
+                  },
+                  "Mode": 2,
+                  "TargetPropertyName": "Text"
+                },
+                "TextColor": {
+                  "Formula": {
+                    "Expression": "if ($prop('DataCorePlugin.GameData.CarDamage1')<1){\r\nreturn '#333333'\r\n\t\r\n} else {\r\n\treturn '#FFFFFF'\t\r\n} ",
+                    "Interpreter": 1
+                  },
+                  "Mode": 2,
+                  "TargetPropertyName": "TextColor"
+                }
+              },
+              "Font": "Rajdhani",
+              "FontSize": 28.0,
+              "FontWeight": "Bold",
+              "Height": 35.0,
+              "HorizontalAlignment": 1,
+              "IsTextItem": true,
+              "Left": 112.0,
+              "Name": "TextItem0",
+              "Text": "LIT",
+              "TextColor": "#FF808080",
+              "Top": 9.5,
+              "VerticalAlignment": 1,
+              "Visible": true,
+              "Width": 72.0
+            },
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+              "BackgroundColor": "#00FFFFFF",
+              "Bindings": {
+                "Text": {
+                  "FormatString": "0",
+                  "Formula": {
+                    "Expression": "if ($prop('DataCorePlugin.GameData.CarDamage2')>0 && $prop('DataCorePlugin.GameData.CarDamage2')<=20) {\r\n\r\n\treturn 'LIT'\r\n\t\r\n} else if ($prop('DataCorePlugin.GameData.CarDamage2')>20 && $prop('DataCorePlugin.GameData.CarDamage2')<=50) {\r\n\r\n\treturn 'MED'\r\n\t\r\n} else if ($prop('DataCorePlugin.GameData.CarDamage2')>50) {\r\n\r\n\treturn 'HVY'\r\n\r\n} else {\r\n\r\n\treturn 'OK'\r\n\t\r\n}",
+                    "Interpreter": 1
+                  },
+                  "Mode": 2,
+                  "TargetPropertyName": "Text"
+                },
+                "TextColor": {
+                  "Formula": {
+                    "Expression": "if ($prop('DataCorePlugin.GameData.CarDamage2')<1){\r\nreturn '#333333'\r\n\t\r\n} else {\r\n\treturn '#FFFFFF'\t\r\n} ",
+                    "Interpreter": 1
+                  },
+                  "Mode": 2,
+                  "TargetPropertyName": "TextColor"
+                }
+              },
+              "Font": "Rajdhani",
+              "FontSize": 28.0,
+              "FontWeight": "Bold",
+              "Height": 35.0,
+              "HorizontalAlignment": 1,
+              "IsTextItem": true,
+              "Left": 112.0,
+              "Name": "TextItem1",
+              "Text": "RE",
+              "TextColor": "#FF808080",
+              "Top": 306.5,
+              "VerticalAlignment": 1,
+              "Visible": true,
+              "Width": 72.0
+            },
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+              "BackgroundColor": "#00FFFFFF",
+              "Bindings": {
+                "Text": {
+                  "FormatString": "0",
+                  "Formula": {
+                    "Expression": "if ($prop('DataCorePlugin.GameData.CarDamage3')>0 && $prop('DataCorePlugin.GameData.CarDamage3')<=20) {\r\n\r\n\treturn 'LIT'\r\n\t\r\n} else if ($prop('DataCorePlugin.GameData.CarDamage3')>20 && $prop('DataCorePlugin.GameData.CarDamage3')<=50) {\r\n\r\n\treturn 'MED'\r\n\t\r\n} else if ($prop('DataCorePlugin.GameData.CarDamage3')>50) {\r\n\r\n\treturn 'HVY'\r\n\r\n} else {\r\n\r\n\treturn 'OK'\r\n\t\r\n}",
+                    "Interpreter": 1
+                  },
+                  "Mode": 2,
+                  "TargetPropertyName": "Text"
+                },
+                "TextColor": {
+                  "Formula": {
+                    "Expression": "if ($prop('DataCorePlugin.GameData.CarDamage3')<1){\r\nreturn '#333333'\r\n\t\r\n} else {\r\n\treturn '#FFFFFF'\t\r\n} ",
+                    "Interpreter": 1
+                  },
+                  "Mode": 2,
+                  "TargetPropertyName": "TextColor"
+                }
+              },
+              "Font": "Rajdhani",
+              "FontSize": 28.0,
+              "FontWeight": "Bold",
+              "Height": 35.0,
+              "HorizontalAlignment": 1,
+              "IsTextItem": true,
+              "Left": 9.0,
+              "Name": "TextItem2",
+              "Text": "LE",
+              "TextColor": "#FF808080",
+              "Top": 157.5,
+              "VerticalAlignment": 1,
+              "Visible": true,
+              "Width": 72.0
+            },
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+              "BackgroundColor": "#00FFFFFF",
+              "Bindings": {
+                "Text": {
+                  "FormatString": "0",
+                  "Formula": {
+                    "Expression": "if ($prop('DataCorePlugin.GameData.CarDamage4')>0 && $prop('DataCorePlugin.GameData.CarDamage4')<=20) {\r\n\r\n\treturn 'LIT'\r\n\t\r\n} else if ($prop('DataCorePlugin.GameData.CarDamage4')>20 && $prop('DataCorePlugin.GameData.CarDamage4')<=50) {\r\n\r\n\treturn 'MED'\r\n\t\r\n} else if ($prop('DataCorePlugin.GameData.CarDamage4')>50) {\r\n\r\n\treturn 'HVY'\r\n\r\n} else {\r\n\r\n\treturn 'OK'\r\n\t\r\n}",
+                    "Interpreter": 1
+                  },
+                  "Mode": 2,
+                  "TargetPropertyName": "Text"
+                },
+                "TextColor": {
+                  "Formula": {
+                    "Expression": "if ($prop('DataCorePlugin.GameData.CarDamage4')<1){\r\nreturn '#333333'\r\n\t\r\n} else {\r\n\treturn '#FFFFFF'\t\r\n} ",
+                    "Interpreter": 1
+                  },
+                  "Mode": 2,
+                  "TargetPropertyName": "TextColor"
+                }
+              },
+              "Font": "Rajdhani",
+              "FontSize": 28.0,
+              "FontWeight": "Bold",
+              "Height": 35.0,
+              "HorizontalAlignment": 1,
+              "IsTextItem": true,
+              "Left": 213.0,
+              "Name": "TextItem3",
+              "Text": "RI",
+              "TextColor": "#FF808080",
+              "Top": 157.5,
+              "VerticalAlignment": 1,
+              "Visible": true,
+              "Width": 72.0
+            },
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.Layer, SimHub.Plugins",
+              "BackgroundColor": "#00FFFFFF",
+              "Childrens": [
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.ImageItem, SimHub.Plugins",
+                  "AutoSize": true,
+                  "AutoSizeScale": 0.38,
+                  "BackgroundColor": "#00FFFFFF",
+                  "Bindings": {
+                    "Visible": {
+                      "Formula": {
+                        "Expression": "[DataCorePlugin.GameData.CarDamage1]>0&&[DataCorePlugin.GameData.CarDamage1]<=20"
+                      },
+                      "Mode": 2,
+                      "TargetPropertyName": "Visible"
+                    }
+                  },
+                  "Height": 44.46,
+                  "Image": "light_front",
+                  "Left": 84.90999999999997,
+                  "Name": "lightfront",
+                  "Top": 49.5,
+                  "Visible": true,
+                  "Width": 127.68
+                },
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.ImageItem, SimHub.Plugins",
+                  "AutoSize": true,
+                  "AutoSizeScale": 0.38,
+                  "BackgroundColor": "#00FFFFFF",
+                  "Bindings": {
+                    "Visible": {
+                      "Formula": {
+                        "Expression": "[DataCorePlugin.GameData.CarDamage1]>20&&[DataCorePlugin.GameData.CarDamage1]<=50"
+                      },
+                      "Mode": 2,
+                      "TargetPropertyName": "Visible"
+                    }
+                  },
+                  "Height": 44.46,
+                  "Image": "med_front",
+                  "Left": 84.90999999999997,
+                  "Name": "mediumfront",
+                  "Top": 49.5,
+                  "Visible": true,
+                  "Width": 127.68
+                },
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.ImageItem, SimHub.Plugins",
+                  "AutoSize": true,
+                  "AutoSizeScale": 0.38,
+                  "BackgroundColor": "#00FFFFFF",
+                  "Bindings": {
+                    "Visible": {
+                      "Formula": {
+                        "Expression": "[DataCorePlugin.GameData.CarDamage1]>50"
+                      },
+                      "Mode": 2,
+                      "TargetPropertyName": "Visible"
+                    }
+                  },
+                  "Height": 44.46,
+                  "Image": "heavy_front",
+                  "Left": 84.90999999999997,
+                  "Name": "heavyfront2",
+                  "Top": 49.5,
+                  "Visible": true,
+                  "Width": 127.68
+                },
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.ImageItem, SimHub.Plugins",
+                  "AutoSize": true,
+                  "AutoSizeScale": 0.38,
+                  "BackgroundColor": "#00FFFFFF",
+                  "Bindings": {
+                    "Visible": {
+                      "Formula": {
+                        "Expression": "[DataCorePlugin.GameData.CarDamage3]>0&&[DataCorePlugin.GameData.CarDamage3]<=20"
+                      },
+                      "Mode": 2,
+                      "TargetPropertyName": "Visible"
+                    }
+                  },
+                  "Height": 161.88,
+                  "Image": "light_left",
+                  "Left": 85.75,
+                  "Name": "lightleft",
+                  "Top": 91.5,
+                  "Visible": true,
+                  "Width": 64.22
+                },
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.ImageItem, SimHub.Plugins",
+                  "AutoSize": true,
+                  "AutoSizeScale": 0.38,
+                  "BackgroundColor": "#00FFFFFF",
+                  "Bindings": {
+                    "Visible": {
+                      "Formula": {
+                        "Expression": "[DataCorePlugin.GameData.CarDamage3]>20&&[DataCorePlugin.GameData.CarDamage3]<=50"
+                      },
+                      "Mode": 2,
+                      "TargetPropertyName": "Visible"
+                    }
+                  },
+                  "Height": 161.88,
+                  "Image": "med_left",
+                  "Left": 85.75,
+                  "Name": "mediumleft2",
+                  "Top": 91.5,
+                  "Visible": true,
+                  "Width": 64.22
+                },
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.ImageItem, SimHub.Plugins",
+                  "AutoSize": true,
+                  "AutoSizeScale": 0.38,
+                  "BackgroundColor": "#00FFFFFF",
+                  "Bindings": {
+                    "Visible": {
+                      "Formula": {
+                        "Expression": "[DataCorePlugin.GameData.CarDamage3]>50"
+                      },
+                      "Mode": 2,
+                      "TargetPropertyName": "Visible"
+                    }
+                  },
+                  "Height": 161.88,
+                  "Image": "heavy_left",
+                  "Left": 85.75,
+                  "Name": "heavyleft",
+                  "Top": 91.5,
+                  "Visible": true,
+                  "Width": 64.22
+                },
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.ImageItem, SimHub.Plugins",
+                  "AutoSize": true,
+                  "AutoSizeScale": 0.38,
+                  "BackgroundColor": "#00FFFFFF",
+                  "Bindings": {
+                    "Visible": {
+                      "Formula": {
+                        "Expression": "[DataCorePlugin.GameData.CarDamage4]>0&&[DataCorePlugin.GameData.CarDamage4]<=20"
+                      },
+                      "Mode": 2,
+                      "TargetPropertyName": "Visible"
+                    }
+                  },
+                  "Height": 161.88,
+                  "Image": "light_right",
+                  "Left": 147.75,
+                  "Name": "lightright",
+                  "Top": 91.5,
+                  "Visible": true,
+                  "Width": 63.84
+                },
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.ImageItem, SimHub.Plugins",
+                  "AutoSize": true,
+                  "AutoSizeScale": 0.38,
+                  "BackgroundColor": "#00FFFFFF",
+                  "Bindings": {
+                    "Visible": {
+                      "Formula": {
+                        "Expression": "[DataCorePlugin.GameData.CarDamage4]>20&&[DataCorePlugin.GameData.CarDamage4]<=50"
+                      },
+                      "Mode": 2,
+                      "TargetPropertyName": "Visible"
+                    }
+                  },
+                  "Height": 161.88,
+                  "Image": "med_right",
+                  "Left": 147.75,
+                  "Name": "mediumright",
+                  "Top": 91.5,
+                  "Visible": true,
+                  "Width": 63.84
+                },
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.ImageItem, SimHub.Plugins",
+                  "AutoSize": true,
+                  "AutoSizeScale": 0.38,
+                  "BackgroundColor": "#00FFFFFF",
+                  "Bindings": {
+                    "Visible": {
+                      "Formula": {
+                        "Expression": "[DataCorePlugin.GameData.CarDamage4]>50"
+                      },
+                      "Mode": 2,
+                      "TargetPropertyName": "Visible"
+                    }
+                  },
+                  "Height": 161.88,
+                  "Image": "heavy_right",
+                  "Left": 147.75,
+                  "Name": "heavyright",
+                  "Top": 91.5,
+                  "Visible": true,
+                  "Width": 63.84
+                },
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.ImageItem, SimHub.Plugins",
+                  "AutoSize": true,
+                  "AutoSizeScale": 0.38,
+                  "BackgroundColor": "#00FFFFFF",
+                  "Bindings": {
+                    "Visible": {
+                      "Formula": {
+                        "Expression": "[DataCorePlugin.GameData.CarDamage2]>0&&[DataCorePlugin.GameData.CarDamage2]<=20"
+                      },
+                      "Mode": 2,
+                      "TargetPropertyName": "Visible"
+                    }
+                  },
+                  "Height": 51.68,
+                  "Image": "light_bottom",
+                  "Left": 84.90999999999997,
+                  "Name": "lightrear",
+                  "Top": 249.5,
+                  "Visible": true,
+                  "Width": 128.06
+                },
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.ImageItem, SimHub.Plugins",
+                  "AutoSize": true,
+                  "AutoSizeScale": 0.38,
+                  "BackgroundColor": "#00FFFFFF",
+                  "Bindings": {
+                    "Visible": {
+                      "Formula": {
+                        "Expression": "[DataCorePlugin.GameData.CarDamage2]>20&&[DataCorePlugin.GameData.CarDamage2]<=50"
+                      },
+                      "Mode": 2,
+                      "TargetPropertyName": "Visible"
+                    }
+                  },
+                  "Height": 51.68,
+                  "Image": "med_bottom",
+                  "Left": 84.90999999999997,
+                  "Name": "mediumrear2",
+                  "Top": 249.5,
+                  "Visible": true,
+                  "Width": 128.06
+                },
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.ImageItem, SimHub.Plugins",
+                  "AutoSize": true,
+                  "AutoSizeScale": 0.38,
+                  "BackgroundColor": "#00FFFFFF",
+                  "Bindings": {
+                    "Visible": {
+                      "Formula": {
+                        "Expression": "[DataCorePlugin.GameData.CarDamage2]>50"
+                      },
+                      "Mode": 2,
+                      "TargetPropertyName": "Visible"
+                    }
+                  },
+                  "Height": 51.68,
+                  "Image": "heavy_bottom",
+                  "Left": 84.90999999999997,
+                  "Name": "heavyrear",
+                  "Top": 249.5,
+                  "Visible": true,
+                  "Width": 128.06
+                }
+              ],
+              "Group": true,
+              "Height": 251.68,
+              "Left": 84.90999999999997,
+              "Name": "damage",
+              "Top": 49.5,
+              "Visible": true,
+              "Width": 128.06
+            }
+          ],
+          "Group": true,
+          "Height": 332.0,
+          "Left": 9.0,
+          "Name": "DAMAGES_ACC",
+          "Top": 9.5,
+          "Visible": true,
+          "Width": 276.0
+        }
+      ],
+      "Name": "Screen",
+      "OverlayMaxDuration": 0,
+      "OverlayMinDuration": 0,
+      "OverlayTriggerExpression": {
+        "Expression": ""
+      },
+      "PitScreen": false,
+      "ScreenEnabledExpression": {
+        "Expression": ""
+      },
+      "ScreenId": "0993c6ed-a21a-4355-b754-b4f5638002d8"
+    }
+  ],
+  "ShowBackground": true,
+  "ShowBoundingRectangles": false,
+  "ShowForeground": true,
+  "ShowOnScreenControls": true,
+  "SnapToGrid": false,
+  "Version": 2
+}

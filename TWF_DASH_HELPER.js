@@ -290,6 +290,8 @@ function twf_rpm_gauge_color() {
 
     if ($prop('DataCorePlugin.GameData.CarSettings_RPMRedLineReached') == true) {
         return 'red'
+    } else if ($prop('DRSEnabled')==1){
+        return 'lime'
     } else {
 
         if (color == 1) {
@@ -306,7 +308,15 @@ function twf_rpm_gauge_color() {
     }
 }
 
-
+function twf_get_laps_in_stint(){
+    if (root["lapsinstint"] == null) {
+        root["lapsinstint"] = $prop('CompletedLaps')
+    }
+    if($prop('IsInPitLane')>0){
+     root["lapsinstint"] = $prop('CompletedLaps')
+    }
+return  $prop('CompletedLaps') - root["lapsinstint"]
+}
 
 function twf_current_lap_color() {
     if (root["invalidlap"] == null) {
@@ -385,7 +395,12 @@ function twf_get_session_best_delta(options) {
         return delta
 
     } else {
-        return Math.abs(delta)
+        if(delta>0){
+            return "+"+delta.toFixed(2)
+        } else {
+            return delta.toFixed(2)
+        }
+        // return Math.abs(delta)
     }
 }
 
@@ -401,7 +416,13 @@ function twf_get_alltime_best_delta(options) {
         return delta
 
     } else {
-        return Math.abs(delta)
+        if(delta>0){
+            return "+"+delta.toFixed(2)
+        } else {
+            return delta.toFixed(2)
+        }
+        
+        // return Math.abs(delta)
     }
 }
 
@@ -417,7 +438,13 @@ lastlap = timespantoseconds($prop('LastLapTime'))
         return delta
 
     } else {
-        return Math.abs(delta)
+      
+         if(delta>0){
+            return "+"+delta.toFixed(2)
+        } else {
+            return delta.toFixed(2)
+        }
+        //return Math.abs(delta)
     }
 }
 
@@ -537,13 +564,26 @@ function twf_get_mfd(mfdlocation, mfdname) {
         "class": 1,
         "map": twf_read_setting("mfd_map", 1)
     }
+     const mfd_ac = {
+        "tyres": 1,
+        "damage": 1,
+        "status": 1,
+        "timings": 1,
+        "timingsandgap": 1,
+        "gap": 1,
+        "relative": 1,
+        "class": 1,
+        "map": 0
+    }
 
     if (currentgame == "AssettoCorsaCompetizione") {
         return mfd_acc[mfdname]
     }
     if (currentgame == "IRacing") {
         return mfd_ir[mfdname]
-    } else {
+    } if (currentgame == "AssettoCorsa") {
+        return mfd_ac[mfdname]
+    }else {
         return mfd_all[mfdname]
     }
 }

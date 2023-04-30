@@ -1,0 +1,924 @@
+{
+  "BackgroundColor": "#FF000000",
+  "BackgroundOpacity": 100.0,
+  "BaseHeight": 65,
+  "BaseWidth": 455,
+  "DashboardDebugManager": {
+    "LastPlacement": "156,156,455,65",
+    "Maximized": false
+  },
+  "EnableClickThroughOverlay": true,
+  "EnableOnDashboardMessaging": true,
+  "ForegroundOpacity": 100.0,
+  "GridSize": 10,
+  "HideLabels": true,
+  "Id": "18dc95d9-6e47-45ea-9028-f11b93c6bd93",
+  "Images": [
+    {
+      "Extension": ".png",
+      "Height": 60,
+      "Length": 16678,
+      "MD5": "f4e7bacd33e8a3e4b8c9a6ba3f2a12b3",
+      "Modified": false,
+      "Name": "delta_bg",
+      "Optimized": true,
+      "Width": 420
+    },
+    {
+      "Extension": ".png",
+      "Height": 79,
+      "Length": 5730,
+      "MD5": "2ec3902f3cac80d4f7c6d9d0ce3eecec",
+      "Modified": false,
+      "Name": "bg_blue",
+      "Optimized": true,
+      "Width": 606
+    },
+    {
+      "Extension": ".png",
+      "Height": 79,
+      "Length": 18285,
+      "MD5": "481cab82cb8fe871e7651eee0942a861",
+      "Modified": false,
+      "Name": "bg_checkered",
+      "Optimized": true,
+      "Width": 606
+    },
+    {
+      "Extension": ".png",
+      "Height": 79,
+      "Length": 6340,
+      "MD5": "7bf70f359bf175462757f3c82f3af058",
+      "Modified": false,
+      "Name": "bg_green",
+      "Optimized": true,
+      "Width": 606
+    },
+    {
+      "Extension": ".png",
+      "Height": 79,
+      "Length": 17074,
+      "MD5": "132c01bf58bbb0b99c11cb4e68a69fd1",
+      "Modified": false,
+      "Name": "bg_pit",
+      "Optimized": true,
+      "Width": 606
+    },
+    {
+      "Extension": ".png",
+      "Height": 79,
+      "Length": 8014,
+      "MD5": "51c7a3994daab7217af5aface8ad75aa",
+      "Modified": false,
+      "Name": "bg_white",
+      "Optimized": true,
+      "Width": 606
+    },
+    {
+      "Extension": ".png",
+      "Height": 79,
+      "Length": 7718,
+      "MD5": "3d87abf44754417b3580b8669b72ecee",
+      "Modified": false,
+      "Name": "bg_yellow",
+      "Optimized": true,
+      "Width": 606
+    },
+    {
+      "Extension": ".png",
+      "Height": 79,
+      "Length": 14835,
+      "MD5": "de87ffbbbb5acaae3b33ab20b4d12e32",
+      "Modified": false,
+      "Name": "bg_orange",
+      "Optimized": true,
+      "Width": 606
+    },
+    {
+      "Extension": ".png",
+      "Height": 79,
+      "Length": 12423,
+      "MD5": "3784f7ff547df6fe756c7d257ee8cb38",
+      "Modified": false,
+      "Name": "bg_red",
+      "Optimized": true,
+      "Width": 585
+    },
+    {
+      "Extension": ".png",
+      "Height": 60,
+      "Length": 4373,
+      "MD5": "5a2031c1516770f36e9e84d2bca8f866",
+      "Modified": false,
+      "Name": "bg_black",
+      "Optimized": true,
+      "Width": 439
+    },
+    {
+      "Extension": ".png",
+      "Height": 60,
+      "Length": 4210,
+      "MD5": "d9cf6143c6ca29a3a3aac5a2d2bf377c",
+      "Modified": false,
+      "Name": "bg_black_flag",
+      "Optimized": true,
+      "Width": 455
+    }
+  ],
+  "IsOverlay": false,
+  "Metadata": {
+    "EnableOnDashboardMessaging": true,
+    "Height": 65.0,
+    "IdleScreensIndexs": [
+      0
+    ],
+    "InGameScreensIndexs": [
+      0
+    ],
+    "IsOverlay": false,
+    "MainPreviewIndex": 0,
+    "MetadataVersion": 2.0,
+    "OverlaySizeWarning": false,
+    "PitScreensIndexs": [],
+    "ScreenCount": 1.0,
+    "Width": 455.0
+  },
+  "Screens": [
+    {
+      "AllowOverlays": true,
+      "BackgroundColor": "#FF000000",
+      "IdleScreen": true,
+      "InGameScreen": true,
+      "IsBackgroundLayer": false,
+      "IsForegroundLayer": false,
+      "IsOverlayLayer": false,
+      "Items": [
+        {
+          "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.ImageItem, SimHub.Plugins",
+          "AutoSize": false,
+          "BackgroundColor": "#00FFFFFF",
+          "Height": 65.0,
+          "Image": "delta_bg",
+          "Left": 0.5,
+          "Name": "bg",
+          "Top": 0.0,
+          "Visible": false,
+          "Width": 455.0
+        },
+        {
+          "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.Layer, SimHub.Plugins",
+          "BackgroundColor": "#00FFFFFF",
+          "Childrens": [
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.Layer, SimHub.Plugins",
+              "BackgroundColor": "#00FFFFFF",
+              "Bindings": {
+                "Visible": {
+                  "Formula": {
+                    "Expression": "[DataCorePlugin.GameData.Flag_White] || [GameRawData.Graphics.globalWhite]"
+                  },
+                  "Mode": 2,
+                  "TargetPropertyName": "Visible"
+                }
+              },
+              "Childrens": [
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.ImageItem, SimHub.Plugins",
+                  "AutoSize": false,
+                  "AutoSizeScale": 0.81,
+                  "BackgroundColor": "#00FFFFFF",
+                  "Height": 32.99,
+                  "Image": "bg_white",
+                  "Left": -18.430000000000007,
+                  "Name": "bg2",
+                  "Top": -25.0,
+                  "Visible": true,
+                  "Width": 490.86
+                },
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+                  "BackgroundColor": "#00FFFFFF",
+                  "Font": "Rajdhani",
+                  "FontSize": 32.0,
+                  "FontWeight": "Bold",
+                  "Height": 40.0,
+                  "HorizontalAlignment": 1,
+                  "IsTextItem": true,
+                  "Left": 37.0,
+                  "Name": "TextItem",
+                  "Text": "WHITE FLAG",
+                  "TextColor": "#FF000000",
+                  "Top": -41.0,
+                  "VerticalAlignment": 1,
+                  "Visible": false,
+                  "Width": 380.0
+                }
+              ],
+              "Group": true,
+              "Height": 48.99,
+              "Left": -18.430000000000007,
+              "Name": "WHITE_LINE",
+              "Top": -41.0,
+              "Visible": false,
+              "Width": 490.86
+            },
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.Layer, SimHub.Plugins",
+              "BackgroundColor": "#00FFFFFF",
+              "Bindings": {
+                "Visible": {
+                  "Formula": {
+                    "Expression": "changed(3000, [DataCorePlugin.GameData.Flag_White]) || changed(3000,[GameRawData.Graphics.globalWhite])"
+                  },
+                  "Mode": 2,
+                  "TargetPropertyName": "Visible"
+                }
+              },
+              "Childrens": [
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.ImageItem, SimHub.Plugins",
+                  "AutoSize": false,
+                  "AutoSizeScale": 0.81,
+                  "BackgroundColor": "#00FFFFFF",
+                  "Height": 64.0,
+                  "Image": "bg_white",
+                  "Left": -18.430000000000007,
+                  "Name": "bg2",
+                  "Top": 0.0,
+                  "Visible": true,
+                  "Width": 490.86
+                },
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+                  "BackgroundColor": "#00FFFFFF",
+                  "Font": "Rajdhani",
+                  "FontSize": 32.0,
+                  "FontWeight": "Bold",
+                  "Height": 40.0,
+                  "HorizontalAlignment": 1,
+                  "IsTextItem": true,
+                  "Left": 37.0,
+                  "Name": "TextItem",
+                  "Text": "WHITE FLAG",
+                  "TextColor": "#FF000000",
+                  "Top": 17.0,
+                  "VerticalAlignment": 1,
+                  "Visible": true,
+                  "Width": 380.0
+                }
+              ],
+              "Group": true,
+              "Height": 64.0,
+              "Left": -18.430000000000007,
+              "Name": "WHITE_INITIAL",
+              "Top": 0.0,
+              "Visible": false,
+              "Width": 490.86
+            },
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.Layer, SimHub.Plugins",
+              "BackgroundColor": "#00FFFFFF",
+              "Bindings": {
+                "Visible": {
+                  "Formula": {
+                    "Expression": "[IRacingExtraProperties.iRacing_SlowCarAhead] || [GameRawData.Graphics.FlagsDetails.IsACC_WHITE_FLAG]"
+                  },
+                  "Mode": 2,
+                  "TargetPropertyName": "Visible"
+                }
+              },
+              "Childrens": [
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.ImageItem, SimHub.Plugins",
+                  "AutoSize": false,
+                  "AutoSizeScale": 0.81,
+                  "BackgroundColor": "#00FFFFFF",
+                  "Height": 64.0,
+                  "Image": "bg_white",
+                  "Left": -18.430000000000007,
+                  "Name": "bg2",
+                  "Top": 0.0,
+                  "Visible": true,
+                  "Width": 490.86
+                },
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+                  "BackgroundColor": "#00FFFFFF",
+                  "Font": "Rajdhani",
+                  "FontSize": 32.0,
+                  "FontWeight": "Bold",
+                  "Height": 40.0,
+                  "HorizontalAlignment": 1,
+                  "IsTextItem": true,
+                  "Left": 37.0,
+                  "Name": "TextItem",
+                  "Text": "SLOW MOVING VEHICLE",
+                  "TextColor": "#FF000000",
+                  "Top": 17.0,
+                  "VerticalAlignment": 1,
+                  "Visible": true,
+                  "Width": 380.0
+                }
+              ],
+              "Group": true,
+              "Height": 64.0,
+              "Left": -18.430000000000007,
+              "Name": "SLOW_MOVING",
+              "Top": 0.0,
+              "Visible": false,
+              "Width": 490.86
+            },
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.Layer, SimHub.Plugins",
+              "BackgroundColor": "#00FFFFFF",
+              "Bindings": {
+                "Visible": {
+                  "Formula": {
+                    "Expression": "[DataCorePlugin.GameData.Flag_Green]"
+                  },
+                  "Mode": 2,
+                  "TargetPropertyName": "Visible"
+                }
+              },
+              "Childrens": [
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.ImageItem, SimHub.Plugins",
+                  "AutoSize": false,
+                  "AutoSizeScale": 0.81,
+                  "BackgroundColor": "#00FFFFFF",
+                  "Height": 63.99,
+                  "Image": "bg_green",
+                  "Left": -18.430000000000007,
+                  "Name": "bg2",
+                  "Top": 0.0,
+                  "Visible": true,
+                  "Width": 490.86
+                },
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+                  "BackgroundColor": "#00FFFFFF",
+                  "Font": "Rajdhani",
+                  "FontSize": 32.0,
+                  "FontWeight": "Bold",
+                  "Height": 40.0,
+                  "HorizontalAlignment": 1,
+                  "IsTextItem": true,
+                  "Left": 37.0,
+                  "Name": "TextItem",
+                  "Text": "GREEN FLAG",
+                  "TextColor": "#FFFFFFFF",
+                  "Top": 17.0,
+                  "VerticalAlignment": 1,
+                  "Visible": true,
+                  "Width": 380.0
+                }
+              ],
+              "Group": true,
+              "Height": 63.99,
+              "Left": -18.430000000000007,
+              "Name": "GREEN",
+              "Top": 0.0,
+              "Visible": false,
+              "Width": 490.86
+            },
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.Layer, SimHub.Plugins",
+              "BackgroundColor": "#00FFFFFF",
+              "Bindings": {
+                "Visible": {
+                  "Formula": {
+                    "Expression": "if(isnull($prop('DataCorePlugin.GameRawData.Telemetry.SessionFlagsDetails.Isrepair'),0) > 0 || isnull($prop('GameRawData.mHighestFlagColour'),0) == 9 || $prop('Flag_Orange') > 0){\r\n\treturn 1\r\n} else {\r\n\treturn 0\r\n}",
+                    "Interpreter": 1
+                  },
+                  "Mode": 2,
+                  "TargetPropertyName": "Visible"
+                }
+              },
+              "Childrens": [
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.ImageItem, SimHub.Plugins",
+                  "AutoSize": false,
+                  "AutoSizeScale": 0.81,
+                  "BackgroundColor": "#00FFFFFF",
+                  "Height": 63.99,
+                  "Image": "bg_orange",
+                  "Left": -18.430000000000007,
+                  "Name": "bg2",
+                  "Top": 0.0,
+                  "Visible": true,
+                  "Width": 490.86
+                },
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+                  "BackgroundColor": "#00FFFFFF",
+                  "Font": "Rajdhani",
+                  "FontSize": 32.0,
+                  "FontWeight": "Bold",
+                  "Height": 40.0,
+                  "HorizontalAlignment": 1,
+                  "IsTextItem": true,
+                  "Left": 37.0,
+                  "Name": "TextItem",
+                  "Text": "ORANGE FLAG",
+                  "TextColor": "#FF000000",
+                  "Top": 17.0,
+                  "VerticalAlignment": 1,
+                  "Visible": true,
+                  "Width": 380.0
+                }
+              ],
+              "Group": true,
+              "Height": 63.99,
+              "Left": -18.430000000000007,
+              "Name": "ORANGE",
+              "Top": 0.0,
+              "Visible": false,
+              "Width": 490.86
+            },
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.Layer, SimHub.Plugins",
+              "BackgroundColor": "#00FFFFFF",
+              "Bindings": {
+                "Visible": {
+                  "Formula": {
+                    "Expression": "[Flag_Black]"
+                  },
+                  "Mode": 2,
+                  "TargetPropertyName": "Visible"
+                }
+              },
+              "Childrens": [
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.ImageItem, SimHub.Plugins",
+                  "AutoSize": false,
+                  "AutoSizeScale": 0.81,
+                  "BackgroundColor": "#00FFFFFF",
+                  "Height": 63.99,
+                  "Image": "bg_black_flag",
+                  "Left": -18.430000000000007,
+                  "Name": "bg2",
+                  "Top": 0.004999999999999005,
+                  "Visible": true,
+                  "Width": 490.86
+                },
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+                  "BackgroundColor": "#00FFFFFF",
+                  "Font": "Rajdhani",
+                  "FontSize": 32.0,
+                  "FontWeight": "Bold",
+                  "Height": 40.0,
+                  "HorizontalAlignment": 1,
+                  "IsTextItem": true,
+                  "Left": 88.0,
+                  "Name": "TextItem",
+                  "Text": "BLACK FLAG",
+                  "TextColor": "#FFFFFFFF",
+                  "Top": 17.0,
+                  "VerticalAlignment": 1,
+                  "Visible": true,
+                  "Width": 278.0
+                }
+              ],
+              "Group": true,
+              "Height": 63.99000000000001,
+              "Left": -18.430000000000007,
+              "Name": "BLACK",
+              "Top": 0.004999999999999005,
+              "Visible": false,
+              "Width": 490.86
+            },
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.Layer, SimHub.Plugins",
+              "BackgroundColor": "#00FFFFFF",
+              "Bindings": {
+                "Visible": {
+                  "Formula": {
+                    "Expression": "if ([DataCorePlugin.CurrentGame]=='AssettoCorsaCompetizione', 1, 0)"
+                  },
+                  "Mode": 2,
+                  "TargetPropertyName": "Visible"
+                }
+              },
+              "Childrens": [
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.Layer, SimHub.Plugins",
+                  "BackgroundColor": "#00FFFFFF",
+                  "Bindings": {
+                    "Visible": {
+                      "Formula": {
+                        "Expression": "[GameRawData.Graphics.globalYellow]>0"
+                      },
+                      "Mode": 2,
+                      "TargetPropertyName": "Visible"
+                    }
+                  },
+                  "Childrens": [
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.ImageItem, SimHub.Plugins",
+                      "AutoSize": false,
+                      "AutoSizeScale": 0.81,
+                      "BackgroundColor": "#00FFFFFF",
+                      "Height": 63.99,
+                      "Image": "bg_yellow",
+                      "Left": -18.430000000000007,
+                      "Name": "bg3",
+                      "Top": 0.004999999999999005,
+                      "Visible": true,
+                      "Width": 490.86
+                    },
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+                      "BackgroundColor": "#00FFFFFF",
+                      "Font": "Rajdhani",
+                      "FontSize": 32.0,
+                      "FontWeight": "Bold",
+                      "Height": 40.0,
+                      "HorizontalAlignment": 1,
+                      "IsTextItem": true,
+                      "Left": 37.0,
+                      "Name": "TextItem",
+                      "Text": "SECTOR",
+                      "TextColor": "#FF000000",
+                      "Top": 13.0,
+                      "VerticalAlignment": 1,
+                      "Visible": true,
+                      "Width": 278.0
+                    },
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+                      "BackgroundColor": "#00FFFFFF",
+                      "Bindings": {
+                        "Visible": {
+                          "Formula": {
+                            "Expression": "[GameRawData.Graphics.globalYellow1] =1"
+                          },
+                          "Mode": 2,
+                          "TargetPropertyName": "Visible"
+                        }
+                      },
+                      "Font": "Rajdhani",
+                      "FontSize": 32.0,
+                      "FontWeight": "Bold",
+                      "Height": 40.0,
+                      "HorizontalAlignment": 1,
+                      "IsTextItem": true,
+                      "Left": 250.0,
+                      "Name": "1_LABEL",
+                      "Text": "1",
+                      "TextColor": "#FF000000",
+                      "Top": 13.0,
+                      "VerticalAlignment": 1,
+                      "Visible": true,
+                      "Width": 60.0
+                    },
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+                      "BackgroundColor": "#00FFFFFF",
+                      "Bindings": {
+                        "Visible": {
+                          "Formula": {
+                            "Expression": "[GameRawData.Graphics.globalYellow2] =1"
+                          },
+                          "Mode": 2,
+                          "TargetPropertyName": "Visible"
+                        }
+                      },
+                      "Font": "Rajdhani",
+                      "FontSize": 32.0,
+                      "FontWeight": "Bold",
+                      "Height": 40.0,
+                      "HorizontalAlignment": 1,
+                      "IsTextItem": true,
+                      "Left": 294.0,
+                      "Name": "2_LABEL",
+                      "Text": "- 2 -",
+                      "TextColor": "#FF000000",
+                      "Top": 13.0,
+                      "VerticalAlignment": 1,
+                      "Visible": true,
+                      "Width": 60.0
+                    },
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+                      "BackgroundColor": "#00FFFFFF",
+                      "Bindings": {
+                        "Visible": {
+                          "Formula": {
+                            "Expression": "[GameRawData.Graphics.globalYellow3] =1"
+                          },
+                          "Mode": 2,
+                          "TargetPropertyName": "Visible"
+                        }
+                      },
+                      "Font": "Rajdhani",
+                      "FontSize": 32.0,
+                      "FontWeight": "Bold",
+                      "Height": 40.0,
+                      "HorizontalAlignment": 1,
+                      "IsTextItem": true,
+                      "Left": 341.0,
+                      "Name": "3_LABEL",
+                      "Text": "3",
+                      "TextColor": "#FF000000",
+                      "Top": 13.0,
+                      "VerticalAlignment": 1,
+                      "Visible": true,
+                      "Width": 60.0
+                    }
+                  ],
+                  "Group": true,
+                  "Height": 63.99000000000001,
+                  "Left": -18.430000000000007,
+                  "Name": "YELLOWSECTOR",
+                  "Top": 0.004999999999999005,
+                  "Visible": true,
+                  "Width": 490.86
+                }
+              ],
+              "Group": true,
+              "Height": 63.99000000000001,
+              "Left": -18.430000000000007,
+              "Name": "SECTOR_ACC",
+              "Top": 0.004999999999999005,
+              "Visible": false,
+              "Width": 490.86
+            },
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.Layer, SimHub.Plugins",
+              "BackgroundColor": "#00FFFFFF",
+              "Bindings": {
+                "Visible": {
+                  "Formula": {
+                    "Expression": "if(isnull($prop('GameRawData.Graphics.FlagsDetails.IsACC_YELLOW_FLAG'),0) > 0 || isnull($prop('GameRawData.mHighestFlagColour'),0) == 7 || $prop('Flag_Yellow') > 0){\r\n\treturn 1\r\n} else {\r\n\treturn 0\r\n}",
+                    "Interpreter": 1
+                  },
+                  "Mode": 2,
+                  "TargetPropertyName": "Visible"
+                }
+              },
+              "Childrens": [
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.ImageItem, SimHub.Plugins",
+                  "AutoSize": false,
+                  "AutoSizeScale": 0.81,
+                  "BackgroundColor": "#00FFFFFF",
+                  "Height": 63.99,
+                  "Image": "bg_yellow",
+                  "Left": -18.430000000000007,
+                  "Name": "bg2",
+                  "Top": 0.004999999999999005,
+                  "Visible": true,
+                  "Width": 490.86
+                },
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+                  "BackgroundColor": "#00FFFFFF",
+                  "Font": "Rajdhani",
+                  "FontSize": 32.0,
+                  "FontWeight": "Bold",
+                  "Height": 40.0,
+                  "HorizontalAlignment": 1,
+                  "IsTextItem": true,
+                  "Left": 88.0,
+                  "Name": "TextItem",
+                  "Text": "YELLOW FLAG",
+                  "TextColor": "#FF000000",
+                  "Top": 17.0,
+                  "VerticalAlignment": 1,
+                  "Visible": true,
+                  "Width": 278.0
+                }
+              ],
+              "Group": true,
+              "Height": 63.99000000000001,
+              "Left": -18.430000000000007,
+              "Name": "YELLOW",
+              "Top": 0.004999999999999005,
+              "Visible": false,
+              "Width": 490.86
+            },
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.Layer, SimHub.Plugins",
+              "BackgroundColor": "#00FFFFFF",
+              "Bindings": {
+                "Visible": {
+                  "Formula": {
+                    "Expression": "[DataCorePlugin.GameData.Flag_Blue]"
+                  },
+                  "Mode": 2,
+                  "TargetPropertyName": "Visible"
+                }
+              },
+              "Childrens": [
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.ImageItem, SimHub.Plugins",
+                  "AutoSize": false,
+                  "AutoSizeScale": 0.81,
+                  "BackgroundColor": "#00FFFFFF",
+                  "Height": 63.99,
+                  "Image": "bg_blue",
+                  "Left": -18.430000000000007,
+                  "Name": "bg2",
+                  "Top": 0.0,
+                  "Visible": true,
+                  "Width": 490.86
+                },
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+                  "BackgroundColor": "#00FFFFFF",
+                  "Font": "Rajdhani",
+                  "FontSize": 32.0,
+                  "FontWeight": "Bold",
+                  "Height": 40.0,
+                  "HorizontalAlignment": 1,
+                  "IsTextItem": true,
+                  "Left": 37.0,
+                  "Name": "TextItem",
+                  "Text": "BLUE FLAG",
+                  "TextColor": "#FFFFFFFF",
+                  "Top": 17.0,
+                  "VerticalAlignment": 1,
+                  "Visible": true,
+                  "Width": 380.0
+                }
+              ],
+              "Group": true,
+              "Height": 63.99,
+              "Left": -18.430000000000007,
+              "Name": "BLUE",
+              "Top": 0.0,
+              "Visible": false,
+              "Width": 490.86
+            },
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.Layer, SimHub.Plugins",
+              "BackgroundColor": "#00FFFFFF",
+              "Bindings": {
+                "Visible": {
+                  "Formula": {
+                    "Expression": "[DataCorePlugin.GameData.Flag_Checkered] || [GameRawData.Graphics.globalChequered]"
+                  },
+                  "Mode": 2,
+                  "TargetPropertyName": "Visible"
+                }
+              },
+              "Childrens": [
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.ImageItem, SimHub.Plugins",
+                  "AutoSize": false,
+                  "AutoSizeScale": 0.81,
+                  "BackgroundColor": "#00FFFFFF",
+                  "Height": 63.99,
+                  "Image": "bg_checkered",
+                  "Left": -18.430000000000007,
+                  "Name": "bg2",
+                  "Top": 0.0,
+                  "Visible": true,
+                  "Width": 490.86
+                }
+              ],
+              "Group": true,
+              "Height": 63.99,
+              "Left": -18.430000000000007,
+              "Name": "CHEQUERED",
+              "Top": 0.0,
+              "Visible": false,
+              "Width": 490.86
+            },
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.Layer, SimHub.Plugins",
+              "BackgroundColor": "#00FFFFFF",
+              "Bindings": {
+                "Visible": {
+                  "Formula": {
+                    "Expression": "[IsInPitLane]&&[PitLimiterOn]==0"
+                  },
+                  "Mode": 2,
+                  "TargetPropertyName": "Visible"
+                }
+              },
+              "Childrens": [
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.ImageItem, SimHub.Plugins",
+                  "AutoSize": false,
+                  "AutoSizeScale": 0.8,
+                  "BackgroundColor": "#00FFFFFF",
+                  "Height": 63.2,
+                  "Image": "bg_red",
+                  "Left": -7.0,
+                  "Name": "bg2",
+                  "Top": 0.0,
+                  "Visible": true,
+                  "Width": 468.0
+                },
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+                  "BackgroundColor": "#00FFFFFF",
+                  "Font": "Rajdhani",
+                  "FontSize": 32.0,
+                  "FontWeight": "Bold",
+                  "Height": 40.0,
+                  "HorizontalAlignment": 1,
+                  "IsTextItem": true,
+                  "Left": 37.0,
+                  "Name": "TextItem",
+                  "Text": "ENABLE PIT LIMITER",
+                  "TextColor": "#FFFFFFFF",
+                  "Top": 17.0,
+                  "VerticalAlignment": 1,
+                  "Visible": true,
+                  "Width": 380.0
+                }
+              ],
+              "Group": true,
+              "Height": 63.2,
+              "Left": -7.0,
+              "Name": "PIT REMINDER",
+              "Top": 0.0,
+              "Visible": false,
+              "Width": 468.0
+            },
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.Layer, SimHub.Plugins",
+              "BackgroundColor": "#00FFFFFF",
+              "Bindings": {
+                "Visible": {
+                  "Formula": {
+                    "Expression": "[PitLimiterOn]>0"
+                  },
+                  "Mode": 2,
+                  "TargetPropertyName": "Visible"
+                }
+              },
+              "Childrens": [
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.ImageItem, SimHub.Plugins",
+                  "AutoSize": false,
+                  "AutoSizeScale": 0.81,
+                  "BackgroundColor": "#00FFFFFF",
+                  "Height": 63.99,
+                  "Image": "bg_pit",
+                  "Left": -18.430000000000007,
+                  "Name": "bg2",
+                  "Top": 0.0,
+                  "Visible": true,
+                  "Width": 490.86
+                },
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+                  "BackgroundColor": "#00FFFFFF",
+                  "Font": "Rajdhani",
+                  "FontSize": 32.0,
+                  "FontWeight": "Bold",
+                  "Height": 40.0,
+                  "HorizontalAlignment": 1,
+                  "IsTextItem": true,
+                  "Left": 37.0,
+                  "Name": "TextItem",
+                  "Text": "PIT LIMITER ENABLED",
+                  "TextColor": "#FFFFFFFF",
+                  "Top": 17.0,
+                  "VerticalAlignment": 1,
+                  "Visible": true,
+                  "Width": 380.0
+                }
+              ],
+              "Group": true,
+              "Height": 63.99,
+              "Left": -18.430000000000007,
+              "Name": "PIT",
+              "Top": 0.0,
+              "Visible": false,
+              "Width": 490.86
+            }
+          ],
+          "Group": true,
+          "Height": 105.0,
+          "Left": -18.430000000000007,
+          "Name": "FLAGS_TOP",
+          "Top": -41.0,
+          "Visible": true,
+          "Width": 490.86
+        }
+      ],
+      "Name": "Screen",
+      "OverlayMaxDuration": 0,
+      "OverlayMinDuration": 0,
+      "OverlayTriggerExpression": {
+        "Expression": ""
+      },
+      "PitScreen": false,
+      "ScreenEnabledExpression": {
+        "Expression": ""
+      },
+      "ScreenId": "80261caf-8cff-483b-b0f3-3b2eff3843ab"
+    }
+  ],
+  "ShowBackground": true,
+  "ShowBoundingRectangles": false,
+  "ShowForeground": true,
+  "ShowOnScreenControls": true,
+  "SnapToGrid": false,
+  "Version": 2
+}

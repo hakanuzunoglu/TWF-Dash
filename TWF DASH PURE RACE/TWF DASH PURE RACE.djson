@@ -12,7 +12,7 @@
   "ForegroundOpacity": 100.0,
   "GridSize": 10,
   "HideLabels": true,
-  "Id": "87891146-f2aa-47bd-b353-533806afb659",
+  "Id": "075eb919-c6f9-4384-8162-708e2169a17b",
   "Images": [
     {
       "Extension": ".png",
@@ -565,6 +565,65 @@
           "BackgroundColor": "#00FFFFFF",
           "Childrens": [
             {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+              "BackgroundColor": "#FF232323",
+              "BorderStyle": {
+                "BorderColor": "#FF808080"
+              },
+              "Height": 39.0,
+              "IsRectangleItem": true,
+              "Left": 361.0,
+              "Name": "RectangleItem",
+              "Top": 395.0,
+              "Visible": true,
+              "Width": 128.0
+            },
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+              "BackgroundColor": "#00FFFFFF",
+              "Bindings": {
+                "Text": {
+                  "FormatString": "hh\\:mm\\:ss",
+                  "Formula": {
+                    "Expression": "isnull([SessionTimeLeft], 'N/A')"
+                  },
+                  "Mode": 2,
+                  "TargetPropertyName": "Text"
+                }
+              },
+              "CharWidth": 12.0,
+              "Font": "Rajdhani",
+              "FontSize": 24.0,
+              "FontWeight": "Bold",
+              "Height": 28.0,
+              "HorizontalAlignment": 1,
+              "IsTextItem": true,
+              "Left": 366.0,
+              "Name": "TextItem3",
+              "SpecialChars": ".,:;:",
+              "SpecialCharsWidth": 6.0,
+              "Text": "11:24:15",
+              "TextColor": "#FF878787",
+              "Top": 400.0,
+              "UseMonospacedText": true,
+              "VerticalAlignment": 1,
+              "Visible": true,
+              "Width": 118.0
+            }
+          ],
+          "Group": true,
+          "Height": 39.0,
+          "Left": 361.0,
+          "Name": "REMAINING",
+          "Top": 395.0,
+          "Visible": true,
+          "Width": 128.0
+        },
+        {
+          "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.Layer, SimHub.Plugins",
+          "BackgroundColor": "#00FFFFFF",
+          "Childrens": [
+            {
               "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.LinearGaugeItem, SimHub.Plugins",
               "AlternateGaugeColor": "#FF008000",
               "AutoSize": false,
@@ -572,7 +631,7 @@
               "Bindings": {
                 "GaugeColor": {
                   "Formula": {
-                    "Expression": "if([CarSettings_RPMRedLineReached]=1,'#FF0000','#333333')"
+                    "Expression": "if([CarSettings_RPMRedLineReached]=1,'#FF0000',if([DRSEnabled]=1,'green','#333333'))"
                   },
                   "Mode": 2,
                   "TargetPropertyName": "GaugeColor"
@@ -624,11 +683,45 @@
               "Name": "RPM_VALUE",
               "NoDataText": "0",
               "TextColor": "#FF999999",
-              "Top": 8.0,
+              "Top": 16.0,
               "UseMonospacedText": true,
               "VerticalAlignment": 1,
               "Visible": true,
               "Width": 144.0
+            },
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+              "BackgroundColor": "#00FFFFFF",
+              "Bindings": {
+                "TextColor": {
+                  "Formula": {
+                    "Expression": "if([DRSEnabled]=1,'lime','white')"
+                  },
+                  "Mode": 2,
+                  "TargetPropertyName": "TextColor"
+                },
+                "Visible": {
+                  "Formula": {
+                    "Expression": "[DRSAvailable]"
+                  },
+                  "Mode": 2,
+                  "TargetPropertyName": "Visible"
+                }
+              },
+              "Font": "Rajdhani",
+              "FontSize": 22.0,
+              "FontWeight": "Bold",
+              "Height": 20.0,
+              "HorizontalAlignment": 1,
+              "IsTextItem": true,
+              "Left": 400.0,
+              "Name": "DRS_ENABLED",
+              "Text": "DRS",
+              "TextColor": "#FFFFFFFF",
+              "Top": 5.0,
+              "VerticalAlignment": 1,
+              "Visible": true,
+              "Width": 50.0
             },
             {
               "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.Layer, SimHub.Plugins",
@@ -878,7 +971,7 @@
               "Name": "GEAR_VALUE",
               "NoDataText": "N",
               "TextColor": "#FFFFD700",
-              "Top": 47.0,
+              "Top": 52.0,
               "VerticalAlignment": 1,
               "Visible": true,
               "Width": 144.0
@@ -898,7 +991,7 @@
               "Name": "SPEED_VALUE",
               "NoDataText": "0",
               "TextColor": "#FFFFFFFF",
-              "Top": 187.0,
+              "Top": 192.0,
               "UseMonospacedText": true,
               "VerticalAlignment": 1,
               "Visible": true,
@@ -974,14 +1067,14 @@
               "Group": true,
               "Height": 6.0,
               "Left": 361.0,
-              "Name": "Layer",
+              "Name": "PEDALS",
               "Top": 254.0,
               "Visible": true,
               "Width": 128.0
             }
           ],
           "Group": true,
-          "Height": 260.0,
+          "Height": 262.0,
           "Left": 353.16666666666674,
           "Name": "gear",
           "Top": 0.0,
@@ -1884,65 +1977,6 @@
           "Width": 128.0
         },
         {
-          "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.Layer, SimHub.Plugins",
-          "BackgroundColor": "#00FFFFFF",
-          "Childrens": [
-            {
-              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
-              "BackgroundColor": "#FF232323",
-              "BorderStyle": {
-                "BorderColor": "#FF808080"
-              },
-              "Height": 39.0,
-              "IsRectangleItem": true,
-              "Left": 361.0,
-              "Name": "RectangleItem",
-              "Top": 395.0,
-              "Visible": true,
-              "Width": 128.0
-            },
-            {
-              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
-              "BackgroundColor": "#00FFFFFF",
-              "Bindings": {
-                "Text": {
-                  "FormatString": "hh\\:mm\\:ss",
-                  "Formula": {
-                    "Expression": "isnull([SessionTimeLeft], 'N/A')"
-                  },
-                  "Mode": 2,
-                  "TargetPropertyName": "Text"
-                }
-              },
-              "CharWidth": 12.0,
-              "Font": "Rajdhani",
-              "FontSize": 24.0,
-              "FontWeight": "Bold",
-              "Height": 28.0,
-              "HorizontalAlignment": 1,
-              "IsTextItem": true,
-              "Left": 366.0,
-              "Name": "TextItem3",
-              "SpecialChars": ".,:;:",
-              "SpecialCharsWidth": 6.0,
-              "Text": "11:24:15",
-              "TextColor": "#FF878787",
-              "Top": 400.0,
-              "UseMonospacedText": true,
-              "VerticalAlignment": 1,
-              "Visible": true,
-              "Width": 118.0
-            }
-          ],
-          "Group": true,
-          "Height": 39.0,
-          "Left": 361.0,
-          "Name": "REMAINING",
-          "Top": 395.0,
-          "Visible": true,
-          "Width": 128.0
-        },
-        {
           "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.WidgetItem, SimHub.Plugins",
           "AutoSize": true,
           "BackgroundColor": "#00FFFFFF",
@@ -1957,6 +1991,23 @@
           "Top": 85.0,
           "Visible": true,
           "Width": 267.0
+        },
+        {
+          "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.WidgetItem, SimHub.Plugins",
+          "AutoSize": true,
+          "BackgroundColor": "#00FFFFFF",
+          "EnableScreenRolesAndActivation": false,
+          "FileName": "iratings.djson",
+          "Height": 24.0,
+          "InitialScreenIndex": 0,
+          "Left": 551.0,
+          "Name": "iratings",
+          "NextScreenCommand": 0,
+          "PreviousScreenCommand": 0,
+          "RenderingSkip": 30,
+          "Top": 446.0,
+          "Visible": true,
+          "Width": 176.0
         },
         {
           "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.Layer, SimHub.Plugins",
@@ -3489,23 +3540,6 @@
           "Top": 85.0,
           "Visible": true,
           "Width": 670.0
-        },
-        {
-          "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.WidgetItem, SimHub.Plugins",
-          "AutoSize": true,
-          "BackgroundColor": "#00FFFFFF",
-          "EnableScreenRolesAndActivation": false,
-          "FileName": "iratings.djson",
-          "Height": 24.0,
-          "InitialScreenIndex": 0,
-          "Left": 551.0,
-          "Name": "iratings",
-          "NextScreenCommand": 0,
-          "PreviousScreenCommand": 0,
-          "RenderingSkip": 30,
-          "Top": 446.0,
-          "Visible": true,
-          "Width": 176.0
         }
       ],
       "Name": "PURE RACE",

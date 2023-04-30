@@ -1,0 +1,149 @@
+{
+  "BackgroundColor": "#FF000000",
+  "BackgroundOpacity": 100.0,
+  "BaseHeight": 4,
+  "BaseWidth": 160,
+  "DashboardDebugManager": {
+    "Maximized": false
+  },
+  "EnableClickThroughOverlay": true,
+  "EnableOnDashboardMessaging": true,
+  "ForegroundOpacity": 100.0,
+  "GridSize": 10,
+  "HideLabels": false,
+  "Id": "0b488511-9b63-465a-9197-234f90314c9c",
+  "Images": [],
+  "IsOverlay": false,
+  "Metadata": {
+    "EnableOnDashboardMessaging": true,
+    "Height": 4.0,
+    "IdleScreensIndexs": [
+      0
+    ],
+    "InGameScreensIndexs": [
+      0
+    ],
+    "IsOverlay": false,
+    "MainPreviewIndex": 0,
+    "MetadataVersion": 2.0,
+    "OverlaySizeWarning": false,
+    "PitScreensIndexs": [],
+    "ScreenCount": 1.0,
+    "Width": 160.0
+  },
+  "Screens": [
+    {
+      "AllowOverlays": true,
+      "BackgroundColor": "#FF000000",
+      "IdleScreen": true,
+      "InGameScreen": true,
+      "IsBackgroundLayer": false,
+      "IsForegroundLayer": false,
+      "IsOverlayLayer": false,
+      "Items": [
+        {
+          "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.Layer, SimHub.Plugins",
+          "BackgroundColor": "#00FFFFFF",
+          "Bindings": {
+            "Visible": {
+              "Formula": {
+                "Expression": "const json_settings = readtextfile('./JavascriptExtensions/TWF_DASH_CONFIG.json')\r\nconst config = JSON.parse(json_settings);\r\n\r\nif (!config){\r\n\treturn 0\r\n} else {\r\n\t\tif(config.pedals == \"2\"){\r\n\t\t\treturn 1\r\n\t\t} else {\r\n\t\t\treturn 0\r\n\t\t}\r\n}",
+                "Interpreter": 1
+              },
+              "Mode": 2,
+              "TargetPropertyName": "Visible"
+            }
+          },
+          "Childrens": [
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.LinearGaugeItem, SimHub.Plugins",
+              "AlternateGaugeColor": "#FF008000",
+              "AutoSize": false,
+              "BackgroundColor": "#FF444444",
+              "Bindings": {
+                "Value": {
+                  "Formula": {
+                    "Expression": "[Throttle]"
+                  },
+                  "Mode": 2,
+                  "TargetPropertyName": "Value"
+                }
+              },
+              "GaugeAlignment": 0,
+              "GaugeColor": "#FF00FF00",
+              "GaugeOrientation": 0,
+              "Height": 4.0,
+              "IsLinearGauge": true,
+              "Left": 80.0,
+              "Maximum": 100.0,
+              "Minimum": 0.0,
+              "Name": "THROTTLE",
+              "PAW": 16.0,
+              "Steps": 0.0,
+              "Top": 0.0,
+              "UseAlternateStyle": false,
+              "Value": 20.0,
+              "Visible": true,
+              "Width": 80.0
+            },
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.LinearGaugeItem, SimHub.Plugins",
+              "AlternateGaugeColor": "#FF008000",
+              "AutoSize": false,
+              "BackgroundColor": "#FF444444",
+              "Bindings": {
+                "Value": {
+                  "Formula": {
+                    "Expression": "[Brake]"
+                  },
+                  "Mode": 2,
+                  "TargetPropertyName": "Value"
+                }
+              },
+              "GaugeAlignment": 2,
+              "GaugeColor": "#FFFF0000",
+              "GaugeOrientation": 0,
+              "Height": 4.0,
+              "IsLinearGauge": true,
+              "Left": 0.0,
+              "Maximum": 100.0,
+              "Minimum": 0.0,
+              "Name": "BRAKE",
+              "PAW": 16.0,
+              "Steps": 0.0,
+              "Top": 0.0,
+              "UseAlternateStyle": false,
+              "Value": 20.0,
+              "Visible": true,
+              "Width": 80.0
+            }
+          ],
+          "Group": true,
+          "Height": 4.0,
+          "Left": 0.0,
+          "Name": "PEDALS",
+          "Top": 0.0,
+          "Visible": true,
+          "Width": 160.0
+        }
+      ],
+      "Name": "Screen",
+      "OverlayMaxDuration": 0,
+      "OverlayMinDuration": 0,
+      "OverlayTriggerExpression": {
+        "Expression": ""
+      },
+      "PitScreen": false,
+      "ScreenEnabledExpression": {
+        "Expression": ""
+      },
+      "ScreenId": "a71b854c-c9f0-4e38-ace4-fd5b6f7637b4"
+    }
+  ],
+  "ShowBackground": true,
+  "ShowBoundingRectangles": false,
+  "ShowForeground": true,
+  "ShowOnScreenControls": true,
+  "SnapToGrid": false,
+  "Version": 2
+}

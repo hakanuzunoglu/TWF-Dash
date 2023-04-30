@@ -1,0 +1,388 @@
+{
+  "BackgroundColor": "#FF000000",
+  "BackgroundOpacity": 100.0,
+  "BaseHeight": 36,
+  "BaseWidth": 65,
+  "DashboardDebugManager": {
+    "LastPlacement": "130,130,65,36",
+    "Maximized": false
+  },
+  "EnableClickThroughOverlay": true,
+  "EnableOnDashboardMessaging": true,
+  "ForegroundOpacity": 100.0,
+  "GridSize": 10,
+  "HideLabels": false,
+  "Id": "0191f396-2285-4052-bca6-7a162a579b97",
+  "Images": [
+    {
+      "Extension": ".png",
+      "Length": 2134,
+      "MD5": "57876c63976a184ccbd341b0cad9530c",
+      "Modified": false,
+      "Name": "alpine",
+      "Optimized": true
+    },
+    {
+      "Extension": ".png",
+      "Length": 4199,
+      "MD5": "a4bcacb1891b192f09afcce284bd7905",
+      "Modified": false,
+      "Name": "amr",
+      "Optimized": true
+    },
+    {
+      "Extension": ".png",
+      "Length": 4199,
+      "MD5": "a4bcacb1891b192f09afcce284bd7905",
+      "Modified": false,
+      "Name": "aston",
+      "Optimized": true
+    },
+    {
+      "Extension": ".png",
+      "Length": 4662,
+      "MD5": "61b1b618eb1b70e769a1f5cda690c2fc",
+      "Modified": false,
+      "Name": "audi",
+      "Optimized": true
+    },
+    {
+      "Extension": ".png",
+      "Length": 5663,
+      "MD5": "0fdf5475321d90ce7b1dd6081140b0b8",
+      "Modified": false,
+      "Name": "bentley",
+      "Optimized": true
+    },
+    {
+      "Extension": ".png",
+      "Length": 5104,
+      "MD5": "ffb407e60db55dfd0eae2d69cffcd482",
+      "Modified": false,
+      "Name": "bmw",
+      "Optimized": true
+    },
+    {
+      "Extension": ".png",
+      "Length": 6535,
+      "MD5": "238d140eb7e13b7f605d3b9c17ba23de",
+      "Modified": false,
+      "Name": "cadillac",
+      "Optimized": true
+    },
+    {
+      "Extension": ".png",
+      "Length": 5340,
+      "MD5": "e0194458b66b742abdd8a1ce9111b7c6",
+      "Modified": false,
+      "Name": "chevrolet",
+      "Optimized": true
+    },
+    {
+      "Extension": ".png",
+      "Length": 4871,
+      "MD5": "a3cf37a4cf14e06a566ab80071899abe",
+      "Modified": false,
+      "Name": "corvette",
+      "Optimized": true
+    },
+    {
+      "Extension": ".png",
+      "Length": 2857,
+      "MD5": "9f0b7c86961c8627a8b316cee707b6fb",
+      "Modified": false,
+      "Name": "dallara",
+      "Optimized": true
+    },
+    {
+      "Extension": ".png",
+      "Length": 3320,
+      "MD5": "a7904db5931cbe1db01eb7b261a215ed",
+      "Modified": false,
+      "Name": "ferrari",
+      "Optimized": true
+    },
+    {
+      "Extension": ".png",
+      "Length": 6371,
+      "MD5": "7808eda2d4e348208b1a64e3a0da13c3",
+      "Modified": false,
+      "Name": "ford",
+      "Optimized": true
+    },
+    {
+      "Extension": ".png",
+      "Length": 6115,
+      "MD5": "18a7ce2c965fd9239c715d69a8eec146",
+      "Modified": false,
+      "Name": "ginetta",
+      "Optimized": true
+    },
+    {
+      "Extension": ".png",
+      "Length": 8022,
+      "MD5": "c0f44344af236df371e82335a843db19",
+      "Modified": false,
+      "Name": "holden",
+      "Optimized": true
+    },
+    {
+      "Extension": ".png",
+      "Length": 8886,
+      "MD5": "7b5a3dd4ae803fabf50fd01c695732ae",
+      "Modified": false,
+      "Name": "honda",
+      "Optimized": true
+    },
+    {
+      "Extension": ".png",
+      "Length": 8886,
+      "MD5": "7b5a3dd4ae803fabf50fd01c695732ae",
+      "Modified": false,
+      "Name": "hpd",
+      "Optimized": true
+    },
+    {
+      "Extension": ".png",
+      "Length": 5854,
+      "MD5": "0b5f210311a6d7bcfed2f5becba510d5",
+      "Modified": false,
+      "Name": "jaguar",
+      "Optimized": true
+    },
+    {
+      "Extension": ".png",
+      "Length": 1792,
+      "MD5": "4f140bc8d5d6444f39e3e8c17a32864c",
+      "Modified": false,
+      "Name": "kia",
+      "Optimized": true
+    },
+    {
+      "Extension": ".png",
+      "Length": 4728,
+      "MD5": "0612b01032031511fc6a9fef9f129f45",
+      "Modified": false,
+      "Name": "ktm",
+      "Optimized": true
+    },
+    {
+      "Extension": ".png",
+      "Length": 6687,
+      "MD5": "f46f2b0a18b80cb1753290cadbbb7307",
+      "Modified": false,
+      "Name": "lamborghini",
+      "Optimized": true
+    },
+    {
+      "Extension": ".png",
+      "Length": 7847,
+      "MD5": "6a425b9b1a0519d8f86e9f6aa60c9b39",
+      "Modified": false,
+      "Name": "lexus",
+      "Optimized": true
+    },
+    {
+      "Extension": ".png",
+      "Length": 4605,
+      "MD5": "daf2aa17f9860c4468824e8dda870cd9",
+      "Modified": false,
+      "Name": "lotus",
+      "Optimized": true
+    },
+    {
+      "Extension": ".png",
+      "Length": 2381,
+      "MD5": "0d0cf29bda7952f9256b245517dbfa8d",
+      "Modified": false,
+      "Name": "maserati",
+      "Optimized": true
+    },
+    {
+      "Extension": ".png",
+      "Length": 7070,
+      "MD5": "c92cfb4b40e4e8fe987dc07b03658e1f",
+      "Modified": false,
+      "Name": "mazda",
+      "Optimized": true
+    },
+    {
+      "Extension": ".png",
+      "Length": 1966,
+      "MD5": "3d135912b4f3bed0a02d7e2a92db7444",
+      "Modified": false,
+      "Name": "mclaren",
+      "Optimized": true
+    },
+    {
+      "Extension": ".png",
+      "Length": 5720,
+      "MD5": "c909911d0c004b134baa26ad27d2cfa6",
+      "Modified": false,
+      "Name": "mercedes",
+      "Optimized": true
+    },
+    {
+      "Extension": ".png",
+      "Length": 6681,
+      "MD5": "fe91f4ee52f0be88b0642d9843d362d6",
+      "Modified": false,
+      "Name": "nissan",
+      "Optimized": true
+    },
+    {
+      "Extension": ".png",
+      "Length": 3993,
+      "MD5": "e8d5163dc210ac68116ab73187f1f97e",
+      "Modified": false,
+      "Name": "pontiac",
+      "Optimized": true
+    },
+    {
+      "Extension": ".png",
+      "Length": 6859,
+      "MD5": "332bdcf81edc3b840974d60f95fb101e",
+      "Modified": false,
+      "Name": "porsche",
+      "Optimized": true
+    },
+    {
+      "Extension": ".png",
+      "Length": 4030,
+      "MD5": "44161cfcc648441428ed350f40dac816",
+      "Modified": false,
+      "Name": "radical",
+      "Optimized": true
+    },
+    {
+      "Extension": ".png",
+      "Length": 3240,
+      "MD5": "fe19ba1b18ae930d590e05b17a28ed44",
+      "Modified": false,
+      "Name": "renault",
+      "Optimized": true
+    },
+    {
+      "Extension": ".png",
+      "Length": 4313,
+      "MD5": "cc7a7b8d75da1a2aaad38f7c17012c80",
+      "Modified": false,
+      "Name": "ruf",
+      "Optimized": true
+    },
+    {
+      "Extension": ".png",
+      "Length": 11845,
+      "MD5": "f1ef1d79b188e658934d69a411603fff",
+      "Modified": false,
+      "Name": "subaru",
+      "Optimized": true
+    },
+    {
+      "Extension": ".png",
+      "Length": 9072,
+      "MD5": "6e71aad3d3cfc997151baf7463c82c0e",
+      "Modified": false,
+      "Name": "toyota",
+      "Optimized": true
+    },
+    {
+      "Extension": ".png",
+      "Height": 115,
+      "Length": 3946,
+      "MD5": "3c825e497834c983c56a7ba79ad3a001",
+      "Modified": false,
+      "Name": "twf",
+      "Optimized": true,
+      "Width": 200
+    },
+    {
+      "Extension": ".png",
+      "Length": 3992,
+      "MD5": "44d006a1e5f19842f66d133cbb5dab0b",
+      "Modified": false,
+      "Name": "volkswagen",
+      "Optimized": true
+    },
+    {
+      "Extension": ".png",
+      "Length": 3992,
+      "MD5": "44d006a1e5f19842f66d133cbb5dab0b",
+      "Modified": false,
+      "Name": "vw",
+      "Optimized": true
+    }
+  ],
+  "IsOverlay": false,
+  "Metadata": {
+    "EnableOnDashboardMessaging": true,
+    "Height": 36.0,
+    "IdleScreensIndexs": [
+      0
+    ],
+    "InGameScreensIndexs": [
+      0
+    ],
+    "IsOverlay": false,
+    "MainPreviewIndex": 0,
+    "MetadataVersion": 2.0,
+    "OverlaySizeWarning": false,
+    "PitScreensIndexs": [],
+    "ScreenCount": 1.0,
+    "Width": 65.0
+  },
+  "Screens": [
+    {
+      "AllowOverlays": true,
+      "BackgroundColor": "#FF000000",
+      "IdleScreen": true,
+      "InGameScreen": true,
+      "IsBackgroundLayer": false,
+      "IsForegroundLayer": false,
+      "IsOverlayLayer": false,
+      "Items": [
+        {
+          "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.ImageItem, SimHub.Plugins",
+          "AutoSize": false,
+          "AutoSizeScale": -0.2,
+          "BackgroundColor": "#00FFFFFF",
+          "Bindings": {
+            "Image": {
+              "Formula": {
+                "Expression": "var carname = isnull($prop('CarModel'),'twf ')\r\ncarname = carname.toLowerCase();\r\nvar cn = carname.split(' ');\r\ncn2 = cn[0].split('_');\r\n\r\n\r\nconst cars = ['alpine','amr','aston', 'audi','bentley','bmw','cadillac','chevrolet','corvette','dallara','ferrari','ford','ginetta','holden','honda','hpd','jaguar','kia','ktm','lamborghini','lexus','lotus','maserati','mazda','mclaren','mercedes', 'nissan','pontiac','porsche','radical','renault','ruf','subaru','toyota','volkswagen','vw']\r\n\r\nif (cars.indexOf(cn2[0])>=0){\r\n\treturn cn2[0]\r\n} else {\r\n\treturn 'twf'\r\n}",
+                "Interpreter": 1
+              },
+              "Mode": 2,
+              "TargetPropertyName": "Image"
+            }
+          },
+          "Height": 36.0,
+          "Image": "twf",
+          "Left": 0.0,
+          "Name": "Car Logo",
+          "RenderingSkip": 10,
+          "Top": 0.0,
+          "Visible": true,
+          "Width": 65.0
+        }
+      ],
+      "Name": "Screen",
+      "OverlayMaxDuration": 0,
+      "OverlayMinDuration": 0,
+      "OverlayTriggerExpression": {
+        "Expression": ""
+      },
+      "PitScreen": false,
+      "ScreenEnabledExpression": {
+        "Expression": ""
+      },
+      "ScreenId": "58419e99-5cd2-47a1-8c46-caf0346586b6"
+    }
+  ],
+  "ShowBackground": true,
+  "ShowBoundingRectangles": false,
+  "ShowForeground": true,
+  "ShowOnScreenControls": true,
+  "SnapToGrid": false,
+  "Version": 2
+}

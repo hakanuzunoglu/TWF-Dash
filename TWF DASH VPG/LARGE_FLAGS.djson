@@ -1,0 +1,1023 @@
+{
+  "BackgroundColor": "#FF000000",
+  "BackgroundOpacity": 100.0,
+  "BaseHeight": 263,
+  "BaseWidth": 780,
+  "DashboardDebugManager": {
+    "LastPlacement": "52,52,780,263",
+    "Maximized": false
+  },
+  "EnableClickThroughOverlay": true,
+  "EnableOnDashboardMessaging": true,
+  "ForegroundOpacity": 100.0,
+  "GridSize": 10,
+  "HideLabels": false,
+  "Id": "8686cb4b-3839-4e29-8dc2-cddbbdb49dda",
+  "Images": [
+    {
+      "Extension": ".png",
+      "Height": 263,
+      "Length": 13589,
+      "MD5": "de4676e914aff7a88bc0c6d0d72f4009",
+      "Modified": false,
+      "Name": "chequered_2",
+      "Optimized": true,
+      "Width": 780
+    }
+  ],
+  "IsOverlay": false,
+  "Metadata": {
+    "EnableOnDashboardMessaging": true,
+    "Height": 263.0,
+    "IdleScreensIndexs": [
+      0
+    ],
+    "InGameScreensIndexs": [
+      0
+    ],
+    "IsOverlay": false,
+    "MainPreviewIndex": 0,
+    "MetadataVersion": 2.0,
+    "OverlaySizeWarning": false,
+    "PitScreensIndexs": [],
+    "ScreenCount": 1.0,
+    "Width": 780.0
+  },
+  "Screens": [
+    {
+      "AllowOverlays": true,
+      "BackgroundColor": "#FF000000",
+      "IdleScreen": true,
+      "InGameScreen": true,
+      "IsBackgroundLayer": false,
+      "IsForegroundLayer": false,
+      "IsOverlayLayer": false,
+      "Items": [
+        {
+          "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.Layer, SimHub.Plugins",
+          "BackgroundColor": "#00FFFFFF",
+          "Childrens": [
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.Layer, SimHub.Plugins",
+              "BackgroundColor": "#00FFFFFF",
+              "Bindings": {
+                "Visible": {
+                  "Formula": {
+                    "Expression": "changed(5000, [DataCorePlugin.GameData.Flag_White]) || changed(5000,[GameRawData.Graphics.globalWhite])"
+                  },
+                  "Mode": 2,
+                  "TargetPropertyName": "Visible"
+                }
+              },
+              "Childrens": [
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+                  "BackgroundColor": "#FFFFFFFF",
+                  "BorderStyle": {
+                    "Bindings": {
+                      "RadiusBottomLeft": {
+                        "Formula": {
+                          "Expression": "const json_settings = readtextfile('./JavascriptExtensions/TWF_DASH_CONFIG.json')\r\nconst config = JSON.parse(json_settings);\r\n\r\nif (!config){\r\n\treturn \"6\"\r\n} else {\r\n\treturn config.ui_radius\r\n}",
+                          "Interpreter": 1
+                        },
+                        "Mode": 2,
+                        "TargetPropertyName": "RadiusBottomLeft"
+                      },
+                      "RadiusBottomRight": {
+                        "Formula": {
+                          "Expression": "const json_settings = readtextfile('./JavascriptExtensions/TWF_DASH_CONFIG.json')\r\nconst config = JSON.parse(json_settings);\r\n\r\nif (!config){\r\n\treturn \"6\"\r\n} else {\r\n\treturn config.ui_radius\r\n}",
+                          "Interpreter": 1
+                        },
+                        "Mode": 2,
+                        "TargetPropertyName": "RadiusBottomRight"
+                      },
+                      "RadiusTopLeft": {
+                        "Formula": {
+                          "Expression": "const json_settings = readtextfile('./JavascriptExtensions/TWF_DASH_CONFIG.json')\r\nconst config = JSON.parse(json_settings);\r\n\r\nif (!config){\r\n\treturn \"6\"\r\n} else {\r\n\treturn config.ui_radius\r\n}",
+                          "Interpreter": 1
+                        },
+                        "Mode": 2,
+                        "TargetPropertyName": "RadiusTopLeft"
+                      },
+                      "RadiusTopRight": {
+                        "Formula": {
+                          "Expression": "const json_settings = readtextfile('./JavascriptExtensions/TWF_DASH_CONFIG.json')\r\nconst config = JSON.parse(json_settings);\r\n\r\nif (!config){\r\n\treturn \"6\"\r\n} else {\r\n\treturn config.ui_radius\r\n}",
+                          "Interpreter": 1
+                        },
+                        "Mode": 2,
+                        "TargetPropertyName": "RadiusTopRight"
+                      }
+                    },
+                    "RadiusBottomLeft": 6,
+                    "RadiusBottomRight": 6,
+                    "RadiusTopLeft": 6,
+                    "RadiusTopRight": 6
+                  },
+                  "Font": "Rajdhani",
+                  "FontSize": 60.0,
+                  "FontWeight": "Bold",
+                  "Height": 263.0,
+                  "HorizontalAlignment": 1,
+                  "IsTextItem": true,
+                  "Left": 0.0,
+                  "Name": "TextItem",
+                  "Text": "FINAL LAP",
+                  "TextColor": "#FF000000",
+                  "Top": 0.0,
+                  "VerticalAlignment": 1,
+                  "Visible": true,
+                  "Width": 780.0
+                }
+              ],
+              "Group": true,
+              "Height": 263.0,
+              "Left": 0.0,
+              "Name": "WHITE_INITIAL",
+              "Top": 0.0,
+              "Visible": true,
+              "Width": 780.0
+            },
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.Layer, SimHub.Plugins",
+              "BackgroundColor": "#00FFFFFF",
+              "Bindings": {
+                "Visible": {
+                  "Formula": {
+                    "Expression": "[IRacingExtraProperties.iRacing_SlowCarAhead] || [GameRawData.Graphics.FlagsDetails.IsACC_WHITE_FLAG]"
+                  },
+                  "Mode": 2,
+                  "TargetPropertyName": "Visible"
+                }
+              },
+              "Childrens": [
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+                  "BackgroundColor": "#FFFFFFFF",
+                  "BorderStyle": {
+                    "Bindings": {
+                      "RadiusBottomLeft": {
+                        "Formula": {
+                          "Expression": "const json_settings = readtextfile('./JavascriptExtensions/TWF_DASH_CONFIG.json')\r\nconst config = JSON.parse(json_settings);\r\n\r\nif (!config){\r\n\treturn \"6\"\r\n} else {\r\n\treturn config.ui_radius\r\n}",
+                          "Interpreter": 1
+                        },
+                        "Mode": 2,
+                        "TargetPropertyName": "RadiusBottomLeft"
+                      },
+                      "RadiusBottomRight": {
+                        "Formula": {
+                          "Expression": "const json_settings = readtextfile('./JavascriptExtensions/TWF_DASH_CONFIG.json')\r\nconst config = JSON.parse(json_settings);\r\n\r\nif (!config){\r\n\treturn \"6\"\r\n} else {\r\n\treturn config.ui_radius\r\n}",
+                          "Interpreter": 1
+                        },
+                        "Mode": 2,
+                        "TargetPropertyName": "RadiusBottomRight"
+                      },
+                      "RadiusTopLeft": {
+                        "Formula": {
+                          "Expression": "const json_settings = readtextfile('./JavascriptExtensions/TWF_DASH_CONFIG.json')\r\nconst config = JSON.parse(json_settings);\r\n\r\nif (!config){\r\n\treturn \"6\"\r\n} else {\r\n\treturn config.ui_radius\r\n}",
+                          "Interpreter": 1
+                        },
+                        "Mode": 2,
+                        "TargetPropertyName": "RadiusTopLeft"
+                      },
+                      "RadiusTopRight": {
+                        "Formula": {
+                          "Expression": "const json_settings = readtextfile('./JavascriptExtensions/TWF_DASH_CONFIG.json')\r\nconst config = JSON.parse(json_settings);\r\n\r\nif (!config){\r\n\treturn \"6\"\r\n} else {\r\n\treturn config.ui_radius\r\n}",
+                          "Interpreter": 1
+                        },
+                        "Mode": 2,
+                        "TargetPropertyName": "RadiusTopRight"
+                      }
+                    },
+                    "RadiusBottomLeft": 6,
+                    "RadiusBottomRight": 6,
+                    "RadiusTopLeft": 6,
+                    "RadiusTopRight": 6
+                  },
+                  "Font": "Rajdhani",
+                  "FontSize": 60.0,
+                  "FontWeight": "Bold",
+                  "Height": 263.0,
+                  "HorizontalAlignment": 1,
+                  "IsTextItem": true,
+                  "Left": 0.0,
+                  "Name": "TextItem",
+                  "Text": "SLOW MOVING VEHICLE",
+                  "TextColor": "#FF000000",
+                  "Top": 0.0,
+                  "VerticalAlignment": 1,
+                  "Visible": true,
+                  "Width": 780.0
+                }
+              ],
+              "Group": true,
+              "Height": 263.0,
+              "Left": 0.0,
+              "Name": "SLOW_VEHICLE",
+              "Top": 0.0,
+              "Visible": true,
+              "Width": 780.0
+            },
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.Layer, SimHub.Plugins",
+              "BackgroundColor": "#00FFFFFF",
+              "Bindings": {
+                "Visible": {
+                  "Formula": {
+                    "Expression": "[DataCorePlugin.GameData.Flag_Green]"
+                  },
+                  "Mode": 2,
+                  "TargetPropertyName": "Visible"
+                }
+              },
+              "Childrens": [
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+                  "BackgroundColor": "#FF008000",
+                  "BorderStyle": {
+                    "Bindings": {
+                      "RadiusBottomLeft": {
+                        "Formula": {
+                          "Expression": "const json_settings = readtextfile('./JavascriptExtensions/TWF_DASH_CONFIG.json')\r\nconst config = JSON.parse(json_settings);\r\n\r\nif (!config){\r\n\treturn \"6\"\r\n} else {\r\n\treturn config.ui_radius\r\n}",
+                          "Interpreter": 1
+                        },
+                        "Mode": 2,
+                        "TargetPropertyName": "RadiusBottomLeft"
+                      },
+                      "RadiusBottomRight": {
+                        "Formula": {
+                          "Expression": "const json_settings = readtextfile('./JavascriptExtensions/TWF_DASH_CONFIG.json')\r\nconst config = JSON.parse(json_settings);\r\n\r\nif (!config){\r\n\treturn \"6\"\r\n} else {\r\n\treturn config.ui_radius\r\n}",
+                          "Interpreter": 1
+                        },
+                        "Mode": 2,
+                        "TargetPropertyName": "RadiusBottomRight"
+                      },
+                      "RadiusTopLeft": {
+                        "Formula": {
+                          "Expression": "const json_settings = readtextfile('./JavascriptExtensions/TWF_DASH_CONFIG.json')\r\nconst config = JSON.parse(json_settings);\r\n\r\nif (!config){\r\n\treturn \"6\"\r\n} else {\r\n\treturn config.ui_radius\r\n}",
+                          "Interpreter": 1
+                        },
+                        "Mode": 2,
+                        "TargetPropertyName": "RadiusTopLeft"
+                      },
+                      "RadiusTopRight": {
+                        "Formula": {
+                          "Expression": "const json_settings = readtextfile('./JavascriptExtensions/TWF_DASH_CONFIG.json')\r\nconst config = JSON.parse(json_settings);\r\n\r\nif (!config){\r\n\treturn \"6\"\r\n} else {\r\n\treturn config.ui_radius\r\n}",
+                          "Interpreter": 1
+                        },
+                        "Mode": 2,
+                        "TargetPropertyName": "RadiusTopRight"
+                      }
+                    },
+                    "RadiusBottomLeft": 6,
+                    "RadiusBottomRight": 6,
+                    "RadiusTopLeft": 6,
+                    "RadiusTopRight": 6
+                  },
+                  "Font": "Rajdhani",
+                  "FontSize": 60.0,
+                  "FontWeight": "Bold",
+                  "Height": 263.0,
+                  "HorizontalAlignment": 1,
+                  "IsTextItem": true,
+                  "Left": 0.0,
+                  "Name": "TextItem",
+                  "Text": "GREEN FLAG",
+                  "TextColor": "#FFFFFFFF",
+                  "Top": 0.0,
+                  "VerticalAlignment": 1,
+                  "Visible": true,
+                  "Width": 780.0
+                }
+              ],
+              "Group": true,
+              "Height": 263.0,
+              "Left": 0.0,
+              "Name": "GREEN",
+              "Top": 0.0,
+              "Visible": false,
+              "Width": 780.0
+            },
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.Layer, SimHub.Plugins",
+              "BackgroundColor": "#00FFFFFF",
+              "Bindings": {
+                "Visible": {
+                  "Formula": {
+                    "Expression": "if ([DataCorePlugin.CurrentGame]=='IRacing', [DataCorePlugin.GameRawData.Telemetry.SessionFlagsDetails.Isrepair] , 0) || [Flag_Orange] > 0"
+                  },
+                  "Mode": 2,
+                  "TargetPropertyName": "Visible"
+                }
+              },
+              "Childrens": [
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+                  "BackgroundColor": "#FFFF8C00",
+                  "BorderStyle": {
+                    "Bindings": {
+                      "RadiusBottomLeft": {
+                        "Formula": {
+                          "Expression": "const json_settings = readtextfile('./JavascriptExtensions/TWF_DASH_CONFIG.json')\r\nconst config = JSON.parse(json_settings);\r\n\r\nif (!config){\r\n\treturn \"6\"\r\n} else {\r\n\treturn config.ui_radius\r\n}",
+                          "Interpreter": 1
+                        },
+                        "Mode": 2,
+                        "TargetPropertyName": "RadiusBottomLeft"
+                      },
+                      "RadiusBottomRight": {
+                        "Formula": {
+                          "Expression": "const json_settings = readtextfile('./JavascriptExtensions/TWF_DASH_CONFIG.json')\r\nconst config = JSON.parse(json_settings);\r\n\r\nif (!config){\r\n\treturn \"6\"\r\n} else {\r\n\treturn config.ui_radius\r\n}",
+                          "Interpreter": 1
+                        },
+                        "Mode": 2,
+                        "TargetPropertyName": "RadiusBottomRight"
+                      },
+                      "RadiusTopLeft": {
+                        "Formula": {
+                          "Expression": "const json_settings = readtextfile('./JavascriptExtensions/TWF_DASH_CONFIG.json')\r\nconst config = JSON.parse(json_settings);\r\n\r\nif (!config){\r\n\treturn \"6\"\r\n} else {\r\n\treturn config.ui_radius\r\n}",
+                          "Interpreter": 1
+                        },
+                        "Mode": 2,
+                        "TargetPropertyName": "RadiusTopLeft"
+                      },
+                      "RadiusTopRight": {
+                        "Formula": {
+                          "Expression": "const json_settings = readtextfile('./JavascriptExtensions/TWF_DASH_CONFIG.json')\r\nconst config = JSON.parse(json_settings);\r\n\r\nif (!config){\r\n\treturn \"6\"\r\n} else {\r\n\treturn config.ui_radius\r\n}",
+                          "Interpreter": 1
+                        },
+                        "Mode": 2,
+                        "TargetPropertyName": "RadiusTopRight"
+                      }
+                    },
+                    "RadiusBottomLeft": 6,
+                    "RadiusBottomRight": 6,
+                    "RadiusTopLeft": 6,
+                    "RadiusTopRight": 6
+                  },
+                  "Font": "Rajdhani",
+                  "FontSize": 60.0,
+                  "FontWeight": "Bold",
+                  "Height": 263.0,
+                  "HorizontalAlignment": 1,
+                  "IsTextItem": true,
+                  "Left": 0.0,
+                  "Name": "TextItem",
+                  "Text": "ORANGE FLAG",
+                  "TextColor": "#FF000000",
+                  "Top": 0.0,
+                  "VerticalAlignment": 1,
+                  "Visible": true,
+                  "Width": 780.0
+                }
+              ],
+              "Group": true,
+              "Height": 263.0,
+              "Left": 0.0,
+              "Name": "ORANGE",
+              "Top": 0.0,
+              "Visible": false,
+              "Width": 780.0
+            },
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.Layer, SimHub.Plugins",
+              "BackgroundColor": "#00FFFFFF",
+              "Bindings": {
+                "Visible": {
+                  "Formula": {
+                    "Expression": "if ([DataCorePlugin.CurrentGame]=='AssettoCorsaCompetizione', 1, 0)"
+                  },
+                  "Mode": 2,
+                  "TargetPropertyName": "Visible"
+                }
+              },
+              "Childrens": [
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.Layer, SimHub.Plugins",
+                  "BackgroundColor": "#00FFFFFF",
+                  "Bindings": {
+                    "Visible": {
+                      "Formula": {
+                        "Expression": "[GameRawData.Graphics.globalYellow]>0"
+                      },
+                      "Mode": 2,
+                      "TargetPropertyName": "Visible"
+                    }
+                  },
+                  "Childrens": [
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+                      "BackgroundColor": "#FFFFE04C",
+                      "BorderStyle": {
+                        "Bindings": {
+                          "RadiusBottomLeft": {
+                            "Formula": {
+                              "Expression": "const json_settings = readtextfile('./JavascriptExtensions/TWF_DASH_CONFIG.json')\r\nconst config = JSON.parse(json_settings);\r\n\r\nif (!config){\r\n\treturn \"6\"\r\n} else {\r\n\treturn config.ui_radius\r\n}",
+                              "Interpreter": 1
+                            },
+                            "Mode": 2,
+                            "TargetPropertyName": "RadiusBottomLeft"
+                          },
+                          "RadiusBottomRight": {
+                            "Formula": {
+                              "Expression": "const json_settings = readtextfile('./JavascriptExtensions/TWF_DASH_CONFIG.json')\r\nconst config = JSON.parse(json_settings);\r\n\r\nif (!config){\r\n\treturn \"6\"\r\n} else {\r\n\treturn config.ui_radius\r\n}",
+                              "Interpreter": 1
+                            },
+                            "Mode": 2,
+                            "TargetPropertyName": "RadiusBottomRight"
+                          },
+                          "RadiusTopLeft": {
+                            "Formula": {
+                              "Expression": "const json_settings = readtextfile('./JavascriptExtensions/TWF_DASH_CONFIG.json')\r\nconst config = JSON.parse(json_settings);\r\n\r\nif (!config){\r\n\treturn \"6\"\r\n} else {\r\n\treturn config.ui_radius\r\n}",
+                              "Interpreter": 1
+                            },
+                            "Mode": 2,
+                            "TargetPropertyName": "RadiusTopLeft"
+                          },
+                          "RadiusTopRight": {
+                            "Formula": {
+                              "Expression": "const json_settings = readtextfile('./JavascriptExtensions/TWF_DASH_CONFIG.json')\r\nconst config = JSON.parse(json_settings);\r\n\r\nif (!config){\r\n\treturn \"6\"\r\n} else {\r\n\treturn config.ui_radius\r\n}",
+                              "Interpreter": 1
+                            },
+                            "Mode": 2,
+                            "TargetPropertyName": "RadiusTopRight"
+                          }
+                        },
+                        "RadiusBottomLeft": 6,
+                        "RadiusBottomRight": 6,
+                        "RadiusTopLeft": 6,
+                        "RadiusTopRight": 6
+                      },
+                      "Height": 263.0,
+                      "IsRectangleItem": true,
+                      "Left": 0.0,
+                      "Name": "RectangleItem3",
+                      "Top": -0.5,
+                      "Visible": true,
+                      "Width": 780.0
+                    },
+                    {
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.Layer, SimHub.Plugins",
+                      "BackgroundColor": "#00FFFFFF",
+                      "Childrens": [
+                        {
+                          "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+                          "BackgroundColor": "#00FFFFFF",
+                          "Font": "Rajdhani",
+                          "FontSize": 60.0,
+                          "FontWeight": "Bold",
+                          "Height": 59.0,
+                          "HorizontalAlignment": 1,
+                          "IsTextItem": true,
+                          "Left": 152.0,
+                          "Name": "TextItem",
+                          "Text": "SECTOR",
+                          "TextColor": "#FF000000",
+                          "Top": 101.5,
+                          "VerticalAlignment": 1,
+                          "Visible": true,
+                          "Width": 278.0
+                        },
+                        {
+                          "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+                          "BackgroundColor": "#00FFFFFF",
+                          "Bindings": {
+                            "Visible": {
+                              "Formula": {
+                                "Expression": "[GameRawData.Graphics.globalYellow1] =1"
+                              },
+                              "Mode": 2,
+                              "TargetPropertyName": "Visible"
+                            }
+                          },
+                          "Font": "Rajdhani",
+                          "FontSize": 60.0,
+                          "FontWeight": "Bold",
+                          "Height": 59.0,
+                          "HorizontalAlignment": 1,
+                          "IsTextItem": true,
+                          "Left": 376.0,
+                          "Name": "1_LABEL",
+                          "Text": "1",
+                          "TextColor": "#FF000000",
+                          "Top": 101.5,
+                          "VerticalAlignment": 1,
+                          "Visible": true,
+                          "Width": 103.0
+                        },
+                        {
+                          "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+                          "BackgroundColor": "#00FFFFFF",
+                          "Bindings": {
+                            "Visible": {
+                              "Formula": {
+                                "Expression": "[GameRawData.Graphics.globalYellow2] =1"
+                              },
+                              "Mode": 2,
+                              "TargetPropertyName": "Visible"
+                            }
+                          },
+                          "Font": "Rajdhani",
+                          "FontSize": 60.0,
+                          "FontWeight": "Bold",
+                          "Height": 59.0,
+                          "HorizontalAlignment": 1,
+                          "IsTextItem": true,
+                          "Left": 448.0,
+                          "Name": "2_LABEL",
+                          "Text": "- 2 -",
+                          "TextColor": "#FF000000",
+                          "Top": 101.5,
+                          "VerticalAlignment": 1,
+                          "Visible": true,
+                          "Width": 103.0
+                        },
+                        {
+                          "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+                          "BackgroundColor": "#00FFFFFF",
+                          "Bindings": {
+                            "Visible": {
+                              "Formula": {
+                                "Expression": "[GameRawData.Graphics.globalYellow3] =1"
+                              },
+                              "Mode": 2,
+                              "TargetPropertyName": "Visible"
+                            }
+                          },
+                          "Font": "Rajdhani",
+                          "FontSize": 60.0,
+                          "FontWeight": "Bold",
+                          "Height": 59.0,
+                          "HorizontalAlignment": 1,
+                          "IsTextItem": true,
+                          "Left": 525.0,
+                          "Name": "3_LABEL",
+                          "Text": "3",
+                          "TextColor": "#FF000000",
+                          "Top": 101.5,
+                          "VerticalAlignment": 1,
+                          "Visible": true,
+                          "Width": 103.0
+                        }
+                      ],
+                      "Group": true,
+                      "Height": 59.0,
+                      "Left": 152.0,
+                      "Name": "Layer",
+                      "Top": 101.5,
+                      "Visible": true,
+                      "Width": 476.0
+                    }
+                  ],
+                  "Group": true,
+                  "Height": 263.0,
+                  "Left": 0.0,
+                  "Name": "YELLOWSECTOR",
+                  "Top": -0.5,
+                  "Visible": true,
+                  "Width": 780.0
+                }
+              ],
+              "Group": true,
+              "Height": 263.0,
+              "Left": 0.0,
+              "Name": "SECTOR_ACC",
+              "Top": -0.5,
+              "Visible": false,
+              "Width": 780.0
+            },
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.Layer, SimHub.Plugins",
+              "BackgroundColor": "#00FFFFFF",
+              "Bindings": {
+                "Visible": {
+                  "Formula": {
+                    "Expression": "[Flag_Yellow] || [GameRawData.Graphics.FlagsDetails.IsACC_YELLOW_FLAG]"
+                  },
+                  "Mode": 2,
+                  "TargetPropertyName": "Visible"
+                }
+              },
+              "Childrens": [
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+                  "BackgroundColor": "#FFFFE04C",
+                  "BorderStyle": {
+                    "Bindings": {
+                      "RadiusBottomLeft": {
+                        "Formula": {
+                          "Expression": "const json_settings = readtextfile('./JavascriptExtensions/TWF_DASH_CONFIG.json')\r\nconst config = JSON.parse(json_settings);\r\n\r\nif (!config){\r\n\treturn \"6\"\r\n} else {\r\n\treturn config.ui_radius\r\n}",
+                          "Interpreter": 1
+                        },
+                        "Mode": 2,
+                        "TargetPropertyName": "RadiusBottomLeft"
+                      },
+                      "RadiusBottomRight": {
+                        "Formula": {
+                          "Expression": "const json_settings = readtextfile('./JavascriptExtensions/TWF_DASH_CONFIG.json')\r\nconst config = JSON.parse(json_settings);\r\n\r\nif (!config){\r\n\treturn \"6\"\r\n} else {\r\n\treturn config.ui_radius\r\n}",
+                          "Interpreter": 1
+                        },
+                        "Mode": 2,
+                        "TargetPropertyName": "RadiusBottomRight"
+                      },
+                      "RadiusTopLeft": {
+                        "Formula": {
+                          "Expression": "const json_settings = readtextfile('./JavascriptExtensions/TWF_DASH_CONFIG.json')\r\nconst config = JSON.parse(json_settings);\r\n\r\nif (!config){\r\n\treturn \"6\"\r\n} else {\r\n\treturn config.ui_radius\r\n}",
+                          "Interpreter": 1
+                        },
+                        "Mode": 2,
+                        "TargetPropertyName": "RadiusTopLeft"
+                      },
+                      "RadiusTopRight": {
+                        "Formula": {
+                          "Expression": "const json_settings = readtextfile('./JavascriptExtensions/TWF_DASH_CONFIG.json')\r\nconst config = JSON.parse(json_settings);\r\n\r\nif (!config){\r\n\treturn \"6\"\r\n} else {\r\n\treturn config.ui_radius\r\n}",
+                          "Interpreter": 1
+                        },
+                        "Mode": 2,
+                        "TargetPropertyName": "RadiusTopRight"
+                      }
+                    },
+                    "RadiusBottomLeft": 6,
+                    "RadiusBottomRight": 6,
+                    "RadiusTopLeft": 6,
+                    "RadiusTopRight": 6
+                  },
+                  "Font": "Rajdhani",
+                  "FontSize": 60.0,
+                  "FontWeight": "Bold",
+                  "Height": 263.0,
+                  "HorizontalAlignment": 1,
+                  "IsTextItem": true,
+                  "Left": 0.0,
+                  "Name": "TextItem",
+                  "Text": "YELLOW FLAG",
+                  "TextColor": "#FF000000",
+                  "Top": 0.0,
+                  "VerticalAlignment": 1,
+                  "Visible": true,
+                  "Width": 780.0
+                }
+              ],
+              "Group": true,
+              "Height": 263.0,
+              "Left": 0.0,
+              "Name": "YELLOW",
+              "Top": 0.0,
+              "Visible": false,
+              "Width": 780.0
+            },
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.Layer, SimHub.Plugins",
+              "BackgroundColor": "#00FFFFFF",
+              "Bindings": {
+                "Visible": {
+                  "Formula": {
+                    "Expression": "[DataCorePlugin.GameData.Flag_Blue]"
+                  },
+                  "Mode": 2,
+                  "TargetPropertyName": "Visible"
+                }
+              },
+              "Childrens": [
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+                  "BackgroundColor": "#FF0000FF",
+                  "BorderStyle": {
+                    "Bindings": {
+                      "RadiusBottomLeft": {
+                        "Formula": {
+                          "Expression": "const json_settings = readtextfile('./JavascriptExtensions/TWF_DASH_CONFIG.json')\r\nconst config = JSON.parse(json_settings);\r\n\r\nif (!config){\r\n\treturn \"6\"\r\n} else {\r\n\treturn config.ui_radius\r\n}",
+                          "Interpreter": 1
+                        },
+                        "Mode": 2,
+                        "TargetPropertyName": "RadiusBottomLeft"
+                      },
+                      "RadiusBottomRight": {
+                        "Formula": {
+                          "Expression": "const json_settings = readtextfile('./JavascriptExtensions/TWF_DASH_CONFIG.json')\r\nconst config = JSON.parse(json_settings);\r\n\r\nif (!config){\r\n\treturn \"6\"\r\n} else {\r\n\treturn config.ui_radius\r\n}",
+                          "Interpreter": 1
+                        },
+                        "Mode": 2,
+                        "TargetPropertyName": "RadiusBottomRight"
+                      },
+                      "RadiusTopLeft": {
+                        "Formula": {
+                          "Expression": "const json_settings = readtextfile('./JavascriptExtensions/TWF_DASH_CONFIG.json')\r\nconst config = JSON.parse(json_settings);\r\n\r\nif (!config){\r\n\treturn \"6\"\r\n} else {\r\n\treturn config.ui_radius\r\n}",
+                          "Interpreter": 1
+                        },
+                        "Mode": 2,
+                        "TargetPropertyName": "RadiusTopLeft"
+                      },
+                      "RadiusTopRight": {
+                        "Formula": {
+                          "Expression": "const json_settings = readtextfile('./JavascriptExtensions/TWF_DASH_CONFIG.json')\r\nconst config = JSON.parse(json_settings);\r\n\r\nif (!config){\r\n\treturn \"6\"\r\n} else {\r\n\treturn config.ui_radius\r\n}",
+                          "Interpreter": 1
+                        },
+                        "Mode": 2,
+                        "TargetPropertyName": "RadiusTopRight"
+                      }
+                    },
+                    "RadiusBottomLeft": 6,
+                    "RadiusBottomRight": 6,
+                    "RadiusTopLeft": 6,
+                    "RadiusTopRight": 6
+                  },
+                  "Font": "Rajdhani",
+                  "FontSize": 60.0,
+                  "FontWeight": "Bold",
+                  "Height": 263.0,
+                  "HorizontalAlignment": 1,
+                  "IsTextItem": true,
+                  "Left": 0.0,
+                  "Name": "TextItem",
+                  "Text": "BLUE FLAG",
+                  "TextColor": "#FFFFFFFF",
+                  "Top": 0.0,
+                  "VerticalAlignment": 1,
+                  "Visible": true,
+                  "Width": 780.0
+                }
+              ],
+              "Group": true,
+              "Height": 263.0,
+              "Left": 0.0,
+              "Name": "BLUE",
+              "Top": 0.0,
+              "Visible": false,
+              "Width": 780.0
+            },
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.Layer, SimHub.Plugins",
+              "BackgroundColor": "#00FFFFFF",
+              "Bindings": {
+                "Visible": {
+                  "Formula": {
+                    "Expression": "[DataCorePlugin.GameData.Flag_Checkered] || [GameRawData.Graphics.globalChequered]"
+                  },
+                  "Mode": 2,
+                  "TargetPropertyName": "Visible"
+                }
+              },
+              "Childrens": [
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.ImageItem, SimHub.Plugins",
+                  "AutoSize": false,
+                  "BackgroundColor": "#00FFFFFF",
+                  "BorderStyle": {
+                    "Bindings": {
+                      "RadiusBottomLeft": {
+                        "Formula": {
+                          "Expression": "const json_settings = readtextfile('./JavascriptExtensions/TWF_DASH_CONFIG.json')\r\nconst config = JSON.parse(json_settings);\r\n\r\nif (!config){\r\n\treturn \"6\"\r\n} else {\r\n\treturn config.ui_radius\r\n}",
+                          "Interpreter": 1
+                        },
+                        "Mode": 2,
+                        "TargetPropertyName": "RadiusBottomLeft"
+                      },
+                      "RadiusBottomRight": {
+                        "Formula": {
+                          "Expression": "const json_settings = readtextfile('./JavascriptExtensions/TWF_DASH_CONFIG.json')\r\nconst config = JSON.parse(json_settings);\r\n\r\nif (!config){\r\n\treturn \"6\"\r\n} else {\r\n\treturn config.ui_radius\r\n}",
+                          "Interpreter": 1
+                        },
+                        "Mode": 2,
+                        "TargetPropertyName": "RadiusBottomRight"
+                      },
+                      "RadiusTopLeft": {
+                        "Formula": {
+                          "Expression": "const json_settings = readtextfile('./JavascriptExtensions/TWF_DASH_CONFIG.json')\r\nconst config = JSON.parse(json_settings);\r\n\r\nif (!config){\r\n\treturn \"6\"\r\n} else {\r\n\treturn config.ui_radius\r\n}",
+                          "Interpreter": 1
+                        },
+                        "Mode": 2,
+                        "TargetPropertyName": "RadiusTopLeft"
+                      },
+                      "RadiusTopRight": {
+                        "Formula": {
+                          "Expression": "const json_settings = readtextfile('./JavascriptExtensions/TWF_DASH_CONFIG.json')\r\nconst config = JSON.parse(json_settings);\r\n\r\nif (!config){\r\n\treturn \"6\"\r\n} else {\r\n\treturn config.ui_radius\r\n}",
+                          "Interpreter": 1
+                        },
+                        "Mode": 2,
+                        "TargetPropertyName": "RadiusTopRight"
+                      }
+                    },
+                    "RadiusBottomLeft": 6,
+                    "RadiusBottomRight": 6,
+                    "RadiusTopLeft": 6,
+                    "RadiusTopRight": 6
+                  },
+                  "Height": 263.0,
+                  "Image": "chequered_2",
+                  "Left": 0.0,
+                  "Name": "ImageItem2",
+                  "Top": 0.0,
+                  "Visible": true,
+                  "Width": 780.0
+                }
+              ],
+              "Group": true,
+              "Height": 263.0,
+              "Left": 0.0,
+              "Name": "CHEQUERED",
+              "Top": 0.0,
+              "Visible": false,
+              "Width": 780.0
+            },
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.Layer, SimHub.Plugins",
+              "BackgroundColor": "#00FFFFFF",
+              "Bindings": {
+                "Visible": {
+                  "Formula": {
+                    "Expression": "[PitLimiterOn]>0"
+                  },
+                  "Mode": 2,
+                  "TargetPropertyName": "Visible"
+                }
+              },
+              "Childrens": [
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+                  "BackgroundColor": "#FF006FFF",
+                  "BorderStyle": {
+                    "Bindings": {
+                      "RadiusBottomLeft": {
+                        "Formula": {
+                          "Expression": "const json_settings = readtextfile('./JavascriptExtensions/TWF_DASH_CONFIG.json')\r\nconst config = JSON.parse(json_settings);\r\n\r\nif (!config){\r\n\treturn \"6\"\r\n} else {\r\n\treturn config.ui_radius\r\n}",
+                          "Interpreter": 1
+                        },
+                        "Mode": 2,
+                        "TargetPropertyName": "RadiusBottomLeft"
+                      },
+                      "RadiusBottomRight": {
+                        "Formula": {
+                          "Expression": "const json_settings = readtextfile('./JavascriptExtensions/TWF_DASH_CONFIG.json')\r\nconst config = JSON.parse(json_settings);\r\n\r\nif (!config){\r\n\treturn \"6\"\r\n} else {\r\n\treturn config.ui_radius\r\n}",
+                          "Interpreter": 1
+                        },
+                        "Mode": 2,
+                        "TargetPropertyName": "RadiusBottomRight"
+                      },
+                      "RadiusTopLeft": {
+                        "Formula": {
+                          "Expression": "const json_settings = readtextfile('./JavascriptExtensions/TWF_DASH_CONFIG.json')\r\nconst config = JSON.parse(json_settings);\r\n\r\nif (!config){\r\n\treturn \"6\"\r\n} else {\r\n\treturn config.ui_radius\r\n}",
+                          "Interpreter": 1
+                        },
+                        "Mode": 2,
+                        "TargetPropertyName": "RadiusTopLeft"
+                      },
+                      "RadiusTopRight": {
+                        "Formula": {
+                          "Expression": "const json_settings = readtextfile('./JavascriptExtensions/TWF_DASH_CONFIG.json')\r\nconst config = JSON.parse(json_settings);\r\n\r\nif (!config){\r\n\treturn \"6\"\r\n} else {\r\n\treturn config.ui_radius\r\n}",
+                          "Interpreter": 1
+                        },
+                        "Mode": 2,
+                        "TargetPropertyName": "RadiusTopRight"
+                      }
+                    },
+                    "RadiusBottomLeft": 6,
+                    "RadiusBottomRight": 6,
+                    "RadiusTopLeft": 6,
+                    "RadiusTopRight": 6
+                  },
+                  "Font": "Rajdhani",
+                  "FontSize": 60.0,
+                  "FontWeight": "Bold",
+                  "Height": 263.0,
+                  "HorizontalAlignment": 1,
+                  "IsTextItem": true,
+                  "Left": 0.0,
+                  "Name": "BB",
+                  "Text": "PIT LIMITER ENABLED",
+                  "TextColor": "#FFF0F8FF",
+                  "TextWrapping": 2,
+                  "Top": 0.0,
+                  "VerticalAlignment": 1,
+                  "Visible": true,
+                  "Width": 780.0
+                },
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+                  "BackgroundColor": "#00FFFFFF",
+                  "Font": "Rajdhani",
+                  "FontSize": 36.0,
+                  "FontWeight": "Bold",
+                  "Height": 50.0,
+                  "HorizontalAlignment": 0,
+                  "IsTextItem": true,
+                  "Left": 136.0,
+                  "Name": "Box",
+                  "Text": "Box",
+                  "TextColor": "#FFFFFFFF",
+                  "Top": 48.375,
+                  "VerticalAlignment": 1,
+                  "Visible": true,
+                  "Width": 190.0
+                },
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+                  "BackgroundColor": "#00FFFFFF",
+                  "Bindings": {
+                    "Text": {
+                      "FormatString": "0m",
+                      "Formula": {
+                        "Expression": "[IRacingExtraProperties.iRacing_DistanceToPitBox]"
+                      },
+                      "Mode": 2,
+                      "TargetPropertyName": "Text"
+                    }
+                  },
+                  "Font": "Rajdhani",
+                  "FontSize": 48.0,
+                  "FontWeight": "Bold",
+                  "Height": 50.0,
+                  "HorizontalAlignment": 2,
+                  "IsTextItem": true,
+                  "Left": 454.0,
+                  "Name": "BOX DISTANCE",
+                  "Text": "999m",
+                  "TextColor": "#FFFFFFFF",
+                  "Top": 48.375,
+                  "VerticalAlignment": 1,
+                  "Visible": true,
+                  "Width": 190.0
+                },
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+                  "BackgroundColor": "#00FFFFFF",
+                  "Font": "Rajdhani",
+                  "FontSize": 36.0,
+                  "FontWeight": "Bold",
+                  "Height": 50.0,
+                  "HorizontalAlignment": 0,
+                  "IsTextItem": true,
+                  "Left": 136.0,
+                  "Name": "pit time",
+                  "Text": "Pit Time",
+                  "TextColor": "#FFFFFFFF",
+                  "Top": 165.5,
+                  "VerticalAlignment": 1,
+                  "Visible": true,
+                  "Width": 190.0
+                },
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+                  "BackgroundColor": "#00FFFFFF",
+                  "Bindings": {
+                    "Text": {
+                      "FormatString": "0.0",
+                      "Formula": {
+                        "Expression": "[IsInPitSince]"
+                      },
+                      "Mode": 2,
+                      "TargetPropertyName": "Text"
+                    }
+                  },
+                  "Font": "Rajdhani",
+                  "FontSize": 48.0,
+                  "FontWeight": "Bold",
+                  "Height": 50.0,
+                  "HorizontalAlignment": 2,
+                  "IsTextItem": true,
+                  "Left": 454.0,
+                  "Name": "pit time value",
+                  "Text": "0",
+                  "TextColor": "#FFFFFFFF",
+                  "Top": 165.5,
+                  "VerticalAlignment": 1,
+                  "Visible": true,
+                  "Width": 190.0
+                }
+              ],
+              "Group": true,
+              "Height": 263.0,
+              "Left": 0.0,
+              "Name": "PIT",
+              "Top": 0.0,
+              "Visible": false,
+              "Width": 780.0
+            }
+          ],
+          "Group": true,
+          "Height": 263.5,
+          "Left": 0.0,
+          "Name": "FLAGS",
+          "Top": -0.5,
+          "Visible": true,
+          "Width": 780.0
+        }
+      ],
+      "Name": "Screen",
+      "OverlayMaxDuration": 0,
+      "OverlayMinDuration": 0,
+      "OverlayTriggerExpression": {
+        "Expression": ""
+      },
+      "PitScreen": false,
+      "ScreenEnabledExpression": {
+        "Expression": ""
+      },
+      "ScreenId": "b3313e90-06b1-4dea-b53e-34508f6f7d1c"
+    }
+  ],
+  "ShowBackground": true,
+  "ShowBoundingRectangles": false,
+  "ShowForeground": true,
+  "ShowOnScreenControls": true,
+  "SnapToGrid": false,
+  "Version": 2
+}

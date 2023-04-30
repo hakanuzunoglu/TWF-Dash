@@ -1,0 +1,153 @@
+{
+  "BackgroundColor": "#FF000000",
+  "BackgroundOpacity": 100.0,
+  "BaseHeight": 12,
+  "BaseWidth": 12,
+  "DashboardDebugManager": {
+    "Maximized": false
+  },
+  "EnableClickThroughOverlay": true,
+  "EnableOnDashboardMessaging": true,
+  "ForegroundOpacity": 100.0,
+  "GridSize": 10,
+  "HideLabels": true,
+  "Id": "46f5a498-31bf-4b4e-9fda-1b2c3c9c837b",
+  "Images": [],
+  "IsOverlay": false,
+  "Metadata": {
+    "EnableOnDashboardMessaging": true,
+    "Height": 12.0,
+    "IdleScreensIndexs": [
+      0,
+      1
+    ],
+    "InGameScreensIndexs": [
+      0,
+      1
+    ],
+    "IsOverlay": false,
+    "MainPreviewIndex": 0,
+    "MetadataVersion": 2.0,
+    "OverlaySizeWarning": false,
+    "PitScreensIndexs": [],
+    "ScreenCount": 2.0,
+    "Width": 12.0
+  },
+  "Screens": [
+    {
+      "AllowOverlays": true,
+      "BackgroundColor": "#FF000000",
+      "IdleScreen": true,
+      "InGameScreen": true,
+      "IsBackgroundLayer": false,
+      "IsForegroundLayer": false,
+      "IsOverlayLayer": false,
+      "Items": [
+        {
+          "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+          "BackgroundColor": "#FF000000",
+          "Height": 12.0,
+          "IsRectangleItem": true,
+          "Left": 0.0,
+          "Name": "RectangleItem",
+          "Top": 0.0,
+          "Visible": true,
+          "Width": 12.0
+        },
+        {
+          "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.EllipseItem, SimHub.Plugins",
+          "BackgroundColor": "#00FFFFFF",
+          "Bindings": {
+            "EllipseColor": {
+              "Formula": {
+                "Expression": "return twf_get_ui_color(\"pagination\")",
+                "Interpreter": 1
+              },
+              "Mode": 2,
+              "TargetPropertyName": "EllipseColor"
+            }
+          },
+          "EllipseColor": "#FF233E49",
+          "EllipseThickness": 2.0,
+          "FillColor": "#00FFFFFF",
+          "Height": 10.0,
+          "Left": 1.0,
+          "Name": "Page 4",
+          "Top": 1.0,
+          "Visible": true,
+          "Width": 10.0
+        }
+      ],
+      "Name": "INACTIVE",
+      "OverlayMaxDuration": 0,
+      "OverlayMinDuration": 0,
+      "OverlayTriggerExpression": {
+        "Expression": ""
+      },
+      "PitScreen": false,
+      "ScreenEnabledExpression": {
+        "Expression": ""
+      },
+      "ScreenId": "77de6733-7893-47b0-adcd-5f571be4eda0"
+    },
+    {
+      "AllowOverlays": true,
+      "BackgroundColor": "#FF000000",
+      "IdleScreen": true,
+      "InGameScreen": true,
+      "IsBackgroundLayer": false,
+      "IsForegroundLayer": false,
+      "IsOverlayLayer": false,
+      "Items": [
+        {
+          "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.EllipseItem, SimHub.Plugins",
+          "BackgroundColor": "#00FFFFFF",
+          "Bindings": {
+            "EllipseColor": {
+              "Formula": {
+                "Expression": "return twf_get_ui_color(\"pagination\")",
+                "Interpreter": 1
+              },
+              "Mode": 2,
+              "TargetPropertyName": "EllipseColor"
+            },
+            "FillColor": {
+              "Formula": {
+                "Expression": "return twf_get_ui_color(\"pagination\")",
+                "Interpreter": 1
+              },
+              "Mode": 2,
+              "TargetPropertyName": "FillColor"
+            }
+          },
+          "EllipseColor": "#FF233E49",
+          "EllipseThickness": 2.0,
+          "FillColor": "#FF233E49",
+          "Height": 10.0,
+          "Left": 1.0,
+          "Name": "Page 4",
+          "Top": 1.0,
+          "Visible": true,
+          "Width": 10.0
+        }
+      ],
+      "Name": "ACTIVE",
+      "OverlayMaxDuration": 0,
+      "OverlayMinDuration": 0,
+      "OverlayTriggerExpression": {
+        "Expression": ""
+      },
+      "PitScreen": false,
+      "ScreenEnabledExpression": {
+        "Expression": ""
+      },
+      "ScreenId": "97ba27ea-d459-4e16-9018-a60a5cc964e6"
+    }
+  ],
+  "ShowBackground": true,
+  "ShowBoundingRectangles": false,
+  "ShowForeground": true,
+  "ShowOnScreenControls": true,
+  "SnapToGrid": false,
+  "Version": 2
+}

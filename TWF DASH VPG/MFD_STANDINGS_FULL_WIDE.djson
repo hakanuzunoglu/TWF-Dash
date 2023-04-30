@@ -1,0 +1,273 @@
+{
+  "BackgroundColor": "#FF000000",
+  "BackgroundOpacity": 100.0,
+  "BaseHeight": 300,
+  "BaseWidth": 640,
+  "DashboardDebugManager": {
+    "LastPlacement": "274,630,640,300",
+    "Maximized": false
+  },
+  "EnableClickThroughOverlay": true,
+  "EnableOnDashboardMessaging": true,
+  "ForegroundOpacity": 100.0,
+  "GridSize": 10,
+  "HideLabels": true,
+  "Id": "4efff2f9-0078-40dd-a8df-44cdcb02ed5d",
+  "Images": [],
+  "IsOverlay": false,
+  "Metadata": {
+    "EnableOnDashboardMessaging": true,
+    "Height": 300.0,
+    "IdleScreensIndexs": [
+      0,
+      1
+    ],
+    "InGameScreensIndexs": [
+      0,
+      1
+    ],
+    "IsOverlay": false,
+    "MainPreviewIndex": 0,
+    "MetadataVersion": 2.0,
+    "OverlaySizeWarning": false,
+    "PitScreensIndexs": [],
+    "ScreenCount": 2.0,
+    "Width": 640.0
+  },
+  "Screens": [
+    {
+      "AllowOverlays": true,
+      "BackgroundColor": "#FF000000",
+      "IdleScreen": true,
+      "InGameScreen": true,
+      "IsBackgroundLayer": false,
+      "IsForegroundLayer": false,
+      "IsOverlayLayer": false,
+      "Items": [
+        {
+          "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.WidgetItem, SimHub.Plugins",
+          "AutoSize": true,
+          "BackgroundColor": "#00FFFFFF",
+          "FileName": "RELATIVE_FULL_WIDE.djson",
+          "Height": 288.0,
+          "Left": 0.0,
+          "Name": "RELATIVE_FULL_WIDE",
+          "NextScreenCommand": 0,
+          "PreviousScreenCommand": 0,
+          "Top": 0.0,
+          "Visible": true,
+          "Width": 633.0
+        },
+        {
+          "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.Layer, SimHub.Plugins",
+          "BackgroundColor": "#00FFFFFF",
+          "Childrens": [
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+              "BackgroundColor": "#FF000000",
+              "Height": 13.0,
+              "IsRectangleItem": true,
+              "Left": 305.5,
+              "Name": "RectangleItem",
+              "Top": 287.0,
+              "Visible": true,
+              "Width": 29.0
+            },
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.EllipseItem, SimHub.Plugins",
+              "BackgroundColor": "#00FFFFFF",
+              "Bindings": {
+                "EllipseColor": {
+                  "Formula": {
+                    "Expression": "const json_settings = readtextfile('./JavascriptExtensions/TWF_DASH_CONFIG.json')\r\nconst config = JSON.parse(json_settings);\r\n\r\nif (!config){\r\n\treturn \"#FF477384\"\r\n} else {\r\n\t\tif(config.ui_color == \"1\"){\r\n\t\t\treturn \"#FF477384\"\r\n\t\t}\r\n        if(config.ui_color == \"2\"){\r\n\t\t\treturn \"#FF222222\"\r\n\t\t} \r\n        if(config.ui_color == \"3\"){\r\n\t\t\treturn config.ui_custom_color\r\n\t\t}else {\r\n\t\t\treturn 0\r\n\t\t}\r\n}",
+                    "Interpreter": 1
+                  },
+                  "Mode": 2,
+                  "TargetPropertyName": "EllipseColor"
+                },
+                "FillColor": {
+                  "Formula": {
+                    "Expression": "const json_settings = readtextfile('./JavascriptExtensions/TWF_DASH_CONFIG.json')\r\nconst config = JSON.parse(json_settings);\r\n\r\nif (!config){\r\n\treturn \"#FF477384\"\r\n} else {\r\n\t\tif(config.ui_color == \"1\"){\r\n\t\t\treturn \"#FF477384\"\r\n\t\t}\r\n        if(config.ui_color == \"2\"){\r\n\t\t\treturn \"#FF222222\"\r\n\t\t} \r\n        if(config.ui_color == \"3\"){\r\n\t\t\treturn config.ui_custom_color\r\n\t\t}else {\r\n\t\t\treturn 0\r\n\t\t}\r\n}",
+                    "Interpreter": 1
+                  },
+                  "Mode": 2,
+                  "TargetPropertyName": "FillColor"
+                }
+              },
+              "EllipseColor": "#FF477384",
+              "EllipseThickness": 2.0,
+              "FillColor": "#FF477384",
+              "Height": 10.0,
+              "Left": 308.5,
+              "Name": "Page 1",
+              "Top": 290.0,
+              "Visible": true,
+              "Width": 10.0
+            },
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.EllipseItem, SimHub.Plugins",
+              "BackgroundColor": "#00FFFFFF",
+              "Bindings": {
+                "EllipseColor": {
+                  "Formula": {
+                    "Expression": "const json_settings = readtextfile('./JavascriptExtensions/TWF_DASH_CONFIG.json')\r\nconst config = JSON.parse(json_settings);\r\n\r\nif (!config){\r\n\treturn \"#FF477384\"\r\n} else {\r\n\t\tif(config.ui_color == \"1\"){\r\n\t\t\treturn \"#FF477384\"\r\n\t\t}\r\n        if(config.ui_color == \"2\"){\r\n\t\t\treturn \"#FF222222\"\r\n\t\t} \r\n        if(config.ui_color == \"3\"){\r\n\t\t\treturn config.ui_custom_color\r\n\t\t}else {\r\n\t\t\treturn 0\r\n\t\t}\r\n}",
+                    "Interpreter": 1
+                  },
+                  "Mode": 2,
+                  "TargetPropertyName": "EllipseColor"
+                }
+              },
+              "EllipseColor": "#FF233E49",
+              "EllipseThickness": 2.0,
+              "FillColor": "#00FFFFFF",
+              "Height": 10.0,
+              "Left": 322.5,
+              "Name": "Page 2",
+              "Top": 290.0,
+              "Visible": true,
+              "Width": 10.0
+            }
+          ],
+          "Group": true,
+          "Height": 13.0,
+          "Left": 305.5,
+          "Name": "Paging",
+          "Top": 287.0,
+          "Visible": true,
+          "Width": 29.0
+        }
+      ],
+      "Name": "Screen",
+      "OverlayMaxDuration": 0,
+      "OverlayMinDuration": 0,
+      "OverlayTriggerExpression": {
+        "Expression": ""
+      },
+      "PitScreen": false,
+      "ScreenEnabledExpression": {
+        "Expression": ""
+      },
+      "ScreenId": "35a48f0c-72f3-44c1-87e0-640afb98f32d"
+    },
+    {
+      "AllowOverlays": true,
+      "BackgroundColor": "#FF000000",
+      "IdleScreen": true,
+      "InGameScreen": true,
+      "IsBackgroundLayer": false,
+      "IsForegroundLayer": false,
+      "IsOverlayLayer": false,
+      "Items": [
+        {
+          "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.WidgetItem, SimHub.Plugins",
+          "AutoSize": true,
+          "BackgroundColor": "#00FFFFFF",
+          "FileName": "CLASS_FULL_WIDE.djson",
+          "Height": 284.0,
+          "Left": 0.0,
+          "Name": "CLASS_FULL_WIDE",
+          "NextScreenCommand": 0,
+          "PreviousScreenCommand": 0,
+          "Top": 0.0,
+          "Visible": true,
+          "Width": 633.0
+        },
+        {
+          "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.Layer, SimHub.Plugins",
+          "BackgroundColor": "#00FFFFFF",
+          "Childrens": [
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+              "BackgroundColor": "#FF000000",
+              "Height": 13.0,
+              "IsRectangleItem": true,
+              "Left": 305.5,
+              "Name": "RectangleItem",
+              "Top": 287.0,
+              "Visible": true,
+              "Width": 29.0
+            },
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.EllipseItem, SimHub.Plugins",
+              "BackgroundColor": "#00FFFFFF",
+              "Bindings": {
+                "EllipseColor": {
+                  "Formula": {
+                    "Expression": "const json_settings = readtextfile('./JavascriptExtensions/TWF_DASH_CONFIG.json')\r\nconst config = JSON.parse(json_settings);\r\n\r\nif (!config){\r\n\treturn \"#FF477384\"\r\n} else {\r\n\t\tif(config.ui_color == \"1\"){\r\n\t\t\treturn \"#FF477384\"\r\n\t\t}\r\n        if(config.ui_color == \"2\"){\r\n\t\t\treturn \"#FF222222\"\r\n\t\t} \r\n        if(config.ui_color == \"3\"){\r\n\t\t\treturn config.ui_custom_color\r\n\t\t}else {\r\n\t\t\treturn 0\r\n\t\t}\r\n}",
+                    "Interpreter": 1
+                  },
+                  "Mode": 2,
+                  "TargetPropertyName": "EllipseColor"
+                }
+              },
+              "EllipseColor": "#FF233E49",
+              "EllipseThickness": 2.0,
+              "FillColor": "#00FFFFFF",
+              "Height": 10.0,
+              "Left": 308.0,
+              "Name": "Page 1",
+              "Top": 290.0,
+              "Visible": true,
+              "Width": 10.0
+            },
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.EllipseItem, SimHub.Plugins",
+              "BackgroundColor": "#00FFFFFF",
+              "Bindings": {
+                "EllipseColor": {
+                  "Formula": {
+                    "Expression": "const json_settings = readtextfile('./JavascriptExtensions/TWF_DASH_CONFIG.json')\r\nconst config = JSON.parse(json_settings);\r\n\r\nif (!config){\r\n\treturn \"#FF477384\"\r\n} else {\r\n\t\tif(config.ui_color == \"1\"){\r\n\t\t\treturn \"#FF477384\"\r\n\t\t}\r\n        if(config.ui_color == \"2\"){\r\n\t\t\treturn \"#FF222222\"\r\n\t\t} \r\n        if(config.ui_color == \"3\"){\r\n\t\t\treturn config.ui_custom_color\r\n\t\t}else {\r\n\t\t\treturn 0\r\n\t\t}\r\n}",
+                    "Interpreter": 1
+                  },
+                  "Mode": 2,
+                  "TargetPropertyName": "EllipseColor"
+                },
+                "FillColor": {
+                  "Formula": {
+                    "Expression": "const json_settings = readtextfile('./JavascriptExtensions/TWF_DASH_CONFIG.json')\r\nconst config = JSON.parse(json_settings);\r\n\r\nif (!config){\r\n\treturn \"#FF477384\"\r\n} else {\r\n\t\tif(config.ui_color == \"1\"){\r\n\t\t\treturn \"#FF477384\"\r\n\t\t}\r\n        if(config.ui_color == \"2\"){\r\n\t\t\treturn \"#FF222222\"\r\n\t\t} \r\n        if(config.ui_color == \"3\"){\r\n\t\t\treturn config.ui_custom_color\r\n\t\t}else {\r\n\t\t\treturn 0\r\n\t\t}\r\n}",
+                    "Interpreter": 1
+                  },
+                  "Mode": 2,
+                  "TargetPropertyName": "FillColor"
+                }
+              },
+              "EllipseColor": "#FF477384",
+              "EllipseThickness": 2.0,
+              "FillColor": "#FF477384",
+              "Height": 10.0,
+              "Left": 322.0,
+              "Name": "Page 2",
+              "Top": 290.0,
+              "Visible": true,
+              "Width": 10.0
+            }
+          ],
+          "Group": true,
+          "Height": 13.0,
+          "Left": 305.5,
+          "Name": "Paging2",
+          "Top": 287.0,
+          "Visible": true,
+          "Width": 29.0
+        }
+      ],
+      "Name": "Screen",
+      "OverlayMaxDuration": 0,
+      "OverlayMinDuration": 0,
+      "OverlayTriggerExpression": {
+        "Expression": ""
+      },
+      "PitScreen": false,
+      "ScreenEnabledExpression": {
+        "Expression": ""
+      },
+      "ScreenId": "56fc828d-996f-446e-a639-a7d15f5313ba"
+    }
+  ],
+  "ShowBackground": true,
+  "ShowBoundingRectangles": false,
+  "ShowForeground": true,
+  "ShowOnScreenControls": true,
+  "SnapToGrid": false,
+  "Version": 2
+}

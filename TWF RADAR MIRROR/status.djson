@@ -1,0 +1,1372 @@
+{
+  "BackgroundColor": "#FF000000",
+  "BackgroundOpacity": 100.0,
+  "BaseHeight": 250,
+  "BaseWidth": 306,
+  "DashboardDebugManager": {
+    "LastPlacement": "182,182,300,245",
+    "Maximized": false
+  },
+  "EnableClickThroughOverlay": true,
+  "EnableOnDashboardMessaging": true,
+  "ForegroundOpacity": 100.0,
+  "GridSize": 10,
+  "HideLabels": true,
+  "Id": "073f573f-c803-40a0-b35b-2c8de07810b7",
+  "Images": [
+    {
+      "Extension": ".png",
+      "Height": 35,
+      "Length": 1770,
+      "MD5": "c02b75cb078ff47974b5af75bf2a1cfa",
+      "Modified": false,
+      "Name": "icon-water-temp",
+      "Optimized": true,
+      "Width": 35
+    },
+    {
+      "Extension": ".png",
+      "Height": 35,
+      "Length": 1332,
+      "MD5": "a28c557952d8481bd50f455fe7bc0945",
+      "Modified": false,
+      "Name": "icon-oil-temp",
+      "Optimized": true,
+      "Width": 35
+    },
+    {
+      "Extension": ".png",
+      "Height": 35,
+      "Length": 1268,
+      "MD5": "ffd4f73490e1e063d12cd1a0f1db754f",
+      "Modified": false,
+      "Name": "icon-oil-pressure",
+      "Optimized": true,
+      "Width": 35
+    },
+    {
+      "Extension": ".png",
+      "Height": 35,
+      "Length": 1801,
+      "MD5": "880367c31cb2ad3ed67228fb46774c08",
+      "Modified": false,
+      "Name": "icon-oil-level",
+      "Optimized": true,
+      "Width": 35
+    },
+    {
+      "Extension": ".png",
+      "Height": 35,
+      "Length": 1195,
+      "MD5": "7490d3219dec6b0cfbdcc000ae60d602",
+      "Modified": false,
+      "Name": "icon-fuel-pressure",
+      "Optimized": true,
+      "Width": 35
+    },
+    {
+      "Extension": ".png",
+      "Height": 35,
+      "Length": 527,
+      "MD5": "2ac073d0d85f566595d7a509144c135b",
+      "Modified": false,
+      "Name": "icon-battery",
+      "Optimized": true,
+      "Width": 35
+    },
+    {
+      "Extension": ".png",
+      "Height": 112,
+      "Length": 473,
+      "MD5": "bcd1b4d78ed1509eec8618c8f8ad564b",
+      "Modified": false,
+      "Name": "engine_power",
+      "Optimized": true,
+      "Width": 164
+    },
+    {
+      "Extension": ".png",
+      "Height": 112,
+      "Length": 649,
+      "MD5": "a083b0d1e7825c92df7bf4f5c5a8d4ff",
+      "Modified": false,
+      "Name": "ers",
+      "Optimized": true,
+      "Width": 164
+    },
+    {
+      "Extension": ".png",
+      "Height": 96,
+      "Length": 1353,
+      "MD5": "1b9039048183c6822492990e74f30320",
+      "Modified": false,
+      "Name": "turbo",
+      "Optimized": true,
+      "Width": 128
+    }
+  ],
+  "IsOverlay": false,
+  "Metadata": {
+    "EnableOnDashboardMessaging": true,
+    "Height": 250.0,
+    "IdleScreensIndexs": [
+      0
+    ],
+    "InGameScreensIndexs": [
+      0
+    ],
+    "IsOverlay": false,
+    "MainPreviewIndex": 0,
+    "MetadataVersion": 2.0,
+    "OverlaySizeWarning": false,
+    "PitScreensIndexs": [],
+    "ScreenCount": 1.0,
+    "Width": 306.0
+  },
+  "Screens": [
+    {
+      "AllowOverlays": true,
+      "BackgroundColor": "#FF000000",
+      "IdleScreen": true,
+      "InGameScreen": true,
+      "IsBackgroundLayer": false,
+      "IsForegroundLayer": false,
+      "IsOverlayLayer": false,
+      "Items": [
+        {
+          "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+          "BackgroundColor": "#FF233E49",
+          "Bindings": {
+            "BackgroundColor": {
+              "Formula": {
+                "Expression": "return twf_get_ui_color(\"border\")",
+                "Interpreter": 1
+              },
+              "Mode": 2,
+              "TargetPropertyName": "BackgroundColor"
+            }
+          },
+          "Height": 264.0,
+          "IsRectangleItem": true,
+          "Left": 101.0,
+          "Name": "RectangleItem2",
+          "Top": 0.0,
+          "Visible": true,
+          "Width": 2.0
+        },
+        {
+          "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+          "BackgroundColor": "#FF233E49",
+          "Bindings": {
+            "BackgroundColor": {
+              "Formula": {
+                "Expression": "return twf_get_ui_color(\"border\")",
+                "Interpreter": 1
+              },
+              "Mode": 2,
+              "TargetPropertyName": "BackgroundColor"
+            }
+          },
+          "Height": 264.0,
+          "IsRectangleItem": true,
+          "Left": 204.0,
+          "Name": "RectangleItem",
+          "Top": 0.0,
+          "Visible": true,
+          "Width": 2.0
+        },
+        {
+          "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+          "BackgroundColor": "#FF233E49",
+          "Bindings": {
+            "BackgroundColor": {
+              "Formula": {
+                "Expression": "return twf_get_ui_color(\"border\")",
+                "Interpreter": 1
+              },
+              "Mode": 2,
+              "TargetPropertyName": "BackgroundColor"
+            }
+          },
+          "Height": 2.0,
+          "IsRectangleItem": true,
+          "Left": 0.0,
+          "Name": "RectangleItem4",
+          "Top": 123.0,
+          "Visible": true,
+          "Width": 320.0
+        },
+        {
+          "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.Layer, SimHub.Plugins",
+          "BackgroundColor": "#00FFFFFF",
+          "Bindings": {
+            "Visible": {
+              "Formula": {
+                "Expression": "if ([DataCorePlugin.CurrentGame]='IRacing', 1, 0)"
+              },
+              "Mode": 2,
+              "TargetPropertyName": "Visible"
+            }
+          },
+          "Childrens": [
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+              "BackgroundColor": "#00FFFFFF",
+              "Bindings": {
+                "Text": {
+                  "FormatString": "0.0",
+                  "Formula": {
+                    "Expression": "[DataCorePlugin.GameData.OilPressure]"
+                  },
+                  "Mode": 2,
+                  "TargetPropertyName": "Text"
+                }
+              },
+              "Font": "Rajdhani",
+              "FontSize": 32.0,
+              "FontWeight": "Bold",
+              "Height": 40.0,
+              "HorizontalAlignment": 1,
+              "IsTextItem": true,
+              "Left": 104.75,
+              "Name": "oil_pressure_value",
+              "Text": "00.0",
+              "TextColor": "#FFFFFFFF",
+              "Top": 57.5,
+              "VerticalAlignment": 1,
+              "Visible": true,
+              "Width": 98.0
+            },
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+              "BackgroundColor": "#00FFFFFF",
+              "Bindings": {
+                "Text": {
+                  "FormatString": "0",
+                  "Formula": {
+                    "Expression": "[DataCorePlugin.GameRawData.Telemetry.OilLevel]"
+                  },
+                  "Mode": 2,
+                  "TargetPropertyName": "Text"
+                }
+              },
+              "Font": "Rajdhani",
+              "FontSize": 32.0,
+              "FontWeight": "Bold",
+              "Height": 40.0,
+              "HorizontalAlignment": 1,
+              "IsTextItem": true,
+              "Left": 206.75,
+              "Name": "oil_level_value",
+              "Text": "00.0",
+              "TextColor": "#FFFFFFFF",
+              "Top": 57.5,
+              "VerticalAlignment": 1,
+              "Visible": true,
+              "Width": 98.0
+            },
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.ImageItem, SimHub.Plugins",
+              "AutoSize": false,
+              "BackgroundColor": "#00FFFFFF",
+              "Height": 33.0,
+              "Image": "icon-oil-level",
+              "Left": 233.25,
+              "Name": "oil_level_icon",
+              "Top": 18.833333333333336,
+              "Visible": true,
+              "Width": 45.0
+            },
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+              "BackgroundColor": "#00FFFFFF",
+              "Font": "Rajdhani",
+              "FontSize": 12.0,
+              "FontWeight": "Bold",
+              "Height": 14.0,
+              "HorizontalAlignment": 1,
+              "IsTextItem": true,
+              "Left": 118.75,
+              "Name": "oil_pressure_label",
+              "Text": "OIL PRESS.",
+              "TextColor": "#FF878787",
+              "Top": 99.5,
+              "VerticalAlignment": 1,
+              "Visible": true,
+              "Width": 70.0
+            },
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.ImageItem, SimHub.Plugins",
+              "AutoSize": false,
+              "BackgroundColor": "#00FFFFFF",
+              "Height": 22.0,
+              "Image": "icon-oil-pressure",
+              "Left": 131.25,
+              "Name": "oil_pressure_icon",
+              "Top": 24.333333333333336,
+              "Visible": true,
+              "Width": 45.0
+            },
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+              "BackgroundColor": "#00FFFFFF",
+              "Font": "Rajdhani",
+              "FontSize": 12.0,
+              "FontWeight": "Bold",
+              "Height": 14.0,
+              "HorizontalAlignment": 1,
+              "IsTextItem": true,
+              "Left": 220.75,
+              "Name": "oil_level_label",
+              "Text": "OIL LEVEL",
+              "TextColor": "#FF878787",
+              "Top": 99.5,
+              "VerticalAlignment": 1,
+              "Visible": true,
+              "Width": 70.0
+            },
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+              "BackgroundColor": "#00FFFFFF",
+              "Font": "Rajdhani",
+              "FontSize": 12.0,
+              "FontWeight": "Bold",
+              "Height": 14.0,
+              "HorizontalAlignment": 1,
+              "IsTextItem": true,
+              "Left": 220.75,
+              "Name": "battery_label",
+              "Text": "BATTERY",
+              "TextColor": "#FF878787",
+              "Top": 224.5,
+              "VerticalAlignment": 1,
+              "Visible": true,
+              "Width": 70.0
+            },
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+              "BackgroundColor": "#00FFFFFF",
+              "Bindings": {
+                "Text": {
+                  "FormatString": "0.0",
+                  "Formula": {
+                    "Expression": "[DataCorePlugin.GameRawData.Telemetry.Voltage]"
+                  },
+                  "Mode": 2,
+                  "TargetPropertyName": "Text"
+                }
+              },
+              "Font": "Rajdhani",
+              "FontSize": 32.0,
+              "FontWeight": "Bold",
+              "Height": 40.0,
+              "HorizontalAlignment": 1,
+              "IsTextItem": true,
+              "Left": 206.75,
+              "Name": "battery_value",
+              "Text": "00.0",
+              "TextColor": "#FFFFFFFF",
+              "Top": 181.5,
+              "VerticalAlignment": 1,
+              "Visible": true,
+              "Width": 98.0
+            },
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.ImageItem, SimHub.Plugins",
+              "AutoSize": false,
+              "BackgroundColor": "#00FFFFFF",
+              "Height": 31.0,
+              "Image": "icon-battery",
+              "Left": 238.25,
+              "Name": "battery_icon",
+              "Top": 143.16666666666666,
+              "Visible": true,
+              "Width": 35.0
+            },
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+              "BackgroundColor": "#00FFFFFF",
+              "Font": "Rajdhani",
+              "FontSize": 12.0,
+              "FontWeight": "Bold",
+              "Height": 14.0,
+              "HorizontalAlignment": 1,
+              "IsTextItem": true,
+              "Left": 16.0,
+              "Name": "fuel_pressure_label",
+              "Text": "FUEL PRESS.",
+              "TextColor": "#FF878787",
+              "Top": 224.5,
+              "VerticalAlignment": 1,
+              "Visible": true,
+              "Width": 70.0
+            },
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+              "BackgroundColor": "#00FFFFFF",
+              "Bindings": {
+                "Text": {
+                  "FormatString": "0.0",
+                  "Formula": {
+                    "Expression": "[DataCorePlugin.GameRawData.Telemetry.FuelPress]"
+                  },
+                  "Mode": 2,
+                  "TargetPropertyName": "Text"
+                }
+              },
+              "Font": "Rajdhani",
+              "FontSize": 32.0,
+              "FontWeight": "Bold",
+              "Height": 40.0,
+              "HorizontalAlignment": 1,
+              "IsTextItem": true,
+              "Left": 2.0,
+              "Name": "fuel_pressure_value",
+              "Text": "00.0",
+              "TextColor": "#FFFFFFFF",
+              "Top": 181.5,
+              "VerticalAlignment": 1,
+              "Visible": true,
+              "Width": 98.0
+            },
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.ImageItem, SimHub.Plugins",
+              "AutoSize": false,
+              "BackgroundColor": "#00FFFFFF",
+              "Height": 33.0,
+              "Image": "icon-fuel-pressure",
+              "Left": 34.5,
+              "Name": "fuel_pressure_icon",
+              "Top": 142.16666666666666,
+              "Visible": true,
+              "Width": 33.0
+            },
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+              "BackgroundColor": "#00FFFFFF",
+              "Bindings": {
+                "Text": {
+                  "FormatString": "0.0\u00b0",
+                  "Formula": {
+                    "Expression": "[DataCorePlugin.GameData.WaterTemperature]"
+                  },
+                  "Mode": 2,
+                  "TargetPropertyName": "Text"
+                }
+              },
+              "Font": "Rajdhani",
+              "FontSize": 32.0,
+              "FontWeight": "Bold",
+              "Height": 40.0,
+              "HorizontalAlignment": 1,
+              "IsTextItem": true,
+              "Left": 104.75,
+              "Name": "water_temp_value",
+              "Text": "00.0\u00b0",
+              "TextColor": "#FFFFFFFF",
+              "Top": 181.5,
+              "VerticalAlignment": 1,
+              "Visible": true,
+              "Width": 98.0
+            },
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+              "BackgroundColor": "#00FFFFFF",
+              "Font": "Rajdhani",
+              "FontSize": 12.0,
+              "FontWeight": "Bold",
+              "Height": 14.0,
+              "HorizontalAlignment": 1,
+              "IsTextItem": true,
+              "Left": 118.75,
+              "Name": "water_temp_label",
+              "Text": "WATER TEMP.",
+              "TextColor": "#FF878787",
+              "Top": 224.5,
+              "VerticalAlignment": 1,
+              "Visible": true,
+              "Width": 70.0
+            },
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.ImageItem, SimHub.Plugins",
+              "AutoSize": false,
+              "BackgroundColor": "#00FFFFFF",
+              "Height": 31.0,
+              "Image": "icon-water-temp",
+              "Left": 136.25,
+              "Name": "water_temp_icon",
+              "Top": 143.16666666666666,
+              "Visible": true,
+              "Width": 35.0
+            },
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+              "BackgroundColor": "#00FFFFFF",
+              "Font": "Rajdhani",
+              "FontSize": 12.0,
+              "FontWeight": "Bold",
+              "Height": 14.0,
+              "HorizontalAlignment": 1,
+              "IsTextItem": true,
+              "Left": 16.0,
+              "Name": "oil_tenp_label",
+              "Text": "OIL TEMP.",
+              "TextColor": "#FF878787",
+              "Top": 99.5,
+              "VerticalAlignment": 1,
+              "Visible": true,
+              "Width": 70.0
+            },
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+              "BackgroundColor": "#00FFFFFF",
+              "Bindings": {
+                "Text": {
+                  "FormatString": "0.0\u00b0",
+                  "Formula": {
+                    "Expression": "[DataCorePlugin.GameData.OilTemperature]"
+                  },
+                  "Mode": 2,
+                  "TargetPropertyName": "Text"
+                }
+              },
+              "Font": "Rajdhani",
+              "FontSize": 32.0,
+              "FontWeight": "Bold",
+              "Height": 44.0,
+              "HorizontalAlignment": 1,
+              "IsTextItem": true,
+              "Left": 2.0,
+              "Name": "oil_temp_value",
+              "Text": "00.0\u00b0",
+              "TextColor": "#FFFFFFFF",
+              "Top": 55.5,
+              "VerticalAlignment": 1,
+              "Visible": true,
+              "Width": 98.0
+            },
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.ImageItem, SimHub.Plugins",
+              "AutoSize": true,
+              "BackgroundColor": "#00FFFFFF",
+              "Height": 35.0,
+              "Image": "icon-oil-temp",
+              "Left": 33.5,
+              "Name": "oil_temp_icon",
+              "Top": 17.833333333333336,
+              "Visible": true,
+              "Width": 35.0
+            }
+          ],
+          "Group": true,
+          "Height": 220.66666666666666,
+          "Left": 2.0,
+          "Name": "Status IR",
+          "Top": 17.833333333333336,
+          "Visible": false,
+          "Width": 302.75
+        },
+        {
+          "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.Layer, SimHub.Plugins",
+          "BackgroundColor": "#00FFFFFF",
+          "Bindings": {
+            "Visible": {
+              "Formula": {
+                "Expression": "if ([DataCorePlugin.CurrentGame]='Automobilista2', 1, 0)"
+              },
+              "Mode": 2,
+              "TargetPropertyName": "Visible"
+            }
+          },
+          "Childrens": [
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+              "BackgroundColor": "#00FFFFFF",
+              "Bindings": {
+                "Text": {
+                  "FormatString": "0",
+                  "Formula": {
+                    "Expression": "[GameRawData.mFuelPressureKPa]"
+                  },
+                  "Mode": 2,
+                  "TargetPropertyName": "Text"
+                }
+              },
+              "Font": "Rajdhani",
+              "FontSize": 32.0,
+              "FontWeight": "Bold",
+              "Height": 43.0,
+              "HorizontalAlignment": 1,
+              "IsTextItem": true,
+              "Left": 210.6083333333333,
+              "Name": "fuel_pressure_value",
+              "Text": "00.0",
+              "TextColor": "#FFFFFFFF",
+              "Top": 56.0,
+              "VerticalAlignment": 1,
+              "Visible": true,
+              "Width": 92.0
+            },
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+              "BackgroundColor": "#00FFFFFF",
+              "Font": "Rajdhani",
+              "FontSize": 12.0,
+              "FontWeight": "Bold",
+              "Height": 20.0,
+              "HorizontalAlignment": 1,
+              "IsTextItem": true,
+              "Left": 210.6083333333333,
+              "Name": "fuel_pressure_label",
+              "Text": "FUEL PRESS.",
+              "TextColor": "#FF878787",
+              "Top": 96.66666666666667,
+              "VerticalAlignment": 1,
+              "Visible": true,
+              "Width": 92.0
+            },
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+              "BackgroundColor": "#00FFFFFF",
+              "Bindings": {
+                "Text": {
+                  "FormatString": "0",
+                  "Formula": {
+                    "Expression": "if($prop('EngineTorque')>0){\r\n\treturn $prop('EngineTorque') * $prop('Rpms') / 5252 \r\n} else {\r\n\treturn '-'\r\n}",
+                    "Interpreter": 1
+                  },
+                  "Mode": 2,
+                  "TargetPropertyName": "Text"
+                }
+              },
+              "Font": "Rajdhani",
+              "FontSize": 32.0,
+              "FontWeight": "Bold",
+              "Height": 43.0,
+              "HorizontalAlignment": 1,
+              "IsTextItem": true,
+              "Left": 104.64166666666668,
+              "Name": "power_value",
+              "Text": "00",
+              "TextColor": "#FFFFFFFF",
+              "Top": 180.0,
+              "VerticalAlignment": 1,
+              "Visible": true,
+              "Width": 97.0
+            },
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+              "BackgroundColor": "#00FFFFFF",
+              "Font": "Rajdhani",
+              "FontSize": 12.0,
+              "FontWeight": "Bold",
+              "Height": 20.0,
+              "HorizontalAlignment": 1,
+              "IsTextItem": true,
+              "Left": 104.64166666666668,
+              "Name": "power_label",
+              "Text": "POWER",
+              "TextColor": "#FF878787",
+              "Top": 222.0,
+              "VerticalAlignment": 1,
+              "Visible": true,
+              "Width": 97.0
+            },
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+              "BackgroundColor": "#00FFFFFF",
+              "Bindings": {
+                "Text": {
+                  "FormatString": "0.0",
+                  "Formula": {
+                    "Expression": "isnull([TurboPercent],'-')"
+                  },
+                  "Mode": 2,
+                  "TargetPropertyName": "Text"
+                }
+              },
+              "Font": "Rajdhani",
+              "FontSize": 32.0,
+              "FontWeight": "Bold",
+              "Height": 43.0,
+              "HorizontalAlignment": 1,
+              "IsTextItem": true,
+              "Left": 210.6083333333333,
+              "Name": "turbo_value",
+              "Text": "00.0",
+              "TextColor": "#FFFFFFFF",
+              "Top": 180.0,
+              "VerticalAlignment": 1,
+              "Visible": true,
+              "Width": 92.0
+            },
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+              "BackgroundColor": "#00FFFFFF",
+              "Font": "Rajdhani",
+              "FontSize": 12.0,
+              "FontWeight": "Bold",
+              "Height": 20.0,
+              "HorizontalAlignment": 1,
+              "IsTextItem": true,
+              "Left": 210.6083333333333,
+              "Name": "turbo_label",
+              "Text": "TURBO %",
+              "TextColor": "#FF878787",
+              "Top": 222.0,
+              "VerticalAlignment": 1,
+              "Visible": true,
+              "Width": 92.0
+            },
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+              "BackgroundColor": "#00FFFFFF",
+              "Bindings": {
+                "Text": {
+                  "FormatString": "0",
+                  "Formula": {
+                    "Expression": "[DataCorePlugin.GameData.OilPressure]"
+                  },
+                  "Mode": 2,
+                  "TargetPropertyName": "Text"
+                }
+              },
+              "Font": "Rajdhani",
+              "FontSize": 32.0,
+              "FontWeight": "Bold",
+              "Height": 43.0,
+              "HorizontalAlignment": 1,
+              "IsTextItem": true,
+              "Left": 104.64166666666668,
+              "Name": "oil_pressure_value",
+              "Text": "00.0",
+              "TextColor": "#FFFFFFFF",
+              "Top": 56.0,
+              "VerticalAlignment": 1,
+              "Visible": true,
+              "Width": 97.0
+            },
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+              "BackgroundColor": "#00FFFFFF",
+              "Font": "Rajdhani",
+              "FontSize": 12.0,
+              "FontWeight": "Bold",
+              "Height": 20.0,
+              "HorizontalAlignment": 1,
+              "IsTextItem": true,
+              "Left": 104.64166666666668,
+              "Name": "oil_pressure_text",
+              "Text": "OIL PRESS.",
+              "TextColor": "#FF878787",
+              "Top": 96.66666666666667,
+              "VerticalAlignment": 1,
+              "Visible": true,
+              "Width": 97.0
+            },
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+              "BackgroundColor": "#00FFFFFF",
+              "Bindings": {
+                "Text": {
+                  "FormatString": "0\u00b0",
+                  "Formula": {
+                    "Expression": "[WaterTemperature]"
+                  },
+                  "Mode": 2,
+                  "TargetPropertyName": "Text"
+                }
+              },
+              "Font": "Rajdhani",
+              "FontSize": 32.0,
+              "FontWeight": "Bold",
+              "Height": 43.0,
+              "HorizontalAlignment": 1,
+              "IsTextItem": true,
+              "Left": 2.875,
+              "Name": "water_temp_value",
+              "Text": "00.0",
+              "TextColor": "#FFFFFFFF",
+              "Top": 180.0,
+              "VerticalAlignment": 1,
+              "Visible": true,
+              "Width": 98.0
+            },
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+              "BackgroundColor": "#00FFFFFF",
+              "Font": "Rajdhani",
+              "FontSize": 12.0,
+              "FontWeight": "Bold",
+              "Height": 20.0,
+              "HorizontalAlignment": 1,
+              "IsTextItem": true,
+              "Left": 2.875,
+              "Name": "water_temp_label",
+              "Text": "WATER TEMP.",
+              "TextColor": "#FF878787",
+              "Top": 222.0,
+              "VerticalAlignment": 1,
+              "Visible": true,
+              "Width": 98.0
+            },
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+              "BackgroundColor": "#00FFFFFF",
+              "Bindings": {
+                "Text": {
+                  "FormatString": "0\u00b0",
+                  "Formula": {
+                    "Expression": "[DataCorePlugin.GameData.OilTemperature]"
+                  },
+                  "Mode": 2,
+                  "TargetPropertyName": "Text"
+                }
+              },
+              "Font": "Rajdhani",
+              "FontSize": 32.0,
+              "FontWeight": "Bold",
+              "Height": 43.0,
+              "HorizontalAlignment": 1,
+              "IsTextItem": true,
+              "Left": 2.875,
+              "Name": "oil_temp_value",
+              "Text": "00.0\u00b0",
+              "TextColor": "#FFFFFFFF",
+              "Top": 56.0,
+              "VerticalAlignment": 1,
+              "Visible": true,
+              "Width": 98.0
+            },
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+              "BackgroundColor": "#00FFFFFF",
+              "Font": "Rajdhani",
+              "FontSize": 12.0,
+              "FontWeight": "Bold",
+              "Height": 20.0,
+              "HorizontalAlignment": 1,
+              "IsTextItem": true,
+              "Left": 2.875,
+              "Name": "oil_temp_label",
+              "Text": "OIL TEMP.",
+              "TextColor": "#FF878787",
+              "Top": 96.66666666666667,
+              "VerticalAlignment": 1,
+              "Visible": true,
+              "Width": 98.0
+            },
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.ImageItem, SimHub.Plugins",
+              "AutoSize": true,
+              "AutoSizeScale": 0.3,
+              "BackgroundColor": "#00FFFFFF",
+              "Height": 33.6,
+              "Image": "engine_power",
+              "Left": 128.54166666666669,
+              "Name": "oil_level_icon",
+              "Top": 142.4,
+              "Visible": true,
+              "Width": 49.199999999999996
+            },
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.ImageItem, SimHub.Plugins",
+              "AutoSize": false,
+              "BackgroundColor": "#00FFFFFF",
+              "Height": 22.0,
+              "Image": "icon-oil-pressure",
+              "Left": 130.64166666666668,
+              "Name": "oil_pressure_icon",
+              "Top": 24.44444444444445,
+              "Visible": true,
+              "Width": 45.0
+            },
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.ImageItem, SimHub.Plugins",
+              "AutoSize": true,
+              "AutoSizeScale": 0.35,
+              "BackgroundColor": "#00FFFFFF",
+              "Height": 33.599999999999994,
+              "Image": "turbo",
+              "Left": 234.2083333333333,
+              "Name": "battery_icon",
+              "Top": 142.40000000000003,
+              "Visible": true,
+              "Width": 44.8
+            },
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.ImageItem, SimHub.Plugins",
+              "AutoSize": false,
+              "BackgroundColor": "#00FFFFFF",
+              "Height": 33.0,
+              "Image": "icon-fuel-pressure",
+              "Left": 240.1083333333333,
+              "Name": "fuel_pressure_icon",
+              "Top": 18.94444444444445,
+              "Visible": true,
+              "Width": 33.0
+            },
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.ImageItem, SimHub.Plugins",
+              "AutoSize": false,
+              "BackgroundColor": "#00FFFFFF",
+              "Height": 31.0,
+              "Image": "icon-water-temp",
+              "Left": 34.375,
+              "Name": "water_temp_icon",
+              "Top": 143.70000000000002,
+              "Visible": true,
+              "Width": 35.0
+            },
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.ImageItem, SimHub.Plugins",
+              "AutoSize": true,
+              "BackgroundColor": "#00FFFFFF",
+              "Height": 35.0,
+              "Image": "icon-oil-temp",
+              "Left": 34.375,
+              "Name": "oil_temp_icon",
+              "Top": 17.94444444444445,
+              "Visible": true,
+              "Width": 35.0
+            }
+          ],
+          "Group": true,
+          "Height": 224.05555555555554,
+          "Left": 2.875,
+          "Name": "Status AMS2",
+          "Top": 17.94444444444445,
+          "Visible": false,
+          "Width": 299.7333333333333
+        },
+        {
+          "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.Layer, SimHub.Plugins",
+          "BackgroundColor": "#00FFFFFF",
+          "Bindings": {
+            "Visible": {
+              "Formula": {
+                "Expression": "const supportedgames = ['IRacing', 'Automobilista2']\r\nvar currentgame = $prop('DataCorePlugin.CurrentGame')\r\n\tif (supportedgames.indexOf(currentgame)>=0){\r\n\t\treturn 0\r\n\t} else {\r\n\t\treturn 1\r\n}\r\n",
+                "Interpreter": 1
+              },
+              "Mode": 2,
+              "TargetPropertyName": "Visible"
+            }
+          },
+          "Childrens": [
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+              "BackgroundColor": "#00FFFFFF",
+              "Bindings": {
+                "Text": {
+                  "FormatString": "0",
+                  "Formula": {
+                    "Expression": "if([ERSPercent]>0,[ERSPercent],'-')"
+                  },
+                  "Mode": 2,
+                  "TargetPropertyName": "Text"
+                }
+              },
+              "Font": "Rajdhani",
+              "FontSize": 32.0,
+              "FontWeight": "Bold",
+              "Height": 43.0,
+              "HorizontalAlignment": 1,
+              "IsTextItem": true,
+              "Left": 104.51944444444445,
+              "Name": "ers_value",
+              "Text": "00.0",
+              "TextColor": "#FFFFFFFF",
+              "Top": 180.0,
+              "VerticalAlignment": 1,
+              "Visible": true,
+              "Width": 98.0
+            },
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+              "BackgroundColor": "#00FFFFFF",
+              "Font": "Rajdhani",
+              "FontSize": 12.0,
+              "FontWeight": "Bold",
+              "Height": 20.0,
+              "HorizontalAlignment": 1,
+              "IsTextItem": true,
+              "Left": 104.51944444444445,
+              "Name": "ers_label",
+              "Text": "ERS",
+              "TextColor": "#FF878787",
+              "Top": 222.66666666666666,
+              "VerticalAlignment": 1,
+              "Visible": true,
+              "Width": 98.0
+            },
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+              "BackgroundColor": "#00FFFFFF",
+              "Bindings": {
+                "Opacity": {
+                  "Formula": {
+                    "Expression": "if([EngineTorque]=0,30,100)"
+                  },
+                  "Mode": 2,
+                  "TargetPropertyName": "Opacity"
+                },
+                "Text": {
+                  "FormatString": "0",
+                  "Formula": {
+                    "Expression": "if($prop('EngineTorque')>0){\r\n\treturn $prop('EngineTorque') * $prop('Rpms') / 5252 \r\n} else {\r\n\treturn '-'\r\n}",
+                    "Interpreter": 1
+                  },
+                  "Mode": 2,
+                  "TargetPropertyName": "Text"
+                }
+              },
+              "Font": "Rajdhani",
+              "FontSize": 32.0,
+              "FontWeight": "Bold",
+              "Height": 43.0,
+              "HorizontalAlignment": 1,
+              "IsTextItem": true,
+              "Left": 1.3916666666666728,
+              "Name": "power_value",
+              "Text": "00",
+              "TextColor": "#FFFFFFFF",
+              "Top": 180.0,
+              "VerticalAlignment": 1,
+              "Visible": true,
+              "Width": 98.0
+            },
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+              "BackgroundColor": "#00FFFFFF",
+              "Font": "Rajdhani",
+              "FontSize": 12.0,
+              "FontWeight": "Bold",
+              "Height": 20.0,
+              "HorizontalAlignment": 1,
+              "IsTextItem": true,
+              "Left": 1.3916666666666728,
+              "Name": "power_label",
+              "Text": "POWER",
+              "TextColor": "#FF878787",
+              "Top": 222.66666666666666,
+              "VerticalAlignment": 1,
+              "Visible": true,
+              "Width": 98.0
+            },
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+              "BackgroundColor": "#00FFFFFF",
+              "Bindings": {
+                "Opacity": {
+                  "Formula": {
+                    "Expression": "if([Turbo]=0,30,100)"
+                  },
+                  "Mode": 2,
+                  "TargetPropertyName": "Opacity"
+                },
+                "Text": {
+                  "FormatString": "0.0",
+                  "Formula": {
+                    "Expression": "if([DataCorePlugin.GameData.TurboPercent],[TurboPercent],'-')"
+                  },
+                  "Mode": 2,
+                  "TargetPropertyName": "Text"
+                }
+              },
+              "Font": "Rajdhani",
+              "FontSize": 32.0,
+              "FontWeight": "Bold",
+              "Height": 43.0,
+              "HorizontalAlignment": 1,
+              "IsTextItem": true,
+              "Left": 206.50833333333333,
+              "Name": "turbo_value",
+              "Text": "00.0",
+              "TextColor": "#FFFFFFFF",
+              "Top": 180.0,
+              "VerticalAlignment": 1,
+              "Visible": true,
+              "Width": 98.0
+            },
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+              "BackgroundColor": "#00FFFFFF",
+              "Font": "Rajdhani",
+              "FontSize": 12.0,
+              "FontWeight": "Bold",
+              "Height": 20.0,
+              "HorizontalAlignment": 1,
+              "IsTextItem": true,
+              "Left": 206.50833333333333,
+              "Name": "turbo_label",
+              "Text": "TURBO %",
+              "TextColor": "#FF878787",
+              "Top": 222.66666666666666,
+              "VerticalAlignment": 1,
+              "Visible": true,
+              "Width": 98.0
+            },
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+              "BackgroundColor": "#00FFFFFF",
+              "Bindings": {
+                "Opacity": {
+                  "Formula": {
+                    "Expression": "if([OilPressure]=0,30,100)"
+                  },
+                  "Mode": 2,
+                  "TargetPropertyName": "Opacity"
+                },
+                "Text": {
+                  "FormatString": "0",
+                  "Formula": {
+                    "Expression": "if([DataCorePlugin.GameData.OilPressure],[OilPressure],'-')"
+                  },
+                  "Mode": 2,
+                  "TargetPropertyName": "Text"
+                }
+              },
+              "Font": "Rajdhani",
+              "FontSize": 32.0,
+              "FontWeight": "Bold",
+              "Height": 43.0,
+              "HorizontalAlignment": 1,
+              "IsTextItem": true,
+              "Left": 104.51944444444445,
+              "Name": "oil_pressure_value",
+              "Text": "00.0",
+              "TextColor": "#FFFFFFFF",
+              "Top": 55.66666666666667,
+              "VerticalAlignment": 1,
+              "Visible": true,
+              "Width": 98.0
+            },
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+              "BackgroundColor": "#00FFFFFF",
+              "Font": "Rajdhani",
+              "FontSize": 12.0,
+              "FontWeight": "Bold",
+              "Height": 20.0,
+              "HorizontalAlignment": 1,
+              "IsTextItem": true,
+              "Left": 104.51944444444445,
+              "Name": "oil_pressure_text",
+              "Text": "OIL PRESS.",
+              "TextColor": "#FF878787",
+              "Top": 96.33333333333333,
+              "VerticalAlignment": 1,
+              "Visible": true,
+              "Width": 98.0
+            },
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+              "BackgroundColor": "#00FFFFFF",
+              "Bindings": {
+                "Opacity": {
+                  "Formula": {
+                    "Expression": "if([WaterTemperature]=0,30,100)"
+                  },
+                  "Mode": 2,
+                  "TargetPropertyName": "Opacity"
+                },
+                "Text": {
+                  "FormatString": "0\u00b0",
+                  "Formula": {
+                    "Expression": "isnull([WaterTemperature],'-')"
+                  },
+                  "Mode": 2,
+                  "TargetPropertyName": "Text"
+                }
+              },
+              "Font": "Rajdhani",
+              "FontSize": 32.0,
+              "FontWeight": "Bold",
+              "Height": 43.0,
+              "HorizontalAlignment": 1,
+              "IsTextItem": true,
+              "Left": 206.50833333333333,
+              "Name": "water_temp_value",
+              "Text": "00.0",
+              "TextColor": "#FFFFFFFF",
+              "Top": 55.66666666666667,
+              "VerticalAlignment": 1,
+              "Visible": true,
+              "Width": 98.0
+            },
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+              "BackgroundColor": "#00FFFFFF",
+              "Font": "Rajdhani",
+              "FontSize": 12.0,
+              "FontWeight": "Bold",
+              "Height": 20.0,
+              "HorizontalAlignment": 1,
+              "IsTextItem": true,
+              "Left": 206.50833333333333,
+              "Name": "water_temp_label",
+              "Text": "WATER TEMP.",
+              "TextColor": "#FF878787",
+              "Top": 96.33333333333333,
+              "VerticalAlignment": 1,
+              "Visible": true,
+              "Width": 98.0
+            },
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+              "BackgroundColor": "#00FFFFFF",
+              "Bindings": {
+                "Opacity": {
+                  "Formula": {
+                    "Expression": "if([OilTemperature]=0,30,100)"
+                  },
+                  "Mode": 2,
+                  "TargetPropertyName": "Opacity"
+                },
+                "Text": {
+                  "FormatString": "0\u00b0",
+                  "Formula": {
+                    "Expression": "if([DataCorePlugin.GameData.OilTemperature],[OilTemperature],'-')"
+                  },
+                  "Mode": 2,
+                  "TargetPropertyName": "Text"
+                }
+              },
+              "Font": "Rajdhani",
+              "FontSize": 32.0,
+              "FontWeight": "Bold",
+              "Height": 43.0,
+              "HorizontalAlignment": 1,
+              "IsTextItem": true,
+              "Left": 1.3916666666666728,
+              "Name": "oil_temp_value",
+              "Text": "00.0\u00b0",
+              "TextColor": "#FFFFFFFF",
+              "Top": 55.66666666666667,
+              "VerticalAlignment": 1,
+              "Visible": true,
+              "Width": 98.0
+            },
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+              "BackgroundColor": "#00FFFFFF",
+              "Font": "Rajdhani",
+              "FontSize": 12.0,
+              "FontWeight": "Bold",
+              "Height": 20.0,
+              "HorizontalAlignment": 1,
+              "IsTextItem": true,
+              "Left": 1.3916666666666728,
+              "Name": "oil_temp_label",
+              "Text": "OIL TEMP.",
+              "TextColor": "#FF878787",
+              "Top": 96.33333333333333,
+              "VerticalAlignment": 1,
+              "Visible": true,
+              "Width": 98.0
+            },
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.ImageItem, SimHub.Plugins",
+              "AutoSize": true,
+              "AutoSizeScale": 0.3,
+              "BackgroundColor": "#00FFFFFF",
+              "Height": 33.6,
+              "Image": "ers",
+              "Left": 128.91944444444445,
+              "Name": "oil_level_icon",
+              "Top": 143.5,
+              "Visible": true,
+              "Width": 49.199999999999996
+            },
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.ImageItem, SimHub.Plugins",
+              "AutoSize": false,
+              "BackgroundColor": "#00FFFFFF",
+              "Height": 22.0,
+              "Image": "icon-oil-pressure",
+              "Left": 131.01944444444445,
+              "Name": "oil_pressure_icon",
+              "Top": 23.16666666666667,
+              "Visible": true,
+              "Width": 45.0
+            },
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.ImageItem, SimHub.Plugins",
+              "AutoSize": true,
+              "AutoSizeScale": 0.35,
+              "BackgroundColor": "#00FFFFFF",
+              "Height": 33.599999999999994,
+              "Image": "turbo",
+              "Left": 233.10833333333332,
+              "Name": "battery_icon",
+              "Top": 143.5,
+              "Visible": true,
+              "Width": 44.8
+            },
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.ImageItem, SimHub.Plugins",
+              "AutoSize": false,
+              "BackgroundColor": "#00FFFFFF",
+              "Height": 31.0,
+              "Image": "icon-water-temp",
+              "Left": 238.00833333333333,
+              "Name": "water_temp_icon",
+              "Top": 18.66666666666667,
+              "Visible": true,
+              "Width": 35.0
+            },
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.ImageItem, SimHub.Plugins",
+              "AutoSize": true,
+              "BackgroundColor": "#00FFFFFF",
+              "Height": 35.0,
+              "Image": "icon-oil-temp",
+              "Left": 32.89166666666667,
+              "Name": "oil_temp_icon",
+              "Top": 16.66666666666667,
+              "Visible": true,
+              "Width": 35.0
+            },
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.ImageItem, SimHub.Plugins",
+              "AutoSize": true,
+              "AutoSizeScale": 0.3,
+              "BackgroundColor": "#00FFFFFF",
+              "Height": 33.6,
+              "Image": "engine_power",
+              "Left": 25.791666666666675,
+              "Name": "oil_level_icon",
+              "Top": 143.5,
+              "Visible": true,
+              "Width": 49.199999999999996
+            }
+          ],
+          "Group": true,
+          "Height": 226.0,
+          "Left": 1.3916666666666728,
+          "Name": "Status",
+          "Top": 16.66666666666667,
+          "Visible": true,
+          "Width": 303.1166666666667
+        }
+      ],
+      "Name": "Screen",
+      "OverlayMaxDuration": 0,
+      "OverlayMinDuration": 0,
+      "OverlayTriggerExpression": {
+        "Expression": ""
+      },
+      "PitScreen": false,
+      "ScreenEnabledExpression": {
+        "Expression": ""
+      },
+      "ScreenId": "69621159-877e-4e7f-aaaf-8d4c80f92bb6"
+    }
+  ],
+  "ShowBackground": true,
+  "ShowBoundingRectangles": false,
+  "ShowForeground": true,
+  "ShowOnScreenControls": true,
+  "SnapToGrid": false,
+  "Version": 2
+}

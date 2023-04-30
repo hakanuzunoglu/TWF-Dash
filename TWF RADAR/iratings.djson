@@ -1,1 +1,216 @@
-{"DashboardDebugManager":{"LastPlacement":"208,208,176,24","Maximized":false},"Version":2,"Id":"e46458fe-21a3-45a2-8cbb-a8136156054a","BaseHeight":24,"BaseWidth":176,"BackgroundColor":"#FF000000","Screens":[{"Name":"Screen","InGameScreen":true,"IdleScreen":true,"PitScreen":false,"ScreenId":"65c1196e-d3d1-4b04-bfa7-578ed8678c15","AllowOverlays":true,"IsForegroundLayer":false,"IsOverlayLayer":false,"OverlayTriggerExpression":{"Expression":""},"ScreenEnabledExpression":{"Expression":""},"OverlayMaxDuration":0,"OverlayMinDuration":0,"IsBackgroundLayer":false,"BackgroundColor":"#FF000000","Items":[{"$type":"SimHub.Plugins.OutputPlugins.GraphicalDash.Models.Layer, SimHub.Plugins","Top":0.0,"Left":0.0,"Height":24.0,"Width":159.0,"BackgroundColor":"#00FFFFFF","Childrens":[{"$type":"SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins","IsTextItem":true,"Font":"Rajdhani","FontWeight":"SemiBold","FontSize":24.0,"Text":"+000","TextColor":"#FF808080","HorizontalAlignment":2,"VerticalAlignment":1,"BackgroundColor":"#00FFFFFF","Height":20.0,"Left":95.0,"Top":2.0,"Visible":true,"Width":64.0,"Name":"GAINS","Bindings":{"Text":{"FormatString":"0","Formula":{"Expression":"isnull([IRacingExtraProperties.iRacing_Player_iRGainEstimation],'')"},"Mode":2,"TargetPropertyName":"Text"}}},{"$type":"SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins","IsTextItem":true,"Font":"Rajdhani","FontWeight":"Bold","TextPadding":{"PaddingTop":1,"PaddingLeft":6},"FontSize":22.0,"Text":"! 255","TextColor":"#FF000000","HorizontalAlignment":0,"VerticalAlignment":1,"BackgroundColor":"#FFFFFF00","BorderStyle":{"RadiusTopLeft":4,"RadiusTopRight":4,"RadiusBottomLeft":4,"RadiusBottomRight":4},"Height":24.0,"Left":0.0,"Top":0.0,"Visible":true,"Width":60.0,"Name":"INCIDENTS","Bindings":{"Text":{"FormatString":"","Formula":{"Interpreter":1,"Expression":"var incs = $prop('DataCorePlugin.GameRawData.SessionData.DriverInfo.DriverIncidentCount');\r\nvar incslimit =  $prop('DataCorePlugin.GameRawData.SessionData.WeekendInfo.WeekendOptions.IncidentLimit');\r\n\r\nif(incs != null){\r\n\tif(incslimit == \"unlimited\"){\r\n\t\treturn '! ' + incs + 'x'\r\n\t} else {\r\n\t\treturn incs + '/'+ incslimit + 'x'\r\n\t}\r\n}else{\r\n\treturn ''\r\n}"},"Mode":2,"TargetPropertyName":"Text"},"Width":{"Formula":{"Interpreter":1,"Expression":"if($prop('DataCorePlugin.GameRawData.SessionData.DriverInfo.DriverIncidentCount')!=null){\r\nvar incs = isnull($prop('DataCorePlugin.GameRawData.SessionData.DriverInfo.DriverIncidentCount'),'');\r\nvar incslimit = isnull($prop('DataCorePlugin.GameRawData.SessionData.WeekendInfo.WeekendOptions.IncidentLimit'),'')\r\nvar incchars = incs.length\r\nvar inclimitchars = incslimit.length\r\nvar totalwidth = 20\r\nvar charwidth = 14\r\n\r\nif(incs != null){\r\n\tif(incslimit == \"unlimited\"){\r\n\t\ttotalwidth = (incchars*charwidth)+(2*charwidth)\r\n\t} else {\r\n\t\ttotalwidth = (incchars*charwidth)+(3*charwidth)\r\n\t}\r\n}\r\nreturn totalwidth\r\n}else {\r\n\treturn ''\r\n}"},"Mode":2,"TargetPropertyName":"Width"},"BackgroundColor":{"Formula":{"Interpreter":1,"Expression":"var incs = $prop('DataCorePlugin.GameRawData.SessionData.DriverInfo.DriverIncidentCount');\r\nvar incslimit =  $prop('DataCorePlugin.GameRawData.SessionData.WeekendInfo.WeekendOptions.IncidentLimit');\r\nif(incs != null){\r\n\tif(incslimit == \"unlimited\"){\r\n\t\treturn 0\r\n\t} else {\r\n\t\treturn (100 * incs) / incslimit;\r\n\t}\r\n}"},"StartColor":"#FFD3D3D3","EnableMiddleColor":true,"MiddleColor":"#FFFFFF00","MiddleColorValue":20.0,"EndColor":"#FFFF0000","StartColorValue":30.0,"EndColorValue":70.0,"Mode":4,"TargetPropertyName":"BackgroundColor"},"TextColor":{"Formula":{"Interpreter":1,"Expression":"var incs = $prop('DataCorePlugin.GameRawData.SessionData.DriverInfo.DriverIncidentCount');\r\nvar incslimit =  $prop('DataCorePlugin.GameRawData.SessionData.WeekendInfo.WeekendOptions.IncidentLimit');\r\nvar incspercent = 0\r\n\r\n\r\nif(incs != null){\r\n\tif(incslimit == \"unlimited\"){\r\n\t\treturn '#000000'\r\n\t} else {\r\n\t\tincspercent = (100 * incs) / incslimit;\r\n\t\tif (incspercent<60){\r\n\t\t\treturn '#000000'\r\n\t\t} else {\r\n\t\t\treturn '#FFFFFF'\r\n\t\t}\r\n\t}\r\n}"},"Mode":2,"TargetPropertyName":"TextColor"}}}],"Group":true,"Visible":true,"Name":"iratings","Bindings":{"Visible":{"Formula":{"Expression":"if ([DataCorePlugin.CurrentGame]=='IRacing', 1, 0)"},"Mode":2,"TargetPropertyName":"Visible"}}}]}],"SnapToGrid":false,"HideLabels":true,"ShowForeground":true,"ForegroundOpacity":100.0,"ShowBackground":true,"BackgroundOpacity":100.0,"ShowBoundingRectangles":false,"GridSize":10,"Images":[],"Metadata":{"ScreenCount":1.0,"InGameScreensIndexs":[0],"IdleScreensIndexs":[0],"MainPreviewIndex":0,"IsOverlay":false,"Width":176.0,"Height":24.0,"OverlaySizeWarning":false,"MetadataVersion":2.0,"EnableOnDashboardMessaging":true,"PitScreensIndexs":[]},"ShowOnScreenControls":true,"IsOverlay":false,"EnableClickThroughOverlay":true,"EnableOnDashboardMessaging":true}
+{
+  "BackgroundColor": "#FF000000",
+  "BackgroundOpacity": 100.0,
+  "BaseHeight": 24,
+  "BaseWidth": 176,
+  "DashboardDebugManager": {
+    "LastPlacement": "208,208,176,24",
+    "Maximized": false
+  },
+  "EnableClickThroughOverlay": true,
+  "EnableOnDashboardMessaging": true,
+  "ForegroundOpacity": 100.0,
+  "GridSize": 10,
+  "HideLabels": true,
+  "Id": "fd644243-053f-466e-aaf7-994a18143dc4",
+  "Images": [],
+  "IsOverlay": false,
+  "Metadata": {
+    "EnableOnDashboardMessaging": true,
+    "Height": 24.0,
+    "IdleScreensIndexs": [
+      0
+    ],
+    "InGameScreensIndexs": [
+      0
+    ],
+    "IsOverlay": false,
+    "MainPreviewIndex": 0,
+    "MetadataVersion": 2.0,
+    "OverlaySizeWarning": false,
+    "PitScreensIndexs": [],
+    "ScreenCount": 1.0,
+    "Width": 176.0
+  },
+  "Screens": [
+    {
+      "AllowOverlays": true,
+      "BackgroundColor": "#FF000000",
+      "IdleScreen": true,
+      "InGameScreen": true,
+      "IsBackgroundLayer": false,
+      "IsForegroundLayer": false,
+      "IsOverlayLayer": false,
+      "Items": [
+        {
+          "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.Layer, SimHub.Plugins",
+          "BackgroundColor": "#00FFFFFF",
+          "Bindings": {
+            "Visible": {
+              "Formula": {
+                "Expression": "if ([DataCorePlugin.CurrentGame]=='IRacing', 1, 0)"
+              },
+              "Mode": 2,
+              "TargetPropertyName": "Visible"
+            }
+          },
+          "Childrens": [
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+              "BackgroundColor": "#00FFFFFF",
+              "Bindings": {
+                "Text": {
+                  "FormatString": "0",
+                  "Formula": {
+                    "Expression": "isnull([IRacingExtraProperties.iRacing_Player_iRGainEstimation],'')"
+                  },
+                  "Mode": 2,
+                  "TargetPropertyName": "Text"
+                }
+              },
+              "Font": "Rajdhani",
+              "FontSize": 24.0,
+              "FontWeight": "SemiBold",
+              "Height": 20.0,
+              "HorizontalAlignment": 2,
+              "IsTextItem": true,
+              "Left": 110.0,
+              "Name": "GAINS",
+              "Text": "+000",
+              "TextColor": "#FF808080",
+              "Top": 2.0,
+              "VerticalAlignment": 1,
+              "Visible": true,
+              "Width": 64.0
+            },
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+              "BackgroundColor": "#FFFFFF00",
+              "Bindings": {
+                "BackgroundColor": {
+                  "EnableMiddleColor": true,
+                  "EndColor": "#FFFF0000",
+                  "EndColorValue": 70.0,
+                  "Formula": {
+                    "Expression": "var incs = $prop('DataCorePlugin.GameRawData.SessionData.DriverInfo.DriverIncidentCount');\r\nvar incslimit =  $prop('DataCorePlugin.GameRawData.SessionData.WeekendInfo.WeekendOptions.IncidentLimit');\r\nif(incs != null){\r\n\tif(incslimit == \"unlimited\"){\r\n\t\treturn 0\r\n\t} else {\r\n\t\treturn (100 * incs) / incslimit;\r\n\t}\r\n}",
+                    "Interpreter": 1
+                  },
+                  "MiddleColor": "#FFFFFF00",
+                  "MiddleColorValue": 20.0,
+                  "Mode": 4,
+                  "StartColor": "#FFD3D3D3",
+                  "StartColorValue": 30.0,
+                  "TargetPropertyName": "BackgroundColor"
+                },
+                "Text": {
+                  "FormatString": "",
+                  "Formula": {
+                    "Expression": "var incs = $prop('DataCorePlugin.GameRawData.SessionData.DriverInfo.DriverIncidentCount');\r\nvar incslimit =  $prop('DataCorePlugin.GameRawData.SessionData.WeekendInfo.WeekendOptions.IncidentLimit');\r\n\r\nif(incs != null){\r\n\tif(incslimit == \"unlimited\"){\r\n\t\treturn '! ' + incs + 'x'\r\n\t} else {\r\n\t\treturn incs + '/'+ incslimit + 'x'\r\n\t}\r\n}else{\r\n\treturn ''\r\n}",
+                    "Interpreter": 1
+                  },
+                  "Mode": 2,
+                  "TargetPropertyName": "Text"
+                },
+                "TextColor": {
+                  "Formula": {
+                    "Expression": "var incs = $prop('DataCorePlugin.GameRawData.SessionData.DriverInfo.DriverIncidentCount');\r\nvar incslimit =  $prop('DataCorePlugin.GameRawData.SessionData.WeekendInfo.WeekendOptions.IncidentLimit');\r\nvar incspercent = 0\r\n\r\n\r\nif(incs != null){\r\n\tif(incslimit == \"unlimited\"){\r\n\t\treturn '#000000'\r\n\t} else {\r\n\t\tincspercent = (100 * incs) / incslimit;\r\n\t\tif (incspercent<60){\r\n\t\t\treturn '#000000'\r\n\t\t} else {\r\n\t\t\treturn '#FFFFFF'\r\n\t\t}\r\n\t}\r\n}",
+                    "Interpreter": 1
+                  },
+                  "Mode": 2,
+                  "TargetPropertyName": "TextColor"
+                },
+                "Width": {
+                  "Formula": {
+                    "Expression": "if($prop('DataCorePlugin.GameRawData.SessionData.DriverInfo.DriverIncidentCount')!=null){\r\nvar incs = isnull($prop('DataCorePlugin.GameRawData.SessionData.DriverInfo.DriverIncidentCount'),'');\r\nvar incslimit = isnull($prop('DataCorePlugin.GameRawData.SessionData.WeekendInfo.WeekendOptions.IncidentLimit'),'')\r\nvar incchars = incs.length\r\nvar inclimitchars = incslimit.length\r\nvar totalwidth = 20\r\nvar charwidth = 14\r\n\r\nif(incs != null){\r\n\tif(incslimit == \"unlimited\"){\r\n\t\ttotalwidth = (incchars*charwidth)+(2*charwidth)\r\n\t} else {\r\n\t\ttotalwidth = (incchars*charwidth)+(3*charwidth)\r\n\t}\r\n}\r\nreturn totalwidth\r\n}else {\r\n\treturn ''\r\n}",
+                    "Interpreter": 1
+                  },
+                  "Mode": 2,
+                  "TargetPropertyName": "Width"
+                }
+              },
+              "BorderStyle": {
+                "RadiusBottomLeft": 4,
+                "RadiusBottomRight": 4,
+                "RadiusTopLeft": 4,
+                "RadiusTopRight": 4
+              },
+              "Font": "Rajdhani",
+              "FontSize": 22.0,
+              "FontWeight": "Bold",
+              "Height": 24.0,
+              "HorizontalAlignment": 0,
+              "IsTextItem": true,
+              "Left": 0.0,
+              "Name": "INCIDENTS",
+              "Text": "! 255",
+              "TextColor": "#FF000000",
+              "TextPadding": {
+                "PaddingLeft": 6,
+                "PaddingTop": 1
+              },
+              "Top": 0.0,
+              "VerticalAlignment": 1,
+              "Visible": true,
+              "Width": 60.0
+            },
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+              "BackgroundColor": "#FF000000",
+              "Bindings": {
+                "Text": {
+                  "FormatString": "0",
+                  "Formula": {
+                    "Expression": "[IRacingExtraProperties.iRacing_Class_SoFk]"
+                  },
+                  "Mode": 2,
+                  "TargetPropertyName": "Text"
+                }
+              },
+              "BlinkDelay": 5000.0,
+              "BlinkEnabled": true,
+              "Font": "Rajdhani",
+              "FontSize": 24.0,
+              "FontWeight": "SemiBold",
+              "Height": 20.0,
+              "HorizontalAlignment": 2,
+              "IsTextItem": true,
+              "Left": 110.0,
+              "Name": "SOF",
+              "Text": "+000",
+              "TextColor": "#FF808080",
+              "TextWrapping": 0,
+              "Top": 2.0,
+              "VerticalAlignment": 1,
+              "Visible": true,
+              "Width": 64.0
+            }
+          ],
+          "Group": true,
+          "Height": 24.0,
+          "Left": 0.0,
+          "Name": "iratings",
+          "Top": 0.0,
+          "Visible": true,
+          "Width": 174.0
+        }
+      ],
+      "Name": "Screen",
+      "OverlayMaxDuration": 0,
+      "OverlayMinDuration": 0,
+      "OverlayTriggerExpression": {
+        "Expression": ""
+      },
+      "PitScreen": false,
+      "ScreenEnabledExpression": {
+        "Expression": ""
+      },
+      "ScreenId": "65c1196e-d3d1-4b04-bfa7-578ed8678c15"
+    }
+  ],
+  "ShowBackground": true,
+  "ShowBoundingRectangles": false,
+  "ShowForeground": true,
+  "ShowOnScreenControls": true,
+  "SnapToGrid": false,
+  "Version": 2
+}

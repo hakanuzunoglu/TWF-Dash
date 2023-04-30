@@ -1,1 +1,848 @@
-{"DashboardDebugManager":{"LastPlacement":"156,156,455,90","Maximized":false},"Version":2,"Id":"bf7a652a-d9b9-45bd-bd2c-b2daba28bc98","BaseHeight":90,"BaseWidth":455,"BackgroundColor":"#FF000000","Screens":[{"Name":"Screen","InGameScreen":true,"IdleScreen":true,"PitScreen":false,"ScreenId":"020eaf1f-0358-4ff5-95ba-b89b363d19c9","AllowOverlays":true,"IsForegroundLayer":false,"IsOverlayLayer":false,"OverlayTriggerExpression":{"Expression":""},"ScreenEnabledExpression":{"Expression":""},"OverlayMaxDuration":0,"OverlayMinDuration":0,"IsBackgroundLayer":false,"BackgroundColor":"#FF000000","Items":[{"$type":"SimHub.Plugins.OutputPlugins.GraphicalDash.Models.Layer, SimHub.Plugins","Top":-1.0000000000000142,"Left":0.0,"Height":66.000000000000014,"Width":455.5,"BackgroundColor":"#00FFFFFF","Childrens":[{"$type":"SimHub.Plugins.OutputPlugins.GraphicalDash.Models.ImageItem, SimHub.Plugins","Image":"deltabg","AutoSize":false,"BackgroundColor":"#00FFFFFF","Height":65.0,"Left":0.5,"Top":0.0,"Visible":true,"Width":455.0,"Name":"bg","Bindings":{"Image":{"Formula":{"Interpreter":1,"Expression":"return twf_get_ui_bg(\"delta\")"},"Mode":2,"TargetPropertyName":"Image"}}},{"$type":"SimHub.Plugins.OutputPlugins.GraphicalDash.Models.LinearGaugeItem, SimHub.Plugins","IsLinearGauge":true,"GaugeOrientation":0,"GaugeAlignment":0,"AutoSize":false,"GaugeImage":"delta_green","GaugeColor":"#00FFFFFF","AlternateGaugeColor":"#FF008000","UseAlternateStyle":false,"Minimum":0.0,"Maximum":-0.3,"Value":-0.07,"Steps":0.0,"PAW":53.0,"BackgroundColor":"#00FFFFFF","Height":65.0,"Left":228.0,"Top":-1.0,"Visible":true,"Width":227.0,"Name":"LinearGaugeItem1","Bindings":{"Value":{"Formula":{"Expression":"[PersistantTrackerPlugin.SessionBestLiveDeltaProgressSeconds]+(-0.08)"},"Mode":2,"TargetPropertyName":"Value"},"Visible":{"Formula":{"Expression":"if(isnull([PersistantTrackerPlugin.SessionBestLiveDeltaProgressSeconds]), 0,\r\nif([IsInPitLane]=1, 0,\r\nif([DataCorePlugin.CurrentGame] == 'AssettoCorsaCompetizione' and [CompletedLaps]<2, 0,\r\nif(timespantoseconds([BestLapTime])=0, 0, 1))))"},"Mode":2,"TargetPropertyName":"Visible"}}},{"$type":"SimHub.Plugins.OutputPlugins.GraphicalDash.Models.LinearGaugeItem, SimHub.Plugins","IsLinearGauge":true,"GaugeOrientation":0,"GaugeAlignment":0,"AutoSize":false,"GaugeImage":"delta_red","GaugeColor":"#00FFFFFF","AlternateGaugeColor":"#FF008000","UseAlternateStyle":false,"Minimum":0.0,"Maximum":-0.3,"Value":-1.0,"Steps":0.0,"PAW":227.0,"Rotation":180.0,"BackgroundColor":"#00FFFFFF","Height":65.0,"Left":0.0,"Top":-1.0,"Visible":true,"Width":227.0,"Name":"LinearGaugeItem01","Bindings":{"Value":{"Formula":{"Expression":"([PersistantTrackerPlugin.SessionBestLiveDeltaProgressSeconds]+0.085)*-1"},"Mode":2,"TargetPropertyName":"Value"},"Visible":{"Formula":{"Expression":"if(isnull([PersistantTrackerPlugin.SessionBestLiveDeltaProgressSeconds]), 0,\r\nif([IsInPitLane]=1, 0,\r\nif([DataCorePlugin.CurrentGame] == 'AssettoCorsaCompetizione' and [CompletedLaps]<2, 0,\r\nif(timespantoseconds([BestLapTime])=0, 0, 1))))"},"Mode":2,"TargetPropertyName":"Visible"}}},{"$type":"SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins","IsTextItem":true,"Font":"Rajdhani","FontWeight":"Bold","FontSize":32.0,"Text":"-1.234","TextColor":"#FFFFFFFF","HorizontalAlignment":2,"VerticalAlignment":1,"CharWidth":16.0,"SpecialCharsWidth":5.0,"BackgroundColor":"#00FFFFFF","Height":32.0,"Left":320.0,"Top":20.0,"Visible":true,"Width":110.0,"Name":"DeltaSessionBestValue2","Bindings":{"Text":{"FormatString":"0.00","Formula":{"Expression":"if(isnull([PersistantTrackerPlugin.SessionBestLiveDeltaProgressSeconds]), 'N/A',\r\nif([IsInPitLane]=1, 'No REF',\r\nif([DataCorePlugin.CurrentGame] == 'AssettoCorsaCompetizione' and [CompletedLaps]<2, 'No REF',\r\nif(timespantoseconds([BestLapTime])=0, 'No REF',\r\nif([PersistantTrackerPlugin.SessionBestLiveDeltaProgressSeconds]<= -2.00, '-2.00',\r\nif([PersistantTrackerPlugin.SessionBestLiveDeltaProgressSeconds]>= 2.00, '+2.00',\r\nif([PersistantTrackerPlugin.SessionBestLiveDeltaProgressSeconds]>0, '+', '') + format([PersistantTrackerPlugin.SessionBestLiveDeltaProgressSeconds], '0.00')))))))"},"Mode":2,"TargetPropertyName":"Text"},"Visible":{"Formula":{"Expression":"if([PersistantTrackerPlugin.SessionBestLiveDeltaProgressSeconds]>= 0, 0,\r\nif([IsInPitLane]=1,'0',\r\nif(isnull([PersistantTrackerPlugin.SessionBestLiveDeltaProgressSeconds]), 0,\r\nif([IsInPitLane]=1, 0,\r\nif([DataCorePlugin.CurrentGame] == 'AssettoCorsaCompetizione' and [CompletedLaps]<2, 0,\r\nif(timespantoseconds([BestLapTime])=0, 0, 1))))))"},"Mode":2,"TargetPropertyName":"Visible"}}},{"$type":"SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins","IsTextItem":true,"Font":"Rajdhani","FontWeight":"Bold","FontSize":32.0,"Text":"-1.234","TextColor":"#FFFFFFFF","HorizontalAlignment":0,"VerticalAlignment":1,"CharWidth":16.0,"SpecialCharsWidth":5.0,"BackgroundColor":"#00FFFFFF","Height":32.0,"Left":28.0,"Top":20.0,"Visible":true,"Width":110.0,"Name":"DeltaSessionBestValue1","Bindings":{"Text":{"FormatString":"0.000","Formula":{"Expression":"if(isnull([PersistantTrackerPlugin.SessionBestLiveDeltaProgressSeconds]), 'N/A',\r\nif([IsInPitLane]=1, 'No REF',\r\nif([DataCorePlugin.CurrentGame] == 'AssettoCorsaCompetizione' and [CompletedLaps]<2, 'No REF',\r\nif(timespantoseconds([BestLapTime])=0, 'No REF',\r\nif([PersistantTrackerPlugin.SessionBestLiveDeltaProgressSeconds]<= -2.00, '-2.00',\r\nif([PersistantTrackerPlugin.SessionBestLiveDeltaProgressSeconds]>= 2.00, '+2.00',\r\nif([PersistantTrackerPlugin.SessionBestLiveDeltaProgressSeconds]>0, '+', '') + format([PersistantTrackerPlugin.SessionBestLiveDeltaProgressSeconds], '0.00')))))))"},"Mode":2,"TargetPropertyName":"Text"},"Visible":{"Formula":{"Expression":"if([PersistantTrackerPlugin.SessionBestLiveDeltaProgressSeconds]<= 0, 0,\r\nif(isnull([PersistantTrackerPlugin.SessionBestLiveDeltaProgressSeconds]), 0,\r\nif([IsInPitLane]=1, 0,\r\nif([DataCorePlugin.CurrentGame] == 'AssettoCorsaCompetizione' and [CompletedLaps]<2, 0,\r\nif(timespantoseconds([BestLapTime])=0, 0, 1)))))"},"Mode":2,"TargetPropertyName":"Visible"}}}],"Group":true,"Visible":true,"Name":"progress","Bindings":{"Visible":{"Formula":{"Interpreter":1,"Expression":"return twf_read_setting(\"delta_progress\", 1)"},"Mode":2,"TargetPropertyName":"Visible"}}},{"$type":"SimHub.Plugins.OutputPlugins.GraphicalDash.Models.ImageItem, SimHub.Plugins","Image":"deltalapbg","AutoSize":false,"BackgroundColor":"#00FFFFFF","Height":90.0,"Left":134.0,"Top":0.0,"Visible":true,"Width":188.0,"Name":"ImageItem","Bindings":{"Image":{"Formula":{"Interpreter":1,"Expression":"return twf_get_ui_bg(\"deltalap\")"},"Mode":2,"TargetPropertyName":"Image"}}},{"$type":"SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins","IsTextItem":true,"Font":"Rajdhani","FontWeight":"SemiBold","FontSize":22.0,"Text":"SESSION BEST","TextColor":"#FFFFFFFF","HorizontalAlignment":1,"VerticalAlignment":1,"BackgroundColor":"#00FFFFFF","BorderStyle":{"RadiusTopLeft":6,"RadiusTopRight":6,"RadiusBottomLeft":6,"RadiusBottomRight":6},"Height":18.0,"Left":154.0,"Top":12.0,"Visible":true,"Width":146.0,"Name":"DELTA_LABEL"},{"$type":"SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins","IsTextItem":true,"Font":"Rajdhani","FontWeight":"Bold","FontSize":38.0,"Text":"22.14","TextColor":"#FFFFFFFF","HorizontalAlignment":1,"VerticalAlignment":1,"UseMonospacedText":true,"CharWidth":20.0,"SpecialCharsWidth":7.0,"SpecialChars":".,:;.","BackgroundColor":"#00FFFFFF","Height":40.0,"Left":163.0,"Top":31.0,"Visible":true,"Width":130.0,"Name":"DELTA_VALUE","Bindings":{"Text":{"FormatString":"0.00","Formula":{"Interpreter":1,"Expression":"return twf_get_session_best_delta()"},"Mode":2,"TargetPropertyName":"Text"},"TextColor":{"Formula":{"Interpreter":1,"Expression":"return twf_get_session_best_delta(\"color\")"},"StartColor":"#FF00FF00","EnableMiddleColor":true,"MiddleColor":"#FFFFFFFF","MiddleColorValue":0.0,"EndColor":"#FFFF0000","StartColorValue":-0.001,"EndColorValue":0.001,"Mode":4,"TargetPropertyName":"TextColor"}}}]},{"Name":"Screen","InGameScreen":true,"IdleScreen":true,"PitScreen":false,"ScreenId":"453733d1-80e9-4a45-8029-00a93909e48a","AllowOverlays":true,"IsForegroundLayer":false,"IsOverlayLayer":false,"OverlayTriggerExpression":{"Expression":""},"ScreenEnabledExpression":{"Expression":""},"OverlayMaxDuration":0,"OverlayMinDuration":0,"IsBackgroundLayer":false,"BackgroundColor":"#FF000000","Items":[{"$type":"SimHub.Plugins.OutputPlugins.GraphicalDash.Models.Layer, SimHub.Plugins","Top":-1.0000000000000142,"Left":0.0,"Height":66.000000000000014,"Width":455.5,"BackgroundColor":"#00FFFFFF","Childrens":[{"$type":"SimHub.Plugins.OutputPlugins.GraphicalDash.Models.ImageItem, SimHub.Plugins","Image":"deltabg","AutoSize":false,"BackgroundColor":"#00FFFFFF","Height":65.0,"Left":0.5,"Top":0.0,"Visible":true,"Width":455.0,"Name":"bg2","Bindings":{"Image":{"Formula":{"Interpreter":1,"Expression":"return twf_get_ui_bg(\"delta\")"},"Mode":2,"TargetPropertyName":"Image"}}},{"$type":"SimHub.Plugins.OutputPlugins.GraphicalDash.Models.LinearGaugeItem, SimHub.Plugins","IsLinearGauge":true,"GaugeOrientation":0,"GaugeAlignment":0,"AutoSize":false,"GaugeImage":"delta_green","GaugeColor":"#00FFFFFF","AlternateGaugeColor":"#FF008000","UseAlternateStyle":false,"Minimum":0.0,"Maximum":-0.3,"Value":-0.07,"Steps":0.0,"PAW":53.0,"BackgroundColor":"#00FFFFFF","Height":65.0,"Left":228.0,"Top":-1.0,"Visible":true,"Width":227.0,"Name":"LinearGaugeItem1","Bindings":{"Value":{"Formula":{"Expression":"[PersistantTrackerPlugin.AllTimeBestLiveDeltaProgressSeconds]+(-0.09)"},"Mode":2,"TargetPropertyName":"Value"},"Visible":{"Formula":{"Expression":"if(isnull([PersistantTrackerPlugin.AllTimeBestLiveDeltaProgressSeconds]), 0,\r\nif([IsInPitLane]=1, 0,\r\nif([DataCorePlugin.CurrentGame] == 'AssettoCorsaCompetizione' and [CompletedLaps]<2, 0,\r\nif(timespantoseconds([BestLapTime])=0, 0, 1))))"},"Mode":2,"TargetPropertyName":"Visible"}}},{"$type":"SimHub.Plugins.OutputPlugins.GraphicalDash.Models.LinearGaugeItem, SimHub.Plugins","IsLinearGauge":true,"GaugeOrientation":0,"GaugeAlignment":0,"AutoSize":false,"GaugeImage":"delta_red","GaugeColor":"#00FFFFFF","AlternateGaugeColor":"#FF008000","UseAlternateStyle":false,"Minimum":0.0,"Maximum":-0.3,"Value":-0.24,"Steps":0.0,"PAW":182.0,"Rotation":180.0,"BackgroundColor":"#00FFFFFF","Height":65.0,"Left":0.0,"Top":-1.0,"Visible":true,"Width":227.0,"Name":"LinearGaugeItem01","Bindings":{"Value":{"Formula":{"Expression":"([PersistantTrackerPlugin.AllTimeBestLiveDeltaProgressSeconds]+0.085)*-1"},"Mode":2,"TargetPropertyName":"Value"},"Visible":{"Formula":{"Expression":"if(isnull([PersistantTrackerPlugin.AllTimeBestLiveDeltaProgressSeconds]), 0,\r\nif([IsInPitLane]=1, 0,\r\nif([DataCorePlugin.CurrentGame] == 'AssettoCorsaCompetizione' and [CompletedLaps]<2, 0,\r\nif(timespantoseconds([BestLapTime])=0, 0, 1))))"},"Mode":2,"TargetPropertyName":"Visible"}}},{"$type":"SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins","IsTextItem":true,"Font":"Rajdhani","FontWeight":"Bold","FontSize":32.0,"Text":"-1.234","TextColor":"#FFFFFFFF","HorizontalAlignment":2,"VerticalAlignment":1,"CharWidth":16.0,"SpecialCharsWidth":5.0,"BackgroundColor":"#00FFFFFF","Height":32.0,"Left":320.0,"Top":20.0,"Visible":true,"Width":110.0,"Name":"DeltaSessionBestValue2","Bindings":{"Text":{"FormatString":"0.00","Formula":{"Expression":"if(isnull([PersistantTrackerPlugin.AllTimeBestLiveDeltaProgressSeconds]), 'N/A',\r\nif([IsInPitLane]=1, 'No REF',\r\nif([DataCorePlugin.CurrentGame] == 'AssettoCorsaCompetizione' and [CompletedLaps]<2, 'No REF',\r\nif(timespantoseconds([BestLapTime])=0, 'No REF',\r\nif([PersistantTrackerPlugin.AllTimeBestLiveDeltaProgressSeconds]<= -2.00, '-2.00',\r\nif([PersistantTrackerPlugin.AllTimeBestLiveDeltaProgressSeconds]>= 2.00, '+2.00',\r\nif([PersistantTrackerPlugin.AllTimeBestLiveDeltaProgressSeconds]>0, '+', '') + format([PersistantTrackerPlugin.AllTimeBestLiveDeltaProgressSeconds], '0.00')))))))"},"Mode":2,"TargetPropertyName":"Text"},"Visible":{"Formula":{"Expression":"if([PersistantTrackerPlugin.AllTimeBestLiveDeltaProgressSeconds]>= 0, 0,\r\nif([IsInPitLane]=1,'0',\r\nif(isnull([PersistantTrackerPlugin.AllTimeBestLiveDeltaProgressSeconds]), 0,\r\nif([IsInPitLane]=1, 0,\r\nif([DataCorePlugin.CurrentGame] == 'AssettoCorsaCompetizione' and [CompletedLaps]<2, 0,\r\nif(timespantoseconds([BestLapTime])=0, 0, 1))))))"},"Mode":2,"TargetPropertyName":"Visible"}}},{"$type":"SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins","IsTextItem":true,"Font":"Rajdhani","FontWeight":"Bold","FontSize":32.0,"Text":"-1.234","TextColor":"#FFFFFFFF","HorizontalAlignment":0,"VerticalAlignment":1,"CharWidth":16.0,"SpecialCharsWidth":5.0,"BackgroundColor":"#00FFFFFF","Height":32.0,"Left":28.0,"Top":20.0,"Visible":true,"Width":110.0,"Name":"DeltaSessionBestValue1","Bindings":{"Text":{"FormatString":"0.000","Formula":{"Expression":"if(isnull([PersistantTrackerPlugin.AllTimeBestLiveDeltaProgressSeconds]), 'N/A',\r\nif([IsInPitLane]=1, 'No REF',\r\nif([DataCorePlugin.CurrentGame] == 'AssettoCorsaCompetizione' and [CompletedLaps]<2, 'No REF',\r\nif(timespantoseconds([BestLapTime])=0, 'No REF',\r\nif([PersistantTrackerPlugin.AllTimeBestLiveDeltaProgressSeconds]<= -2.00, '-2.00',\r\nif([PersistantTrackerPlugin.AllTimeBestLiveDeltaProgressSeconds]>= 2.00, '+2.00',\r\nif([PersistantTrackerPlugin.AllTimeBestLiveDeltaProgressSeconds]>0, '+', '') + format([PersistantTrackerPlugin.AllTimeBestLiveDeltaProgressSeconds], '0.00')))))))"},"Mode":2,"TargetPropertyName":"Text"},"Visible":{"Formula":{"Expression":"if([PersistantTrackerPlugin.AllTimeBestLiveDeltaProgressSeconds]<= 0, 0,\r\nif(isnull([PersistantTrackerPlugin.AllTimeBestLiveDeltaProgressSeconds]), 0,\r\nif([IsInPitLane]=1, 0,\r\nif([DataCorePlugin.CurrentGame] == 'AssettoCorsaCompetizione' and [CompletedLaps]<2, 0,\r\nif(timespantoseconds([BestLapTime])=0, 0, 1)))))"},"Mode":2,"TargetPropertyName":"Visible"}}}],"Group":true,"Visible":true,"Name":"progress","Bindings":{"Visible":{"Formula":{"Interpreter":1,"Expression":"return twf_read_setting(\"delta_progress\", 1)"},"Mode":2,"TargetPropertyName":"Visible"}}},{"$type":"SimHub.Plugins.OutputPlugins.GraphicalDash.Models.ImageItem, SimHub.Plugins","Image":"deltalapbg","AutoSize":false,"BackgroundColor":"#00FFFFFF","Height":90.0,"Left":134.0,"Top":0.0,"Visible":true,"Width":188.0,"Name":"ImageItem2","Bindings":{"Image":{"Formula":{"Interpreter":1,"Expression":"return twf_get_ui_bg(\"deltalap\")"},"Mode":2,"TargetPropertyName":"Image"}}},{"$type":"SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins","IsTextItem":true,"Font":"Rajdhani","FontWeight":"SemiBold","FontSize":22.0,"Text":"ALL TIME BEST","TextColor":"#FFFFFFFF","HorizontalAlignment":1,"VerticalAlignment":1,"BackgroundColor":"#00FFFFFF","BorderStyle":{"RadiusTopLeft":6,"RadiusTopRight":6,"RadiusBottomLeft":6,"RadiusBottomRight":6},"Height":18.0,"Left":144.0,"Top":12.0,"Visible":true,"Width":166.0,"Name":"DELTA_LABEL"},{"$type":"SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins","IsTextItem":true,"Font":"Rajdhani","FontWeight":"Bold","FontSize":38.0,"Text":"6","TextColor":"#FFFFFFFF","HorizontalAlignment":1,"VerticalAlignment":1,"UseMonospacedText":true,"CharWidth":20.0,"SpecialCharsWidth":7.0,"SpecialChars":".,:;.","BackgroundColor":"#00FFFFFF","Height":40.0,"Left":163.0,"Top":31.0,"Visible":true,"Width":130.0,"Name":"DELTA_VALUE","Bindings":{"Text":{"FormatString":"0.00","Formula":{"Interpreter":1,"Expression":"return twf_get_alltime_best_delta()"},"Mode":2,"TargetPropertyName":"Text"},"TextColor":{"Formula":{"Interpreter":1,"Expression":"return twf_get_alltime_best_delta(\"color\")"},"StartColor":"#FF00FF00","EnableMiddleColor":true,"MiddleColor":"#FFFFFFFF","MiddleColorValue":0.0,"EndColor":"#FFFF0000","StartColorValue":-0.001,"EndColorValue":0.001,"Mode":4,"TargetPropertyName":"TextColor"}}}]},{"Name":"Screen","InGameScreen":true,"IdleScreen":true,"PitScreen":false,"ScreenId":"981e6578-8a97-47a6-80f2-fea11e5dc218","AllowOverlays":true,"IsForegroundLayer":false,"IsOverlayLayer":false,"OverlayTriggerExpression":{"Expression":""},"ScreenEnabledExpression":{"Expression":""},"OverlayMaxDuration":0,"OverlayMinDuration":0,"IsBackgroundLayer":false,"BackgroundColor":"#FF000000","Items":[{"$type":"SimHub.Plugins.OutputPlugins.GraphicalDash.Models.ImageItem, SimHub.Plugins","Image":"deltalapbg","AutoSize":false,"BackgroundColor":"#00FFFFFF","Height":90.0,"Left":134.0,"Top":0.0,"Visible":true,"Width":188.0,"Name":"ImageItem2","Bindings":{"Image":{"Formula":{"Interpreter":1,"Expression":"return twf_get_ui_bg(\"deltalap\")"},"Mode":2,"TargetPropertyName":"Image"}}},{"$type":"SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins","IsTextItem":true,"Font":"Rajdhani","FontWeight":"SemiBold","FontSize":22.0,"Text":"LAST LAP","TextColor":"#FFFFFFFF","HorizontalAlignment":1,"VerticalAlignment":1,"BackgroundColor":"#00FFFFFF","BorderStyle":{"RadiusTopLeft":6,"RadiusTopRight":6,"RadiusBottomLeft":6,"RadiusBottomRight":6},"Height":18.0,"Left":144.0,"Top":12.0,"Visible":true,"Width":166.0,"Name":"DELTA_LABEL"},{"$type":"SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins","IsTextItem":true,"Font":"Rajdhani","FontWeight":"Bold","FontSize":38.0,"Text":"6","TextColor":"#FFFFFFFF","HorizontalAlignment":1,"VerticalAlignment":1,"UseMonospacedText":true,"CharWidth":20.0,"SpecialCharsWidth":7.0,"SpecialChars":".,:;.","BackgroundColor":"#00FFFFFF","Height":40.0,"Left":163.0,"Top":31.0,"Visible":true,"Width":130.0,"Name":"DELTA_VALUE","Bindings":{"Text":{"FormatString":"0.00","Formula":{"Interpreter":1,"Expression":"return twf_get_lastlap_delta()"},"Mode":2,"TargetPropertyName":"Text"},"TextColor":{"Formula":{"Interpreter":1,"Expression":"return twf_get_lastlap_delta(\"color\")"},"StartColor":"#FF00FF00","EnableMiddleColor":true,"MiddleColor":"#FFFFFFFF","MiddleColorValue":0.0,"EndColor":"#FFFF0000","StartColorValue":-0.001,"EndColorValue":0.001,"Mode":4,"TargetPropertyName":"TextColor"}}}]}],"SnapToGrid":false,"HideLabels":true,"ShowForeground":true,"ForegroundOpacity":100.0,"ShowBackground":true,"BackgroundOpacity":100.0,"ShowBoundingRectangles":false,"GridSize":10,"Images":[{"Name":"delta_green","Extension":".png","Modified":false,"Optimized":true,"Width":208,"Height":55,"Length":7109,"MD5":"2a8b8c005c5554f12ffe2dd04a788c46"},{"Name":"delta_red","Extension":".png","Modified":false,"Optimized":true,"Width":278,"Height":73,"Length":6690,"MD5":"bb39c4af349e8aaaed5b2f5c7a7496cf"},{"Name":"deltalapbgblack","Extension":".png","Modified":false,"Optimized":true,"Length":6828,"MD5":"9f4cb7af97cc551ea93cdc8a4b8d8144"},{"Name":"deltabgblack","Extension":".png","Modified":false,"Optimized":true,"Length":13566,"MD5":"6177bafffdb52c77c2eafcd0b7bdb623"},{"Name":"deltalapbg","Extension":".png","Modified":false,"Optimized":true,"Width":262,"Height":110,"Length":9369,"MD5":"60ecf9e378cddf1d6acf8c99227de749"},{"Name":"deltabg","Extension":".png","Modified":false,"Optimized":true,"Width":420,"Height":60,"Length":16665,"MD5":"650afe9998748072a1c67f66cd7ef36a"}],"Metadata":{"ScreenCount":3.0,"InGameScreensIndexs":[0,1,2],"IdleScreensIndexs":[0,1,2],"MainPreviewIndex":0,"IsOverlay":false,"Width":455.0,"Height":90.0,"OverlaySizeWarning":false,"MetadataVersion":2.0,"EnableOnDashboardMessaging":true,"PitScreensIndexs":[]},"ShowOnScreenControls":true,"IsOverlay":false,"EnableClickThroughOverlay":true,"EnableOnDashboardMessaging":true}
+{
+  "BackgroundColor": "#FF000000",
+  "BackgroundOpacity": 100.0,
+  "BaseHeight": 90,
+  "BaseWidth": 455,
+  "DashboardDebugManager": {
+    "LastPlacement": "156,156,455,90",
+    "Maximized": false
+  },
+  "EnableClickThroughOverlay": true,
+  "EnableOnDashboardMessaging": true,
+  "ForegroundOpacity": 100.0,
+  "GridSize": 10,
+  "HideLabels": true,
+  "Id": "321f23a0-837d-49fa-9b23-83ec9438dcff",
+  "Images": [
+    {
+      "Extension": ".png",
+      "Height": 55,
+      "Length": 7109,
+      "MD5": "2a8b8c005c5554f12ffe2dd04a788c46",
+      "Modified": false,
+      "Name": "delta_green",
+      "Optimized": true,
+      "Width": 208
+    },
+    {
+      "Extension": ".png",
+      "Height": 73,
+      "Length": 6690,
+      "MD5": "bb39c4af349e8aaaed5b2f5c7a7496cf",
+      "Modified": false,
+      "Name": "delta_red",
+      "Optimized": true,
+      "Width": 278
+    },
+    {
+      "Extension": ".png",
+      "Length": 6828,
+      "MD5": "9f4cb7af97cc551ea93cdc8a4b8d8144",
+      "Modified": false,
+      "Name": "deltalapbgblack",
+      "Optimized": true
+    },
+    {
+      "Extension": ".png",
+      "Length": 13566,
+      "MD5": "6177bafffdb52c77c2eafcd0b7bdb623",
+      "Modified": false,
+      "Name": "deltabgblack",
+      "Optimized": true
+    },
+    {
+      "Extension": ".png",
+      "Height": 110,
+      "Length": 9369,
+      "MD5": "60ecf9e378cddf1d6acf8c99227de749",
+      "Modified": false,
+      "Name": "deltalapbg",
+      "Optimized": true,
+      "Width": 262
+    },
+    {
+      "Extension": ".png",
+      "Height": 60,
+      "Length": 16665,
+      "MD5": "650afe9998748072a1c67f66cd7ef36a",
+      "Modified": false,
+      "Name": "deltabg",
+      "Optimized": true,
+      "Width": 420
+    }
+  ],
+  "IsOverlay": false,
+  "Metadata": {
+    "EnableOnDashboardMessaging": true,
+    "Height": 90.0,
+    "IdleScreensIndexs": [
+      0,
+      1,
+      2
+    ],
+    "InGameScreensIndexs": [
+      0,
+      1,
+      2
+    ],
+    "IsOverlay": false,
+    "MainPreviewIndex": 0,
+    "MetadataVersion": 2.0,
+    "OverlaySizeWarning": false,
+    "PitScreensIndexs": [],
+    "ScreenCount": 3.0,
+    "Width": 455.0
+  },
+  "Screens": [
+    {
+      "AllowOverlays": true,
+      "BackgroundColor": "#FF000000",
+      "IdleScreen": true,
+      "InGameScreen": true,
+      "IsBackgroundLayer": false,
+      "IsForegroundLayer": false,
+      "IsOverlayLayer": false,
+      "Items": [
+        {
+          "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.Layer, SimHub.Plugins",
+          "BackgroundColor": "#00FFFFFF",
+          "Bindings": {
+            "Visible": {
+              "Formula": {
+                "Expression": "return twf_read_setting(\"delta_progress\", 1)",
+                "Interpreter": 1
+              },
+              "Mode": 2,
+              "TargetPropertyName": "Visible"
+            }
+          },
+          "Childrens": [
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.ImageItem, SimHub.Plugins",
+              "AutoSize": false,
+              "BackgroundColor": "#00FFFFFF",
+              "Bindings": {
+                "Image": {
+                  "Formula": {
+                    "Expression": "return twf_get_ui_bg(\"delta\")",
+                    "Interpreter": 1
+                  },
+                  "Mode": 2,
+                  "TargetPropertyName": "Image"
+                }
+              },
+              "Height": 65.0,
+              "Image": "deltabg",
+              "Left": 0.5,
+              "Name": "bg",
+              "Top": 0.0,
+              "Visible": true,
+              "Width": 455.0
+            },
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.LinearGaugeItem, SimHub.Plugins",
+              "AlternateGaugeColor": "#FF008000",
+              "AutoSize": false,
+              "BackgroundColor": "#00FFFFFF",
+              "Bindings": {
+                "Value": {
+                  "Formula": {
+                    "Expression": "[PersistantTrackerPlugin.SessionBestLiveDeltaProgressSeconds]+(-0.09)"
+                  },
+                  "Mode": 2,
+                  "TargetPropertyName": "Value"
+                },
+                "Visible": {
+                  "Formula": {
+                    "Expression": "if(isnull([PersistantTrackerPlugin.SessionBestLiveDeltaProgressSeconds]), 0,\r\nif([IsInPitLane]=1, 0,\r\nif([DataCorePlugin.CurrentGame] == 'AssettoCorsaCompetizione' and [CompletedLaps]<2, 0,\r\nif(timespantoseconds([BestLapTime])=0, 0, 1))))"
+                  },
+                  "Mode": 2,
+                  "TargetPropertyName": "Visible"
+                }
+              },
+              "GaugeAlignment": 0,
+              "GaugeColor": "#00FFFFFF",
+              "GaugeImage": "delta_green",
+              "GaugeOrientation": 0,
+              "Height": 65.0,
+              "IsLinearGauge": true,
+              "Left": 228.0,
+              "Maximum": -0.3,
+              "Minimum": 0.0,
+              "Name": "LinearGaugeItem1",
+              "PAW": 53.0,
+              "Steps": 0.0,
+              "Top": -1.0,
+              "UseAlternateStyle": false,
+              "Value": -0.07,
+              "Visible": true,
+              "Width": 227.0
+            },
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.LinearGaugeItem, SimHub.Plugins",
+              "AlternateGaugeColor": "#FF008000",
+              "AutoSize": false,
+              "BackgroundColor": "#00FFFFFF",
+              "Bindings": {
+                "Value": {
+                  "Formula": {
+                    "Expression": "([PersistantTrackerPlugin.SessionBestLiveDeltaProgressSeconds]+0.09)*-1"
+                  },
+                  "Mode": 2,
+                  "TargetPropertyName": "Value"
+                },
+                "Visible": {
+                  "Formula": {
+                    "Expression": "if(isnull([PersistantTrackerPlugin.SessionBestLiveDeltaProgressSeconds]), 0,\r\nif([IsInPitLane]=1, 0,\r\nif([DataCorePlugin.CurrentGame] == 'AssettoCorsaCompetizione' and [CompletedLaps]<2, 0,\r\nif(timespantoseconds([BestLapTime])=0, 0, 1))))"
+                  },
+                  "Mode": 2,
+                  "TargetPropertyName": "Visible"
+                }
+              },
+              "GaugeAlignment": 0,
+              "GaugeColor": "#00FFFFFF",
+              "GaugeImage": "delta_red",
+              "GaugeOrientation": 0,
+              "Height": 65.0,
+              "IsLinearGauge": true,
+              "Left": 0.0,
+              "Maximum": -0.3,
+              "Minimum": 0.0,
+              "Name": "LinearGaugeItem01",
+              "PAW": 182.0,
+              "Rotation": 180.0,
+              "Steps": 0.0,
+              "Top": -1.0,
+              "UseAlternateStyle": false,
+              "Value": -0.24,
+              "Visible": true,
+              "Width": 227.0
+            },
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+              "BackgroundColor": "#00FFFFFF",
+              "Bindings": {
+                "Text": {
+                  "FormatString": "0.00",
+                  "Formula": {
+                    "Expression": "if(isnull([PersistantTrackerPlugin.SessionBestLiveDeltaProgressSeconds]), 'N/A',\r\nif([IsInPitLane]=1, 'No REF',\r\nif([DataCorePlugin.CurrentGame] == 'AssettoCorsaCompetizione' and [CompletedLaps]<2, 'No REF',\r\nif(timespantoseconds([BestLapTime])=0, 'No REF',\r\nif([PersistantTrackerPlugin.SessionBestLiveDeltaProgressSeconds]<= -2.00, '-2.00',\r\nif([PersistantTrackerPlugin.SessionBestLiveDeltaProgressSeconds]>= 2.00, '+2.00',\r\nif([PersistantTrackerPlugin.SessionBestLiveDeltaProgressSeconds]>0, '+', '') + format([PersistantTrackerPlugin.SessionBestLiveDeltaProgressSeconds], '0.00')))))))"
+                  },
+                  "Mode": 2,
+                  "TargetPropertyName": "Text"
+                },
+                "Visible": {
+                  "Formula": {
+                    "Expression": "if([PersistantTrackerPlugin.SessionBestLiveDeltaProgressSeconds]>= 0, 0,\r\nif([IsInPitLane]=1,'0',\r\nif(isnull([PersistantTrackerPlugin.SessionBestLiveDeltaProgressSeconds]), 0,\r\nif([IsInPitLane]=1, 0,\r\nif([DataCorePlugin.CurrentGame] == 'AssettoCorsaCompetizione' and [CompletedLaps]<2, 0,\r\nif(timespantoseconds([BestLapTime])=0, 0, 1))))))"
+                  },
+                  "Mode": 2,
+                  "TargetPropertyName": "Visible"
+                }
+              },
+              "CharWidth": 16.0,
+              "Font": "Rajdhani",
+              "FontSize": 32.0,
+              "FontWeight": "Bold",
+              "Height": 32.0,
+              "HorizontalAlignment": 2,
+              "IsTextItem": true,
+              "Left": 320.0,
+              "Name": "DeltaSessionBestValue2",
+              "SpecialCharsWidth": 5.0,
+              "Text": "-1.234",
+              "TextColor": "#FFFFFFFF",
+              "Top": 20.0,
+              "VerticalAlignment": 1,
+              "Visible": true,
+              "Width": 110.0
+            },
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+              "BackgroundColor": "#00FFFFFF",
+              "Bindings": {
+                "Text": {
+                  "FormatString": "0.000",
+                  "Formula": {
+                    "Expression": "if(isnull([PersistantTrackerPlugin.SessionBestLiveDeltaProgressSeconds]), 'N/A',\r\nif([IsInPitLane]=1, 'No REF',\r\nif([DataCorePlugin.CurrentGame] == 'AssettoCorsaCompetizione' and [CompletedLaps]<2, 'No REF',\r\nif(timespantoseconds([BestLapTime])=0, 'No REF',\r\nif([PersistantTrackerPlugin.SessionBestLiveDeltaProgressSeconds]<= -2.00, '-2.00',\r\nif([PersistantTrackerPlugin.SessionBestLiveDeltaProgressSeconds]>= 2.00, '+2.00',\r\nif([PersistantTrackerPlugin.SessionBestLiveDeltaProgressSeconds]>0, '+', '') + format([PersistantTrackerPlugin.SessionBestLiveDeltaProgressSeconds], '0.00')))))))"
+                  },
+                  "Mode": 2,
+                  "TargetPropertyName": "Text"
+                },
+                "Visible": {
+                  "Formula": {
+                    "Expression": "if([PersistantTrackerPlugin.SessionBestLiveDeltaProgressSeconds]<= 0, 0,\r\nif(isnull([PersistantTrackerPlugin.SessionBestLiveDeltaProgressSeconds]), 0,\r\nif([IsInPitLane]=1, 0,\r\nif([DataCorePlugin.CurrentGame] == 'AssettoCorsaCompetizione' and [CompletedLaps]<2, 0,\r\nif(timespantoseconds([BestLapTime])=0, 0, 1)))))"
+                  },
+                  "Mode": 2,
+                  "TargetPropertyName": "Visible"
+                }
+              },
+              "CharWidth": 16.0,
+              "Font": "Rajdhani",
+              "FontSize": 32.0,
+              "FontWeight": "Bold",
+              "Height": 32.0,
+              "HorizontalAlignment": 0,
+              "IsTextItem": true,
+              "Left": 28.0,
+              "Name": "DeltaSessionBestValue1",
+              "SpecialCharsWidth": 5.0,
+              "Text": "-1.234",
+              "TextColor": "#FFFFFFFF",
+              "Top": 20.0,
+              "VerticalAlignment": 1,
+              "Visible": true,
+              "Width": 110.0
+            }
+          ],
+          "Group": true,
+          "Height": 66.00000000000001,
+          "Left": 0.0,
+          "Name": "progress",
+          "Top": -1.0000000000000142,
+          "Visible": true,
+          "Width": 455.5
+        },
+        {
+          "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.ImageItem, SimHub.Plugins",
+          "AutoSize": false,
+          "BackgroundColor": "#00FFFFFF",
+          "Bindings": {
+            "Image": {
+              "Formula": {
+                "Expression": "return twf_get_ui_bg(\"deltalap\")",
+                "Interpreter": 1
+              },
+              "Mode": 2,
+              "TargetPropertyName": "Image"
+            }
+          },
+          "Height": 90.0,
+          "Image": "deltalapbg",
+          "Left": 122.0,
+          "Name": "ImageItem",
+          "Top": 0.0,
+          "Visible": true,
+          "Width": 210.0
+        },
+        {
+          "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+          "BackgroundColor": "#00FFFFFF",
+          "BorderStyle": {
+            "RadiusBottomLeft": 6,
+            "RadiusBottomRight": 6,
+            "RadiusTopLeft": 6,
+            "RadiusTopRight": 6
+          },
+          "Font": "Rajdhani",
+          "FontSize": 22.0,
+          "FontWeight": "SemiBold",
+          "Height": 18.0,
+          "HorizontalAlignment": 1,
+          "IsTextItem": true,
+          "Left": 154.0,
+          "Name": "DELTA_LABEL",
+          "Text": "SESSION BEST",
+          "TextColor": "#FFFFFFFF",
+          "Top": 12.0,
+          "VerticalAlignment": 1,
+          "Visible": true,
+          "Width": 146.0
+        },
+        {
+          "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+          "BackgroundColor": "#00FFFFFF",
+          "Bindings": {
+            "Text": {
+              "FormatString": "0.00",
+              "Formula": {
+                "Expression": "return twf_get_session_best_delta()",
+                "Interpreter": 1
+              },
+              "Mode": 2,
+              "TargetPropertyName": "Text"
+            },
+            "TextColor": {
+              "EnableMiddleColor": true,
+              "EndColor": "#FFFF0000",
+              "EndColorValue": 0.001,
+              "Formula": {
+                "Expression": "return twf_get_session_best_delta(\"color\")",
+                "Interpreter": 1
+              },
+              "MiddleColor": "#FFFFFFFF",
+              "MiddleColorValue": 0.0,
+              "Mode": 4,
+              "StartColor": "#FF00FF00",
+              "StartColorValue": -0.001,
+              "TargetPropertyName": "TextColor"
+            }
+          },
+          "CharWidth": 20.0,
+          "Font": "Rajdhani",
+          "FontSize": 38.0,
+          "FontWeight": "Bold",
+          "Height": 40.0,
+          "HorizontalAlignment": 1,
+          "IsTextItem": true,
+          "Left": 152.0,
+          "Name": "DELTA_VALUE",
+          "SpecialChars": ".,:;.",
+          "SpecialCharsWidth": 7.0,
+          "Text": "22.14",
+          "TextColor": "#FFFFFFFF",
+          "Top": 31.0,
+          "UseMonospacedText": true,
+          "VerticalAlignment": 1,
+          "Visible": true,
+          "Width": 150.0
+        }
+      ],
+      "Name": "Screen",
+      "OverlayMaxDuration": 0,
+      "OverlayMinDuration": 0,
+      "OverlayTriggerExpression": {
+        "Expression": ""
+      },
+      "PitScreen": false,
+      "ScreenEnabledExpression": {
+        "Expression": ""
+      },
+      "ScreenId": "020eaf1f-0358-4ff5-95ba-b89b363d19c9"
+    },
+    {
+      "AllowOverlays": true,
+      "BackgroundColor": "#FF000000",
+      "IdleScreen": true,
+      "InGameScreen": true,
+      "IsBackgroundLayer": false,
+      "IsForegroundLayer": false,
+      "IsOverlayLayer": false,
+      "Items": [
+        {
+          "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.Layer, SimHub.Plugins",
+          "BackgroundColor": "#00FFFFFF",
+          "Bindings": {
+            "Visible": {
+              "Formula": {
+                "Expression": "return twf_read_setting(\"delta_progress\", 1)",
+                "Interpreter": 1
+              },
+              "Mode": 2,
+              "TargetPropertyName": "Visible"
+            }
+          },
+          "Childrens": [
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.ImageItem, SimHub.Plugins",
+              "AutoSize": false,
+              "BackgroundColor": "#00FFFFFF",
+              "Bindings": {
+                "Image": {
+                  "Formula": {
+                    "Expression": "return twf_get_ui_bg(\"delta\")",
+                    "Interpreter": 1
+                  },
+                  "Mode": 2,
+                  "TargetPropertyName": "Image"
+                }
+              },
+              "Height": 65.0,
+              "Image": "deltabg",
+              "Left": 0.5,
+              "Name": "bg2",
+              "Top": 0.0,
+              "Visible": true,
+              "Width": 455.0
+            },
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.LinearGaugeItem, SimHub.Plugins",
+              "AlternateGaugeColor": "#FF008000",
+              "AutoSize": false,
+              "BackgroundColor": "#00FFFFFF",
+              "Bindings": {
+                "Value": {
+                  "Formula": {
+                    "Expression": "[PersistantTrackerPlugin.AllTimeBestLiveDeltaProgressSeconds]+(-0.09)"
+                  },
+                  "Mode": 2,
+                  "TargetPropertyName": "Value"
+                },
+                "Visible": {
+                  "Formula": {
+                    "Expression": "if(isnull([PersistantTrackerPlugin.AllTimeBestLiveDeltaProgressSeconds]), 0,\r\nif([IsInPitLane]=1, 0,\r\nif([DataCorePlugin.CurrentGame] == 'AssettoCorsaCompetizione' and [CompletedLaps]<2, 0,\r\nif(timespantoseconds([BestLapTime])=0, 0, 1))))"
+                  },
+                  "Mode": 2,
+                  "TargetPropertyName": "Visible"
+                }
+              },
+              "GaugeAlignment": 0,
+              "GaugeColor": "#00FFFFFF",
+              "GaugeImage": "delta_green",
+              "GaugeOrientation": 0,
+              "Height": 65.0,
+              "IsLinearGauge": true,
+              "Left": 228.0,
+              "Maximum": -0.3,
+              "Minimum": 0.0,
+              "Name": "LinearGaugeItem1",
+              "PAW": 53.0,
+              "Steps": 0.0,
+              "Top": -1.0,
+              "UseAlternateStyle": false,
+              "Value": -0.07,
+              "Visible": true,
+              "Width": 227.0
+            },
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.LinearGaugeItem, SimHub.Plugins",
+              "AlternateGaugeColor": "#FF008000",
+              "AutoSize": false,
+              "BackgroundColor": "#00FFFFFF",
+              "Bindings": {
+                "Value": {
+                  "Formula": {
+                    "Expression": "([PersistantTrackerPlugin.AllTimeBestLiveDeltaProgressSeconds]+0.085)*-1"
+                  },
+                  "Mode": 2,
+                  "TargetPropertyName": "Value"
+                },
+                "Visible": {
+                  "Formula": {
+                    "Expression": "if(isnull([PersistantTrackerPlugin.AllTimeBestLiveDeltaProgressSeconds]), 0,\r\nif([IsInPitLane]=1, 0,\r\nif([DataCorePlugin.CurrentGame] == 'AssettoCorsaCompetizione' and [CompletedLaps]<2, 0,\r\nif(timespantoseconds([BestLapTime])=0, 0, 1))))"
+                  },
+                  "Mode": 2,
+                  "TargetPropertyName": "Visible"
+                }
+              },
+              "GaugeAlignment": 0,
+              "GaugeColor": "#00FFFFFF",
+              "GaugeImage": "delta_red",
+              "GaugeOrientation": 0,
+              "Height": 65.0,
+              "IsLinearGauge": true,
+              "Left": 0.0,
+              "Maximum": -0.3,
+              "Minimum": 0.0,
+              "Name": "LinearGaugeItem01",
+              "PAW": 182.0,
+              "Rotation": 180.0,
+              "Steps": 0.0,
+              "Top": -1.0,
+              "UseAlternateStyle": false,
+              "Value": -0.24,
+              "Visible": true,
+              "Width": 227.0
+            },
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+              "BackgroundColor": "#00FFFFFF",
+              "Bindings": {
+                "Text": {
+                  "FormatString": "0.00",
+                  "Formula": {
+                    "Expression": "if(isnull([PersistantTrackerPlugin.AllTimeBestLiveDeltaProgressSeconds]), 'N/A',\r\nif([IsInPitLane]=1, 'No REF',\r\nif([DataCorePlugin.CurrentGame] == 'AssettoCorsaCompetizione' and [CompletedLaps]<2, 'No REF',\r\nif(timespantoseconds([BestLapTime])=0, 'No REF',\r\nif([PersistantTrackerPlugin.AllTimeBestLiveDeltaProgressSeconds]<= -2.00, '-2.00',\r\nif([PersistantTrackerPlugin.AllTimeBestLiveDeltaProgressSeconds]>= 2.00, '+2.00',\r\nif([PersistantTrackerPlugin.AllTimeBestLiveDeltaProgressSeconds]>0, '+', '') + format([PersistantTrackerPlugin.AllTimeBestLiveDeltaProgressSeconds], '0.00')))))))"
+                  },
+                  "Mode": 2,
+                  "TargetPropertyName": "Text"
+                },
+                "Visible": {
+                  "Formula": {
+                    "Expression": "if([PersistantTrackerPlugin.AllTimeBestLiveDeltaProgressSeconds]>= 0, 0,\r\nif([IsInPitLane]=1,'0',\r\nif(isnull([PersistantTrackerPlugin.AllTimeBestLiveDeltaProgressSeconds]), 0,\r\nif([IsInPitLane]=1, 0,\r\nif([DataCorePlugin.CurrentGame] == 'AssettoCorsaCompetizione' and [CompletedLaps]<2, 0,\r\nif(timespantoseconds([BestLapTime])=0, 0, 1))))))"
+                  },
+                  "Mode": 2,
+                  "TargetPropertyName": "Visible"
+                }
+              },
+              "CharWidth": 16.0,
+              "Font": "Rajdhani",
+              "FontSize": 32.0,
+              "FontWeight": "Bold",
+              "Height": 32.0,
+              "HorizontalAlignment": 2,
+              "IsTextItem": true,
+              "Left": 320.0,
+              "Name": "DeltaSessionBestValue2",
+              "SpecialCharsWidth": 5.0,
+              "Text": "-1.234",
+              "TextColor": "#FFFFFFFF",
+              "Top": 20.0,
+              "VerticalAlignment": 1,
+              "Visible": true,
+              "Width": 110.0
+            },
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+              "BackgroundColor": "#00FFFFFF",
+              "Bindings": {
+                "Text": {
+                  "FormatString": "0.000",
+                  "Formula": {
+                    "Expression": "if(isnull([PersistantTrackerPlugin.AllTimeBestLiveDeltaProgressSeconds]), 'N/A',\r\nif([IsInPitLane]=1, 'No REF',\r\nif([DataCorePlugin.CurrentGame] == 'AssettoCorsaCompetizione' and [CompletedLaps]<2, 'No REF',\r\nif(timespantoseconds([BestLapTime])=0, 'No REF',\r\nif([PersistantTrackerPlugin.AllTimeBestLiveDeltaProgressSeconds]<= -2.00, '-2.00',\r\nif([PersistantTrackerPlugin.AllTimeBestLiveDeltaProgressSeconds]>= 2.00, '+2.00',\r\nif([PersistantTrackerPlugin.AllTimeBestLiveDeltaProgressSeconds]>0, '+', '') + format([PersistantTrackerPlugin.AllTimeBestLiveDeltaProgressSeconds], '0.00')))))))"
+                  },
+                  "Mode": 2,
+                  "TargetPropertyName": "Text"
+                },
+                "Visible": {
+                  "Formula": {
+                    "Expression": "if([PersistantTrackerPlugin.AllTimeBestLiveDeltaProgressSeconds]<= 0, 0,\r\nif(isnull([PersistantTrackerPlugin.AllTimeBestLiveDeltaProgressSeconds]), 0,\r\nif([IsInPitLane]=1, 0,\r\nif([DataCorePlugin.CurrentGame] == 'AssettoCorsaCompetizione' and [CompletedLaps]<2, 0,\r\nif(timespantoseconds([BestLapTime])=0, 0, 1)))))"
+                  },
+                  "Mode": 2,
+                  "TargetPropertyName": "Visible"
+                }
+              },
+              "CharWidth": 16.0,
+              "Font": "Rajdhani",
+              "FontSize": 32.0,
+              "FontWeight": "Bold",
+              "Height": 32.0,
+              "HorizontalAlignment": 0,
+              "IsTextItem": true,
+              "Left": 28.0,
+              "Name": "DeltaSessionBestValue1",
+              "SpecialCharsWidth": 5.0,
+              "Text": "-1.234",
+              "TextColor": "#FFFFFFFF",
+              "Top": 20.0,
+              "VerticalAlignment": 1,
+              "Visible": true,
+              "Width": 110.0
+            }
+          ],
+          "Group": true,
+          "Height": 66.00000000000001,
+          "Left": 0.0,
+          "Name": "progress",
+          "Top": -1.0000000000000142,
+          "Visible": true,
+          "Width": 455.5
+        },
+        {
+          "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.ImageItem, SimHub.Plugins",
+          "AutoSize": false,
+          "BackgroundColor": "#00FFFFFF",
+          "Bindings": {
+            "Image": {
+              "Formula": {
+                "Expression": "return twf_get_ui_bg(\"deltalap\")",
+                "Interpreter": 1
+              },
+              "Mode": 2,
+              "TargetPropertyName": "Image"
+            }
+          },
+          "Height": 90.0,
+          "Image": "deltalapbg",
+          "Left": 122.0,
+          "Name": "ImageItem2",
+          "Top": 0.0,
+          "Visible": true,
+          "Width": 210.0
+        },
+        {
+          "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+          "BackgroundColor": "#00FFFFFF",
+          "BorderStyle": {
+            "RadiusBottomLeft": 6,
+            "RadiusBottomRight": 6,
+            "RadiusTopLeft": 6,
+            "RadiusTopRight": 6
+          },
+          "Font": "Rajdhani",
+          "FontSize": 22.0,
+          "FontWeight": "SemiBold",
+          "Height": 18.0,
+          "HorizontalAlignment": 1,
+          "IsTextItem": true,
+          "Left": 144.0,
+          "Name": "DELTA_LABEL",
+          "Text": "ALL TIME BEST",
+          "TextColor": "#FFFFFFFF",
+          "Top": 12.0,
+          "VerticalAlignment": 1,
+          "Visible": true,
+          "Width": 166.0
+        },
+        {
+          "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+          "BackgroundColor": "#00FFFFFF",
+          "Bindings": {
+            "Text": {
+              "FormatString": "0.00",
+              "Formula": {
+                "Expression": "return twf_get_alltime_best_delta()",
+                "Interpreter": 1
+              },
+              "Mode": 2,
+              "TargetPropertyName": "Text"
+            },
+            "TextColor": {
+              "EnableMiddleColor": true,
+              "EndColor": "#FFFF0000",
+              "EndColorValue": 0.001,
+              "Formula": {
+                "Expression": "return twf_get_alltime_best_delta(\"color\")",
+                "Interpreter": 1
+              },
+              "MiddleColor": "#FFFFFFFF",
+              "MiddleColorValue": 0.0,
+              "Mode": 4,
+              "StartColor": "#FF00FF00",
+              "StartColorValue": -0.001,
+              "TargetPropertyName": "TextColor"
+            }
+          },
+          "CharWidth": 20.0,
+          "Font": "Rajdhani",
+          "FontSize": 38.0,
+          "FontWeight": "Bold",
+          "Height": 40.0,
+          "HorizontalAlignment": 1,
+          "IsTextItem": true,
+          "Left": 152.0,
+          "Name": "DELTA_VALUE",
+          "SpecialChars": ".,:;.",
+          "SpecialCharsWidth": 7.0,
+          "Text": "6",
+          "TextColor": "#FFFFFFFF",
+          "Top": 31.0,
+          "UseMonospacedText": true,
+          "VerticalAlignment": 1,
+          "Visible": true,
+          "Width": 150.0
+        }
+      ],
+      "Name": "Screen",
+      "OverlayMaxDuration": 0,
+      "OverlayMinDuration": 0,
+      "OverlayTriggerExpression": {
+        "Expression": ""
+      },
+      "PitScreen": false,
+      "ScreenEnabledExpression": {
+        "Expression": ""
+      },
+      "ScreenId": "453733d1-80e9-4a45-8029-00a93909e48a"
+    },
+    {
+      "AllowOverlays": true,
+      "BackgroundColor": "#FF000000",
+      "IdleScreen": true,
+      "InGameScreen": true,
+      "IsBackgroundLayer": false,
+      "IsForegroundLayer": false,
+      "IsOverlayLayer": false,
+      "Items": [
+        {
+          "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.ImageItem, SimHub.Plugins",
+          "AutoSize": false,
+          "BackgroundColor": "#00FFFFFF",
+          "Bindings": {
+            "Image": {
+              "Formula": {
+                "Expression": "return twf_get_ui_bg(\"deltalap\")",
+                "Interpreter": 1
+              },
+              "Mode": 2,
+              "TargetPropertyName": "Image"
+            }
+          },
+          "Height": 90.0,
+          "Image": "deltalapbg",
+          "Left": 122.0,
+          "Name": "ImageItem2",
+          "Top": 0.0,
+          "Visible": true,
+          "Width": 210.0
+        },
+        {
+          "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+          "BackgroundColor": "#00FFFFFF",
+          "BorderStyle": {
+            "RadiusBottomLeft": 6,
+            "RadiusBottomRight": 6,
+            "RadiusTopLeft": 6,
+            "RadiusTopRight": 6
+          },
+          "Font": "Rajdhani",
+          "FontSize": 22.0,
+          "FontWeight": "SemiBold",
+          "Height": 18.0,
+          "HorizontalAlignment": 1,
+          "IsTextItem": true,
+          "Left": 144.0,
+          "Name": "DELTA_LABEL",
+          "Text": "LAST LAP",
+          "TextColor": "#FFFFFFFF",
+          "Top": 12.0,
+          "VerticalAlignment": 1,
+          "Visible": true,
+          "Width": 166.0
+        },
+        {
+          "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+          "BackgroundColor": "#00FFFFFF",
+          "Bindings": {
+            "Text": {
+              "FormatString": "0.00",
+              "Formula": {
+                "Expression": "return twf_get_lastlap_delta()",
+                "Interpreter": 1
+              },
+              "Mode": 2,
+              "TargetPropertyName": "Text"
+            },
+            "TextColor": {
+              "EnableMiddleColor": true,
+              "EndColor": "#FFFF0000",
+              "EndColorValue": 0.001,
+              "Formula": {
+                "Expression": "return twf_get_lastlap_delta(\"color\")",
+                "Interpreter": 1
+              },
+              "MiddleColor": "#FFFFFFFF",
+              "MiddleColorValue": 0.0,
+              "Mode": 4,
+              "StartColor": "#FF00FF00",
+              "StartColorValue": -0.001,
+              "TargetPropertyName": "TextColor"
+            }
+          },
+          "CharWidth": 20.0,
+          "Font": "Rajdhani",
+          "FontSize": 38.0,
+          "FontWeight": "Bold",
+          "Height": 40.0,
+          "HorizontalAlignment": 1,
+          "IsTextItem": true,
+          "Left": 152.0,
+          "Name": "DELTA_VALUE",
+          "SpecialChars": ".,:;.",
+          "SpecialCharsWidth": 7.0,
+          "Text": "6",
+          "TextColor": "#FFFFFFFF",
+          "Top": 31.0,
+          "UseMonospacedText": true,
+          "VerticalAlignment": 1,
+          "Visible": true,
+          "Width": 150.0
+        }
+      ],
+      "Name": "Screen",
+      "OverlayMaxDuration": 0,
+      "OverlayMinDuration": 0,
+      "OverlayTriggerExpression": {
+        "Expression": ""
+      },
+      "PitScreen": false,
+      "ScreenEnabledExpression": {
+        "Expression": ""
+      },
+      "ScreenId": "981e6578-8a97-47a6-80f2-fea11e5dc218"
+    }
+  ],
+  "ShowBackground": true,
+  "ShowBoundingRectangles": false,
+  "ShowForeground": true,
+  "ShowOnScreenControls": true,
+  "SnapToGrid": false,
+  "Version": 2
+}

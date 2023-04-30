@@ -1,0 +1,1907 @@
+{
+  "BackgroundColor": "#FF000000",
+  "BackgroundOpacity": 100.0,
+  "BaseHeight": 517,
+  "BaseWidth": 442,
+  "DashboardDebugManager": {
+    "LastPlacement": "887,134,552,646",
+    "Maximized": false
+  },
+  "EnableClickThroughOverlay": true,
+  "EnableOnDashboardMessaging": true,
+  "ForegroundOpacity": 100.0,
+  "GridSize": 10,
+  "HideLabels": true,
+  "Id": "02d3c8a6-83d4-4e6c-8de1-99e5e813d8aa",
+  "Images": [],
+  "IsOverlay": false,
+  "Metadata": {
+    "EnableOnDashboardMessaging": true,
+    "Height": 517.0,
+    "IdleScreensIndexs": [
+      0
+    ],
+    "InGameScreensIndexs": [
+      0
+    ],
+    "IsOverlay": false,
+    "MainPreviewIndex": 0,
+    "MetadataVersion": 2.0,
+    "OverlaySizeWarning": false,
+    "PitScreensIndexs": [],
+    "ScreenCount": 1.0,
+    "Width": 442.0
+  },
+  "Screens": [
+    {
+      "AllowOverlays": true,
+      "BackgroundColor": "#FF000000",
+      "IdleScreen": true,
+      "InGameScreen": true,
+      "IsBackgroundLayer": false,
+      "IsForegroundLayer": false,
+      "IsOverlayLayer": false,
+      "Items": [
+        {
+          "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.WidgetItem, SimHub.Plugins",
+          "AutoSize": true,
+          "AutoSizeScale": 1.5,
+          "BackgroundColor": "#00FFFFFF",
+          "EnableScreenRolesAndActivation": false,
+          "FileName": "damage_vdash.djson",
+          "Height": 529.5,
+          "InitialScreenIndex": 0,
+          "Left": -2.5,
+          "Name": "damage_vdash",
+          "NextScreenCommand": 0,
+          "PreviousScreenCommand": 0,
+          "Top": -2.75,
+          "Visible": true,
+          "Width": 447.0
+        },
+        {
+          "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.Layer, SimHub.Plugins",
+          "BackgroundColor": "#00FFFFFF",
+          "Childrens": [
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.Layer, SimHub.Plugins",
+              "BackgroundColor": "#00FFFFFF",
+              "Childrens": [
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+                  "BackgroundColor": "#FF000000",
+                  "BorderStyle": {
+                    "RadiusBottomLeft": 10,
+                    "RadiusBottomRight": 10,
+                    "RadiusTopLeft": 10,
+                    "RadiusTopRight": 10
+                  },
+                  "Height": 120.0,
+                  "IsRectangleItem": true,
+                  "Left": 113.0,
+                  "Name": "FL",
+                  "Top": 91.0,
+                  "Visible": true,
+                  "Width": 40.0
+                },
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+                  "BackgroundColor": "#FFFFA500",
+                  "Bindings": {
+                    "BackgroundColor": {
+                      "Formula": {
+                        "Expression": "var wheel = '01'\r\nvar wheelslip = $prop('DataCorePlugin.GameRawData.Physics.WheelSlip'+wheel)\r\nvar lock = $prop('DataCorePlugin.GameRawData.Physics.WheelAngularSpeed'+wheel)\r\nvar speed = $prop('DataCorePlugin.GameData.SpeedLocal')\r\n\r\nif(wheelslip > 1){\r\n\tif(isincreasing(50, speed)){\r\n\t\treturn '#00BFFF'\r\n\t} else if (lock==0) {\r\n\t\treturn '#FFE04C'\r\n\t} else { \r\n\t\treturn '#999999'\r\n\t}\r\n}else{\r\n\treturn '#00000000'\r\n}",
+                        "Interpreter": 1
+                      },
+                      "Mode": 2,
+                      "TargetPropertyName": "BackgroundColor"
+                    }
+                  },
+                  "BorderStyle": {
+                    "RadiusBottomLeft": 6,
+                    "RadiusBottomRight": 6,
+                    "RadiusTopLeft": 6,
+                    "RadiusTopRight": 6
+                  },
+                  "Height": 110.0,
+                  "IsRectangleItem": true,
+                  "Left": 6.0,
+                  "Name": "SLIP",
+                  "Opacity": 30.0,
+                  "Top": 95.0,
+                  "Visible": true,
+                  "Width": 133.0
+                },
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+                  "BackgroundColor": "#00FFFFFF",
+                  "Bindings": {
+                    "Text": {
+                      "FormatString": "0.0",
+                      "Formula": {
+                        "Expression": "isnull([TyrePressureFrontLeft], '')"
+                      },
+                      "Mode": 2,
+                      "TargetPropertyName": "Text"
+                    }
+                  },
+                  "Font": "Rajdhani",
+                  "FontSize": 38.0,
+                  "FontWeight": "Bold",
+                  "Height": 40.0,
+                  "HorizontalAlignment": 2,
+                  "IsTextItem": true,
+                  "Left": 2.0,
+                  "Name": "PRESSURE",
+                  "Text": "00.0",
+                  "TextColor": "#FFFFFFFF",
+                  "Top": 129.625,
+                  "VerticalAlignment": 1,
+                  "Visible": true,
+                  "Width": 100.0
+                },
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+                  "BackgroundColor": "#00FFFFFF",
+                  "Bindings": {
+                    "Text": {
+                      "FormatString": "",
+                      "Formula": {
+                        "Expression": "var tyretemp = isnull($prop('TyreTemperatureFrontLeft'),0)\r\nvar braketemp = isnull($prop('BrakeTemperatureFrontLeft'),0)\r\nvar value = ''\r\nif(tyretemp > 0){\r\n\ttyretemp = Math.round(tyretemp) + '\u00b0'\r\n\tvalue = value + tyretemp\r\n}\r\nif(braketemp > 0){\r\n\tbraketemp = Math.round(braketemp) + '\u00b0'\r\n\tvalue = value + ' '+ braketemp\r\n}\r\n\r\nreturn value",
+                        "Interpreter": 1
+                      },
+                      "Mode": 2,
+                      "TargetPropertyName": "Text"
+                    }
+                  },
+                  "CharWidth": 11.0,
+                  "Font": "Rajdhani",
+                  "FontSize": 22.0,
+                  "FontWeight": "Bold",
+                  "Height": 24.0,
+                  "HorizontalAlignment": 2,
+                  "IsTextItem": true,
+                  "Left": 2.0,
+                  "Name": "TYRE",
+                  "SpecialChars": ".,:;\u00b0 ",
+                  "SpecialCharsWidth": 6.0,
+                  "Text": "00\u00b0",
+                  "TextColor": "#FF878787",
+                  "Top": 166.625,
+                  "UseMonospacedText": true,
+                  "VerticalAlignment": 1,
+                  "Visible": true,
+                  "Width": 100.0
+                },
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+                  "BackgroundColor": "#FF7FFF00",
+                  "Bindings": {
+                    "BackgroundColor": {
+                      "EnableMiddleColor": true,
+                      "EndColor": "#FFFF0000",
+                      "EndColorValue": 120.0,
+                      "Formula": {
+                        "Expression": "isnull([TyreTemperatureFrontLeft],0)"
+                      },
+                      "MiddleColor": "#FF00FF00",
+                      "MiddleColorValue": 82.0,
+                      "Mode": 4,
+                      "StartColor": "#FF00BFFF",
+                      "StartColorValue": 45.0,
+                      "TargetPropertyName": "BackgroundColor"
+                    }
+                  },
+                  "BorderStyle": {
+                    "RadiusBottomLeft": 6,
+                    "RadiusBottomRight": 6,
+                    "RadiusTopLeft": 6,
+                    "RadiusTopRight": 6
+                  },
+                  "Height": 100.0,
+                  "IsRectangleItem": true,
+                  "Left": 109.0,
+                  "Name": "TYRE",
+                  "Top": 99.625,
+                  "Visible": true,
+                  "Width": 26.0
+                },
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+                  "BackgroundColor": "#FF0000FF",
+                  "Bindings": {
+                    "BackgroundColor": {
+                      "EnableMiddleColor": true,
+                      "EndColor": "#FFFF0000",
+                      "EndColorValue": 120.0,
+                      "Formula": {
+                        "Expression": "isnull([TyreTemperatureFrontLeftMiddle],0)"
+                      },
+                      "MiddleColor": "#FF00FF00",
+                      "MiddleColorValue": 82.0,
+                      "Mode": 4,
+                      "StartColor": "#FF00BFFF",
+                      "StartColorValue": 45.0,
+                      "TargetPropertyName": "BackgroundColor"
+                    },
+                    "Visible": {
+                      "Formula": {
+                        "Expression": "isnull([TyreTemperatureFrontLeftMiddle],0)>0"
+                      },
+                      "Mode": 2,
+                      "TargetPropertyName": "Visible"
+                    }
+                  },
+                  "Height": 100.0,
+                  "IsRectangleItem": true,
+                  "Left": 117.0,
+                  "Name": "TYRE_MIDDLE",
+                  "Top": 99.375,
+                  "Visible": true,
+                  "Width": 10.0
+                },
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+                  "BackgroundColor": "#FF7FFF00",
+                  "Bindings": {
+                    "BackgroundColor": {
+                      "EnableMiddleColor": true,
+                      "EndColor": "#FFFF0000",
+                      "EndColorValue": 120.0,
+                      "Formula": {
+                        "Expression": "isnull([TyreTemperatureFrontLeftOuter],0)"
+                      },
+                      "MiddleColor": "#FF00FF00",
+                      "MiddleColorValue": 82.0,
+                      "Mode": 4,
+                      "StartColor": "#FF00BFFF",
+                      "StartColorValue": 45.0,
+                      "TargetPropertyName": "BackgroundColor"
+                    },
+                    "Visible": {
+                      "Formula": {
+                        "Expression": "isnull([TyreTemperatureFrontLeftOuter],0)>0"
+                      },
+                      "Mode": 2,
+                      "TargetPropertyName": "Visible"
+                    }
+                  },
+                  "BorderStyle": {
+                    "RadiusBottomLeft": 6,
+                    "RadiusTopLeft": 6
+                  },
+                  "Height": 100.0,
+                  "IsRectangleItem": true,
+                  "Left": 108.0,
+                  "Name": "TYRE_OUTER",
+                  "Top": 99.375,
+                  "Visible": true,
+                  "Width": 8.0
+                },
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+                  "BackgroundColor": "#FF7FFF00",
+                  "Bindings": {
+                    "BackgroundColor": {
+                      "EnableMiddleColor": true,
+                      "EndColor": "#FFFF0000",
+                      "EndColorValue": 120.0,
+                      "Formula": {
+                        "Expression": "isnull([TyreTemperatureFrontLeftInner],0)"
+                      },
+                      "MiddleColor": "#FF00FF00",
+                      "MiddleColorValue": 82.0,
+                      "Mode": 4,
+                      "StartColor": "#FF00BFFF",
+                      "StartColorValue": 45.0,
+                      "TargetPropertyName": "BackgroundColor"
+                    },
+                    "Visible": {
+                      "Formula": {
+                        "Expression": "isnull([TyreTemperatureFrontLeftInner],0)>0"
+                      },
+                      "Mode": 2,
+                      "TargetPropertyName": "Visible"
+                    }
+                  },
+                  "BorderStyle": {
+                    "RadiusBottomRight": 6,
+                    "RadiusTopRight": 6
+                  },
+                  "Height": 100.0,
+                  "IsRectangleItem": true,
+                  "Left": 128.0,
+                  "Name": "TYRE_INNER",
+                  "Top": 99.375,
+                  "Visible": true,
+                  "Width": 8.0
+                },
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+                  "BackgroundColor": "#FF7FFF00",
+                  "Bindings": {
+                    "BackgroundColor": {
+                      "EnableMiddleColor": true,
+                      "EndColor": "#FFFF0000",
+                      "EndColorValue": 900.0,
+                      "Formula": {
+                        "Expression": "[BrakeTemperatureFrontLeft]"
+                      },
+                      "MiddleColor": "#FF00FF00",
+                      "MiddleColorValue": 550.0,
+                      "Mode": 4,
+                      "StartColor": "#FF4169E1",
+                      "StartColorValue": 50.0,
+                      "TargetPropertyName": "BackgroundColor"
+                    }
+                  },
+                  "BorderStyle": {
+                    "RadiusBottomLeft": 2,
+                    "RadiusBottomRight": 2,
+                    "RadiusTopLeft": 2,
+                    "RadiusTopRight": 2
+                  },
+                  "Height": 71.0,
+                  "IsRectangleItem": true,
+                  "Left": 139.0,
+                  "Name": "BRAKE",
+                  "Top": 114.0,
+                  "Visible": true,
+                  "Width": 9.0
+                },
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+                  "BackgroundColor": "#FF808080",
+                  "Bindings": {
+                    "Visible": {
+                      "Formula": {
+                        "Expression": "[BrakeTemperatureFrontLeft] = 0"
+                      },
+                      "Mode": 2,
+                      "TargetPropertyName": "Visible"
+                    }
+                  },
+                  "BorderStyle": {
+                    "RadiusBottomLeft": 2,
+                    "RadiusBottomRight": 2,
+                    "RadiusTopLeft": 2,
+                    "RadiusTopRight": 2
+                  },
+                  "Height": 71.0,
+                  "IsRectangleItem": true,
+                  "Left": 139.0,
+                  "Name": "BRAKE_NA",
+                  "Top": 114.0,
+                  "Visible": true,
+                  "Width": 9.0
+                },
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.LinearGaugeItem, SimHub.Plugins",
+                  "AlternateGaugeColor": "#FF008000",
+                  "AutoSize": false,
+                  "BackgroundColor": "#FF555555",
+                  "Bindings": {
+                    "GaugeColor": {
+                      "EnableMiddleColor": true,
+                      "EndColor": "#FFFF0000",
+                      "EndColorValue": 900.0,
+                      "Formula": {
+                        "Expression": "[BrakeTemperatureFrontLeft]"
+                      },
+                      "MiddleColor": "#FF7FFF00",
+                      "MiddleColorValue": 550.0,
+                      "Mode": 4,
+                      "StartColor": "#FF1E90FF",
+                      "StartColorValue": 50.0,
+                      "TargetPropertyName": "GaugeColor"
+                    },
+                    "Value": {
+                      "Formula": {
+                        "Expression": "100-(isnull([GameRawData.mBrakeDamage01],0) * 1)"
+                      },
+                      "Mode": 2,
+                      "TargetPropertyName": "Value"
+                    },
+                    "Visible": {
+                      "Formula": {
+                        "Expression": "return twf_read_setting_equals(\"ams_brakedamageontyres\",0,0,1)",
+                        "Interpreter": 1
+                      },
+                      "Mode": 2,
+                      "TargetPropertyName": "Visible"
+                    }
+                  },
+                  "BorderStyle": {
+                    "RadiusBottomLeft": 3,
+                    "RadiusBottomRight": 3,
+                    "RadiusTopLeft": 3,
+                    "RadiusTopRight": 3
+                  },
+                  "GaugeAlignment": 0,
+                  "GaugeColor": "#FF7FFF00",
+                  "GaugeOrientation": 1,
+                  "Height": 71.0,
+                  "IsLinearGauge": true,
+                  "Left": 139.0,
+                  "Maximum": 100.0,
+                  "Minimum": 0.0,
+                  "Name": "BRAKE_AMS2",
+                  "PAW": 14.0,
+                  "Steps": 0.0,
+                  "Top": 114.0,
+                  "UseAlternateStyle": false,
+                  "Value": 20.0,
+                  "Visible": true,
+                  "Width": 9.0
+                },
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+                  "BackgroundColor": "#FF000000",
+                  "Height": 100.0,
+                  "IsRectangleItem": true,
+                  "Left": 116.0,
+                  "Name": "LINE1",
+                  "Top": 99.625,
+                  "Visible": true,
+                  "Width": 1.0
+                },
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+                  "BackgroundColor": "#FF000000",
+                  "Height": 100.0,
+                  "IsRectangleItem": true,
+                  "Left": 127.0,
+                  "Name": "LINE2",
+                  "Top": 99.625,
+                  "Visible": true,
+                  "Width": 1.0
+                },
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+                  "BackgroundColor": "#00FFFFFF",
+                  "Bindings": {
+                    "Text": {
+                      "FormatString": "",
+                      "Formula": {
+                        "Expression": "var tyrewear = isnull($prop('TyreWearFrontLeft'),0)\r\nif(tyrewear>0){\r\n\treturn Math.round(tyrewear) +'%'\r\n}else{\r\n\treturn ''\r\n}\r\n\r\n",
+                        "Interpreter": 1
+                      },
+                      "Mode": 2,
+                      "TargetPropertyName": "Text"
+                    },
+                    "TextColor": {
+                      "EnableMiddleColor": true,
+                      "EndColor": "#FF878787",
+                      "EndColorValue": 100.0,
+                      "Formula": {
+                        "Expression": "var tyrewear = isnull($prop('TyreWearFrontLeft'),0)\r\nif(tyrewear>0){\r\n\treturn Math.round(tyrewear)\r\n}else{\r\n\treturn 100\r\n}\r\n\r\n",
+                        "Interpreter": 1
+                      },
+                      "MiddleColor": "#FFFFA500",
+                      "MiddleColorValue": 60.0,
+                      "Mode": 4,
+                      "StartColor": "#FFFF0000",
+                      "StartColorValue": 0.0,
+                      "TargetPropertyName": "TextColor"
+                    }
+                  },
+                  "Font": "Rajdhani",
+                  "FontSize": 22.0,
+                  "FontWeight": "Bold",
+                  "Height": 24.0,
+                  "HorizontalAlignment": 2,
+                  "IsTextItem": true,
+                  "Left": 2.0,
+                  "Name": "TYRE",
+                  "Text": "50%",
+                  "TextColor": "#FF878787",
+                  "Top": 108.625,
+                  "VerticalAlignment": 1,
+                  "Visible": true,
+                  "Width": 100.0
+                }
+              ],
+              "Group": true,
+              "Height": 120.0,
+              "Left": 2.0,
+              "Name": "FL",
+              "Top": 91.0,
+              "Visible": true,
+              "Width": 151.0
+            },
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.Layer, SimHub.Plugins",
+              "BackgroundColor": "#00FFFFFF",
+              "Childrens": [
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+                  "BackgroundColor": "#FF000000",
+                  "BorderStyle": {
+                    "RadiusBottomLeft": 10,
+                    "RadiusBottomRight": 10,
+                    "RadiusTopLeft": 10,
+                    "RadiusTopRight": 10
+                  },
+                  "Height": 120.0,
+                  "IsRectangleItem": true,
+                  "Left": 289.0,
+                  "Name": "FL",
+                  "Top": 90.0,
+                  "Visible": true,
+                  "Width": 40.0
+                },
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+                  "BackgroundColor": "#FFFFA500",
+                  "Bindings": {
+                    "BackgroundColor": {
+                      "Formula": {
+                        "Expression": "var wheel = '02'\r\nvar wheelslip = $prop('DataCorePlugin.GameRawData.Physics.WheelSlip'+wheel)\r\nvar lock = $prop('DataCorePlugin.GameRawData.Physics.WheelAngularSpeed'+wheel)\r\nvar speed = $prop('DataCorePlugin.GameData.SpeedLocal')\r\n\r\nif(wheelslip > 1){\r\n\tif(isincreasing(50, speed)){\r\n\t\treturn '#00BFFF'\r\n\t} else if (lock==0) {\r\n\t\treturn '#FFE04C'\r\n\t} else { \r\n\t\treturn '#999999'\r\n\t}\r\n}else{\r\n\treturn '#00000000'\r\n}",
+                        "Interpreter": 1
+                      },
+                      "Mode": 2,
+                      "TargetPropertyName": "BackgroundColor"
+                    }
+                  },
+                  "BorderStyle": {
+                    "RadiusBottomLeft": 6,
+                    "RadiusBottomRight": 6,
+                    "RadiusTopLeft": 6,
+                    "RadiusTopRight": 6
+                  },
+                  "Height": 110.0,
+                  "IsRectangleItem": true,
+                  "Left": 302.0,
+                  "Name": "SLIP",
+                  "Opacity": 30.0,
+                  "Top": 95.0,
+                  "Visible": true,
+                  "Width": 134.0
+                },
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+                  "BackgroundColor": "#00FFFFFF",
+                  "Bindings": {
+                    "Text": {
+                      "FormatString": "0.0",
+                      "Formula": {
+                        "Expression": "isnull([TyrePressureFrontRight], '')"
+                      },
+                      "Mode": 2,
+                      "TargetPropertyName": "Text"
+                    }
+                  },
+                  "Font": "Rajdhani",
+                  "FontSize": 38.0,
+                  "FontWeight": "Bold",
+                  "Height": 40.0,
+                  "HorizontalAlignment": 0,
+                  "IsTextItem": true,
+                  "Left": 340.0,
+                  "Name": "PRESSURE",
+                  "Text": "00.0",
+                  "TextColor": "#FFFFFFFF",
+                  "Top": 129.625,
+                  "VerticalAlignment": 1,
+                  "Visible": true,
+                  "Width": 100.0
+                },
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+                  "BackgroundColor": "#00FFFFFF",
+                  "Bindings": {
+                    "Text": {
+                      "FormatString": "",
+                      "Formula": {
+                        "Expression": "var tyretemp = isnull($prop('TyreTemperatureFrontRight'),0)\r\nvar braketemp = isnull($prop('BrakeTemperatureFrontRight'),0)\r\nvar value = ''\r\n\r\nif(braketemp > 0){\r\n\tbraketemp = Math.round(braketemp) + '\u00b0'\r\n\tvalue = value + braketemp + ' '\r\n}\r\n\r\nif(tyretemp > 0){\r\n\ttyretemp = Math.round(tyretemp) + '\u00b0'\r\n\tvalue = value + tyretemp\r\n}\r\n\r\nreturn value",
+                        "Interpreter": 1
+                      },
+                      "Mode": 2,
+                      "TargetPropertyName": "Text"
+                    }
+                  },
+                  "CharWidth": 11.0,
+                  "Font": "Rajdhani",
+                  "FontSize": 22.0,
+                  "FontWeight": "Bold",
+                  "Height": 24.0,
+                  "HorizontalAlignment": 0,
+                  "IsTextItem": true,
+                  "Left": 340.0,
+                  "Name": "TYRE",
+                  "SpecialChars": ".,:;\u00b0 ",
+                  "SpecialCharsWidth": 6.0,
+                  "Text": "00\u00b0",
+                  "TextColor": "#FF878787",
+                  "Top": 166.625,
+                  "UseMonospacedText": true,
+                  "VerticalAlignment": 1,
+                  "Visible": true,
+                  "Width": 100.0
+                },
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+                  "BackgroundColor": "#FF7FFF00",
+                  "Bindings": {
+                    "BackgroundColor": {
+                      "EnableMiddleColor": true,
+                      "EndColor": "#FFFF0000",
+                      "EndColorValue": 120.0,
+                      "Formula": {
+                        "Expression": "isnull([TyreTemperatureFrontRight],0)"
+                      },
+                      "MiddleColor": "#FF00FF00",
+                      "MiddleColorValue": 82.0,
+                      "Mode": 4,
+                      "StartColor": "#FF00BFFF",
+                      "StartColorValue": 45.0,
+                      "TargetPropertyName": "BackgroundColor"
+                    }
+                  },
+                  "BorderStyle": {
+                    "RadiusBottomLeft": 6,
+                    "RadiusBottomRight": 6,
+                    "RadiusTopLeft": 6,
+                    "RadiusTopRight": 6
+                  },
+                  "Height": 100.0,
+                  "IsRectangleItem": true,
+                  "Left": 307.0,
+                  "Name": "TYRE",
+                  "Top": 99.625,
+                  "Visible": true,
+                  "Width": 26.0
+                },
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+                  "BackgroundColor": "#FF0000FF",
+                  "Bindings": {
+                    "BackgroundColor": {
+                      "EnableMiddleColor": true,
+                      "EndColor": "#FFFF0000",
+                      "EndColorValue": 120.0,
+                      "Formula": {
+                        "Expression": "isnull([TyreTemperatureFrontRightMiddle],0)"
+                      },
+                      "MiddleColor": "#FF00FF00",
+                      "MiddleColorValue": 82.0,
+                      "Mode": 4,
+                      "StartColor": "#FF00BFFF",
+                      "StartColorValue": 45.0,
+                      "TargetPropertyName": "BackgroundColor"
+                    },
+                    "Visible": {
+                      "Formula": {
+                        "Expression": "isnull([TyreTemperatureFrontRightMiddle],0)>0"
+                      },
+                      "Mode": 2,
+                      "TargetPropertyName": "Visible"
+                    }
+                  },
+                  "Height": 100.0,
+                  "IsRectangleItem": true,
+                  "Left": 316.0,
+                  "Name": "TYRE_MIDDLE",
+                  "Top": 99.375,
+                  "Visible": true,
+                  "Width": 10.0
+                },
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+                  "BackgroundColor": "#FF7FFF00",
+                  "Bindings": {
+                    "BackgroundColor": {
+                      "EnableMiddleColor": true,
+                      "EndColor": "#FFFF0000",
+                      "EndColorValue": 120.0,
+                      "Formula": {
+                        "Expression": "isnull([TyreTemperatureFrontRightInner],0)"
+                      },
+                      "MiddleColor": "#FF00FF00",
+                      "MiddleColorValue": 82.0,
+                      "Mode": 4,
+                      "StartColor": "#FF00BFFF",
+                      "StartColorValue": 45.0,
+                      "TargetPropertyName": "BackgroundColor"
+                    },
+                    "Visible": {
+                      "Formula": {
+                        "Expression": "isnull([TyreTemperatureFrontRightInner],0)>0"
+                      },
+                      "Mode": 2,
+                      "TargetPropertyName": "Visible"
+                    }
+                  },
+                  "BorderStyle": {
+                    "RadiusBottomLeft": 6,
+                    "RadiusTopLeft": 6
+                  },
+                  "Height": 100.0,
+                  "IsRectangleItem": true,
+                  "Left": 307.0,
+                  "Name": "TYRE_INNER",
+                  "Top": 99.375,
+                  "Visible": true,
+                  "Width": 8.0
+                },
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+                  "BackgroundColor": "#FF7FFF00",
+                  "Bindings": {
+                    "BackgroundColor": {
+                      "EnableMiddleColor": true,
+                      "EndColor": "#FFFF0000",
+                      "EndColorValue": 120.0,
+                      "Formula": {
+                        "Expression": "isnull([TyreTemperatureFrontRightOuter],0)"
+                      },
+                      "MiddleColor": "#FF00FF00",
+                      "MiddleColorValue": 82.0,
+                      "Mode": 4,
+                      "StartColor": "#FF00BFFF",
+                      "StartColorValue": 45.0,
+                      "TargetPropertyName": "BackgroundColor"
+                    },
+                    "Visible": {
+                      "Formula": {
+                        "Expression": "isnull([TyreTemperatureFrontRightOuter],0)>0"
+                      },
+                      "Mode": 2,
+                      "TargetPropertyName": "Visible"
+                    }
+                  },
+                  "BorderStyle": {
+                    "RadiusBottomRight": 6,
+                    "RadiusTopRight": 6
+                  },
+                  "Height": 100.0,
+                  "IsRectangleItem": true,
+                  "Left": 327.0,
+                  "Name": "TYRE_OUTER",
+                  "Top": 99.375,
+                  "Visible": true,
+                  "Width": 8.0
+                },
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+                  "BackgroundColor": "#FF7FFF00",
+                  "Bindings": {
+                    "BackgroundColor": {
+                      "EnableMiddleColor": true,
+                      "EndColor": "#FFFF0000",
+                      "EndColorValue": 900.0,
+                      "Formula": {
+                        "Expression": "isnull([BrakeTemperatureFrontRight],0)"
+                      },
+                      "MiddleColor": "#FF00FF00",
+                      "MiddleColorValue": 550.0,
+                      "Mode": 4,
+                      "StartColor": "#FF4169E1",
+                      "StartColorValue": 50.0,
+                      "TargetPropertyName": "BackgroundColor"
+                    }
+                  },
+                  "BorderStyle": {
+                    "RadiusBottomLeft": 2,
+                    "RadiusBottomRight": 2,
+                    "RadiusTopLeft": 2,
+                    "RadiusTopRight": 2
+                  },
+                  "Height": 71.0,
+                  "IsRectangleItem": true,
+                  "Left": 293.0,
+                  "Name": "BRAKE",
+                  "Top": 114.0,
+                  "Visible": true,
+                  "Width": 9.0
+                },
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+                  "BackgroundColor": "#FF808080",
+                  "Bindings": {
+                    "Visible": {
+                      "Formula": {
+                        "Expression": "[BrakeTemperatureFrontRight]=0"
+                      },
+                      "Mode": 2,
+                      "TargetPropertyName": "Visible"
+                    }
+                  },
+                  "BorderStyle": {
+                    "RadiusBottomLeft": 2,
+                    "RadiusBottomRight": 2,
+                    "RadiusTopLeft": 2,
+                    "RadiusTopRight": 2
+                  },
+                  "Height": 71.0,
+                  "IsRectangleItem": true,
+                  "Left": 293.0,
+                  "Name": "BRAKE_NA",
+                  "Top": 114.0,
+                  "Visible": true,
+                  "Width": 9.0
+                },
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.LinearGaugeItem, SimHub.Plugins",
+                  "AlternateGaugeColor": "#FF008000",
+                  "AutoSize": false,
+                  "BackgroundColor": "#FF555555",
+                  "Bindings": {
+                    "GaugeColor": {
+                      "EnableMiddleColor": true,
+                      "EndColor": "#FFFF0000",
+                      "EndColorValue": 900.0,
+                      "Formula": {
+                        "Expression": "[BrakeTemperatureFrontRight]"
+                      },
+                      "MiddleColor": "#FF7FFF00",
+                      "MiddleColorValue": 550.0,
+                      "Mode": 4,
+                      "StartColor": "#FF1E90FF",
+                      "StartColorValue": 50.0,
+                      "TargetPropertyName": "GaugeColor"
+                    },
+                    "Value": {
+                      "Formula": {
+                        "Expression": "100-(isnull([GameRawData.mBrakeDamage02],0) * 1)"
+                      },
+                      "Mode": 2,
+                      "TargetPropertyName": "Value"
+                    },
+                    "Visible": {
+                      "Formula": {
+                        "Expression": "return twf_read_setting_equals(\"ams_brakedamageontyres\",0,0,1)",
+                        "Interpreter": 1
+                      },
+                      "Mode": 2,
+                      "TargetPropertyName": "Visible"
+                    }
+                  },
+                  "BorderStyle": {
+                    "RadiusBottomLeft": 3,
+                    "RadiusBottomRight": 3,
+                    "RadiusTopLeft": 3,
+                    "RadiusTopRight": 3
+                  },
+                  "GaugeAlignment": 0,
+                  "GaugeColor": "#FF7FFF00",
+                  "GaugeOrientation": 1,
+                  "Height": 71.0,
+                  "IsLinearGauge": true,
+                  "Left": 293.0,
+                  "Maximum": 100.0,
+                  "Minimum": 0.0,
+                  "Name": "BRAKE_AMS2",
+                  "PAW": 14.0,
+                  "Steps": 0.0,
+                  "Top": 114.0,
+                  "UseAlternateStyle": false,
+                  "Value": 20.0,
+                  "Visible": true,
+                  "Width": 9.0
+                },
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+                  "BackgroundColor": "#FF000000",
+                  "Height": 100.0,
+                  "IsRectangleItem": true,
+                  "Left": 315.0,
+                  "Name": "LINE1",
+                  "Top": 99.625,
+                  "Visible": true,
+                  "Width": 1.0
+                },
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+                  "BackgroundColor": "#FF000000",
+                  "Height": 100.0,
+                  "IsRectangleItem": true,
+                  "Left": 326.0,
+                  "Name": "LINE2",
+                  "Top": 99.625,
+                  "Visible": true,
+                  "Width": 1.0
+                },
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+                  "BackgroundColor": "#00FFFFFF",
+                  "Bindings": {
+                    "Text": {
+                      "FormatString": "",
+                      "Formula": {
+                        "Expression": "var tyrewear = isnull($prop('TyreWearFrontRight'),0)\r\nif(tyrewear>0){\r\n\treturn Math.round(tyrewear) +'%'\r\n}else{\r\n\treturn ''\r\n}\r\n\r\n",
+                        "Interpreter": 1
+                      },
+                      "Mode": 2,
+                      "TargetPropertyName": "Text"
+                    },
+                    "TextColor": {
+                      "EnableMiddleColor": true,
+                      "EndColor": "#FF878787",
+                      "EndColorValue": 100.0,
+                      "Formula": {
+                        "Expression": "var tyrewear = isnull($prop('TyreWearFrontRight'),0)\r\nif(tyrewear>0){\r\n\treturn Math.round(tyrewear)\r\n}else{\r\n\treturn 100\r\n}\r\n\r\n",
+                        "Interpreter": 1
+                      },
+                      "MiddleColor": "#FFFFA500",
+                      "MiddleColorValue": 60.0,
+                      "Mode": 4,
+                      "StartColor": "#FFFF0000",
+                      "StartColorValue": 0.0,
+                      "TargetPropertyName": "TextColor"
+                    }
+                  },
+                  "Font": "Rajdhani",
+                  "FontSize": 22.0,
+                  "FontWeight": "Bold",
+                  "Height": 24.0,
+                  "HorizontalAlignment": 0,
+                  "IsTextItem": true,
+                  "Left": 340.0,
+                  "Name": "TYRE2",
+                  "Text": "50%",
+                  "TextColor": "#FF878787",
+                  "Top": 108.625,
+                  "VerticalAlignment": 1,
+                  "Visible": true,
+                  "Width": 100.0
+                }
+              ],
+              "Group": true,
+              "Height": 120.0,
+              "Left": 289.0,
+              "Name": "FR",
+              "Top": 90.0,
+              "Visible": true,
+              "Width": 151.0
+            },
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.Layer, SimHub.Plugins",
+              "BackgroundColor": "#00FFFFFF",
+              "Childrens": [
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+                  "BackgroundColor": "#FF000000",
+                  "BorderStyle": {
+                    "RadiusBottomLeft": 10,
+                    "RadiusBottomRight": 10,
+                    "RadiusTopLeft": 10,
+                    "RadiusTopRight": 10
+                  },
+                  "Height": 120.0,
+                  "IsRectangleItem": true,
+                  "Left": 111.0,
+                  "Name": "FL",
+                  "Top": 305.0,
+                  "Visible": true,
+                  "Width": 40.0
+                },
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+                  "BackgroundColor": "#FFFFA500",
+                  "Bindings": {
+                    "BackgroundColor": {
+                      "Formula": {
+                        "Expression": "var wheel = '03'\r\nvar wheelslip = $prop('DataCorePlugin.GameRawData.Physics.WheelSlip'+wheel)\r\nvar lock = $prop('DataCorePlugin.GameRawData.Physics.WheelAngularSpeed'+wheel)\r\nvar speed = $prop('DataCorePlugin.GameData.SpeedLocal')\r\n\r\nif(wheelslip > 1){\r\n\tif(isincreasing(50, speed)){\r\n\t\treturn '#00BFFF'\r\n\t} else if (lock==0) {\r\n\t\treturn '#FFE04C'\r\n\t} else { \r\n\t\treturn '#999999'\r\n\t}\r\n}else{\r\n\treturn '#00000000'\r\n}",
+                        "Interpreter": 1
+                      },
+                      "Mode": 2,
+                      "TargetPropertyName": "BackgroundColor"
+                    }
+                  },
+                  "BorderStyle": {
+                    "RadiusBottomLeft": 6,
+                    "RadiusBottomRight": 6,
+                    "RadiusTopLeft": 6,
+                    "RadiusTopRight": 6
+                  },
+                  "Height": 110.0,
+                  "IsRectangleItem": true,
+                  "Left": 6.0,
+                  "Name": "SLIP",
+                  "Opacity": 30.0,
+                  "Top": 311.5,
+                  "Visible": true,
+                  "Width": 134.0
+                },
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+                  "BackgroundColor": "#00FFFFFF",
+                  "Bindings": {
+                    "Text": {
+                      "FormatString": "0.0",
+                      "Formula": {
+                        "Expression": "isnull([TyrePressureRearLeft], '')"
+                      },
+                      "Mode": 2,
+                      "TargetPropertyName": "Text"
+                    }
+                  },
+                  "Font": "Rajdhani",
+                  "FontSize": 38.0,
+                  "FontWeight": "Bold",
+                  "Height": 40.0,
+                  "HorizontalAlignment": 2,
+                  "IsTextItem": true,
+                  "Left": 2.0,
+                  "Name": "PRESSURE",
+                  "Text": "00.0",
+                  "TextColor": "#FFFFFFFF",
+                  "Top": 346.375,
+                  "VerticalAlignment": 1,
+                  "Visible": true,
+                  "Width": 100.0
+                },
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+                  "BackgroundColor": "#00FFFFFF",
+                  "Bindings": {
+                    "Text": {
+                      "FormatString": "",
+                      "Formula": {
+                        "Expression": "var tyretemp = isnull($prop('TyreTemperatureRearLeft'),0)\r\nvar braketemp = isnull($prop('BrakeTemperatureRearLeft'),0)\r\nvar value = ''\r\nif(tyretemp > 0){\r\n\ttyretemp = Math.round(tyretemp) + '\u00b0'\r\n\tvalue = value + tyretemp\r\n}\r\nif(braketemp > 0){\r\n\tbraketemp = Math.round(braketemp) + '\u00b0'\r\n\tvalue = value + ' '+ braketemp\r\n}\r\n\r\nreturn value",
+                        "Interpreter": 1
+                      },
+                      "Mode": 2,
+                      "TargetPropertyName": "Text"
+                    }
+                  },
+                  "CharWidth": 11.0,
+                  "Font": "Rajdhani",
+                  "FontSize": 22.0,
+                  "FontWeight": "Bold",
+                  "Height": 24.0,
+                  "HorizontalAlignment": 2,
+                  "IsTextItem": true,
+                  "Left": 2.0,
+                  "Name": "TYRE",
+                  "SpecialChars": ".,:;\u00b0 ",
+                  "SpecialCharsWidth": 6.0,
+                  "Text": "00\u00b0",
+                  "TextColor": "#FF878787",
+                  "Top": 383.375,
+                  "UseMonospacedText": true,
+                  "VerticalAlignment": 1,
+                  "Visible": true,
+                  "Width": 100.0
+                },
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+                  "BackgroundColor": "#FF7FFF00",
+                  "Bindings": {
+                    "BackgroundColor": {
+                      "EnableMiddleColor": true,
+                      "EndColor": "#FFFF0000",
+                      "EndColorValue": 120.0,
+                      "Formula": {
+                        "Expression": "isnull([TyreTemperatureRearLeft],0)"
+                      },
+                      "MiddleColor": "#FF00FF00",
+                      "MiddleColorValue": 82.0,
+                      "Mode": 4,
+                      "StartColor": "#FF00BFFF",
+                      "StartColorValue": 45.0,
+                      "TargetPropertyName": "BackgroundColor"
+                    }
+                  },
+                  "BorderStyle": {
+                    "RadiusBottomLeft": 6,
+                    "RadiusBottomRight": 6,
+                    "RadiusTopLeft": 6,
+                    "RadiusTopRight": 6
+                  },
+                  "Height": 100.0,
+                  "IsRectangleItem": true,
+                  "Left": 109.0,
+                  "Name": "TYRE",
+                  "Top": 316.375,
+                  "Visible": true,
+                  "Width": 26.0
+                },
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+                  "BackgroundColor": "#FF0000FF",
+                  "Bindings": {
+                    "BackgroundColor": {
+                      "EnableMiddleColor": true,
+                      "EndColor": "#FFFF0000",
+                      "EndColorValue": 120.0,
+                      "Formula": {
+                        "Expression": "isnull([TyreTemperatureRearLeftMiddle],0)"
+                      },
+                      "MiddleColor": "#FF00FF00",
+                      "MiddleColorValue": 82.0,
+                      "Mode": 4,
+                      "StartColor": "#FF00BFFF",
+                      "StartColorValue": 45.0,
+                      "TargetPropertyName": "BackgroundColor"
+                    },
+                    "Visible": {
+                      "Formula": {
+                        "Expression": "isnull([TyreTemperatureRearLeftMiddle],0)>0"
+                      },
+                      "Mode": 2,
+                      "TargetPropertyName": "Visible"
+                    }
+                  },
+                  "Height": 100.0,
+                  "IsRectangleItem": true,
+                  "Left": 117.0,
+                  "Name": "TYRE_MIDDLE",
+                  "Top": 316.375,
+                  "Visible": true,
+                  "Width": 10.0
+                },
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+                  "BackgroundColor": "#FF7FFF00",
+                  "Bindings": {
+                    "BackgroundColor": {
+                      "EnableMiddleColor": true,
+                      "EndColor": "#FFFF0000",
+                      "EndColorValue": 120.0,
+                      "Formula": {
+                        "Expression": "isnull([TyreTemperatureRearLeftOuter],0)"
+                      },
+                      "MiddleColor": "#FF00FF00",
+                      "MiddleColorValue": 82.0,
+                      "Mode": 4,
+                      "StartColor": "#FF00BFFF",
+                      "StartColorValue": 45.0,
+                      "TargetPropertyName": "BackgroundColor"
+                    },
+                    "Visible": {
+                      "Formula": {
+                        "Expression": "isnull([TyreTemperatureRearLeftOuter],0)>0"
+                      },
+                      "Mode": 2,
+                      "TargetPropertyName": "Visible"
+                    }
+                  },
+                  "BorderStyle": {
+                    "RadiusBottomLeft": 6,
+                    "RadiusTopLeft": 6
+                  },
+                  "Height": 100.0,
+                  "IsRectangleItem": true,
+                  "Left": 108.0,
+                  "Name": "TYRE_OUTER",
+                  "Top": 316.375,
+                  "Visible": true,
+                  "Width": 8.0
+                },
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+                  "BackgroundColor": "#FF7FFF00",
+                  "Bindings": {
+                    "BackgroundColor": {
+                      "EnableMiddleColor": true,
+                      "EndColor": "#FFFF0000",
+                      "EndColorValue": 120.0,
+                      "Formula": {
+                        "Expression": "isnull([TyreTemperatureRearLeftInner],0)"
+                      },
+                      "MiddleColor": "#FF00FF00",
+                      "MiddleColorValue": 82.0,
+                      "Mode": 4,
+                      "StartColor": "#FF00BFFF",
+                      "StartColorValue": 45.0,
+                      "TargetPropertyName": "BackgroundColor"
+                    },
+                    "Visible": {
+                      "Formula": {
+                        "Expression": "isnull([TyreTemperatureRearLeftInner],0)>0"
+                      },
+                      "Mode": 2,
+                      "TargetPropertyName": "Visible"
+                    }
+                  },
+                  "BorderStyle": {
+                    "RadiusBottomRight": 6,
+                    "RadiusTopRight": 6
+                  },
+                  "Height": 100.0,
+                  "IsRectangleItem": true,
+                  "Left": 128.0,
+                  "Name": "TYRE_INNER",
+                  "Top": 316.375,
+                  "Visible": true,
+                  "Width": 8.0
+                },
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+                  "BackgroundColor": "#FF7FFF00",
+                  "Bindings": {
+                    "BackgroundColor": {
+                      "EnableMiddleColor": true,
+                      "EndColor": "#FFFF0000",
+                      "EndColorValue": 900.0,
+                      "Formula": {
+                        "Expression": "isnull([BrakeTemperatureRearLeft],0)"
+                      },
+                      "MiddleColor": "#FF00FF00",
+                      "MiddleColorValue": 550.0,
+                      "Mode": 4,
+                      "StartColor": "#FF4169E1",
+                      "StartColorValue": 50.0,
+                      "TargetPropertyName": "BackgroundColor"
+                    }
+                  },
+                  "BorderStyle": {
+                    "RadiusBottomLeft": 2,
+                    "RadiusBottomRight": 2,
+                    "RadiusTopLeft": 2,
+                    "RadiusTopRight": 2
+                  },
+                  "Height": 70.0,
+                  "IsRectangleItem": true,
+                  "Left": 139.0,
+                  "Name": "BRAKE",
+                  "Top": 331.375,
+                  "Visible": true,
+                  "Width": 9.0
+                },
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+                  "BackgroundColor": "#FF808080",
+                  "Bindings": {
+                    "Visible": {
+                      "Formula": {
+                        "Expression": "[BrakeTemperatureRearLeft] = 0"
+                      },
+                      "Mode": 2,
+                      "TargetPropertyName": "Visible"
+                    }
+                  },
+                  "BorderStyle": {
+                    "RadiusBottomLeft": 2,
+                    "RadiusBottomRight": 2,
+                    "RadiusTopLeft": 2,
+                    "RadiusTopRight": 2
+                  },
+                  "Height": 70.0,
+                  "IsRectangleItem": true,
+                  "Left": 139.0,
+                  "Name": "BRAKE_NA",
+                  "Top": 331.0,
+                  "Visible": true,
+                  "Width": 9.0
+                },
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.LinearGaugeItem, SimHub.Plugins",
+                  "AlternateGaugeColor": "#FF008000",
+                  "AutoSize": false,
+                  "BackgroundColor": "#FF555555",
+                  "Bindings": {
+                    "GaugeColor": {
+                      "EnableMiddleColor": true,
+                      "EndColor": "#FFFF0000",
+                      "EndColorValue": 900.0,
+                      "Formula": {
+                        "Expression": "[BrakeTemperatureRearLeft]"
+                      },
+                      "MiddleColor": "#FF7FFF00",
+                      "MiddleColorValue": 550.0,
+                      "Mode": 4,
+                      "StartColor": "#FF1E90FF",
+                      "StartColorValue": 50.0,
+                      "TargetPropertyName": "GaugeColor"
+                    },
+                    "Value": {
+                      "Formula": {
+                        "Expression": "100-(isnull([GameRawData.mBrakeDamage03],0) * 1)"
+                      },
+                      "Mode": 2,
+                      "TargetPropertyName": "Value"
+                    },
+                    "Visible": {
+                      "Formula": {
+                        "Expression": "return twf_read_setting_equals(\"ams_brakedamageontyres\",0,0,1)",
+                        "Interpreter": 1
+                      },
+                      "Mode": 2,
+                      "TargetPropertyName": "Visible"
+                    }
+                  },
+                  "BorderStyle": {
+                    "RadiusBottomLeft": 3,
+                    "RadiusBottomRight": 3,
+                    "RadiusTopLeft": 3,
+                    "RadiusTopRight": 3
+                  },
+                  "GaugeAlignment": 0,
+                  "GaugeColor": "#FF7FFF00",
+                  "GaugeOrientation": 1,
+                  "Height": 71.0,
+                  "IsLinearGauge": true,
+                  "Left": 139.0,
+                  "Maximum": 100.0,
+                  "Minimum": 0.0,
+                  "Name": "BRAKE_AMS2",
+                  "PAW": 14.0,
+                  "Steps": 0.0,
+                  "Top": 331.0,
+                  "UseAlternateStyle": false,
+                  "Value": 20.0,
+                  "Visible": true,
+                  "Width": 9.0
+                },
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+                  "BackgroundColor": "#FF000000",
+                  "Height": 100.0,
+                  "IsRectangleItem": true,
+                  "Left": 116.0,
+                  "Name": "LINE1",
+                  "Top": 316.375,
+                  "Visible": true,
+                  "Width": 1.0
+                },
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+                  "BackgroundColor": "#FF000000",
+                  "Height": 100.0,
+                  "IsRectangleItem": true,
+                  "Left": 127.0,
+                  "Name": "LINE2",
+                  "Top": 316.375,
+                  "Visible": true,
+                  "Width": 1.0
+                },
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+                  "BackgroundColor": "#00FFFFFF",
+                  "Bindings": {
+                    "Text": {
+                      "FormatString": "",
+                      "Formula": {
+                        "Expression": "var tyrewear = isnull($prop('TyreWearRearLeft'),0)\r\nif(tyrewear>0){\r\n\treturn Math.round(tyrewear) +'%'\r\n}else{\r\n\treturn ''\r\n}\r\n\r\n",
+                        "Interpreter": 1
+                      },
+                      "Mode": 2,
+                      "TargetPropertyName": "Text"
+                    },
+                    "TextColor": {
+                      "EnableMiddleColor": true,
+                      "EndColor": "#FF878787",
+                      "EndColorValue": 100.0,
+                      "Formula": {
+                        "Expression": "var tyrewear = isnull($prop('TyreWearRearLeft'),0)\r\nif(tyrewear>0){\r\n\treturn Math.round(tyrewear)\r\n}else{\r\n\treturn 100\r\n}\r\n\r\n",
+                        "Interpreter": 1
+                      },
+                      "MiddleColor": "#FFFFA500",
+                      "MiddleColorValue": 60.0,
+                      "Mode": 4,
+                      "StartColor": "#FFFF0000",
+                      "StartColorValue": 0.0,
+                      "TargetPropertyName": "TextColor"
+                    }
+                  },
+                  "Font": "Rajdhani",
+                  "FontSize": 22.0,
+                  "FontWeight": "Bold",
+                  "Height": 24.0,
+                  "HorizontalAlignment": 2,
+                  "IsTextItem": true,
+                  "Left": 2.0,
+                  "Name": "TYRE3",
+                  "Text": "50%",
+                  "TextColor": "#FF878787",
+                  "Top": 324.625,
+                  "VerticalAlignment": 1,
+                  "Visible": true,
+                  "Width": 100.0
+                }
+              ],
+              "Group": true,
+              "Height": 120.0,
+              "Left": 2.0,
+              "Name": "RL",
+              "Top": 305.0,
+              "Visible": true,
+              "Width": 149.0
+            },
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.Layer, SimHub.Plugins",
+              "BackgroundColor": "#00FFFFFF",
+              "Childrens": [
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+                  "BackgroundColor": "#FF000000",
+                  "BorderStyle": {
+                    "RadiusBottomLeft": 10,
+                    "RadiusBottomRight": 10,
+                    "RadiusTopLeft": 10,
+                    "RadiusTopRight": 10
+                  },
+                  "Height": 120.0,
+                  "IsRectangleItem": true,
+                  "Left": 290.0,
+                  "Name": "FL",
+                  "Top": 305.0,
+                  "Visible": true,
+                  "Width": 40.0
+                },
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+                  "BackgroundColor": "#FFFFA500",
+                  "Bindings": {
+                    "BackgroundColor": {
+                      "Formula": {
+                        "Expression": "var wheel = '04'\r\nvar wheelslip = $prop('DataCorePlugin.GameRawData.Physics.WheelSlip'+wheel)\r\nvar lock = $prop('DataCorePlugin.GameRawData.Physics.WheelAngularSpeed'+wheel)\r\nvar speed = $prop('DataCorePlugin.GameData.SpeedLocal')\r\n\r\nif(wheelslip > 1){\r\n\tif(isincreasing(50, speed)){\r\n\t\treturn '#00BFFF'\r\n\t} else if (lock==0) {\r\n\t\treturn '#FFE04C'\r\n\t} else { \r\n\t\treturn '#999999'\r\n\t}\r\n}else{\r\n\treturn '#00000000'\r\n}",
+                        "Interpreter": 1
+                      },
+                      "Mode": 2,
+                      "TargetPropertyName": "BackgroundColor"
+                    }
+                  },
+                  "BorderStyle": {
+                    "RadiusBottomLeft": 6,
+                    "RadiusBottomRight": 6,
+                    "RadiusTopLeft": 6,
+                    "RadiusTopRight": 6
+                  },
+                  "Height": 110.0,
+                  "IsRectangleItem": true,
+                  "Left": 302.0,
+                  "Name": "SLIP",
+                  "Opacity": 30.0,
+                  "Top": 311.5,
+                  "Visible": true,
+                  "Width": 134.0
+                },
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+                  "BackgroundColor": "#00FFFFFF",
+                  "Bindings": {
+                    "Text": {
+                      "FormatString": "0.0",
+                      "Formula": {
+                        "Expression": "isnull([TyrePressureRearRight], '')"
+                      },
+                      "Mode": 2,
+                      "TargetPropertyName": "Text"
+                    }
+                  },
+                  "Font": "Rajdhani",
+                  "FontSize": 38.0,
+                  "FontWeight": "Bold",
+                  "Height": 40.0,
+                  "HorizontalAlignment": 0,
+                  "IsTextItem": true,
+                  "Left": 340.0,
+                  "Name": "PRESSURE",
+                  "Text": "00.0",
+                  "TextColor": "#FFFFFFFF",
+                  "Top": 346.375,
+                  "VerticalAlignment": 1,
+                  "Visible": true,
+                  "Width": 100.0
+                },
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+                  "BackgroundColor": "#00FFFFFF",
+                  "Bindings": {
+                    "Text": {
+                      "FormatString": "",
+                      "Formula": {
+                        "Expression": "var tyretemp = isnull($prop('TyreTemperatureRearRight'),0)\r\nvar braketemp = isnull($prop('BrakeTemperatureRearRight'),0)\r\nvar value = ''\r\n\r\nif(braketemp > 0){\r\n\tbraketemp = Math.round(braketemp) + '\u00b0'\r\n\tvalue = value + braketemp +' '\r\n}\r\n\r\nif(tyretemp > 0){\r\n\ttyretemp = Math.round(tyretemp) + '\u00b0'\r\n\tvalue = value + tyretemp\r\n}\r\n\r\nreturn value",
+                        "Interpreter": 1
+                      },
+                      "Mode": 2,
+                      "TargetPropertyName": "Text"
+                    }
+                  },
+                  "CharWidth": 11.0,
+                  "Font": "Rajdhani",
+                  "FontSize": 22.0,
+                  "FontWeight": "Bold",
+                  "Height": 24.0,
+                  "HorizontalAlignment": 0,
+                  "IsTextItem": true,
+                  "Left": 340.0,
+                  "Name": "TYRE",
+                  "SpecialChars": ".,:;\u00b0 ",
+                  "SpecialCharsWidth": 6.0,
+                  "Text": "00\u00b0",
+                  "TextColor": "#FF878787",
+                  "Top": 383.375,
+                  "UseMonospacedText": true,
+                  "VerticalAlignment": 1,
+                  "Visible": true,
+                  "Width": 100.0
+                },
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+                  "BackgroundColor": "#FF7FFF00",
+                  "Bindings": {
+                    "BackgroundColor": {
+                      "EnableMiddleColor": true,
+                      "EndColor": "#FFFF0000",
+                      "EndColorValue": 120.0,
+                      "Formula": {
+                        "Expression": "isnull([TyreTemperatureRearRight],0)"
+                      },
+                      "MiddleColor": "#FF00FF00",
+                      "MiddleColorValue": 82.0,
+                      "Mode": 4,
+                      "StartColor": "#FF00BFFF",
+                      "StartColorValue": 45.0,
+                      "TargetPropertyName": "BackgroundColor"
+                    }
+                  },
+                  "BorderStyle": {
+                    "RadiusBottomLeft": 6,
+                    "RadiusBottomRight": 6,
+                    "RadiusTopLeft": 6,
+                    "RadiusTopRight": 6
+                  },
+                  "Height": 100.0,
+                  "IsRectangleItem": true,
+                  "Left": 307.0,
+                  "Name": "TYRE",
+                  "Top": 316.375,
+                  "Visible": true,
+                  "Width": 26.0
+                },
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+                  "BackgroundColor": "#FF0000FF",
+                  "Bindings": {
+                    "BackgroundColor": {
+                      "EnableMiddleColor": true,
+                      "EndColor": "#FFFF0000",
+                      "EndColorValue": 120.0,
+                      "Formula": {
+                        "Expression": "isnull([TyreTemperatureRearRightMiddle],0)"
+                      },
+                      "MiddleColor": "#FF00FF00",
+                      "MiddleColorValue": 82.0,
+                      "Mode": 4,
+                      "StartColor": "#FF00BFFF",
+                      "StartColorValue": 45.0,
+                      "TargetPropertyName": "BackgroundColor"
+                    },
+                    "Visible": {
+                      "Formula": {
+                        "Expression": "isnull([TyreTemperatureRearRightMiddle],0)>0"
+                      },
+                      "Mode": 2,
+                      "TargetPropertyName": "Visible"
+                    }
+                  },
+                  "Height": 100.0,
+                  "IsRectangleItem": true,
+                  "Left": 316.0,
+                  "Name": "TYRE_MIDDLE",
+                  "Top": 316.375,
+                  "Visible": true,
+                  "Width": 10.0
+                },
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+                  "BackgroundColor": "#FF7FFF00",
+                  "Bindings": {
+                    "BackgroundColor": {
+                      "EnableMiddleColor": true,
+                      "EndColor": "#FFFF0000",
+                      "EndColorValue": 120.0,
+                      "Formula": {
+                        "Expression": "isnull([TyreTemperatureRearRightInner],0)"
+                      },
+                      "MiddleColor": "#FF00FF00",
+                      "MiddleColorValue": 82.0,
+                      "Mode": 4,
+                      "StartColor": "#FF00BFFF",
+                      "StartColorValue": 45.0,
+                      "TargetPropertyName": "BackgroundColor"
+                    },
+                    "Visible": {
+                      "Formula": {
+                        "Expression": "isnull([TyreTemperatureRearRightInner],0)>0"
+                      },
+                      "Mode": 2,
+                      "TargetPropertyName": "Visible"
+                    }
+                  },
+                  "BorderStyle": {
+                    "RadiusBottomLeft": 6,
+                    "RadiusTopLeft": 6
+                  },
+                  "Height": 100.0,
+                  "IsRectangleItem": true,
+                  "Left": 307.0,
+                  "Name": "TYRE_INNER",
+                  "Top": 316.375,
+                  "Visible": true,
+                  "Width": 8.0
+                },
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+                  "BackgroundColor": "#FF7FFF00",
+                  "Bindings": {
+                    "BackgroundColor": {
+                      "EnableMiddleColor": true,
+                      "EndColor": "#FFFF0000",
+                      "EndColorValue": 120.0,
+                      "Formula": {
+                        "Expression": "isnull([TyreTemperatureRearRightOuter],0)"
+                      },
+                      "MiddleColor": "#FF00FF00",
+                      "MiddleColorValue": 82.0,
+                      "Mode": 4,
+                      "StartColor": "#FF00BFFF",
+                      "StartColorValue": 45.0,
+                      "TargetPropertyName": "BackgroundColor"
+                    },
+                    "Visible": {
+                      "Formula": {
+                        "Expression": "isnull([TyreTemperatureRearRightOuter],0)>0"
+                      },
+                      "Mode": 2,
+                      "TargetPropertyName": "Visible"
+                    }
+                  },
+                  "BorderStyle": {
+                    "RadiusBottomRight": 6,
+                    "RadiusTopRight": 6
+                  },
+                  "Height": 100.0,
+                  "IsRectangleItem": true,
+                  "Left": 327.0,
+                  "Name": "TYRE_OUTER",
+                  "Top": 316.375,
+                  "Visible": true,
+                  "Width": 8.0
+                },
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+                  "BackgroundColor": "#FF7FFF00",
+                  "Bindings": {
+                    "BackgroundColor": {
+                      "EnableMiddleColor": true,
+                      "EndColor": "#FFFF0000",
+                      "EndColorValue": 900.0,
+                      "Formula": {
+                        "Expression": "isnull([BrakeTemperatureRearRight],0)"
+                      },
+                      "MiddleColor": "#FF00FF00",
+                      "MiddleColorValue": 550.0,
+                      "Mode": 4,
+                      "StartColor": "#FF4169E1",
+                      "StartColorValue": 50.0,
+                      "TargetPropertyName": "BackgroundColor"
+                    }
+                  },
+                  "BorderStyle": {
+                    "RadiusBottomLeft": 2,
+                    "RadiusBottomRight": 2,
+                    "RadiusTopLeft": 2,
+                    "RadiusTopRight": 2
+                  },
+                  "Height": 70.0,
+                  "IsRectangleItem": true,
+                  "Left": 293.0,
+                  "Name": "BRAKE",
+                  "Top": 331.0,
+                  "Visible": true,
+                  "Width": 9.0
+                },
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+                  "BackgroundColor": "#FF808080",
+                  "Bindings": {
+                    "Visible": {
+                      "Formula": {
+                        "Expression": "[BrakeTemperatureRearRight]=0"
+                      },
+                      "Mode": 2,
+                      "TargetPropertyName": "Visible"
+                    }
+                  },
+                  "BorderStyle": {
+                    "RadiusBottomLeft": 2,
+                    "RadiusBottomRight": 2,
+                    "RadiusTopLeft": 2,
+                    "RadiusTopRight": 2
+                  },
+                  "Height": 70.0,
+                  "IsRectangleItem": true,
+                  "Left": 293.0,
+                  "Name": "BRAKE_NA",
+                  "Top": 331.0,
+                  "Visible": true,
+                  "Width": 9.0
+                },
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.LinearGaugeItem, SimHub.Plugins",
+                  "AlternateGaugeColor": "#FF008000",
+                  "AutoSize": false,
+                  "BackgroundColor": "#FF555555",
+                  "Bindings": {
+                    "GaugeColor": {
+                      "EnableMiddleColor": true,
+                      "EndColor": "#FFFF0000",
+                      "EndColorValue": 900.0,
+                      "Formula": {
+                        "Expression": "[BrakeTemperatureRearRight]"
+                      },
+                      "MiddleColor": "#FF7FFF00",
+                      "MiddleColorValue": 550.0,
+                      "Mode": 4,
+                      "StartColor": "#FF1E90FF",
+                      "StartColorValue": 50.0,
+                      "TargetPropertyName": "GaugeColor"
+                    },
+                    "Value": {
+                      "Formula": {
+                        "Expression": "100-(isnull([GameRawData.mBrakeDamage04],0) * 1)"
+                      },
+                      "Mode": 2,
+                      "TargetPropertyName": "Value"
+                    },
+                    "Visible": {
+                      "Formula": {
+                        "Expression": "return twf_read_setting_equals(\"ams_brakedamageontyres\",0,0,1)\r\n\r\n",
+                        "Interpreter": 1
+                      },
+                      "Mode": 2,
+                      "TargetPropertyName": "Visible"
+                    }
+                  },
+                  "BorderStyle": {
+                    "RadiusBottomLeft": 3,
+                    "RadiusBottomRight": 3,
+                    "RadiusTopLeft": 3,
+                    "RadiusTopRight": 3
+                  },
+                  "GaugeAlignment": 0,
+                  "GaugeColor": "#FF7FFF00",
+                  "GaugeOrientation": 1,
+                  "Height": 71.0,
+                  "IsLinearGauge": true,
+                  "Left": 293.0,
+                  "Maximum": 100.0,
+                  "Minimum": 0.0,
+                  "Name": "BRAKE_AMS2",
+                  "PAW": 14.0,
+                  "Steps": 0.0,
+                  "Top": 330.0,
+                  "UseAlternateStyle": false,
+                  "Value": 20.0,
+                  "Visible": true,
+                  "Width": 9.0
+                },
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+                  "BackgroundColor": "#FF000000",
+                  "Height": 100.0,
+                  "IsRectangleItem": true,
+                  "Left": 315.0,
+                  "Name": "LINE1",
+                  "Top": 316.375,
+                  "Visible": true,
+                  "Width": 1.0
+                },
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+                  "BackgroundColor": "#FF000000",
+                  "Height": 100.0,
+                  "IsRectangleItem": true,
+                  "Left": 326.0,
+                  "Name": "LINE2",
+                  "Top": 316.375,
+                  "Visible": true,
+                  "Width": 1.0
+                },
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+                  "BackgroundColor": "#00FFFFFF",
+                  "Bindings": {
+                    "Text": {
+                      "FormatString": "",
+                      "Formula": {
+                        "Expression": "var tyrewear = isnull($prop('TyreWearRearRight'),0)\r\nif(tyrewear>0){\r\n\treturn Math.round(tyrewear) +'%'\r\n}else{\r\n\treturn ''\r\n}\r\n\r\n",
+                        "Interpreter": 1
+                      },
+                      "Mode": 2,
+                      "TargetPropertyName": "Text"
+                    },
+                    "TextColor": {
+                      "EnableMiddleColor": true,
+                      "EndColor": "#FF878787",
+                      "EndColorValue": 100.0,
+                      "Formula": {
+                        "Expression": "var tyrewear = isnull($prop('TyreWearRearRight'),0)\r\nif(tyrewear>0){\r\n\treturn Math.round(tyrewear)\r\n}else{\r\n\treturn 100\r\n}\r\n\r\n",
+                        "Interpreter": 1
+                      },
+                      "MiddleColor": "#FFFFA500",
+                      "MiddleColorValue": 60.0,
+                      "Mode": 4,
+                      "StartColor": "#FFFF0000",
+                      "StartColorValue": 0.0,
+                      "TargetPropertyName": "TextColor"
+                    }
+                  },
+                  "Font": "Rajdhani",
+                  "FontSize": 22.0,
+                  "FontWeight": "Bold",
+                  "Height": 24.0,
+                  "HorizontalAlignment": 0,
+                  "IsTextItem": true,
+                  "Left": 340.0,
+                  "Name": "TYRE4",
+                  "Text": "50%",
+                  "TextColor": "#FF878787",
+                  "Top": 325.625,
+                  "VerticalAlignment": 1,
+                  "Visible": true,
+                  "Width": 100.0
+                }
+              ],
+              "Group": true,
+              "Height": 120.0,
+              "Left": 290.0,
+              "Name": "RR",
+              "Top": 305.0,
+              "Visible": true,
+              "Width": 150.0
+            },
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+              "BackgroundColor": "#00FFFFFF",
+              "Bindings": {
+                "Text": {
+                  "Formula": {
+                    "Expression": "var compound = isnull($prop('GameRawData.Graphics.TyreCompound'),'')\r\nvar tyreset = isnull($prop('GameRawData.Graphics.currentTyreSet'),'')\r\nif(compound=='dry_compound'){\r\n\treturn 'DRY ' + tyreset\r\n} else if(compound=='wet_compound'){\r\n\treturn 'WET ' + tyreset\r\n} else {\r\n\treturn ''\r\n}",
+                    "Interpreter": 1
+                  },
+                  "Mode": 2,
+                  "TargetPropertyName": "Text"
+                }
+              },
+              "Font": "Rajdhani",
+              "FontSize": 22.0,
+              "FontWeight": "Bold",
+              "Height": 24.0,
+              "HorizontalAlignment": 0,
+              "IsTextItem": true,
+              "Left": 11.0,
+              "Name": "TextItem",
+              "Text": "SET",
+              "TextColor": "#FF878787",
+              "Top": 25.0,
+              "VerticalAlignment": 1,
+              "Visible": true,
+              "Width": 100.0
+            }
+          ],
+          "Group": true,
+          "Height": 400.0,
+          "Left": 2.0,
+          "Name": "TYRES2",
+          "Top": 25.0,
+          "Visible": true,
+          "Width": 438.0
+        }
+      ],
+      "Name": "Screen",
+      "OverlayMaxDuration": 0,
+      "OverlayMinDuration": 0,
+      "OverlayTriggerExpression": {
+        "Expression": ""
+      },
+      "PitScreen": false,
+      "ScreenEnabledExpression": {
+        "Expression": ""
+      },
+      "ScreenId": "46b5a2ef-05c6-4401-b9a3-5eef7fbbf389"
+    }
+  ],
+  "ShowBackground": true,
+  "ShowBoundingRectangles": false,
+  "ShowForeground": true,
+  "ShowOnScreenControls": true,
+  "SnapToGrid": false,
+  "Version": 2
+}

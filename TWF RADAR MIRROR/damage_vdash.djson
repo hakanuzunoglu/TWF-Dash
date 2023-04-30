@@ -1,0 +1,983 @@
+{
+  "BackgroundColor": "#FF000000",
+  "BackgroundOpacity": 100.0,
+  "BaseHeight": 353,
+  "BaseWidth": 298,
+  "DashboardDebugManager": {
+    "LastPlacement": "185,249,298,353",
+    "Maximized": false
+  },
+  "EnableClickThroughOverlay": true,
+  "EnableOnDashboardMessaging": true,
+  "ForegroundOpacity": 100.0,
+  "GridSize": 10,
+  "HideLabels": true,
+  "Id": "958b6fc5-78bc-4f36-b9d0-00f784e1251a",
+  "Images": [
+    {
+      "Extension": ".png",
+      "Height": 1000,
+      "Length": 47773,
+      "MD5": "b52297a5f53e6fd80b6349f48b961e3c",
+      "Modified": false,
+      "Name": "car-mask4",
+      "Optimized": true,
+      "Width": 500
+    },
+    {
+      "Extension": ".png",
+      "Length": 68639,
+      "MD5": "646fb326449994456f5155332c1061d4",
+      "Modified": false,
+      "Name": "car-mask2",
+      "Optimized": true
+    }
+  ],
+  "IsOverlay": false,
+  "Metadata": {
+    "EnableOnDashboardMessaging": true,
+    "Height": 353.0,
+    "IdleScreensIndexs": [
+      0
+    ],
+    "InGameScreensIndexs": [
+      0
+    ],
+    "IsOverlay": false,
+    "MainPreviewIndex": 0,
+    "MetadataVersion": 2.0,
+    "OverlaySizeWarning": false,
+    "PitScreensIndexs": [],
+    "ScreenCount": 1.0,
+    "Width": 298.0
+  },
+  "Screens": [
+    {
+      "AllowOverlays": true,
+      "BackgroundColor": "#FF000000",
+      "IdleScreen": true,
+      "InGameScreen": true,
+      "IsBackgroundLayer": false,
+      "IsForegroundLayer": false,
+      "IsOverlayLayer": false,
+      "Items": [
+        {
+          "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.Layer, SimHub.Plugins",
+          "BackgroundColor": "#00FFFFFF",
+          "Childrens": [
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+              "BackgroundColor": "#FF043B04",
+              "BorderStyle": {
+                "RadiusBottomLeft": 50,
+                "RadiusBottomRight": 50,
+                "RadiusTopLeft": 50,
+                "RadiusTopRight": 50
+              },
+              "Height": 266.0,
+              "IsRectangleItem": true,
+              "Left": 85.0,
+              "Name": "CARBASE",
+              "Top": 42.0,
+              "Visible": true,
+              "Width": 128.0
+            },
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.Layer, SimHub.Plugins",
+              "BackgroundColor": "#00FFFFFF",
+              "Bindings": {
+                "Visible": {
+                  "Formula": {
+                    "Expression": "[DataCorePlugin.CurrentGame]!='Automobilista2' && [DataCorePlugin.CurrentGame]!='AssettoCorsa' && [DataCorePlugin.CurrentGame]!='IRacing'"
+                  },
+                  "Mode": 2,
+                  "TargetPropertyName": "Visible"
+                }
+              },
+              "Childrens": [
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+                  "BackgroundColor": "#FFFF0000",
+                  "Bindings": {
+                    "BackgroundColor": {
+                      "EnableMiddleColor": true,
+                      "EndColor": "#FFFF0000",
+                      "EndColorValue": 40.0,
+                      "Formula": {
+                        "Expression": "[CarDamage1]"
+                      },
+                      "MiddleColor": "#FFFFFF00",
+                      "MiddleColorValue": 10.0,
+                      "Mode": 4,
+                      "StartColor": "#00FFFFFF",
+                      "StartColorValue": 0.0,
+                      "TargetPropertyName": "BackgroundColor"
+                    }
+                  },
+                  "BorderStyle": {
+                    "RadiusTopLeft": 50,
+                    "RadiusTopRight": 50
+                  },
+                  "Height": 53.0,
+                  "IsRectangleItem": true,
+                  "Left": 85.0,
+                  "Name": "FRONT",
+                  "Top": 42.0,
+                  "Visible": true,
+                  "Width": 128.0
+                },
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+                  "BackgroundColor": "#FFFFFF00",
+                  "Bindings": {
+                    "BackgroundColor": {
+                      "EnableMiddleColor": true,
+                      "EndColor": "#FFFF0000",
+                      "EndColorValue": 40.0,
+                      "Formula": {
+                        "Expression": "[CarDamage3]"
+                      },
+                      "MiddleColor": "#FFFFFF00",
+                      "MiddleColorValue": 10.0,
+                      "Mode": 4,
+                      "StartColor": "#00FFFFFF",
+                      "StartColorValue": 0.0,
+                      "TargetPropertyName": "BackgroundColor"
+                    }
+                  },
+                  "Height": 160.0,
+                  "IsRectangleItem": true,
+                  "Left": 85.0,
+                  "Name": "LEFT",
+                  "Top": 95.0,
+                  "Visible": true,
+                  "Width": 62.5
+                },
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+                  "BackgroundColor": "#FF008000",
+                  "Bindings": {
+                    "BackgroundColor": {
+                      "EnableMiddleColor": true,
+                      "EndColor": "#FFFF0000",
+                      "EndColorValue": 40.0,
+                      "Formula": {
+                        "Expression": "[CarDamage4]"
+                      },
+                      "MiddleColor": "#FFFFFF00",
+                      "MiddleColorValue": 10.0,
+                      "Mode": 4,
+                      "StartColor": "#00FFFFFF",
+                      "StartColorValue": 1.0,
+                      "TargetPropertyName": "BackgroundColor"
+                    }
+                  },
+                  "Height": 160.0,
+                  "IsRectangleItem": true,
+                  "Left": 148.0,
+                  "Name": "RIGHT",
+                  "Top": 95.0,
+                  "Visible": true,
+                  "Width": 64.5
+                },
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+                  "BackgroundColor": "#FFFF0000",
+                  "Bindings": {
+                    "BackgroundColor": {
+                      "EnableMiddleColor": true,
+                      "EndColor": "#FFFF0000",
+                      "EndColorValue": 40.0,
+                      "Formula": {
+                        "Expression": "[CarDamage2]"
+                      },
+                      "MiddleColor": "#FFFFFF00",
+                      "MiddleColorValue": 10.0,
+                      "Mode": 4,
+                      "StartColor": "#00FFFFFF",
+                      "StartColorValue": 0.0,
+                      "TargetPropertyName": "BackgroundColor"
+                    }
+                  },
+                  "BorderStyle": {
+                    "RadiusBottomLeft": 40,
+                    "RadiusBottomRight": 40
+                  },
+                  "Height": 53.0,
+                  "IsRectangleItem": true,
+                  "Left": 85.0,
+                  "Name": "REAR",
+                  "Top": 255.0,
+                  "Visible": true,
+                  "Width": 127.0
+                }
+              ],
+              "Group": true,
+              "Height": 266.0,
+              "Left": 85.0,
+              "Name": "DAMAGE_COLORS",
+              "Top": 42.0,
+              "Visible": false,
+              "Width": 128.0
+            },
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.Layer, SimHub.Plugins",
+              "BackgroundColor": "#00FFFFFF",
+              "Bindings": {
+                "Visible": {
+                  "Formula": {
+                    "Expression": "[DataCorePlugin.CurrentGame]='AssettoCorsa'"
+                  },
+                  "Mode": 2,
+                  "TargetPropertyName": "Visible"
+                }
+              },
+              "Childrens": [
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+                  "BackgroundColor": "#7D00FF00",
+                  "Bindings": {
+                    "BackgroundColor": {
+                      "EnableMiddleColor": true,
+                      "EndColor": "#FFFF0000",
+                      "EndColorValue": 70.0,
+                      "Formula": {
+                        "Expression": "var cardamage = isnull($prop('CarDamage1'),0)\r\ncardamage = cardamage.toFixed()\r\nreturn cardamage",
+                        "Interpreter": 1
+                      },
+                      "MiddleColor": "#FFFFFF00",
+                      "MiddleColorValue": 10.0,
+                      "Mode": 4,
+                      "StartColor": "#00FFFFFF",
+                      "StartColorValue": 0.0,
+                      "TargetPropertyName": "BackgroundColor"
+                    }
+                  },
+                  "BorderStyle": {
+                    "RadiusBottomLeft": 50,
+                    "RadiusBottomRight": 50,
+                    "RadiusTopLeft": 50,
+                    "RadiusTopRight": 50
+                  },
+                  "Height": 266.0,
+                  "IsRectangleItem": true,
+                  "Left": 85.0,
+                  "Name": "DAMAGE_AC",
+                  "Top": 42.0,
+                  "Visible": true,
+                  "Width": 128.0
+                }
+              ],
+              "Group": true,
+              "Height": 266.0,
+              "Left": 85.0,
+              "Name": "AC_COLORS",
+              "Top": 42.0,
+              "Visible": false,
+              "Width": 128.0
+            },
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.Layer, SimHub.Plugins",
+              "BackgroundColor": "#00FFFFFF",
+              "Bindings": {
+                "Visible": {
+                  "Formula": {
+                    "Expression": "[DataCorePlugin.CurrentGame]='Automobilista2'"
+                  },
+                  "Mode": 2,
+                  "TargetPropertyName": "Visible"
+                }
+              },
+              "Childrens": [
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+                  "BackgroundColor": "#7D00FF00",
+                  "Bindings": {
+                    "BackgroundColor": {
+                      "EnableMiddleColor": true,
+                      "EndColor": "#FFFF0000",
+                      "EndColorValue": 70.0,
+                      "Formula": {
+                        "Expression": "[CarDamage2]"
+                      },
+                      "MiddleColor": "#FFFFFF00",
+                      "MiddleColorValue": 10.0,
+                      "Mode": 4,
+                      "StartColor": "#FF008000",
+                      "StartColorValue": 0.0,
+                      "TargetPropertyName": "BackgroundColor"
+                    }
+                  },
+                  "BorderStyle": {
+                    "RadiusBottomLeft": 50,
+                    "RadiusBottomRight": 50,
+                    "RadiusTopLeft": 50,
+                    "RadiusTopRight": 50
+                  },
+                  "Height": 266.0,
+                  "IsRectangleItem": true,
+                  "Left": 85.0,
+                  "Name": "AERODAMAGE_AMS2",
+                  "Top": 42.0,
+                  "Visible": true,
+                  "Width": 128.0
+                },
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+                  "BackgroundColor": "#7D00FF00",
+                  "Bindings": {
+                    "BackgroundColor": {
+                      "EnableMiddleColor": true,
+                      "EndColor": "#FFFF0000",
+                      "EndColorValue": 70.0,
+                      "Formula": {
+                        "Expression": "isnull([GameRawData.mBrakeDamage01],0) * 100 * 1"
+                      },
+                      "MiddleColor": "#FFFFFF00",
+                      "MiddleColorValue": 10.0,
+                      "Mode": 4,
+                      "StartColor": "#FF008000",
+                      "StartColorValue": 0.0,
+                      "TargetPropertyName": "BackgroundColor"
+                    }
+                  },
+                  "BorderStyle": {
+                    "BorderBottom": 4,
+                    "BorderColor": "#FF000000",
+                    "BorderRight": 4,
+                    "BorderTop": 4
+                  },
+                  "Height": 50.0,
+                  "IsRectangleItem": true,
+                  "Left": 85.0,
+                  "Name": "BRAKE_FL_AMS2",
+                  "Top": 75.0,
+                  "Visible": true,
+                  "Width": 30.0
+                },
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+                  "BackgroundColor": "#7D00FF00",
+                  "Bindings": {
+                    "BackgroundColor": {
+                      "EnableMiddleColor": true,
+                      "EndColor": "#FFFF0000",
+                      "EndColorValue": 70.0,
+                      "Formula": {
+                        "Expression": "isnull([GameRawData.mBrakeDamage03],0) * 100 * 1"
+                      },
+                      "MiddleColor": "#FFFFFF00",
+                      "MiddleColorValue": 10.0,
+                      "Mode": 4,
+                      "StartColor": "#FF008000",
+                      "StartColorValue": 0.0,
+                      "TargetPropertyName": "BackgroundColor"
+                    }
+                  },
+                  "BorderStyle": {
+                    "BorderBottom": 4,
+                    "BorderColor": "#FF000000",
+                    "BorderRight": 4,
+                    "BorderTop": 4
+                  },
+                  "Height": 50.0,
+                  "IsRectangleItem": true,
+                  "Left": 85.0,
+                  "Name": "BRAKE_RL_AMS",
+                  "Top": 232.0,
+                  "Visible": true,
+                  "Width": 30.0
+                },
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+                  "BackgroundColor": "#7D00FF00",
+                  "Bindings": {
+                    "BackgroundColor": {
+                      "EnableMiddleColor": true,
+                      "EndColor": "#FFFF0000",
+                      "EndColorValue": 70.0,
+                      "Formula": {
+                        "Expression": "isnull([GameRawData.mBrakeDamage03],0) * 100 * 1"
+                      },
+                      "MiddleColor": "#FFFFFF00",
+                      "MiddleColorValue": 10.0,
+                      "Mode": 4,
+                      "StartColor": "#FF008000",
+                      "StartColorValue": 0.0,
+                      "TargetPropertyName": "BackgroundColor"
+                    }
+                  },
+                  "BorderStyle": {
+                    "BorderBottom": 4,
+                    "BorderColor": "#FF000000",
+                    "BorderRight": 4,
+                    "BorderTop": 4
+                  },
+                  "Height": 50.0,
+                  "IsRectangleItem": true,
+                  "Left": 188.0,
+                  "Name": "BRAKE_RR_AMS",
+                  "Top": 232.0,
+                  "Visible": true,
+                  "Width": 30.0
+                },
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+                  "BackgroundColor": "#7D00FF00",
+                  "Bindings": {
+                    "BackgroundColor": {
+                      "EnableMiddleColor": true,
+                      "EndColor": "#FFFF0000",
+                      "EndColorValue": 70.0,
+                      "Formula": {
+                        "Expression": "isnull([GameRawData.mBrakeDamage02],0) * 100 * 1"
+                      },
+                      "MiddleColor": "#FFFFFF00",
+                      "MiddleColorValue": 10.0,
+                      "Mode": 4,
+                      "StartColor": "#FF008000",
+                      "StartColorValue": 0.0,
+                      "TargetPropertyName": "BackgroundColor"
+                    }
+                  },
+                  "BorderStyle": {
+                    "BorderBottom": 4,
+                    "BorderColor": "#FF000000",
+                    "BorderRight": 4,
+                    "BorderTop": 4
+                  },
+                  "Height": 50.0,
+                  "IsRectangleItem": true,
+                  "Left": 188.0,
+                  "Name": "BRAKE_FR_AMS2",
+                  "Top": 75.0,
+                  "Visible": true,
+                  "Width": 30.0
+                }
+              ],
+              "Group": true,
+              "Height": 266.0,
+              "Left": 85.0,
+              "Name": "AMS2_COLORS",
+              "Top": 42.0,
+              "Visible": true,
+              "Width": 133.0
+            },
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.ImageItem, SimHub.Plugins",
+              "AutoSize": false,
+              "AutoSizeScale": 0.28,
+              "BackgroundColor": "#00FFFFFF",
+              "Bindings": {
+                "Image": {
+                  "Formula": {
+                    "Expression": "if(twf_read_setting(\"car_damage_ui\") == 2){\r\n\treturn 'car-mask2'\r\n} else {\r\n\treturn 'car-mask4'\r\n}\r\n",
+                    "Interpreter": 1
+                  },
+                  "Mode": 2,
+                  "TargetPropertyName": "Image"
+                }
+              },
+              "Height": 279.96000000000004,
+              "Image": "car-mask4",
+              "Left": 79.0,
+              "Name": "car",
+              "Top": 35.51999999999998,
+              "Visible": true,
+              "Width": 140.0
+            },
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.Layer, SimHub.Plugins",
+              "BackgroundColor": "#00FFFFFF",
+              "Bindings": {
+                "Visible": {
+                  "Formula": {
+                    "Expression": "[DataCorePlugin.CurrentGame]!='Automobilista2' && [DataCorePlugin.CurrentGame]!='AssettoCorsa' && [DataCorePlugin.CurrentGame]!='IRacing'"
+                  },
+                  "Mode": 2,
+                  "TargetPropertyName": "Visible"
+                }
+              },
+              "Childrens": [
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+                  "BackgroundColor": "#00FFFFFF",
+                  "Bindings": {
+                    "Text": {
+                      "FormatString": "0",
+                      "Formula": {
+                        "Expression": "[CarDamage1]"
+                      },
+                      "Mode": 2,
+                      "TargetPropertyName": "Text"
+                    },
+                    "TextColor": {
+                      "EnableMiddleColor": true,
+                      "EndColor": "#FFFF0000",
+                      "EndColorValue": 40.0,
+                      "Formula": {
+                        "Expression": "[CarDamage1]"
+                      },
+                      "MiddleColor": "#FFFFFF00",
+                      "MiddleColorValue": 10.0,
+                      "Mode": 4,
+                      "StartColor": "#FFFFFFFF",
+                      "StartColorValue": 0.0,
+                      "TargetPropertyName": "TextColor"
+                    }
+                  },
+                  "Font": "Rajdhani",
+                  "FontSize": 26.0,
+                  "FontWeight": "Bold",
+                  "Height": 35.0,
+                  "HorizontalAlignment": 1,
+                  "IsTextItem": true,
+                  "Left": 108.0,
+                  "Name": "FRONT",
+                  "Text": "66%",
+                  "TextColor": "#FFFFFFFF",
+                  "Top": 10.0,
+                  "VerticalAlignment": 1,
+                  "Visible": true,
+                  "Width": 84.0
+                },
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+                  "BackgroundColor": "#00FFFFFF",
+                  "Bindings": {
+                    "Text": {
+                      "FormatString": "0",
+                      "Formula": {
+                        "Expression": "[CarDamage2]"
+                      },
+                      "Mode": 2,
+                      "TargetPropertyName": "Text"
+                    },
+                    "TextColor": {
+                      "EnableMiddleColor": true,
+                      "EndColor": "#FFFF0000",
+                      "EndColorValue": 40.0,
+                      "Formula": {
+                        "Expression": "[CarDamage2]"
+                      },
+                      "MiddleColor": "#FFFFFF00",
+                      "MiddleColorValue": 10.0,
+                      "Mode": 4,
+                      "StartColor": "#FFFFFFFF",
+                      "StartColorValue": 1.0,
+                      "TargetPropertyName": "TextColor"
+                    }
+                  },
+                  "Font": "Rajdhani",
+                  "FontSize": 26.0,
+                  "FontWeight": "Bold",
+                  "Height": 35.0,
+                  "HorizontalAlignment": 1,
+                  "IsTextItem": true,
+                  "Left": 107.0,
+                  "Name": "REAR",
+                  "Text": "66%",
+                  "TextColor": "#FFFFFFFF",
+                  "Top": 306.5,
+                  "VerticalAlignment": 1,
+                  "Visible": true,
+                  "Width": 84.0
+                },
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+                  "BackgroundColor": "#00FFFFFF",
+                  "Bindings": {
+                    "Text": {
+                      "FormatString": "0",
+                      "Formula": {
+                        "Expression": "[CarDamage3]"
+                      },
+                      "Mode": 2,
+                      "TargetPropertyName": "Text"
+                    },
+                    "TextColor": {
+                      "EnableMiddleColor": true,
+                      "EndColor": "#FFFF0000",
+                      "EndColorValue": 45.0,
+                      "Formula": {
+                        "Expression": "[CarDamage3]"
+                      },
+                      "MiddleColor": "#FFFFFF00",
+                      "MiddleColorValue": 10.0,
+                      "Mode": 4,
+                      "StartColor": "#FFFFFFFF",
+                      "StartColorValue": 0.0,
+                      "TargetPropertyName": "TextColor"
+                    }
+                  },
+                  "Font": "Rajdhani",
+                  "FontSize": 26.0,
+                  "FontWeight": "Bold",
+                  "Height": 35.0,
+                  "HorizontalAlignment": 1,
+                  "IsTextItem": true,
+                  "Left": 19.0,
+                  "Name": "LEFT",
+                  "Text": "66%",
+                  "TextColor": "#FFFFFFFF",
+                  "Top": 157.5,
+                  "VerticalAlignment": 1,
+                  "Visible": true,
+                  "Width": 70.0
+                },
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+                  "BackgroundColor": "#00FFFFFF",
+                  "Bindings": {
+                    "Text": {
+                      "FormatString": "0",
+                      "Formula": {
+                        "Expression": "[CarDamage4]"
+                      },
+                      "Mode": 2,
+                      "TargetPropertyName": "Text"
+                    },
+                    "TextColor": {
+                      "EnableMiddleColor": true,
+                      "EndColor": "#FFFF0000",
+                      "EndColorValue": 45.0,
+                      "Formula": {
+                        "Expression": "[CarDamage4]"
+                      },
+                      "MiddleColor": "#FFFFFF00",
+                      "MiddleColorValue": 10.0,
+                      "Mode": 4,
+                      "StartColor": "#FFFFFFFF",
+                      "StartColorValue": 1.0,
+                      "TargetPropertyName": "TextColor"
+                    }
+                  },
+                  "Font": "Rajdhani",
+                  "FontSize": 26.0,
+                  "FontWeight": "Bold",
+                  "Height": 35.0,
+                  "HorizontalAlignment": 1,
+                  "IsTextItem": true,
+                  "Left": 210.0,
+                  "Name": "RIGHT",
+                  "Text": "66%",
+                  "TextColor": "#FFFFFFFF",
+                  "Top": 157.5,
+                  "VerticalAlignment": 1,
+                  "Visible": true,
+                  "Width": 70.0
+                }
+              ],
+              "Group": true,
+              "Height": 331.5,
+              "Left": 19.0,
+              "Name": "DAMAGE_LABELS",
+              "Top": 10.0,
+              "Visible": true,
+              "Width": 261.0
+            },
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.Layer, SimHub.Plugins",
+              "BackgroundColor": "#00FFFFFF",
+              "Bindings": {
+                "Visible": {
+                  "Formula": {
+                    "Expression": "[DataCorePlugin.CurrentGame]='AssettoCorsa'"
+                  },
+                  "Mode": 2,
+                  "TargetPropertyName": "Visible"
+                }
+              },
+              "Childrens": [
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+                  "BackgroundColor": "#FF000000",
+                  "Bindings": {
+                    "Text": {
+                      "FormatString": "0",
+                      "Formula": {
+                        "Expression": "var cardamage = isnull($prop('CarDamage1'),'')\r\ncardamage = cardamage.toFixed()\r\nif (cardamage>0){\r\nreturn cardamage +'%'\r\n}else{\r\nreturn ''\r\n}",
+                        "Interpreter": 1
+                      },
+                      "Mode": 2,
+                      "TargetPropertyName": "Text"
+                    },
+                    "TextColor": {
+                      "EnableMiddleColor": true,
+                      "EndColor": "#FFFF0000",
+                      "EndColorValue": 70.0,
+                      "Formula": {
+                        "Expression": "var cardamage = isnull($prop('CarDamage1'),0)\r\ncardamage = cardamage.toFixed()\r\nreturn cardamage",
+                        "Interpreter": 1
+                      },
+                      "MiddleColor": "#FFFFFF00",
+                      "MiddleColorValue": 10.0,
+                      "Mode": 4,
+                      "StartColor": "#FFFFFFFF",
+                      "StartColorValue": 0.0,
+                      "TargetPropertyName": "TextColor"
+                    }
+                  },
+                  "Font": "Rajdhani",
+                  "FontSize": 26.0,
+                  "FontWeight": "Bold",
+                  "Height": 35.0,
+                  "HorizontalAlignment": 1,
+                  "IsTextItem": true,
+                  "Left": 115.0,
+                  "Name": "CARDAMAGE_AC",
+                  "Text": "66%",
+                  "TextColor": "#FFFFFFFF",
+                  "Top": 167.5,
+                  "VerticalAlignment": 1,
+                  "Visible": true,
+                  "Width": 68.0
+                }
+              ],
+              "Group": true,
+              "Height": 35.0,
+              "Left": 115.0,
+              "Name": "AC_LABEL",
+              "Top": 167.5,
+              "Visible": false,
+              "Width": 68.0
+            },
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.Layer, SimHub.Plugins",
+              "BackgroundColor": "#00FFFFFF",
+              "Bindings": {
+                "Visible": {
+                  "Formula": {
+                    "Expression": "[DataCorePlugin.CurrentGame]='Automobilista2'"
+                  },
+                  "Mode": 2,
+                  "TargetPropertyName": "Visible"
+                }
+              },
+              "Childrens": [
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+                  "BackgroundColor": "#FF000000",
+                  "Bindings": {
+                    "Text": {
+                      "FormatString": "0%",
+                      "Formula": {
+                        "Expression": "isnull([GameRawData.mAeroDamage],0) * 1"
+                      },
+                      "Mode": 2,
+                      "TargetPropertyName": "Text"
+                    },
+                    "TextColor": {
+                      "EnableMiddleColor": true,
+                      "EndColor": "#FFFF0000",
+                      "EndColorValue": 70.0,
+                      "Formula": {
+                        "Expression": "isnull([GameRawData.mAeroDamage],0) * 100"
+                      },
+                      "MiddleColor": "#FFFFFF00",
+                      "MiddleColorValue": 10.0,
+                      "Mode": 4,
+                      "StartColor": "#FFFFFFFF",
+                      "StartColorValue": 0.0,
+                      "TargetPropertyName": "TextColor"
+                    },
+                    "Visible": {
+                      "Formula": {
+                        "Expression": "[CarDamage2]>0"
+                      },
+                      "Mode": 2,
+                      "TargetPropertyName": "Visible"
+                    }
+                  },
+                  "BorderStyle": {
+                    "RadiusBottomLeft": 6,
+                    "RadiusBottomRight": 6,
+                    "RadiusTopLeft": 6,
+                    "RadiusTopRight": 6
+                  },
+                  "Font": "Rajdhani",
+                  "FontSize": 26.0,
+                  "FontWeight": "Bold",
+                  "Height": 35.0,
+                  "HorizontalAlignment": 1,
+                  "IsTextItem": true,
+                  "Left": 115.0,
+                  "Name": "AERODAMAGE_AMS2",
+                  "Text": "66%",
+                  "TextColor": "#FFFFFFFF",
+                  "Top": 168.5,
+                  "VerticalAlignment": 1,
+                  "Visible": true,
+                  "Width": 68.0
+                },
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+                  "BackgroundColor": "#00FFFFFF",
+                  "Bindings": {
+                    "Text": {
+                      "FormatString": "0.0%",
+                      "Formula": {
+                        "Expression": "[CarDamage1]/100"
+                      },
+                      "Mode": 2,
+                      "TargetPropertyName": "Text"
+                    },
+                    "TextColor": {
+                      "EnableMiddleColor": true,
+                      "EndColor": "#FFFF5400",
+                      "EndColorValue": 40.0,
+                      "Formula": {
+                        "Expression": "[CarDamage1]"
+                      },
+                      "MiddleColor": "#FFFFFF00",
+                      "MiddleColorValue": 10.0,
+                      "Mode": 4,
+                      "StartColor": "#FFFFFFFF",
+                      "StartColorValue": 0.0,
+                      "TargetPropertyName": "TextColor"
+                    }
+                  },
+                  "Font": "Rajdhani",
+                  "FontSize": 26.0,
+                  "FontWeight": "Bold",
+                  "Height": 35.0,
+                  "HorizontalAlignment": 1,
+                  "IsTextItem": true,
+                  "Left": 107.0,
+                  "Name": "ENGINE_AMS2",
+                  "Text": "66.2%",
+                  "TextColor": "#FFFFFFFF",
+                  "Top": 65.0,
+                  "VerticalAlignment": 1,
+                  "Visible": true,
+                  "Width": 84.0
+                },
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+                  "BackgroundColor": "#00FFFFFF",
+                  "Bindings": {
+                    "Text": {
+                      "FormatString": "0.0%",
+                      "Formula": {
+                        "Expression": "[CarDamage1]/100"
+                      },
+                      "Mode": 2,
+                      "TargetPropertyName": "Text"
+                    },
+                    "TextColor": {
+                      "EnableMiddleColor": true,
+                      "EndColor": "#FFFF5400",
+                      "EndColorValue": 40.0,
+                      "Formula": {
+                        "Expression": "[CarDamage1]"
+                      },
+                      "MiddleColor": "#FFFFFF00",
+                      "MiddleColorValue": 10.0,
+                      "Mode": 4,
+                      "StartColor": "#FFFFFFFF",
+                      "StartColorValue": 0.0,
+                      "TargetPropertyName": "TextColor"
+                    }
+                  },
+                  "Font": "Rajdhani",
+                  "FontSize": 26.0,
+                  "FontWeight": "Bold",
+                  "Height": 35.0,
+                  "HorizontalAlignment": 1,
+                  "IsTextItem": true,
+                  "Left": 107.0,
+                  "Name": "ENGINE_AMS",
+                  "Text": "66.2%",
+                  "TextColor": "#FFFFFFFF",
+                  "Top": 252.0,
+                  "VerticalAlignment": 1,
+                  "Visible": true,
+                  "Width": 84.0
+                },
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+                  "BackgroundColor": "#00FFFFFF",
+                  "BorderStyle": {
+                    "RadiusBottomLeft": 6,
+                    "RadiusBottomRight": 6,
+                    "RadiusTopLeft": 6,
+                    "RadiusTopRight": 6
+                  },
+                  "Font": "Rajdhani",
+                  "FontSize": 18.0,
+                  "FontWeight": "Bold",
+                  "Height": 35.0,
+                  "HorizontalAlignment": 1,
+                  "IsTextItem": true,
+                  "Left": 112.0,
+                  "Name": "AERO_LABEL",
+                  "Text": "AERO",
+                  "TextColor": "#FFC0C0C0",
+                  "Top": 194.0,
+                  "VerticalAlignment": 1,
+                  "Visible": true,
+                  "Width": 68.0
+                },
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+                  "BackgroundColor": "#00FFFFFF",
+                  "BorderStyle": {
+                    "RadiusBottomLeft": 6,
+                    "RadiusBottomRight": 6,
+                    "RadiusTopLeft": 6,
+                    "RadiusTopRight": 6
+                  },
+                  "Font": "Rajdhani",
+                  "FontSize": 18.0,
+                  "FontWeight": "Bold",
+                  "Height": 35.0,
+                  "HorizontalAlignment": 1,
+                  "IsTextItem": true,
+                  "Left": 112.0,
+                  "Name": "ENGINE_LABEL",
+                  "Text": "ENGINE",
+                  "TextColor": "#FFC0C0C0",
+                  "Top": 85.0,
+                  "VerticalAlignment": 1,
+                  "Visible": true,
+                  "Width": 68.0
+                }
+              ],
+              "Group": true,
+              "Height": 222.0,
+              "Left": 107.0,
+              "Name": "AMS2_LABELS",
+              "Top": 65.0,
+              "Visible": true,
+              "Width": 84.0
+            }
+          ],
+          "Group": true,
+          "Height": 331.5,
+          "Left": 19.0,
+          "Name": "DAMAGES",
+          "Top": 10.0,
+          "Visible": true,
+          "Width": 261.0
+        }
+      ],
+      "Name": "Screen",
+      "OverlayMaxDuration": 0,
+      "OverlayMinDuration": 0,
+      "OverlayTriggerExpression": {
+        "Expression": ""
+      },
+      "PitScreen": false,
+      "ScreenEnabledExpression": {
+        "Expression": ""
+      },
+      "ScreenId": "52855090-ea56-4f96-9c99-b4e024eb8883"
+    }
+  ],
+  "ShowBackground": true,
+  "ShowBoundingRectangles": false,
+  "ShowForeground": true,
+  "ShowOnScreenControls": true,
+  "SnapToGrid": false,
+  "Version": 2
+}

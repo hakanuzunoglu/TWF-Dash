@@ -1,0 +1,533 @@
+{
+  "BackgroundColor": "#FF000000",
+  "BackgroundOpacity": 100.0,
+  "BaseHeight": 81,
+  "BaseWidth": 267,
+  "DashboardDebugManager": {
+    "LastPlacement": "156,156,267,81",
+    "Maximized": false
+  },
+  "EnableClickThroughOverlay": true,
+  "EnableOnDashboardMessaging": true,
+  "ForegroundOpacity": 100.0,
+  "GridSize": 10,
+  "HideLabels": false,
+  "Id": "d80fca1d-f746-404c-8b6e-28dfa2d452aa",
+  "Images": [],
+  "IsOverlay": false,
+  "Metadata": {
+    "EnableOnDashboardMessaging": true,
+    "Height": 81.0,
+    "IdleScreensIndexs": [
+      0,
+      1,
+      2
+    ],
+    "InGameScreensIndexs": [
+      0,
+      1,
+      2
+    ],
+    "IsOverlay": false,
+    "MainPreviewIndex": 0,
+    "MetadataVersion": 2.0,
+    "OverlaySizeWarning": false,
+    "PitScreensIndexs": [],
+    "ScreenCount": 3.0,
+    "Width": 267.0
+  },
+  "Screens": [
+    {
+      "AllowOverlays": true,
+      "BackgroundColor": "#FF000000",
+      "IdleScreen": true,
+      "InGameScreen": true,
+      "IsBackgroundLayer": false,
+      "IsForegroundLayer": false,
+      "IsOverlayLayer": false,
+      "Items": [
+        {
+          "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.Layer, SimHub.Plugins",
+          "BackgroundColor": "#00FFFFFF",
+          "Childrens": [
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+              "BackgroundColor": "#FF232323",
+              "Bindings": {
+                "BackgroundColor": {
+                  "EnableMiddleColor": false,
+                  "EndColor": "#FF222222",
+                  "EndColorValue": 6.0,
+                  "Formula": {
+                    "Expression": "[FuelPercent]"
+                  },
+                  "MiddleColor": "#FF000000",
+                  "MiddleColorValue": 1.0,
+                  "Mode": 4,
+                  "StartColor": "#FFFF0000",
+                  "StartColorValue": 5.0,
+                  "TargetPropertyName": "BackgroundColor"
+                }
+              },
+              "BorderStyle": {
+                "BorderColor": "#FF808080"
+              },
+              "Height": 81.0,
+              "IsRectangleItem": true,
+              "Left": -0.5,
+              "Name": "RectangleItem2",
+              "Top": -0.5,
+              "Visible": true,
+              "Width": 267.0
+            },
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+              "BackgroundColor": "#00FFFFFF",
+              "Font": "Rajdhani",
+              "FontSize": 22.0,
+              "FontWeight": "Bold",
+              "Height": 24.0,
+              "HorizontalAlignment": 0,
+              "IsTextItem": true,
+              "Left": 12.5,
+              "Name": "FUEL_LABEL",
+              "Text": "FUEL",
+              "TextColor": "#FF878787",
+              "Top": 7.5,
+              "VerticalAlignment": 1,
+              "Visible": true,
+              "Width": 100.0
+            },
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+              "BackgroundColor": "#00FFFFFF",
+              "Bindings": {
+                "Text": {
+                  "FormatString": "0.0",
+                  "Formula": {
+                    "Expression": "isnull([Fuel],'')"
+                  },
+                  "Mode": 2,
+                  "TargetPropertyName": "Text"
+                },
+                "TextColor": {
+                  "EnableMiddleColor": false,
+                  "EndColor": "#FFFFFFFF",
+                  "EndColorValue": 11.0,
+                  "Formula": {
+                    "Expression": "[FuelPercent]"
+                  },
+                  "MiddleColor": "#FFFFA500",
+                  "MiddleColorValue": 10.0,
+                  "Mode": 4,
+                  "StartColor": "#FFFFA500",
+                  "StartColorValue": 10.0,
+                  "TargetPropertyName": "TextColor"
+                }
+              },
+              "Font": "Rajdhani",
+              "FontSize": 48.0,
+              "FontWeight": "Bold",
+              "Height": 42.0,
+              "HorizontalAlignment": 0,
+              "IsTextItem": true,
+              "Left": 12.5,
+              "Name": "FUEL",
+              "Text": "120.2",
+              "TextColor": "#FFFFFFFF",
+              "Top": 32.5,
+              "VerticalAlignment": 1,
+              "Visible": true,
+              "Width": 120.0
+            },
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+              "BackgroundColor": "#00FFFFFF",
+              "Bindings": {
+                "Text": {
+                  "FormatString": "0",
+                  "Formula": {
+                    "Expression": "isnull([DataCorePlugin.Computed.Fuel_RemainingLaps],'')"
+                  },
+                  "Mode": 2,
+                  "TargetPropertyName": "Text"
+                }
+              },
+              "Font": "Rajdhani",
+              "FontSize": 48.0,
+              "FontWeight": "Bold",
+              "Height": 42.0,
+              "HorizontalAlignment": 0,
+              "IsTextItem": true,
+              "Left": 151.5,
+              "Name": "LAPS",
+              "Text": "38",
+              "TextColor": "#FFFFFFFF",
+              "Top": 33.5,
+              "VerticalAlignment": 1,
+              "Visible": true,
+              "Width": 110.0
+            },
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+              "BackgroundColor": "#00FFFFFF",
+              "Font": "Rajdhani",
+              "FontSize": 22.0,
+              "FontWeight": "Bold",
+              "Height": 24.0,
+              "HorizontalAlignment": 0,
+              "IsTextItem": true,
+              "Left": 151.5,
+              "Name": "LAPS_LABEL",
+              "Text": "LAPS",
+              "TextColor": "#FF878787",
+              "Top": 7.5,
+              "VerticalAlignment": 1,
+              "Visible": true,
+              "Width": 100.0
+            }
+          ],
+          "Group": true,
+          "Height": 81.0,
+          "Left": -0.5,
+          "Name": "FUEL",
+          "Top": -0.5,
+          "Visible": true,
+          "Width": 267.0
+        }
+      ],
+      "Name": "Screen",
+      "OverlayMaxDuration": 0,
+      "OverlayMinDuration": 0,
+      "OverlayTriggerExpression": {
+        "Expression": ""
+      },
+      "PitScreen": false,
+      "ScreenEnabledExpression": {
+        "Expression": ""
+      },
+      "ScreenId": "3fd98cd8-382b-4707-ab87-547b431b148b"
+    },
+    {
+      "AllowOverlays": true,
+      "BackgroundColor": "#FF000000",
+      "IdleScreen": true,
+      "InGameScreen": true,
+      "IsBackgroundLayer": false,
+      "IsForegroundLayer": false,
+      "IsOverlayLayer": false,
+      "Items": [
+        {
+          "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.Layer, SimHub.Plugins",
+          "BackgroundColor": "#00FFFFFF",
+          "Childrens": [
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+              "BackgroundColor": "#FF232323",
+              "Bindings": {
+                "BackgroundColor": {
+                  "EnableMiddleColor": false,
+                  "EndColor": "#FF222222",
+                  "EndColorValue": 6.0,
+                  "Formula": {
+                    "Expression": "[FuelPercent]"
+                  },
+                  "MiddleColor": "#FF000000",
+                  "MiddleColorValue": 1.0,
+                  "Mode": 4,
+                  "StartColor": "#FFFF0000",
+                  "StartColorValue": 5.0,
+                  "TargetPropertyName": "BackgroundColor"
+                }
+              },
+              "BorderStyle": {
+                "BorderColor": "#FF808080"
+              },
+              "Height": 81.0,
+              "IsRectangleItem": true,
+              "Left": -0.5,
+              "Name": "RectangleItem",
+              "Top": -0.5,
+              "Visible": true,
+              "Width": 267.0
+            },
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+              "BackgroundColor": "#00FFFFFF",
+              "Font": "Rajdhani",
+              "FontSize": 22.0,
+              "FontWeight": "Bold",
+              "Height": 24.0,
+              "HorizontalAlignment": 0,
+              "IsTextItem": true,
+              "Left": 12.5,
+              "Name": "FUEL_LABEL",
+              "Text": "ESTIMATED",
+              "TextColor": "#FF878787",
+              "Top": 7.5,
+              "VerticalAlignment": 1,
+              "Visible": true,
+              "Width": 100.0
+            },
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+              "BackgroundColor": "#00FFFFFF",
+              "Bindings": {
+                "Text": {
+                  "FormatString": "hh\\:mm\\:ss",
+                  "Formula": {
+                    "Expression": "isnull([DataCorePlugin.Computed.Fuel_RemainingTime],'')"
+                  },
+                  "Mode": 2,
+                  "TargetPropertyName": "Text"
+                },
+                "TextColor": {
+                  "EnableMiddleColor": false,
+                  "EndColor": "#FFFFFFFF",
+                  "EndColorValue": 11.0,
+                  "Formula": {
+                    "Expression": "[FuelPercent]"
+                  },
+                  "MiddleColor": "#FFFFA500",
+                  "MiddleColorValue": 10.0,
+                  "Mode": 4,
+                  "StartColor": "#FFFFA500",
+                  "StartColorValue": 10.0,
+                  "TargetPropertyName": "TextColor"
+                }
+              },
+              "Font": "Rajdhani",
+              "FontSize": 42.0,
+              "FontWeight": "Bold",
+              "Height": 42.0,
+              "HorizontalAlignment": 0,
+              "IsTextItem": true,
+              "Left": 12.0,
+              "Name": "FUEL",
+              "Text": "00:14:02",
+              "TextColor": "#FFFFFFFF",
+              "Top": 33.0,
+              "VerticalAlignment": 1,
+              "Visible": true,
+              "Width": 162.0
+            },
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+              "BackgroundColor": "#00FFFFFF",
+              "Bindings": {
+                "Text": {
+                  "FormatString": "0",
+                  "Formula": {
+                    "Expression": "return (Math.ceil( $prop('DataCorePlugin.Computed.Fuel_LitersPerLap')\t * 10 ) / 10).toFixed(1);\r\n\r\n",
+                    "Interpreter": 1
+                  },
+                  "Mode": 2,
+                  "TargetPropertyName": "Text"
+                }
+              },
+              "Font": "Rajdhani",
+              "FontSize": 42.0,
+              "FontWeight": "Bold",
+              "Height": 42.0,
+              "HorizontalAlignment": 0,
+              "IsTextItem": true,
+              "Left": 180.5,
+              "Name": "LAPS",
+              "Text": "38",
+              "TextColor": "#FFFFFFFF",
+              "Top": 33.0,
+              "VerticalAlignment": 1,
+              "Visible": true,
+              "Width": 75.0
+            },
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+              "BackgroundColor": "#00FFFFFF",
+              "Font": "Rajdhani",
+              "FontSize": 22.0,
+              "FontWeight": "Bold",
+              "Height": 24.0,
+              "HorizontalAlignment": 0,
+              "IsTextItem": true,
+              "Left": 180.5,
+              "Name": "LAPS_LABEL",
+              "Text": "AVG",
+              "TextColor": "#FF878787",
+              "Top": 7.5,
+              "VerticalAlignment": 1,
+              "Visible": true,
+              "Width": 100.0
+            }
+          ],
+          "Group": true,
+          "Height": 81.0,
+          "Left": -0.5,
+          "Name": "FUEL",
+          "Top": -0.5,
+          "Visible": true,
+          "Width": 281.0
+        }
+      ],
+      "Name": "Screen",
+      "OverlayMaxDuration": 0,
+      "OverlayMinDuration": 0,
+      "OverlayTriggerExpression": {
+        "Expression": ""
+      },
+      "PitScreen": false,
+      "ScreenEnabledExpression": {
+        "Expression": ""
+      },
+      "ScreenId": "d24dfaa7-0f42-4a6c-8a33-002059f18800"
+    },
+    {
+      "AllowOverlays": true,
+      "BackgroundColor": "#FF000000",
+      "IdleScreen": true,
+      "InGameScreen": true,
+      "IsBackgroundLayer": false,
+      "IsForegroundLayer": false,
+      "IsOverlayLayer": false,
+      "Items": [
+        {
+          "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.Layer, SimHub.Plugins",
+          "BackgroundColor": "#00FFFFFF",
+          "Childrens": [
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.RectangleItem, SimHub.Plugins",
+              "BackgroundColor": "#FF232323",
+              "BorderStyle": {
+                "BorderColor": "#FF808080"
+              },
+              "Height": 81.0,
+              "IsRectangleItem": true,
+              "Left": -0.5,
+              "Name": "RectangleItem",
+              "Top": -0.5,
+              "Visible": true,
+              "Width": 267.0
+            },
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+              "BackgroundColor": "#00FFFFFF",
+              "Font": "Rajdhani",
+              "FontSize": 22.0,
+              "FontWeight": "Bold",
+              "Height": 24.0,
+              "HorizontalAlignment": 0,
+              "IsTextItem": true,
+              "Left": 12.5,
+              "Name": "FUEL_LABEL",
+              "Text": "REFUEL",
+              "TextColor": "#FF878787",
+              "Top": 7.5,
+              "VerticalAlignment": 1,
+              "Visible": true,
+              "Width": 100.0
+            },
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+              "BackgroundColor": "#00FFFFFF",
+              "Bindings": {
+                "Text": {
+                  "FormatString": "0",
+                  "Formula": {
+                    "Expression": "return twf_refuel()",
+                    "Interpreter": 1
+                  },
+                  "Mode": 2,
+                  "TargetPropertyName": "Text"
+                }
+              },
+              "Font": "Rajdhani",
+              "FontSize": 42.0,
+              "FontWeight": "Bold",
+              "Height": 42.0,
+              "HorizontalAlignment": 0,
+              "IsTextItem": true,
+              "Left": 12.0,
+              "Name": "FUEL",
+              "Text": "120",
+              "TextColor": "#FFFFFFFF",
+              "Top": 33.0,
+              "VerticalAlignment": 1,
+              "Visible": true,
+              "Width": 162.0
+            },
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+              "BackgroundColor": "#00FFFFFF",
+              "Bindings": {
+                "Text": {
+                  "FormatString": "0",
+                  "Formula": {
+                    "Expression": "return (Math.ceil( $prop('DataCorePlugin.Computed.Fuel_LitersPerLap')\t * 10 ) / 10).toFixed(1);\r\n\r\n",
+                    "Interpreter": 1
+                  },
+                  "Mode": 2,
+                  "TargetPropertyName": "Text"
+                }
+              },
+              "Font": "Rajdhani",
+              "FontSize": 42.0,
+              "FontWeight": "Bold",
+              "Height": 42.0,
+              "HorizontalAlignment": 0,
+              "IsTextItem": true,
+              "Left": 180.5,
+              "Name": "LAPS",
+              "Text": "38",
+              "TextColor": "#FFFFFFFF",
+              "Top": 33.0,
+              "VerticalAlignment": 1,
+              "Visible": true,
+              "Width": 75.0
+            },
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+              "BackgroundColor": "#00FFFFFF",
+              "Font": "Rajdhani",
+              "FontSize": 22.0,
+              "FontWeight": "Bold",
+              "Height": 24.0,
+              "HorizontalAlignment": 0,
+              "IsTextItem": true,
+              "Left": 180.5,
+              "Name": "LAPS_LABEL",
+              "Text": "AVG",
+              "TextColor": "#FF878787",
+              "Top": 7.5,
+              "VerticalAlignment": 1,
+              "Visible": true,
+              "Width": 100.0
+            }
+          ],
+          "Group": true,
+          "Height": 81.0,
+          "Left": -0.5,
+          "Name": "FUEL",
+          "Top": -0.5,
+          "Visible": true,
+          "Width": 281.0
+        }
+      ],
+      "Name": "Screen",
+      "OverlayMaxDuration": 0,
+      "OverlayMinDuration": 0,
+      "OverlayTriggerExpression": {
+        "Expression": ""
+      },
+      "PitScreen": false,
+      "ScreenEnabledExpression": {
+        "Expression": ""
+      },
+      "ScreenId": "9f558cff-7416-4e77-be70-cf1f9c8d98bd"
+    }
+  ],
+  "ShowBackground": true,
+  "ShowBoundingRectangles": false,
+  "ShowForeground": true,
+  "ShowOnScreenControls": true,
+  "SnapToGrid": false,
+  "Version": 2
+}

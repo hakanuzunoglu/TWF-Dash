@@ -1,0 +1,205 @@
+{
+  "BackgroundColor": "#FF000000",
+  "BackgroundOpacity": 100.0,
+  "BaseHeight": 300,
+  "BaseWidth": 228,
+  "DashboardDebugManager": {
+    "LastPlacement": "135,181,228,300",
+    "Maximized": false
+  },
+  "EnableClickThroughOverlay": true,
+  "EnableOnDashboardMessaging": true,
+  "ForegroundOpacity": 100.0,
+  "GridSize": 10,
+  "HideLabels": true,
+  "Id": "ada3e1da-31cd-4763-b82b-a7d7802dc3e5",
+  "Images": [],
+  "IsOverlay": false,
+  "Metadata": {
+    "EnableOnDashboardMessaging": true,
+    "Height": 300.0,
+    "IdleScreensIndexs": [
+      0,
+      1
+    ],
+    "InGameScreensIndexs": [
+      0,
+      1
+    ],
+    "IsOverlay": false,
+    "MainPreviewIndex": 0,
+    "MetadataVersion": 2.0,
+    "OverlaySizeWarning": false,
+    "PitScreensIndexs": [],
+    "ScreenCount": 2.0,
+    "Width": 228.0
+  },
+  "Screens": [
+    {
+      "AllowOverlays": true,
+      "BackgroundColor": "#FF000000",
+      "IdleScreen": true,
+      "InGameScreen": true,
+      "IsBackgroundLayer": false,
+      "IsForegroundLayer": false,
+      "IsOverlayLayer": false,
+      "Items": [
+        {
+          "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.WidgetItem, SimHub.Plugins",
+          "AutoSize": true,
+          "BackgroundColor": "#00FFFFFF",
+          "FileName": "relative_lite.djson",
+          "Height": 284.0,
+          "InitialScreenIndex": 0,
+          "Left": 0.0,
+          "Name": "RELATIVE_LITE",
+          "NextScreenCommand": 0,
+          "PreviousScreenCommand": 0,
+          "Top": 0.0,
+          "Visible": true,
+          "Width": 228.0
+        },
+        {
+          "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.Layer, SimHub.Plugins",
+          "BackgroundColor": "#00FFFFFF",
+          "Childrens": [
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.WidgetItem, SimHub.Plugins",
+              "AutoSize": true,
+              "BackgroundColor": "#00FFFFFF",
+              "FileName": "pagination.djson",
+              "Height": 12.0,
+              "InitialScreenIndex": 1,
+              "Left": 101.5,
+              "Name": "pagination3",
+              "NextScreenCommand": 0,
+              "PreviousScreenCommand": 0,
+              "Top": 288.0,
+              "Visible": true,
+              "Width": 12.0
+            },
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.WidgetItem, SimHub.Plugins",
+              "AutoSize": true,
+              "BackgroundColor": "#00FFFFFF",
+              "FileName": "pagination.djson",
+              "Height": 12.0,
+              "InitialScreenIndex": 0,
+              "Left": 114.5,
+              "Name": "pagination3",
+              "NextScreenCommand": 0,
+              "PreviousScreenCommand": 0,
+              "Top": 288.0,
+              "Visible": true,
+              "Width": 12.0
+            }
+          ],
+          "Group": true,
+          "Height": 12.0,
+          "Left": 101.5,
+          "Name": "pagination",
+          "Top": 288.0,
+          "Visible": true,
+          "Width": 25.0
+        }
+      ],
+      "Name": "Screen",
+      "OverlayMaxDuration": 0,
+      "OverlayMinDuration": 0,
+      "OverlayTriggerExpression": {
+        "Expression": ""
+      },
+      "PitScreen": false,
+      "ScreenEnabledExpression": {
+        "Expression": ""
+      },
+      "ScreenId": "35a48f0c-72f3-44c1-87e0-640afb98f32d"
+    },
+    {
+      "AllowOverlays": true,
+      "BackgroundColor": "#FF000000",
+      "IdleScreen": true,
+      "InGameScreen": true,
+      "IsBackgroundLayer": false,
+      "IsForegroundLayer": false,
+      "IsOverlayLayer": false,
+      "Items": [
+        {
+          "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.Layer, SimHub.Plugins",
+          "BackgroundColor": "#00FFFFFF",
+          "Childrens": [
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.WidgetItem, SimHub.Plugins",
+              "AutoSize": true,
+              "BackgroundColor": "#00FFFFFF",
+              "FileName": "pagination.djson",
+              "Height": 12.0,
+              "InitialScreenIndex": 0,
+              "Left": 101.5,
+              "Name": "pagination3",
+              "NextScreenCommand": 0,
+              "PreviousScreenCommand": 0,
+              "Top": 288.0,
+              "Visible": true,
+              "Width": 12.0
+            },
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.WidgetItem, SimHub.Plugins",
+              "AutoSize": true,
+              "BackgroundColor": "#00FFFFFF",
+              "FileName": "pagination.djson",
+              "Height": 12.0,
+              "InitialScreenIndex": 1,
+              "Left": 114.5,
+              "Name": "pagination2",
+              "NextScreenCommand": 0,
+              "PreviousScreenCommand": 0,
+              "Top": 288.0,
+              "Visible": true,
+              "Width": 12.0
+            }
+          ],
+          "Group": true,
+          "Height": 12.0,
+          "Left": 101.5,
+          "Name": "Layer",
+          "Top": 288.0,
+          "Visible": true,
+          "Width": 25.0
+        },
+        {
+          "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.WidgetItem, SimHub.Plugins",
+          "AutoSize": true,
+          "BackgroundColor": "#00FFFFFF",
+          "FileName": "class_lite.djson",
+          "Height": 284.0,
+          "InitialScreenIndex": 0,
+          "Left": 0.0,
+          "Name": "CLASS_LITE",
+          "NextScreenCommand": 0,
+          "PreviousScreenCommand": 0,
+          "Top": 0.0,
+          "Visible": true,
+          "Width": 228.0
+        }
+      ],
+      "Name": "Screen",
+      "OverlayMaxDuration": 0,
+      "OverlayMinDuration": 0,
+      "OverlayTriggerExpression": {
+        "Expression": ""
+      },
+      "PitScreen": false,
+      "ScreenEnabledExpression": {
+        "Expression": ""
+      },
+      "ScreenId": "56fc828d-996f-446e-a639-a7d15f5313ba"
+    }
+  ],
+  "ShowBackground": true,
+  "ShowBoundingRectangles": false,
+  "ShowForeground": true,
+  "ShowOnScreenControls": true,
+  "SnapToGrid": false,
+  "Version": 2
+}

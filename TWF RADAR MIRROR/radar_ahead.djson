@@ -1,0 +1,237 @@
+{
+  "BackgroundColor": "#FF000000",
+  "BackgroundOpacity": 100.0,
+  "BaseHeight": 65,
+  "BaseWidth": 455,
+  "DashboardDebugManager": {
+    "Maximized": false
+  },
+  "EnableClickThroughOverlay": true,
+  "EnableOnDashboardMessaging": true,
+  "ForegroundOpacity": 100.0,
+  "GridSize": 10,
+  "HideLabels": false,
+  "Id": "beb5a4a2-4401-4b9e-bbc5-c001bcc89554",
+  "Images": [
+    {
+      "Extension": ".png",
+      "Height": 60,
+      "Length": 16665,
+      "MD5": "650afe9998748072a1c67f66cd7ef36a",
+      "Modified": false,
+      "Name": "deltabg",
+      "Optimized": true,
+      "Width": 420
+    },
+    {
+      "Extension": ".png",
+      "Length": 13566,
+      "MD5": "6177bafffdb52c77c2eafcd0b7bdb623",
+      "Modified": false,
+      "Name": "deltabgblack",
+      "Optimized": true
+    },
+    {
+      "Extension": ".png",
+      "Height": 23,
+      "Length": 330,
+      "MD5": "42dae40a4d9213b86474d3df6e7d187b",
+      "Modified": false,
+      "Name": "radar_green_arrow",
+      "Optimized": true,
+      "Width": 39
+    },
+    {
+      "Extension": ".png",
+      "Height": 18,
+      "Length": 359,
+      "MD5": "b68106c1711c045bb1ec774563a13885",
+      "Modified": false,
+      "Name": "radar_blue_arrow",
+      "Optimized": true,
+      "Width": 30
+    }
+  ],
+  "IsOverlay": false,
+  "Metadata": {
+    "EnableOnDashboardMessaging": true,
+    "Height": 65.0,
+    "IdleScreensIndexs": [
+      0
+    ],
+    "InGameScreensIndexs": [
+      0
+    ],
+    "IsOverlay": false,
+    "MainPreviewIndex": 0,
+    "MetadataVersion": 2.0,
+    "OverlaySizeWarning": false,
+    "PitScreensIndexs": [],
+    "ScreenCount": 1.0,
+    "Width": 455.0
+  },
+  "Screens": [
+    {
+      "AllowOverlays": true,
+      "BackgroundColor": "#FF000000",
+      "IdleScreen": true,
+      "InGameScreen": true,
+      "IsBackgroundLayer": false,
+      "IsForegroundLayer": false,
+      "IsOverlayLayer": false,
+      "Items": [
+        {
+          "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.ImageItem, SimHub.Plugins",
+          "AutoSize": false,
+          "BackgroundColor": "#00FFFFFF",
+          "Bindings": {
+            "Image": {
+              "Formula": {
+                "Expression": "return twf_get_ui_bg(\"delta\")",
+                "Interpreter": 1
+              },
+              "Mode": 2,
+              "TargetPropertyName": "Image"
+            }
+          },
+          "Height": 65.0,
+          "Image": "deltabg",
+          "Left": 0.0,
+          "Name": "ahead",
+          "Top": 0.0,
+          "Visible": true,
+          "Width": 455.0
+        },
+        {
+          "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.Layer, SimHub.Plugins",
+          "BackgroundColor": "#00FFFFFF",
+          "Bindings": {
+            "Visible": {
+              "Formula": {
+                "Expression": "if (isnull([PersistantTrackerPlugin.DriverAhead_00_CarNumber]), 0, 1)"
+              },
+              "Mode": 2,
+              "TargetPropertyName": "Visible"
+            }
+          },
+          "Childrens": [
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+              "BackgroundColor": "#00FFFFFF",
+              "Bindings": {
+                "Text": {
+                  "Formula": {
+                    "Expression": "if($prop('PersistantTrackerPlugin.DriverAhead_00_CarNumber') != null ){\r\nreturn twf_format_driver_name($prop('PersistantTrackerPlugin.DriverAhead_00_Name'));\r\n} else {\r\nreturn ''\r\n}",
+                    "Interpreter": 1
+                  },
+                  "Mode": 2,
+                  "TargetPropertyName": "Text"
+                },
+                "TextColor": {
+                  "Formula": {
+                    "Expression": "if([PersistantTrackerPlugin.DriverAhead_00_LapsToPlayer]<0,'#00BFFF', \r\nif([PersistantTrackerPlugin.DriverAhead_00_LapsToPlayer]>0, '#ffa500'\r\n,'white'))"
+                  },
+                  "Mode": 2,
+                  "TargetPropertyName": "TextColor"
+                }
+              },
+              "Font": "Rajdhani",
+              "FontSize": 36.0,
+              "FontWeight": "Bold",
+              "Height": 38.0,
+              "HorizontalAlignment": 1,
+              "IsTextItem": true,
+              "Left": 77.0,
+              "Name": "name",
+              "Text": "DRIVER NAME",
+              "TextColor": "#FFFFFFFF",
+              "Top": 23.0,
+              "VerticalAlignment": 1,
+              "Visible": true,
+              "Width": 300.0
+            },
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+              "BackgroundColor": "#00FFFFFF",
+              "Font": "Rajdhani",
+              "FontSize": 20.0,
+              "FontWeight": "Bold",
+              "Height": 22.0,
+              "HorizontalAlignment": 1,
+              "IsTextItem": true,
+              "Left": 77.0,
+              "Name": "label",
+              "Text": "UP AHEAD",
+              "TextColor": "#FF808080",
+              "Top": 8.0,
+              "VerticalAlignment": 1,
+              "Visible": true,
+              "Width": 300.0
+            },
+            {
+              "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.Layer, SimHub.Plugins",
+              "BackgroundColor": "#00FFFFFF",
+              "Childrens": [
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.ImageItem, SimHub.Plugins",
+                  "AutoSize": false,
+                  "BackgroundColor": "#00FFFFFF",
+                  "Height": 23.0,
+                  "Image": "radar_blue_arrow",
+                  "Left": 36.0,
+                  "Name": "ImageItem2",
+                  "Top": 29.0,
+                  "Visible": true,
+                  "Width": 39.0
+                },
+                {
+                  "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.ImageItem, SimHub.Plugins",
+                  "AutoSize": false,
+                  "BackgroundColor": "#00FFFFFF",
+                  "Height": 23.0,
+                  "Image": "radar_blue_arrow",
+                  "Left": 379.0,
+                  "Name": "ImageItem3",
+                  "Top": 29.0,
+                  "Visible": true,
+                  "Width": 39.0
+                }
+              ],
+              "Group": true,
+              "Height": 23.0,
+              "Left": 36.0,
+              "Name": "Layer2",
+              "Top": 29.0,
+              "Visible": true,
+              "Width": 382.0
+            }
+          ],
+          "Group": true,
+          "Height": 53.0,
+          "Left": 36.0,
+          "Name": "AHEAD",
+          "Top": 8.0,
+          "Visible": true,
+          "Width": 382.0
+        }
+      ],
+      "Name": "Screen",
+      "OverlayMaxDuration": 0,
+      "OverlayMinDuration": 0,
+      "OverlayTriggerExpression": {
+        "Expression": ""
+      },
+      "PitScreen": false,
+      "ScreenEnabledExpression": {
+        "Expression": ""
+      },
+      "ScreenId": "c181c8c1-9b14-43ba-8e5f-8ccc114d3ed5"
+    }
+  ],
+  "ShowBackground": true,
+  "ShowBoundingRectangles": false,
+  "ShowForeground": true,
+  "ShowOnScreenControls": true,
+  "SnapToGrid": false,
+  "Version": 2
+}
