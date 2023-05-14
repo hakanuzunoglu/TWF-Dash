@@ -12,7 +12,7 @@
   "ForegroundOpacity": 100.0,
   "GridSize": 10,
   "HideLabels": true,
-  "Id": "3fedfcba-28fc-44ac-9642-e7d62ee0b841",
+  "Id": "267856df-0efc-4538-ba40-b0d551f03ac5",
   "Images": [
     {
       "Extension": ".png",
@@ -534,7 +534,7 @@
                   "TargetPropertyName": "Visible"
                 }
               },
-              "EnableScreenRolesAndActivation": false,
+              "EnableScreenRolesAndActivation": true,
               "FileName": "status_lite_vertical.djson",
               "Height": 255.42,
               "InitialScreenIndex": 0,
@@ -560,7 +560,7 @@
                   "TargetPropertyName": "Visible"
                 }
               },
-              "EnableScreenRolesAndActivation": false,
+              "EnableScreenRolesAndActivation": true,
               "FileName": "damage.djson",
               "Height": 261.21999999999997,
               "InitialScreenIndex": 0,
@@ -1069,32 +1069,22 @@
                       "Width": 2.0
                     },
                     {
-                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.BuiltIn.TimeText, SimHub.Plugins",
                       "BackgroundColor": "#00FFFFFF",
-                      "Bindings": {
-                        "Text": {
-                          "FormatString": "HH\\:MM",
-                          "Formula": {
-                            "Expression": "[DataCorePlugin.CustomExpression.CurrentDateTime]"
-                          },
-                          "Mode": 2,
-                          "TargetPropertyName": "Text"
-                        }
-                      },
                       "Font": "Rajdhani",
                       "FontSize": 22.0,
                       "FontWeight": "SemiBold",
+                      "Format": "HH:mm",
                       "Height": 20.0,
-                      "HorizontalAlignment": 0,
+                      "HorizontalAlignment": 2,
                       "IsTextItem": true,
-                      "Left": 300.0,
-                      "Name": "PCTIME",
-                      "Text": "11:23",
+                      "Left": 259.0,
+                      "Name": "time",
                       "TextColor": "#FF808080",
-                      "Top": 8.25,
+                      "Top": 8.0,
                       "VerticalAlignment": 1,
                       "Visible": true,
-                      "Width": 60.0
+                      "Width": 100.0
                     }
                   ],
                   "Group": true,
@@ -1103,7 +1093,7 @@
                   "Name": "LAP",
                   "Top": 0.0,
                   "Visible": true,
-                  "Width": 190.0
+                  "Width": 189.0
                 },
                 {
                   "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.Layer, SimHub.Plugins",
@@ -2143,41 +2133,31 @@
                       "Width": 2.0
                     },
                     {
-                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.BuiltIn.TimeText, SimHub.Plugins",
                       "BackgroundColor": "#00FFFFFF",
-                      "Bindings": {
-                        "Text": {
-                          "FormatString": "HH\\:MM",
-                          "Formula": {
-                            "Expression": "[DataCorePlugin.CustomExpression.CurrentDateTime]"
-                          },
-                          "Mode": 2,
-                          "TargetPropertyName": "Text"
-                        }
-                      },
                       "Font": "Rajdhani",
                       "FontSize": 22.0,
                       "FontWeight": "SemiBold",
+                      "Format": "HH:mm",
                       "Height": 20.0,
-                      "HorizontalAlignment": 0,
+                      "HorizontalAlignment": 2,
                       "IsTextItem": true,
-                      "Left": 300.0,
-                      "Name": "PCTIME",
-                      "Text": "11:23",
+                      "Left": 259.0,
+                      "Name": "time",
                       "TextColor": "#FF808080",
-                      "Top": 8.25,
+                      "Top": 8.0,
                       "VerticalAlignment": 1,
                       "Visible": true,
-                      "Width": 60.0
+                      "Width": 100.0
                     }
                   ],
                   "Group": true,
                   "Height": 65.0,
                   "Left": 170.0,
-                  "Name": "LAP",
+                  "Name": "LAP2",
                   "Top": 0.0,
                   "Visible": true,
-                  "Width": 190.0
+                  "Width": 189.0
                 },
                 {
                   "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.WidgetItem, SimHub.Plugins",
@@ -2945,41 +2925,31 @@
                       "Width": 2.0
                     },
                     {
-                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.BuiltIn.TimeText, SimHub.Plugins",
                       "BackgroundColor": "#00FFFFFF",
-                      "Bindings": {
-                        "Text": {
-                          "FormatString": "HH\\:MM",
-                          "Formula": {
-                            "Expression": "[DataCorePlugin.CustomExpression.CurrentDateTime]"
-                          },
-                          "Mode": 2,
-                          "TargetPropertyName": "Text"
-                        }
-                      },
                       "Font": "Rajdhani",
                       "FontSize": 22.0,
                       "FontWeight": "SemiBold",
+                      "Format": "HH:mm",
                       "Height": 20.0,
-                      "HorizontalAlignment": 0,
+                      "HorizontalAlignment": 2,
                       "IsTextItem": true,
-                      "Left": 300.0,
-                      "Name": "PCTIME",
-                      "Text": "11:23",
+                      "Left": 259.0,
+                      "Name": "time",
                       "TextColor": "#FF808080",
-                      "Top": 8.25,
+                      "Top": 8.0,
                       "VerticalAlignment": 1,
                       "Visible": true,
-                      "Width": 60.0
+                      "Width": 100.0
                     }
                   ],
                   "Group": true,
                   "Height": 65.0,
                   "Left": 170.0,
-                  "Name": "LAP",
+                  "Name": "LAP2",
                   "Top": 0.0,
                   "Visible": true,
-                  "Width": 190.0
+                  "Width": 189.0
                 },
                 {
                   "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.Layer, SimHub.Plugins",
@@ -3913,41 +3883,31 @@
                       "Width": 2.0
                     },
                     {
-                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.TextItem, SimHub.Plugins",
+                      "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.BuiltIn.TimeText, SimHub.Plugins",
                       "BackgroundColor": "#00FFFFFF",
-                      "Bindings": {
-                        "Text": {
-                          "FormatString": "HH\\:MM",
-                          "Formula": {
-                            "Expression": "[DataCorePlugin.CustomExpression.CurrentDateTime]"
-                          },
-                          "Mode": 2,
-                          "TargetPropertyName": "Text"
-                        }
-                      },
                       "Font": "Rajdhani",
                       "FontSize": 22.0,
                       "FontWeight": "SemiBold",
+                      "Format": "HH:mm",
                       "Height": 20.0,
-                      "HorizontalAlignment": 0,
+                      "HorizontalAlignment": 2,
                       "IsTextItem": true,
-                      "Left": 300.0,
-                      "Name": "PCTIME",
-                      "Text": "11:23",
+                      "Left": 259.0,
+                      "Name": "time",
                       "TextColor": "#FF808080",
-                      "Top": 8.25,
+                      "Top": 8.0,
                       "VerticalAlignment": 1,
                       "Visible": true,
-                      "Width": 60.0
+                      "Width": 100.0
                     }
                   ],
                   "Group": true,
                   "Height": 65.0,
                   "Left": 170.0,
-                  "Name": "LAP",
+                  "Name": "LAP2",
                   "Top": 0.0,
                   "Visible": true,
-                  "Width": 190.0
+                  "Width": 189.0
                 },
                 {
                   "$type": "SimHub.Plugins.OutputPlugins.GraphicalDash.Models.WidgetItem, SimHub.Plugins",

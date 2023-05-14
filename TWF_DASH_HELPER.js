@@ -644,6 +644,7 @@ function twf_laptimer_blink() {
 }
 
 function twf_opponent_has_fastest_lap() {
+     var bestlapdriverposition = $prop('BestLapOpponentPosition') + 1
     if ($prop('BestLapOpponentPosition') !== null) {
         if (isplayer(bestlapdriverposition)) {
             return 0

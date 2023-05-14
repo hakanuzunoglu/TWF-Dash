@@ -1,13 +1,13 @@
 {
     "SECTION 1": "############# PERSONALIZATION #############",
     
-    "your_name": " ",
+    "your_name": "",
         "your_name_tip": "Your name (will appear in various places)",
 
-    "your_number": " ",
+    "your_number": "",
         "your_number_tip": "Your number (will appear in various places)",
 
-    "your_color": " ",
+    "your_color": "orange",
         "your_color_tip": "Red, Blue, #FF233E49 (default - will appear in various places)",
     
     "ui_color": 2,
